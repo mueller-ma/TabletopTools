@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mobile_navigation"
+        app:startDestination="@+id/nav_dices">
+
+    <fragment
+            android:id="@+id/nav_dices"
+            android:name="com.github.muellerma.tabletoptools.ui.dices.DicesFragment"
+            android:label="@string/menu_dices"
+            tools:layout="@layout/fragment_dices" />
+
+    <fragment
+            android:id="@+id/nav_rot13"
+            android:name="com.github.muellerma.tabletoptools.ui.rot13.Rot13Fragment"
+            android:label="@string/menu_rot13"
+            tools:layout="@layout/fragment_rot13" />
+
+    <fragment
+            android:id="@+id/nav_number_converter"
+            android:name="com.github.muellerma.tabletoptools.ui.number_converter.NumberConverterFragment"
+            android:label="@string/menu_number_converter"
+            tools:layout="@layout/fragment_number_converter" />
+</navigation>
