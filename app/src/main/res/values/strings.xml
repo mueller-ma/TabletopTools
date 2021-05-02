@@ -23,6 +23,10 @@
     <string name="dices_d12">D12</string>
     <string name="dices_slider_hint">Number of dices: %d</string>
     <string name="dices_d_d">D%d</string>
+    <string name="menu_fmt">5 Minute Timer</string>
+    <string name="fmt_timer_start">Start</string>
+    <string name="fmt_timer_pause">Pause</string>
+    <string name="fmt_timer_reset">Reset</string>
     <plurals name="rot13_hint">
         <item quantity="one">All latin letters will be rotated by %d place (can be set below)</item>
         <item quantity="other">All latin letters will be rotated by %d places (can be set below)</item>
