@@ -3,6 +3,8 @@ package com.github.muellerma.tabletoptools.ui.fmt
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.os.Handler
+import android.os.Looper
 import android.provider.Settings
 import android.util.Log
 import android.view.LayoutInflater
@@ -11,6 +13,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.core.view.isInvisible
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import com.github.muellerma.tabletoptools.R
 
@@ -62,6 +65,15 @@ class FMTFragment : Fragment() {
         updateTimerView()
 
         return root
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        Handler(Looper.getMainLooper()).post {
+            Log.d(TAG, "Start button is ${startButton.height} high")
+            timerView1.isVisible = startButton.height > 20
+        }
     }
 
     private fun toggleTimer() {
