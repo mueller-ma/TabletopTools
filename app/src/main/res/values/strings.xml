@@ -1,10 +1,7 @@
 <resources>
     <string name="app_name">Tabletop tools</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="app_description">Handy tool collection for tabletop games</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
 
     <string name="menu_rot13">Rot 13</string>
     <string name="menu_number_converter">Number converter</string>

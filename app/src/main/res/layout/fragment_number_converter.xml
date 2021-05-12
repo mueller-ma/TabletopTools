@@ -58,7 +58,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/number_converter_input_wrapper_hex"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:hint="@string/number_converter_hexadecimal"
                 android:layout_width="match_parent"
