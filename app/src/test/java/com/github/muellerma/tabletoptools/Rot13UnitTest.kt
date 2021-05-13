@@ -1,6 +1,6 @@
 package com.github.muellerma.tabletoptools
 
-import com.github.muellerma.tabletoptools.ui.rot13.Rot13Fragment
+import com.github.muellerma.tabletoptools.ui.fragments.Rot13Fragment
 import org.junit.Test
 
 import org.junit.Assert.*

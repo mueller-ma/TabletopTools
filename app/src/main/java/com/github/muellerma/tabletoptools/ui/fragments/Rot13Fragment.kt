@@ -1,4 +1,4 @@
-package com.github.muellerma.tabletoptools.ui.rot13
+package com.github.muellerma.tabletoptools.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,7 +13,7 @@ import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.utils.isLatinLetter
 import com.google.android.material.slider.Slider
 
-class Rot13Fragment : Fragment() {
+class Rot13Fragment : AbstractBaseFragment() {
     private lateinit var slider: Slider
     private lateinit var inputText: EditText
     private lateinit var result: TextView

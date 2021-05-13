@@ -6,25 +6,25 @@
 
     <fragment
             android:id="@+id/nav_dices"
-            android:name="com.github.muellerma.tabletoptools.ui.dices.DicesFragment"
+            android:name="com.github.muellerma.tabletoptools.ui.fragments.DicesFragment"
             android:label="@string/menu_dices"
             tools:layout="@layout/fragment_dices" />
 
     <fragment
             android:id="@+id/nav_rot13"
-            android:name="com.github.muellerma.tabletoptools.ui.rot13.Rot13Fragment"
+            android:name="com.github.muellerma.tabletoptools.ui.fragments.Rot13Fragment"
             android:label="@string/menu_rot13"
             tools:layout="@layout/fragment_rot13" />
 
     <fragment
             android:id="@+id/nav_number_converter"
-            android:name="com.github.muellerma.tabletoptools.ui.number_converter.NumberConverterFragment"
+            android:name="com.github.muellerma.tabletoptools.ui.fragments.NumberConverterFragment"
             android:label="@string/menu_number_converter"
             tools:layout="@layout/fragment_number_converter" />
 
     <fragment
             android:id="@+id/nav_fmt"
-            android:name="com.github.muellerma.tabletoptools.ui.fmt.FMTFragment"
+            android:name="com.github.muellerma.tabletoptools.ui.fragments.FMTFragment"
             android:label="@string/menu_fmt"
             tools:layout="@layout/fragment_fmt" />
 </navigation>

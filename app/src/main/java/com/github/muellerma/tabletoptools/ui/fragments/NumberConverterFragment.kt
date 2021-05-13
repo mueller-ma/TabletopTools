@@ -1,4 +1,4 @@
-package com.github.muellerma.tabletoptools.ui.number_converter
+package com.github.muellerma.tabletoptools.ui.fragments
 
 import android.os.Bundle
 import android.util.Log
@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
 import com.github.muellerma.tabletoptools.R
 import java.util.*
 
-class NumberConverterFragment : Fragment() {
+class NumberConverterFragment : AbstractBaseFragment() {
     private lateinit var binInputText: EditText
     private lateinit var decInputText: EditText
     private lateinit var hexInputText: EditText

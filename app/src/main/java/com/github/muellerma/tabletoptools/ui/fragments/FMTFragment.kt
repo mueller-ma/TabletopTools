@@ -1,4 +1,4 @@
-package com.github.muellerma.tabletoptools.ui.fmt
+package com.github.muellerma.tabletoptools.ui.fragments
 
 import android.media.MediaPlayer
 import android.os.Bundle
@@ -18,7 +18,7 @@ import androidx.fragment.app.Fragment
 import com.github.muellerma.tabletoptools.R
 
 
-class FMTFragment : Fragment() {
+class FMTFragment : AbstractBaseFragment() {
     private lateinit var timerView1: TextView
     private lateinit var timerView2: TextView
     private lateinit var startButton: Button

@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         android:fillViewport="true"
         android:keepScreenOn="true"
-        tools:context=".ui.fmt.FMTFragment">
+        tools:context=".ui.fragments.FMTFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

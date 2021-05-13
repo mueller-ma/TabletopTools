@@ -1,18 +1,20 @@
-package com.github.muellerma.tabletoptools.ui.dices
+package com.github.muellerma.tabletoptools.ui.fragments
 
 import android.os.Bundle
+import android.os.Parcel
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import com.github.muellerma.tabletoptools.MainActivity
+import com.github.muellerma.tabletoptools.ui.MainActivity
 import com.github.muellerma.tabletoptools.R
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.slider.Slider
+import kotlinx.android.parcel.Parcelize
 
-class DicesFragment : Fragment() {
+class DicesFragment : AbstractBaseFragment() {
     private lateinit var slider: Slider
     private lateinit var result: TextView
 
@@ -57,9 +59,7 @@ class DicesFragment : Fragment() {
     }
 
     override fun onResume() {
-        (activity as MainActivity?)?.let {
-            result.text = it.diceResults
-        }
+        result.text = (savedData as DicesData?)?.results
         super.onResume()
     }
 
@@ -84,7 +84,7 @@ class DicesFragment : Fragment() {
         }
         resultString.appendLine().append(result.text)
         resultString.toString().apply {
-            (activity as MainActivity?)?.diceResults = this
+            savedData = DicesData(this)
             result.text = this
         }
     }
@@ -92,4 +92,7 @@ class DicesFragment : Fragment() {
     companion object {
         private var TAG = DicesFragment::class.java.simpleName
     }
+
+    @Parcelize
+    data class DicesData(val results: String) : SavedData
 }

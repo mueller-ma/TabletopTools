@@ -1,7 +1,7 @@
-package com.github.muellerma.tabletoptools
+package com.github.muellerma.tabletoptools.ui
 
 import android.os.Bundle
-import android.view.Menu
+import android.util.Log
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -11,14 +11,16 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.NavHostFragment
+import com.github.muellerma.tabletoptools.R
+import com.github.muellerma.tabletoptools.ui.fragments.AbstractBaseFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
 
-    // Save results in activity, so it isn't lost when leaving and re-entering a fragment
-    var diceResults = ""
-
     override fun onCreate(savedInstanceState: Bundle?) {
+        Log.d(TAG, "onCreate()")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
@@ -37,17 +39,41 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onSupportNavigateUp(): Boolean {
+        Log.d(TAG, "onSupportNavigateUp()")
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
-        diceResults = savedInstanceState.getString("dice_results", "")
+        Log.d(TAG, "onRestoreInstanceState()")
+        getFragments()?.forEach { fragment ->
+            if (fragment is AbstractBaseFragment) {
+                fragment.savedData = savedInstanceState.getParcelable(fragment::class.java.simpleName)
+            }
+        }
         super.onRestoreInstanceState(savedInstanceState)
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
-        outState.putString("dice_results", diceResults)
+        Log.d(TAG, "onSaveInstanceState()")
+        getFragments()?.forEach { fragment ->
+            if (fragment is AbstractBaseFragment) {
+                outState.putParcelable(fragment::class.java.simpleName, fragment.savedData)
+            }
+        }
+
         super.onSaveInstanceState(outState)
+    }
+
+    private fun getFragments(): MutableList<Fragment>? {
+        return supportFragmentManager
+            .fragments
+            .firstOrNull { it is NavHostFragment }
+            ?.childFragmentManager
+            ?.fragments
+    }
+
+    companion object {
+        private val TAG = MainActivity::class.java.simpleName
     }
 }
