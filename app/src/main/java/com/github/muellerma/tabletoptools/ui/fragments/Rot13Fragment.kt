@@ -53,7 +53,7 @@ class Rot13Fragment : AbstractBaseFragment() {
             }
 
             val start = if (c.isUpperCase()) 65 else 97
-            val newChar = (c.toInt() - start + rotateBy) % 26
+            val newChar = (c.code - start + rotateBy) % 26
             return (newChar + start).toChar()
         }
     }

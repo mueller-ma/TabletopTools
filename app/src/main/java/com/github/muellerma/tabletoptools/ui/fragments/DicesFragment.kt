@@ -12,7 +12,7 @@ import com.github.muellerma.tabletoptools.ui.MainActivity
 import com.github.muellerma.tabletoptools.R
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.slider.Slider
-import kotlinx.android.parcel.Parcelize
+import kotlinx.parcelize.Parcelize
 
 class DicesFragment : AbstractBaseFragment() {
     private lateinit var slider: Slider

@@ -36,7 +36,7 @@ class NumberConverterFragment : AbstractBaseFragment() {
 
             inputFromUser = false
             decInputText.setText(input.toString())
-            hexInputText.setText(Integer.toHexString(input).toUpperCase(Locale.US))
+            hexInputText.setText(Integer.toHexString(input).uppercase(Locale.US))
             inputFromUser = true
         }
 
@@ -49,7 +49,7 @@ class NumberConverterFragment : AbstractBaseFragment() {
 
             inputFromUser = false
             binInputText.setText(Integer.toBinaryString(input))
-            hexInputText.setText(Integer.toHexString(input).toUpperCase(Locale.US))
+            hexInputText.setText(Integer.toHexString(input).uppercase(Locale.US))
             inputFromUser = true
         }
 
