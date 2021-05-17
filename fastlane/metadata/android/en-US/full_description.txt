@@ -3,7 +3,6 @@ This app provides a few handy tools for tabletop games:
 * [Rot13](https://en.wikipedia.org/wiki/ROT13)
 * Number converter: Decimal <=> Binary <=> Hexadecimal
 * 5 Minute Timer
+* Buzzers for two players
 
 More tools are planned.
-
-Android 5 or higher is required.

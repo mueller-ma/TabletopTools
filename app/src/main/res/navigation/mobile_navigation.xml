@@ -27,4 +27,10 @@
             android:name="com.github.muellerma.tabletoptools.ui.fragments.FMTFragment"
             android:label="@string/menu_fmt"
             tools:layout="@layout/fragment_fmt" />
+
+    <fragment
+            android:id="@+id/nav_buzzers"
+            android:name="com.github.muellerma.tabletoptools.ui.fragments.BuzzersFragment"
+            android:label="@string/menu_buzzers"
+            tools:layout="@layout/fragment_buzzers" />
 </navigation>

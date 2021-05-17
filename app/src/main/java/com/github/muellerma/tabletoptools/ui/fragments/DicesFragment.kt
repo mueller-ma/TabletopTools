@@ -1,14 +1,11 @@
 package com.github.muellerma.tabletoptools.ui.fragments
 
 import android.os.Bundle
-import android.os.Parcel
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.fragment.app.Fragment
-import com.github.muellerma.tabletoptools.ui.MainActivity
 import com.github.muellerma.tabletoptools.R
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.slider.Slider
