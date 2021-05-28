@@ -1,13 +1,25 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools"
+        tools:ignore="MissingTranslation">
     <string name="app_name">Tabletop tools</string>
     <string name="app_description">Collection d\'outils pratiques pour les jeux de société</string>
     <string name="nav_header_desc">Navigation header</string>
+    <string name="settings">Paramètres</string>
+    <string name="close">Fermer</string>
 
+    <!-- Rot 13 -->
     <string name="menu_rot13">Rot 13</string>
+    <plurals name="rot13_hint">
+        <item quantity="one">Toutes les lettres ( alphabet latin ) seront décalés de %d position (à définir ci-dessous)</item>
+        <item quantity="other">Toutes les lettres ( alphabet latin ) seront décalés de %d positions (à définir ci-dessous)</item>
+    </plurals>
+
+    <!-- Number converter -->
     <string name="menu_number_converter">Convertisseur de nombres</string>
     <string name="number_converter_decimal">Décimal</string>
     <string name="number_converter_binary">Binaire</string>
     <string name="number_converter_hexadecimal">Hexadécimal</string>
+
+    <!-- Dices -->
     <string name="menu_dices">Dés</string>
     <string name="dices_d3">D3</string>
     <string name="dices_d4">D4</string>
@@ -20,15 +32,21 @@
     <string name="dices_d12">D12</string>
     <string name="dices_slider_hint">Nombre de dés : %d</string>
     <string name="dices_d_d">D%d</string>
+
+    <!-- Timer -->
     <string name="menu_fmt">Minuteur - 5min</string>
     <string name="fmt_timer_start">Démarrer</string>
     <string name="fmt_timer_pause">Pause</string>
     <string name="fmt_timer_reset">Réinitialiser</string>
+
+    <!-- Buzzers -->
+    <string name="menu_buzzers">Buzzers</string>
     <string name="buzzers_player_a">Joueur A</string>
     <string name="buzzers_player_b">Joueur B</string>
-    <string name="menu_buzzers">Buzzer</string>
-    <plurals name="rot13_hint">
-        <item quantity="one">Toutes les lettres ( alphabet latin ) seront décalés de %d position (à définir ci-dessous)</item>
-        <item quantity="other">Toutes les lettres ( alphabet latin ) seront décalés de %d positions (à définir ci-dessous)</item>
+    <string name="buzzers_player_c">Joueur C</string>
+    <string name="buzzers_player_d">Joueur D</string>
+    <plurals name="buzzers_amount">
+        <item quantity="one">%d buzzer</item>
+        <item quantity="other">%d buzzers</item>
     </plurals>
 </resources>
