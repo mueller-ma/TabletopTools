@@ -1,13 +1,17 @@
 package com.github.muellerma.tabletoptools.ui.fragments
 
+import android.content.DialogInterface
 import android.os.*
+import android.preference.PreferenceManager
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.Button
+import android.widget.NumberPicker
+import androidx.core.content.edit
 import androidx.core.content.getSystemService
+import androidx.core.view.isVisible
 import com.github.muellerma.tabletoptools.R
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.*
 
 
@@ -21,14 +25,25 @@ class BuzzersFragment : AbstractBaseFragment() {
     ): View? {
         val root = inflater.inflate(R.layout.fragment_buzzers, container, false)
 
-        listOf(R.id.buzzer_a, R.id.buzzer_b).forEach { id ->
+        listOf(R.id.buzzer_a, R.id.buzzer_b, R.id.buzzer_c, R.id.buzzer_d).forEach { id ->
             root.findViewById<Button>(id)?.apply {
                 buzzers.add(this)
                 setOnClickListener { buttonPressed(this) }
             }
         }
+        setupButtonVisibility()
+
+        setHasOptionsMenu(true)
 
         return root
+    }
+
+    private fun setupButtonVisibility() {
+        val visible = PreferenceManager.getDefaultSharedPreferences(requireContext())
+            .getInt("buzzer_count", 2)
+        buzzers.forEachIndexed {index, button ->
+            button.isVisible = index <= visible - 1
+        }
     }
 
     private fun buttonPressed(pressedButton: Button) {
@@ -60,6 +75,40 @@ class BuzzersFragment : AbstractBaseFragment() {
                     }
                 }
             }
+        }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.menu_buzzers, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.settings -> {
+                val prefs = PreferenceManager.getDefaultSharedPreferences(requireContext())
+                val picker = NumberPicker(requireContext()).apply {
+                    minValue = 1
+                    maxValue = 4
+                    value = prefs.getInt("buzzer_count", 2)
+                    displayedValues = (minValue..maxValue).map {
+                        resources.getQuantityString(R.plurals.buzzers_amount, it, it)
+                    }.toTypedArray()
+                }
+
+                MaterialAlertDialogBuilder(requireContext())
+                    .setView(picker)
+                    .setTitle(R.string.settings)
+                    .setPositiveButton(android.R.string.ok) { _, _ ->
+                        prefs.edit {
+                            putInt("buzzer_count", picker.value)
+                        }
+                        setupButtonVisibility()
+                    }
+                    .setNegativeButton(android.R.string.cancel, null)
+                    .show()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
         }
     }
 

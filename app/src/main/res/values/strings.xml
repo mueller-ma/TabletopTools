@@ -1,13 +1,25 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools"
+        tools:ignore="MissingTranslation">
     <string name="app_name">Tabletop tools</string>
     <string name="app_description">Handy tool collection for tabletop games</string>
     <string name="nav_header_desc">Navigation header</string>
+    <string name="settings">Settings</string>
+    <string name="close">Close</string>
 
+    <!-- Rot 13 -->
     <string name="menu_rot13">Rot 13</string>
+    <plurals name="rot13_hint">
+        <item quantity="one">All latin letters will be rotated by %d place (can be set below)</item>
+        <item quantity="other">All latin letters will be rotated by %d places (can be set below)</item>
+    </plurals>
+
+    <!-- Number converter -->
     <string name="menu_number_converter">Number converter</string>
     <string name="number_converter_decimal">Decimal</string>
     <string name="number_converter_binary">Binary</string>
     <string name="number_converter_hexadecimal">Hexadecimal</string>
+
+    <!-- Dices -->
     <string name="menu_dices">Dices</string>
     <string name="dices_d3">D3</string>
     <string name="dices_d4">D4</string>
@@ -20,15 +32,21 @@
     <string name="dices_d12">D12</string>
     <string name="dices_slider_hint">Number of dices: %d</string>
     <string name="dices_d_d">D%d</string>
+
+    <!-- Timer -->
     <string name="menu_fmt">5 Minute Timer</string>
     <string name="fmt_timer_start">Start</string>
     <string name="fmt_timer_pause">Pause</string>
     <string name="fmt_timer_reset">Reset</string>
+
+    <!-- Buzzers -->
+    <string name="menu_buzzers">Buzzers</string>
     <string name="buzzers_player_a">Player A</string>
     <string name="buzzers_player_b">Player B</string>
-    <string name="menu_buzzers">Buzzers</string>
-    <plurals name="rot13_hint">
-        <item quantity="one">All latin letters will be rotated by %d place (can be set below)</item>
-        <item quantity="other">All latin letters will be rotated by %d places (can be set below)</item>
+    <string name="buzzers_player_c">Player C</string>
+    <string name="buzzers_player_d">Player D</string>
+    <plurals name="buzzers_amount">
+        <item quantity="one">%d buzzer</item>
+        <item quantity="other">%d buzzers</item>
     </plurals>
 </resources>
