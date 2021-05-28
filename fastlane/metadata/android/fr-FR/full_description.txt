@@ -3,6 +3,6 @@ This app provides a few handy tools for tabletop games:
 * [Rot13](https://en.wikipedia.org/wiki/ROT13)
 * Convertisseur de nombres: Décimal <=> Binaire <=> Hexadécimal
 * Minuteur - 5 min
-* Buzzers for two players
+* Buzzer pour 2 joueurs
 
 D'autres outils sont prévus.
