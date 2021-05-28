@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Tabletop tools</string>
-    <string name="app_description">Collection d'outils pratiques pour les jeux de société
+    <string name="app_description">Collection d'outils pratiques pour les jeux de société</string>
+    <string name="nav_header_desc">Navigation header</string>
 
     <string name="menu_rot13">Rot 13</string>
     <string name="menu_number_converter">Convertisseur de nombres</string>
