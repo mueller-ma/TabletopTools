@@ -1,0 +1,2 @@
+* Buzzers: Vibrate on press
+* Add French translation
