@@ -26,7 +26,7 @@
     <string name="dices_d6">D6</string>
     <string name="dices_d8">D8</string>
     <string name="dices_d10">D10</string>
-    <string name="dices_d10_2">D10 (0–90)</string>
+    <string name="dices_d10_2">D10 (0&#8211;90)</string>
     <string name="dices_d100">D100</string>
     <string name="dices_d20">D20</string>
     <string name="dices_d12">D12</string>
