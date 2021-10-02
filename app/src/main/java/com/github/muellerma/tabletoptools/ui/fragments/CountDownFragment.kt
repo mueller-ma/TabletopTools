@@ -21,7 +21,7 @@ import com.github.muellerma.tabletoptools.ui.dialog.CountDownPickerDialog
 import java.util.concurrent.TimeUnit
 
 
-class FMTFragment : AbstractBaseFragment() {
+class CountDownFragment : AbstractBaseFragment() {
     private lateinit var timerView1: TextView
     private lateinit var timerView2: TextView
     private lateinit var startButton: Button
@@ -187,7 +187,7 @@ class FMTFragment : AbstractBaseFragment() {
     }
 
     companion object {
-        private var TAG = FMTFragment::class.java.simpleName
+        private var TAG = CountDownFragment::class.java.simpleName
         private const val PREVIOUS_MILLIS = "PREVIOUS_MILLIS"
         private const val DEFAULT_TIMER = 5 * 60 * 1000L
     }

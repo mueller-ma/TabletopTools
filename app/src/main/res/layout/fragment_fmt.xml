@@ -6,7 +6,7 @@
         android:layout_height="match_parent"
         android:fillViewport="true"
         android:keepScreenOn="true"
-        tools:context=".ui.fragments.FMTFragment">
+        tools:context=".ui.fragments.CountDownFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
