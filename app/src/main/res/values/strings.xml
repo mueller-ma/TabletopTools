@@ -38,6 +38,10 @@
     <string name="fmt_timer_start">Start</string>
     <string name="fmt_timer_pause">Pause</string>
     <string name="fmt_timer_reset">Reset</string>
+    <string name="fmt_timer_edit">Edit</string>
+    <string name="fmt_timer_confirm">Confirm</string>
+    <string name="fmt_timer_select_min">Min</string>
+    <string name="fmt_timer_select_sec">Sec</string>
 
     <!-- Buzzers -->
     <string name="menu_buzzers">Buzzers</string>
