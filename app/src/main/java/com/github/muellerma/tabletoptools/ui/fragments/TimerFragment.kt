@@ -6,26 +6,27 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.os.Handler
 import android.os.Looper
+import android.preference.PreferenceManager
 import android.provider.Settings
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.Button
+import android.widget.NumberPicker
 import android.widget.TextView
 import androidx.core.content.edit
 import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.ui.dialog.CountDownPickerDialog
+import com.github.muellerma.tabletoptools.utils.preferences
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import java.util.concurrent.TimeUnit
 
 
-class CountDownFragment : AbstractBaseFragment() {
+class TimerFragment : AbstractBaseFragment() {
     private lateinit var timerView1: TextView
     private lateinit var timerView2: TextView
     private lateinit var startButton: Button
-    private lateinit var editButton: Button
     private lateinit var resetButton: Button
     private var timer: CountDownTimer? = null
     var originalTime: Long = DEFAULT_TIMER
@@ -35,7 +36,7 @@ class CountDownFragment : AbstractBaseFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val sharedPref = activity?.getPreferences(Context.MODE_PRIVATE) ?: return
+        val sharedPref = activity?.preferences() ?: return
         val previousTimeMillis = sharedPref.getLong(PREVIOUS_MILLIS, DEFAULT_TIMER)
         originalTime = previousTimeMillis
         remainingTime = originalTime
@@ -50,14 +51,15 @@ class CountDownFragment : AbstractBaseFragment() {
     }
 
     private fun changeTimerTime(time: Long) {
-        if (time > 0L) {
-            originalTime = time
-            remainingTime = originalTime
-            activity?.getPreferences(Context.MODE_PRIVATE)?.edit {
-                putLong(PREVIOUS_MILLIS, time)
-            }
-            updateTimerView()
+        if (time <= 0L) {
+            return
         }
+        originalTime = time
+        remainingTime = originalTime
+        activity?.preferences()?.edit {
+            putLong(PREVIOUS_MILLIS, time)
+        }
+        updateTimerView()
     }
 
     private fun getMillisFromMinutesAndSeconds(minutes: Int, seconds: Int): Long {
@@ -76,17 +78,10 @@ class CountDownFragment : AbstractBaseFragment() {
         timerView1 = root.findViewById(R.id.timer_view1)
         timerView2 = root.findViewById(R.id.timer_view2)
         startButton = root.findViewById(R.id.start_button)
-        editButton = root.findViewById(R.id.edit_time_button)
         resetButton = root.findViewById(R.id.reset_button)
 
         startButton.setOnClickListener {
             toggleTimer()
-        }
-
-        editButton.setOnClickListener {
-            CountDownPickerDialog().apply {
-                arguments = CountDownPickerDialog.createBundle(originalTime)
-            }.show(childFragmentManager, CountDownPickerDialog.TAG)
         }
 
         resetButton.setOnClickListener {
@@ -108,6 +103,7 @@ class CountDownFragment : AbstractBaseFragment() {
         }
 
         updateTimerView()
+        setHasOptionsMenu(true)
 
         return root
     }
@@ -186,8 +182,25 @@ class CountDownFragment : AbstractBaseFragment() {
         super.onSaveInstanceState(outState)
     }
 
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.menu_timer, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.edit_time -> {
+                CountDownPickerDialog().apply {
+                    arguments = CountDownPickerDialog.createBundle(originalTime)
+                }.show(childFragmentManager, CountDownPickerDialog.TAG)
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
     companion object {
-        private var TAG = CountDownFragment::class.java.simpleName
+        private var TAG = TimerFragment::class.java.simpleName
         private const val PREVIOUS_MILLIS = "PREVIOUS_MILLIS"
         private const val DEFAULT_TIMER = 5 * 60 * 1000L
     }

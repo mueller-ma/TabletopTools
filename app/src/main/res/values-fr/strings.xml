@@ -42,6 +42,7 @@
     <string name="fmt_timer_confirm">Confirmer</string>
     <string name="fmt_timer_select_min">Min</string>
     <string name="fmt_timer_select_sec">Sec</string>
+    <string name="fmt_timer_menu_change">Changer la minuterie</string>
 
     <!-- Buzzers -->
     <string name="menu_buzzers">Buzzers</string>
