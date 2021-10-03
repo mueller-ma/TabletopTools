@@ -1,25 +1,21 @@
 package com.github.muellerma.tabletoptools.ui.fragments
 
-import android.content.Context
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.os.Handler
 import android.os.Looper
-import android.preference.PreferenceManager
 import android.provider.Settings
 import android.util.Log
 import android.view.*
 import android.widget.Button
-import android.widget.NumberPicker
 import android.widget.TextView
 import androidx.core.content.edit
 import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
 import com.github.muellerma.tabletoptools.R
-import com.github.muellerma.tabletoptools.ui.dialog.CountDownPickerDialog
+import com.github.muellerma.tabletoptools.ui.dialog.TimerPickerDialog
 import com.github.muellerma.tabletoptools.utils.preferences
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import java.util.concurrent.TimeUnit
 
 
@@ -41,11 +37,11 @@ class TimerFragment : AbstractBaseFragment() {
         originalTime = previousTimeMillis
         remainingTime = originalTime
         childFragmentManager.setFragmentResultListener(
-            CountDownPickerDialog.RESULT_KEY,
+            TimerPickerDialog.RESULT_KEY,
             this
         ) { _, bundle ->
-            val minute = bundle.getInt(CountDownPickerDialog.MINUTE_KEY)
-            val seconds = bundle.getInt(CountDownPickerDialog.SECOND_KEY)
+            val minute = bundle.getInt(TimerPickerDialog.MINUTE_KEY)
+            val seconds = bundle.getInt(TimerPickerDialog.SECOND_KEY)
             changeTimerTime(getMillisFromMinutesAndSeconds(minute, seconds))
         }
     }
@@ -121,12 +117,12 @@ class TimerFragment : AbstractBaseFragment() {
         if (timerRunning) {
             timer?.cancel()
             timerRunning = false
-            startButton.text = getString(R.string.fmt_timer_start)
+            startButton.text = getString(R.string.timer_start)
             resetButton.isInvisible = false
         } else {
             startTimer(remainingTime)
             timerRunning = true
-            startButton.text = getString(R.string.fmt_timer_pause)
+            startButton.text = getString(R.string.timer_pause)
             resetButton.isInvisible = true
         }
     }
@@ -190,9 +186,9 @@ class TimerFragment : AbstractBaseFragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.edit_time -> {
-                CountDownPickerDialog().apply {
-                    arguments = CountDownPickerDialog.createBundle(originalTime)
-                }.show(childFragmentManager, CountDownPickerDialog.TAG)
+                TimerPickerDialog().apply {
+                    arguments = TimerPickerDialog.createBundle(originalTime)
+                }.show(childFragmentManager, TimerPickerDialog.TAG)
                 true
             }
             else -> super.onOptionsItemSelected(item)

@@ -2,5 +2,5 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/edit_time"
-        android:title="@string/fmt_timer_menu_change" />
+        android:title="@string/timer_menu_change" />
 </menu>

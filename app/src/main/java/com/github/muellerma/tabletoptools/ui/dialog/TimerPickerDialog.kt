@@ -11,7 +11,7 @@ import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.setFragmentResult
 import com.github.muellerma.tabletoptools.R
 
-class CountDownPickerDialog : DialogFragment() {
+class TimerPickerDialog : DialogFragment() {
 
     private var minutesAndSeconds: Pair<Int, Int> = Pair(5, 0)
 

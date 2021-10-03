@@ -23,7 +23,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:textSize="18sp"
-                    android:text="@string/fmt_timer_select_min" />
+                    android:text="@string/timer_select_min" />
 
             <NumberPicker
                     android:id="@+id/minute_number_picker"
@@ -43,7 +43,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:textSize="18sp"
-                    android:text="@string/fmt_timer_select_sec" />
+                    android:text="@string/timer_select_sec" />
 
             <NumberPicker
                     android:id="@+id/second_number_picker"
@@ -57,6 +57,6 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/fmt_timer_confirm" />
+            android:text="@string/timer_confirm" />
 
 </LinearLayout>
