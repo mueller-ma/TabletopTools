@@ -81,14 +81,7 @@ class TimerFragment : AbstractBaseFragment() {
         }
 
         resetButton.setOnClickListener {
-            player?.stop()
-            if (timerRunning) {
-                toggleTimer()
-            }
-
-            remainingTime = originalTime
-            updateTimerView()
-            startButton.isEnabled = true
+            resetTimer()
         }
 
         savedInstanceState?.let {
@@ -102,6 +95,17 @@ class TimerFragment : AbstractBaseFragment() {
         setHasOptionsMenu(true)
 
         return root
+    }
+
+    private fun resetTimer() {
+        player?.stop()
+        if (timerRunning) {
+            toggleTimer()
+        }
+
+        remainingTime = originalTime
+        updateTimerView()
+        startButton.isEnabled = true
     }
 
     override fun onResume() {
@@ -185,13 +189,18 @@ class TimerFragment : AbstractBaseFragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.edit_time -> {
-                TimerPickerDialog().apply {
-                    arguments = TimerPickerDialog.createBundle(originalTime)
-                }.show(childFragmentManager, TimerPickerDialog.TAG)
+                triggerTimerPickerDialog()
                 true
             }
             else -> super.onOptionsItemSelected(item)
         }
+    }
+
+    private fun triggerTimerPickerDialog() {
+        resetTimer()
+        TimerPickerDialog().apply {
+            arguments = TimerPickerDialog.createBundle(originalTime)
+        }.show(childFragmentManager, TimerPickerDialog.TAG)
     }
 
     companion object {
