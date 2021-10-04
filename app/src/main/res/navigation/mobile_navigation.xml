@@ -23,10 +23,10 @@
             tools:layout="@layout/fragment_number_converter" />
 
     <fragment
-            android:id="@+id/nav_fmt"
+            android:id="@+id/nav_timer"
             android:name="com.github.muellerma.tabletoptools.ui.fragments.TimerFragment"
-            android:label="@string/menu_fmt"
-            tools:layout="@layout/fragment_fmt" />
+            android:label="@string/menu_timer"
+            tools:layout="@layout/fragment_timer" />
 
     <fragment
             android:id="@+id/nav_buzzers"

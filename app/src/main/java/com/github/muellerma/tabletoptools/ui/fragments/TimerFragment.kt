@@ -70,7 +70,7 @@ class TimerFragment : AbstractBaseFragment() {
         savedInstanceState: Bundle?
     ): View? {
         Log.d(TAG, "onCreateView()")
-        val root = inflater.inflate(R.layout.fragment_fmt, container, false)
+        val root = inflater.inflate(R.layout.fragment_timer, container, false)
         timerView1 = root.findViewById(R.id.timer_view1)
         timerView2 = root.findViewById(R.id.timer_view2)
         startButton = root.findViewById(R.id.start_button)
@@ -177,7 +177,6 @@ class TimerFragment : AbstractBaseFragment() {
         outState.putBoolean("running", timerRunning)
         super.onSaveInstanceState(outState)
     }
-
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.menu_timer, menu)

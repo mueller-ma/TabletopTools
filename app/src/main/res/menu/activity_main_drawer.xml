@@ -17,9 +17,9 @@
                 android:icon="@drawable/ic_menu_number_converter"
                 android:title="@string/menu_number_converter" />
         <item
-                android:id="@+id/nav_fmt"
+                android:id="@+id/nav_timer"
                 android:icon="@drawable/ic_fast_forward_5"
-                android:title="@string/menu_fmt" />
+                android:title="@string/menu_timer" />
         <item
                 android:id="@+id/nav_buzzers"
                 android:icon="@drawable/ic_radio_button_unchecked"
