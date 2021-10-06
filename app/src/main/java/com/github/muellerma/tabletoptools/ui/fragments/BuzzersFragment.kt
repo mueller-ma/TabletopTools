@@ -11,6 +11,7 @@ import androidx.core.content.edit
 import androidx.core.content.getSystemService
 import androidx.core.view.isVisible
 import com.github.muellerma.tabletoptools.R
+import com.github.muellerma.tabletoptools.utils.preferences
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.*
 
@@ -39,8 +40,7 @@ class BuzzersFragment : AbstractBaseFragment() {
     }
 
     private fun setupButtonVisibility() {
-        val visible = PreferenceManager.getDefaultSharedPreferences(requireContext())
-            .getInt("buzzer_count", 2)
+        val visible = context?.preferences()?.getInt("buzzer_count", 2) ?: 2
         buzzers.forEachIndexed {index, button ->
             button.isVisible = index <= visible - 1
         }
@@ -85,7 +85,7 @@ class BuzzersFragment : AbstractBaseFragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.settings -> {
-                val prefs = PreferenceManager.getDefaultSharedPreferences(requireContext())
+                val prefs = requireContext().preferences()
                 val picker = NumberPicker(requireContext()).apply {
                     minValue = 1
                     maxValue = 4

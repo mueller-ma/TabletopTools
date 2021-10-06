@@ -32,8 +32,8 @@ class TimerFragment : AbstractBaseFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val sharedPref = activity?.preferences() ?: return
-        val previousTimeMillis = sharedPref.getLong(PREVIOUS_MILLIS, DEFAULT_TIMER)
+        val prefs = activity?.preferences() ?: return
+        val previousTimeMillis = prefs.getLong(PREVIOUS_MILLIS, DEFAULT_TIMER)
         originalTime = previousTimeMillis
         remainingTime = originalTime
         childFragmentManager.setFragmentResultListener(
