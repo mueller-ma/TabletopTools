@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_dices,
                 R.id.nav_rot13,
                 R.id.nav_number_converter,
-                R.id.nav_fmt,
+                R.id.nav_timer,
                 R.id.nav_buzzers
             ),
             drawerLayout

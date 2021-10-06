@@ -7,26 +7,62 @@ import android.os.Handler
 import android.os.Looper
 import android.provider.Settings
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.Button
 import android.widget.TextView
+import androidx.core.content.edit
 import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
-import androidx.fragment.app.Fragment
 import com.github.muellerma.tabletoptools.R
+import com.github.muellerma.tabletoptools.ui.dialog.TimerPickerDialog
+import com.github.muellerma.tabletoptools.utils.preferences
+import java.util.concurrent.TimeUnit
 
 
-class FMTFragment : AbstractBaseFragment() {
+class TimerFragment : AbstractBaseFragment() {
     private lateinit var timerView1: TextView
     private lateinit var timerView2: TextView
     private lateinit var startButton: Button
     private lateinit var resetButton: Button
     private var timer: CountDownTimer? = null
-    private var remainingTime: Long = DEFAULT_TIMER
+    var originalTime: Long = DEFAULT_TIMER
+    private var remainingTime: Long = originalTime
     private var timerRunning = false
     private var player: MediaPlayer? = null
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        val sharedPref = activity?.preferences() ?: return
+        val previousTimeMillis = sharedPref.getLong(PREVIOUS_MILLIS, DEFAULT_TIMER)
+        originalTime = previousTimeMillis
+        remainingTime = originalTime
+        childFragmentManager.setFragmentResultListener(
+            TimerPickerDialog.RESULT_KEY,
+            this
+        ) { _, bundle ->
+            val minute = bundle.getInt(TimerPickerDialog.MINUTE_KEY)
+            val seconds = bundle.getInt(TimerPickerDialog.SECOND_KEY)
+            changeTimerTime(getMillisFromMinutesAndSeconds(minute, seconds))
+        }
+    }
+
+    private fun changeTimerTime(time: Long) {
+        if (time <= 0L) {
+            return
+        }
+        originalTime = time
+        remainingTime = originalTime
+        activity?.preferences()?.edit {
+            putLong(PREVIOUS_MILLIS, time)
+        }
+        updateTimerView()
+    }
+
+    private fun getMillisFromMinutesAndSeconds(minutes: Int, seconds: Int): Long {
+        var total = TimeUnit.MINUTES.toMillis(minutes.toLong())
+        total += TimeUnit.SECONDS.toMillis(seconds.toLong())
+        return total
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -34,7 +70,7 @@ class FMTFragment : AbstractBaseFragment() {
         savedInstanceState: Bundle?
     ): View? {
         Log.d(TAG, "onCreateView()")
-        val root = inflater.inflate(R.layout.fragment_fmt, container, false)
+        val root = inflater.inflate(R.layout.fragment_timer, container, false)
         timerView1 = root.findViewById(R.id.timer_view1)
         timerView2 = root.findViewById(R.id.timer_view2)
         startButton = root.findViewById(R.id.start_button)
@@ -45,14 +81,7 @@ class FMTFragment : AbstractBaseFragment() {
         }
 
         resetButton.setOnClickListener {
-            player?.stop()
-            if (timerRunning) {
-                toggleTimer()
-            }
-
-            remainingTime = DEFAULT_TIMER
-            updateTimerView()
-            startButton.isEnabled = true
+            resetTimer()
         }
 
         savedInstanceState?.let {
@@ -63,8 +92,20 @@ class FMTFragment : AbstractBaseFragment() {
         }
 
         updateTimerView()
+        setHasOptionsMenu(true)
 
         return root
+    }
+
+    private fun resetTimer() {
+        player?.stop()
+        if (timerRunning) {
+            toggleTimer()
+        }
+
+        remainingTime = originalTime
+        updateTimerView()
+        startButton.isEnabled = true
     }
 
     override fun onResume() {
@@ -80,12 +121,12 @@ class FMTFragment : AbstractBaseFragment() {
         if (timerRunning) {
             timer?.cancel()
             timerRunning = false
-            startButton.text = getString(R.string.fmt_timer_start)
+            startButton.text = getString(R.string.timer_start)
             resetButton.isInvisible = false
         } else {
             startTimer(remainingTime)
             timerRunning = true
-            startButton.text = getString(R.string.fmt_timer_pause)
+            startButton.text = getString(R.string.timer_pause)
             resetButton.isInvisible = true
         }
     }
@@ -141,8 +182,30 @@ class FMTFragment : AbstractBaseFragment() {
         super.onSaveInstanceState(outState)
     }
 
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.menu_timer, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.edit_time -> {
+                triggerTimerPickerDialog()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+    private fun triggerTimerPickerDialog() {
+        resetTimer()
+        TimerPickerDialog().apply {
+            arguments = TimerPickerDialog.createBundle(originalTime)
+        }.show(childFragmentManager, TimerPickerDialog.TAG)
+    }
+
     companion object {
-        private var TAG = FMTFragment::class.java.simpleName
+        private var TAG = TimerFragment::class.java.simpleName
+        private const val PREVIOUS_MILLIS = "PREVIOUS_MILLIS"
         private const val DEFAULT_TIMER = 5 * 60 * 1000L
     }
 }

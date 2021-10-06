@@ -34,10 +34,13 @@
     <string name="dices_d_d">D%d</string>
 
     <!-- Timer -->
-    <string name="menu_fmt">Minuteur - 5min</string>
-    <string name="fmt_timer_start">Démarrer</string>
-    <string name="fmt_timer_pause">Pause</string>
-    <string name="fmt_timer_reset">Réinitialiser</string>
+    <string name="menu_timer">Minuteur</string>
+    <string name="timer_start">Démarrer</string>
+    <string name="timer_pause">Pause</string>
+    <string name="timer_reset">Réinitialiser</string>
+    <string name="timer_edit">Éditer</string>
+    <string name="timer_select_min">Min</string>
+    <string name="timer_select_sec">Sec</string>
 
     <!-- Buzzers -->
     <string name="menu_buzzers">Buzzers</string>
