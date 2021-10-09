@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+        tools:ignore="MissingTranslation">
+    <string name="app_name">Tools voor bordspellen</string>
+    <string name="app_description">Handige collectie tools voor bordspellen</string>
+    <string name="nav_header_desc">Navigatieheader</string>
+    <string name="settings">Instellingen</string>
+    <string name="close">Sluiten</string>
+
+    <!-- Rot 13 -->
+    <string name="menu_rot13">Rot 13</string>
+    <plurals name="rot13_hint">
+        <item quantity="one">Alle Latijnse letters worden met %d plaatsen gedraaid (kan hieronder worden ingesteld)</item>
+        <item quantity="other">Alle Latijnse letters worden met %d plaatsen gedraaid (kan hieronder worden ingesteld)</item>
+    </plurals>
+
+    <!-- Number converter -->
+    <string name="menu_number_converter">Nummer converter</string>
+    <string name="number_converter_decimal">Decimaal</string>
+    <string name="number_converter_binary">Binair</string>
+    <string name="number_converter_hexadecimal">Hexadecimaal</string>
+
+    <!-- Dices -->
+    <string name="menu_dices">Dobbelstenen</string>
+    <string name="dices_d3">D3</string>
+    <string name="dices_d4">D4</string>
+    <string name="dices_d6">D6</string>
+    <string name="dices_d8">D8</string>
+    <string name="dices_d10">D10</string>
+    <string name="dices_d10_2">D10 (0&#8211;90)</string>
+    <string name="dices_d100">D100</string>
+    <string name="dices_d20">D20</string>
+    <string name="dices_d12">D12</string>
+    <string name="dices_slider_hint">Aantal dobbelstenen: %d</string>
+    <string name="dices_d_d">D%d</string>
+
+    <!-- Timer -->
+    <string name="menu_timer">Timer</string>
+    <string name="timer_start">Start</string>
+    <string name="timer_pause">Pauzeren</string>
+    <string name="timer_reset">Reset</string>
+    <string name="timer_edit">Aanpassen</string>
+    <string name="timer_select_min">Min</string>
+    <string name="timer_select_sec">Sec</string>
+
+    <!-- Buzzers -->
+    <string name="menu_buzzers">Buzzers</string>
+    <string name="buzzers_player_a">Speler A</string>
+    <string name="buzzers_player_b">Speler B</string>
+    <string name="buzzers_player_c">Speler C</string>
+    <string name="buzzers_player_d">Speler D</string>
+    <plurals name="buzzers_amount">
+        <item quantity="one">%d buzzer</item>
+        <item quantity="other">%d buzzers</item>
+    </plurals>
+</resources>
