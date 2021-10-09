@@ -10,6 +10,8 @@
     <string name="menu_rot13">Rot 13</string>
     <plurals name="rot13_hint">
         <item quantity="one">Все латинские буквы будут сдвинуты на %d позицию (можно указать ниже)</item>
+        <item quantity="few">Все латинские буквы будут сдвинуты на %d позиции (можно указать ниже)</item>
+        <item quantity="many">Все латинские буквы будут сдвинуты на %d позиций (можно указать ниже)</item>
         <item quantity="other">Все латинские буквы будут сдвинуты на %d позиции (можно указать ниже)</item>
     </plurals>
 
@@ -50,6 +52,8 @@
     <string name="buzzers_player_d">Игрок D</string>
     <plurals name="buzzers_amount">
         <item quantity="one">%d зуммер</item>
+        <item quantity="few">%d зуммера</item>
+        <item quantity="many">%d зуммеров</item>
         <item quantity="other">%d зуммера</item>
     </plurals>
 </resources>
