@@ -1,0 +1,9 @@
+Esta app cuenta con varias herramientas útiles para juegos de mesa:
+
+* Dados (D3, D4, D6, D8, D10, D12, D20, D100)
+* [Rot13](https://es.wikipedia.org/wiki/ROT13)
+* Conversor de números: Decimal <=> Binario <=> Hexadecimal
+* Temporizador de 5 minutos
+* Zumbadores para dos jugadores
+
+¡Más herramientas en camino!
