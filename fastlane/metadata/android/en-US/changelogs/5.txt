@@ -1,0 +1,2 @@
+* Make timer configurable
+* Add more translations
