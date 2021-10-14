@@ -1,8 +1,6 @@
 package com.github.muellerma.tabletoptools.ui.fragments
 
-import android.content.DialogInterface
 import android.os.*
-import android.preference.PreferenceManager
 import android.util.Log
 import android.view.*
 import android.widget.Button
@@ -13,7 +11,8 @@ import androidx.core.view.isVisible
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.utils.preferences
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import kotlinx.coroutines.*
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 
 class BuzzersFragment : AbstractBaseFragment() {
@@ -67,7 +66,7 @@ class BuzzersFragment : AbstractBaseFragment() {
         }
 
         launch {
-            delay(5 * 1000)
+            delay(5000)
             Handler(Looper.getMainLooper()).post {
                 buzzers.forEach {
                     if (it != pressedButton) {

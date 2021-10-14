@@ -14,7 +14,8 @@
         <activity
                 android:name="com.github.muellerma.tabletoptools.ui.MainActivity"
                 android:label="@string/app_name"
-                android:theme="@style/Theme.TabletopTools.NoActionBar">
+                android:theme="@style/Theme.TabletopTools.NoActionBar"
+                android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
