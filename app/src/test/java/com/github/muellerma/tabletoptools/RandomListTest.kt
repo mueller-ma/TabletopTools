@@ -16,4 +16,15 @@ class RandomListTest {
         assertTrue("bar" in list)
         assertTrue("foobar" in list)
     }
+
+    @Test
+    fun testSortList() {
+        val list = RandomListFragment.sortList("foo\nbar\n\n    \n foobar \n")
+            .split("\n")
+
+        assertEquals(3, list.size)
+        assertTrue(list[0] == "bar")
+        assertTrue(list[1] == "foo")
+        assertTrue(list[2] == "foobar")
+    }
 }
