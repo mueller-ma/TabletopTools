@@ -9,6 +9,10 @@
                 android:icon="@drawable/ic_menu_dices"
                 android:title="@string/menu_dices" />
         <item
+                android:id="@+id/nav_random_list"
+                android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+                android:title="@string/menu_random_list" />
+        <item
                 android:id="@+id/nav_rot13"
                 android:icon="@drawable/ic_outline_text_rotation_angleup"
                 android:title="@string/menu_rot13" />

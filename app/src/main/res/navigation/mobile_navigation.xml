@@ -11,6 +11,12 @@
             tools:layout="@layout/fragment_dices" />
 
     <fragment
+            android:id="@+id/nav_random_list"
+            android:name="com.github.muellerma.tabletoptools.ui.fragments.RandomListFragment"
+            android:label="@string/menu_random_list"
+            tools:layout="@layout/fragment_random_list" />
+
+    <fragment
             android:id="@+id/nav_rot13"
             android:name="com.github.muellerma.tabletoptools.ui.fragments.Rot13Fragment"
             android:label="@string/menu_rot13"

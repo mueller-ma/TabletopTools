@@ -48,6 +48,8 @@
     <string name="buzzers_player_b">Player B</string>
     <string name="buzzers_player_c">Player C</string>
     <string name="buzzers_player_d">Player D</string>
+    <string name="random_list_hint">Enter values separated by new lines</string>
+    <string name="menu_random_list">Randomize list</string>
     <plurals name="buzzers_amount">
         <item quantity="one">%d buzzer</item>
         <item quantity="other">%d buzzers</item>
