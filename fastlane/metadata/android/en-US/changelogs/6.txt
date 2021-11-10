@@ -1,0 +1,2 @@
+* Add a list that can be randomized
+* Add Portuguese translation
