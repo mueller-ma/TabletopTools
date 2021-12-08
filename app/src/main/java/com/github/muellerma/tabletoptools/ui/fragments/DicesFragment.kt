@@ -13,6 +13,7 @@ import kotlinx.parcelize.Parcelize
 
 class DicesFragment : AbstractBaseFragment() {
     private lateinit var slider: Slider
+    private lateinit var incSlider: Slider
     private lateinit var result: TextView
 
     override fun onCreateView(
@@ -21,12 +22,21 @@ class DicesFragment : AbstractBaseFragment() {
         savedInstanceState: Bundle?
     ): View? {
         val root = inflater.inflate(R.layout.fragment_dices, container, false)
+
         slider = root.findViewById(R.id.dices_slider)
         val sliderHint = root.findViewById<TextView>(R.id.dices_slider_hint)
         sliderHint.text = getString(R.string.dices_slider_hint, slider.value.toInt())
         slider.addOnChangeListener { _, value, _ ->
             sliderHint.text = getString(R.string.dices_slider_hint, value.toInt())
         }
+
+        incSlider = root.findViewById(R.id.dices_inc_slider)
+        val incSliderHint = root.findViewById<TextView>(R.id.dices_inc_slider_hint)
+        incSliderHint.text = getString(R.string.dices_inc_slider_hint, incSlider.value.toInt())
+        incSlider.addOnChangeListener { _, value, _ ->
+            incSliderHint.text = getString(R.string.dices_inc_slider_hint, value.toInt())
+        }
+
         result = root.findViewById(R.id.dices_result_text)
 
         mapOf(
@@ -63,7 +73,13 @@ class DicesFragment : AbstractBaseFragment() {
     private fun roll(max: Int, multiplier: Int = 1) {
         val resultString = StringBuilder()
         val numberOfDices = slider.value.toInt()
-        resultString.append("$numberOfDices x ${getString(R.string.dices_d_d, max)}: ")
+        val diceIncrement = incSlider.value.toInt()
+
+        resultString.append("$numberOfDices${getString(R.string.dices_d_d, max)}")
+        if (diceIncrement > 0) {
+            resultString.append("+$diceIncrement")
+        }
+        resultString.append(": ")
 
         val firstDice = (1..max).shuffled().first().times(multiplier)
         Log.d(TAG, "Rolled $firstDice")
@@ -76,9 +92,17 @@ class DicesFragment : AbstractBaseFragment() {
             sum += rolledDice
             resultString.append("+ ").append(rolledDice).append(" ")
         }
-        if (numberOfDices > 1) {
+
+        if (diceIncrement > 0) {
+            sum += diceIncrement
+            Log.d(TAG, "+ increment: $diceIncrement")
+            resultString.append("(+ $diceIncrement) ")
+        }
+
+        if ((numberOfDices > 1) || (diceIncrement > 0)) {
             resultString.append("= $sum")
         }
+
         resultString.appendLine().append(result.text)
         resultString.toString().apply {
             savedData = DicesData(this)
