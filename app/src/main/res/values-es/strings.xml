@@ -31,7 +31,6 @@
     <string name="dices_d20">D20</string>
     <string name="dices_d12">D12</string>
     <string name="dices_slider_hint">Número de dados: %d</string>
-    <string name="dices_inc_slider_hint">Agregar para contar: %d</string>
     <string name="dices_d_d">d%d</string>
 
     <!-- Timer -->
@@ -53,4 +52,5 @@
         <item quantity="one">%d zumbador</item>
         <item quantity="other">%d zumbadores</item>
     </plurals>
+    <string name="dices_inc_slider_hint">Agregar a cuenta:</string>
 </resources>

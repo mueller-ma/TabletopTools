@@ -31,7 +31,6 @@
     <string name="dices_d20">D20</string>
     <string name="dices_d12">D12</string>
     <string name="dices_slider_hint">Nombre de dés : %d</string>
-    <string name="dices_inc_slider_hint">Ajouter au compte : %d</string>
     <string name="dices_d_d">d%d</string>
 
     <!-- Timer -->
