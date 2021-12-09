@@ -76,12 +76,18 @@ class RandomListFragment : AbstractBaseFragment() {
     companion object {
         @VisibleForTesting
         fun randomizeList(list: String): String {
-            return list
+            val orig = list
                 .split("\n")
                 .map { it.trim() }
                 .filter { it.isNotEmpty() }
-                .shuffled()
-                .joinToString("\n")
+
+            val shuffled = orig.shuffled()
+
+            if (shuffled == orig && orig.size > 1) {
+                return randomizeList(list)
+            }
+
+            return shuffled.joinToString("\n")
         }
 
         @VisibleForTesting

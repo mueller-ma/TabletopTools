@@ -18,6 +18,15 @@ class RandomListTest {
     }
 
     @Test
+    fun testRandomizeListOneElement() {
+        val list = RandomListFragment.randomizeList("foo")
+            .split("\n")
+
+        assertEquals(1, list.size)
+        assertTrue("foo" in list)
+    }
+
+    @Test
     fun testSortList() {
         val list = RandomListFragment.sortList("foo\nbar\n\n    \n foobar \n")
             .split("\n")
