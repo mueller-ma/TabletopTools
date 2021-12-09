@@ -52,5 +52,4 @@
         <item quantity="one">%d zumbador</item>
         <item quantity="other">%d zumbadores</item>
     </plurals>
-    <string name="dices_inc_slider_hint">Agregar a cuenta:</string>
 </resources>

@@ -33,7 +33,6 @@
     <string name="dices_d20">D20</string>
     <string name="dices_d12">D12</string>
     <string name="dices_slider_hint">Кількість кубиків: %d</string>
-    <string name="dices_inc_slider_hint">Додайте до рахунку: %d</string>
     <string name="dices_d_d">d%d</string>
 
     <!-- Timer -->
