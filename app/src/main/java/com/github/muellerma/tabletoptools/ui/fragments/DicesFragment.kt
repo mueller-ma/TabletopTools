@@ -12,7 +12,7 @@ import com.google.android.material.slider.Slider
 import kotlinx.parcelize.Parcelize
 
 class DicesFragment : AbstractBaseFragment() {
-    private lateinit var slider: Slider
+    private lateinit var dicesCountSlider: Slider
     private lateinit var incSlider: Slider
     private lateinit var result: TextView
 
@@ -23,10 +23,10 @@ class DicesFragment : AbstractBaseFragment() {
     ): View? {
         val root = inflater.inflate(R.layout.fragment_dices, container, false)
 
-        slider = root.findViewById(R.id.dices_slider)
+        dicesCountSlider = root.findViewById(R.id.dices_count_slider)
         val sliderHint = root.findViewById<TextView>(R.id.dices_slider_hint)
-        sliderHint.text = getString(R.string.dices_slider_hint, slider.value.toInt())
-        slider.addOnChangeListener { _, value, _ ->
+        sliderHint.text = getString(R.string.dices_slider_hint, dicesCountSlider.value.toInt())
+        dicesCountSlider.addOnChangeListener { _, value, _ ->
             sliderHint.text = getString(R.string.dices_slider_hint, value.toInt())
         }
 
@@ -72,7 +72,7 @@ class DicesFragment : AbstractBaseFragment() {
 
     private fun roll(max: Int, multiplier: Int = 1) {
         val resultString = StringBuilder()
-        val numberOfDices = slider.value.toInt()
+        val numberOfDices = dicesCountSlider.value.toInt()
         val diceIncrement = incSlider.value.toInt()
 
         resultString.append("$numberOfDices${getString(R.string.dices_d_d, max)}")
