@@ -30,8 +30,10 @@
     <string name="dices_d100">D100</string>
     <string name="dices_d20">D20</string>
     <string name="dices_d12">D12</string>
-    <string name="dices_slider_hint">Number of dices: %d</string>
-    <string name="dices_d_d">D%d</string>
+    <string name="dices_slider_hint">Number of dice: %d</string>
+    <string name="dices_inc_slider_hint">Add to count: %d</string>
+    <string name="dices_d_d">d%d</string>
+
 
     <!-- Timer -->
     <string name="menu_timer">Timer</string>
