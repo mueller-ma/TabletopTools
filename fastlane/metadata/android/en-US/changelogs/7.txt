@@ -1,0 +1,2 @@
+* Add slider to increment dice count
+* Add German translation
