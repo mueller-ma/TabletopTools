@@ -4,8 +4,9 @@ This Android app provides a few handy tools for tabletop games:
 * Dices (D3, D4, D6, D8, D10, D12, D20, D100)
 * [ROT13](https://en.wikipedia.org/wiki/ROT13)
 * Number converter: Decimal <=> Binary <=> Hexadecimal
-* 5 minute timer
-* Buzzers for two players
+* Timer
+* Buzzers for 1 - 4 players
+* List that can be randomized
 
 More tools are planned.
 
