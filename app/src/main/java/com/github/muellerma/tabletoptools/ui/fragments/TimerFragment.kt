@@ -147,7 +147,7 @@ class TimerFragment : AbstractBaseFragment() {
                 toggleTimer()
                 player = MediaPlayer.create(
                     requireContext(),
-                    Settings.System.DEFAULT_RINGTONE_URI
+                    R.raw.beeps
                 )
                 startButton.isEnabled = false
                 player?.start()
