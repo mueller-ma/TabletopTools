@@ -4,5 +4,6 @@ Diese App bietet eine Sammlung nützlicher Tools für Tabletop-Spiele:
 * Zahlenkonverter: Dezimal <=> Binär <=> Hexadezimal
 * Timer
 * Buzzers für 1 - 4 Spieler
+* Liste, die zufällig sortiert werden kann
 
 Weitere Tools sind geplant.

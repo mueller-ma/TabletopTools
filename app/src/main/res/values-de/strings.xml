@@ -1,24 +1,21 @@
-<resources xmlns:tools="http://schemas.android.com/tools"
-        tools:ignore="MissingTranslation">
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string name="app_name">Tabletop-Tools</string>
     <string name="app_description">Sammlung nützlicher Tools für Tabletop-Spiele</string>
     <string name="nav_header_desc">Seitenmenü</string>
     <string name="settings">Einstellungen</string>
     <string name="close">Schließen</string>
-
     <!-- Rot 13 -->
     <string name="menu_rot13">Rot 13</string>
     <plurals name="rot13_hint">
         <item quantity="one">Alle lateinischen Buchstaben werden um %d Platz rotiert (kann unten gesetzt werden)</item>
         <item quantity="other">Alle lateinischen Buchstaben werden um %d Plätze rotiert (kann unten gesetzt werden)</item>
     </plurals>
-
     <!-- Number converter -->
     <string name="menu_number_converter">Zahlenkonverter</string>
     <string name="number_converter_decimal">Dezimal</string>
     <string name="number_converter_binary">Binär</string>
     <string name="number_converter_hexadecimal">Hexadezimal</string>
-
     <!-- Dices -->
     <string name="menu_dices">Würfel</string>
     <string name="dices_d3">W3</string>
@@ -33,8 +30,6 @@
     <string name="dices_slider_hint">Anzahl der Würfel: %d</string>
     <string name="dices_inc_slider_hint">Zum Ergebnis addieren: %d</string>
     <string name="dices_d_d">W%d</string>
-
-
     <!-- Timer -->
     <string name="menu_timer">Timer</string>
     <string name="timer_start">Start</string>
@@ -43,9 +38,8 @@
     <string name="timer_edit">Bearbeiten</string>
     <string name="timer_select_min">Min</string>
     <string name="timer_select_sec">Sek</string>
-
     <!-- Buzzers -->
-    <string name="menu_buzzers">Buzzers</string>
+    <string name="menu_buzzers">Buzzer</string>
     <string name="buzzers_player_a">Spieler A</string>
     <string name="buzzers_player_b">Spieler B</string>
     <string name="buzzers_player_c">Spieler C</string>
