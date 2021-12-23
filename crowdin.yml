@@ -3,12 +3,5 @@ files:
     translation: /app/src/main/res/values-%two_letters_code%/strings.xml
     translate_attributes: 0
     content_segmentation: 0
-    languages_mapping:
-      two_letters_code:
-        he: iw
-        id: in
-        yi: ji
-        zh-CN: zh-rCN
-        pt-BR: pt-rBR
   - source: /fastlane/metadata/android/en-US/*_description.txt
     translation: /fastlane/metadata/android/%locale%/%original_file_name%
