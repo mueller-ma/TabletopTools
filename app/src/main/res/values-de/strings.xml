@@ -1,51 +1,57 @@
-<resources xmlns:tools="http://schemas.android.com/tools"
-        tools:ignore="MissingTranslation">
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translation instructions can be found in the Readme -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_name">Tabletop-Tools</string>
     <string name="app_description">Sammlung nützlicher Tools für Tabletop-Spiele</string>
     <string name="nav_header_desc">Seitenmenü</string>
     <string name="settings">Einstellungen</string>
-    <string name="close">Schließen</string>
-
-    <!-- Rot 13 -->
+    <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">Rot 13</string>
     <plurals name="rot13_hint">
         <item quantity="one">Alle lateinischen Buchstaben werden um %d Platz rotiert (kann unten gesetzt werden)</item>
         <item quantity="other">Alle lateinischen Buchstaben werden um %d Plätze rotiert (kann unten gesetzt werden)</item>
     </plurals>
-
     <!-- Number converter -->
     <string name="menu_number_converter">Zahlenkonverter</string>
     <string name="number_converter_decimal">Dezimal</string>
     <string name="number_converter_binary">Binär</string>
     <string name="number_converter_hexadecimal">Hexadezimal</string>
-
     <!-- Dices -->
     <string name="menu_dices">Würfel</string>
+    <!-- Dice with 3 sides -->
     <string name="dices_d3">W3</string>
+    <!-- Dice with 4 sides -->
     <string name="dices_d4">W4</string>
+    <!-- Dice with 6 sides -->
     <string name="dices_d6">W6</string>
+    <!-- Dice with 8 sides -->
     <string name="dices_d8">W8</string>
+    <!-- Dice with 10 sides -->
     <string name="dices_d10">W10</string>
+    <!-- Dice with 10 sides; values: 0, 10, 20,... -->
     <string name="dices_d10_2">W10 (0&#8211;90)</string>
+    <!-- Dice with 100 sides -->
     <string name="dices_d100">W100</string>
+    <!-- Dice with 20 sides -->
     <string name="dices_d20">W20</string>
+    <!-- Dice with 12 sides -->
     <string name="dices_d12">W12</string>
     <string name="dices_slider_hint">Anzahl der Würfel: %d</string>
     <string name="dices_inc_slider_hint">Zum Ergebnis addieren: %d</string>
+    <!-- Dice with %d sides -->
     <string name="dices_d_d">W%d</string>
-
-
     <!-- Timer -->
     <string name="menu_timer">Timer</string>
     <string name="timer_start">Start</string>
     <string name="timer_pause">Pause</string>
     <string name="timer_reset">Zurücksetzen</string>
     <string name="timer_edit">Bearbeiten</string>
+    <!-- Abr. of minutes -->
     <string name="timer_select_min">Min</string>
+    <!-- Abr. of seconds -->
     <string name="timer_select_sec">Sek</string>
-
     <!-- Buzzers -->
-    <string name="menu_buzzers">Buzzers</string>
+    <string name="menu_buzzers">Buzzer</string>
     <string name="buzzers_player_a">Spieler A</string>
     <string name="buzzers_player_b">Spieler B</string>
     <string name="buzzers_player_c">Spieler C</string>
