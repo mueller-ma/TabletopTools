@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
+    <string name="app_description">Коллекция удобных инструментов для настольных игр</string>
+    <string name="nav_header_desc">Заголовок навигации</string>
+    <string name="settings">Настройки</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
+    <string name="menu_rot13">Rot 13</string>
+    <plurals name="rot13_hint">
+        <item quantity="one">Все латинские буквы будут сдвинуты на %d позицию (можно указать ниже)</item>
+        <item quantity="few">Все латинские буквы будут сдвинуты на %d позиции (можно указать ниже)</item>
+        <item quantity="many">Все латинские буквы будут сдвинуты на %d позиций (можно указать ниже)</item>
+        <item quantity="other">Все латинские буквы будут сдвинуты на %d позиции (можно указать ниже)</item>
+    </plurals>
     <!-- Number converter -->
+    <string name="menu_number_converter">Конвертер чисел</string>
+    <string name="number_converter_decimal">Десятичный</string>
+    <string name="number_converter_binary">Двоичный</string>
+    <string name="number_converter_hexadecimal">Шестнадцатеричный</string>
     <!-- Dices -->
+    <string name="menu_dices">Кубики</string>
     <!-- Dice with 3 sides -->
     <!-- Dice with 4 sides -->
     <!-- Dice with 6 sides -->
@@ -13,9 +28,29 @@
     <!-- Dice with 100 sides -->
     <!-- Dice with 20 sides -->
     <!-- Dice with 12 sides -->
+    <string name="dices_slider_hint">Количество кубиков: %d</string>
     <!-- Dice with %d sides -->
+    <string name="dices_d_d">d%d</string>
     <!-- Timer -->
+    <string name="menu_timer">Таймер</string>
+    <string name="timer_start">Начало</string>
+    <string name="timer_pause">Пауза</string>
+    <string name="timer_reset">Сбросить</string>
+    <string name="timer_edit">Редактировать</string>
     <!-- Abr. of minutes -->
+    <string name="timer_select_min">Мин.</string>
     <!-- Abr. of seconds -->
+    <string name="timer_select_sec">Сек.</string>
     <!-- Buzzers -->
+    <string name="menu_buzzers">Зуммеры</string>
+    <string name="buzzers_player_a">Игрок A</string>
+    <string name="buzzers_player_b">Игрок B</string>
+    <string name="buzzers_player_c">Игрок C</string>
+    <string name="buzzers_player_d">Игрок D</string>
+    <plurals name="buzzers_amount">
+        <item quantity="one">%d зуммер</item>
+        <item quantity="few">%d зуммера</item>
+        <item quantity="many">%d зуммеров</item>
+        <item quantity="other">%d зуммера</item>
+    </plurals>
 </resources>
