@@ -1,8 +1,9 @@
-Cette application fournit quelques outils pratiques pour les jeux de société :
-* Dés (D3, D4, D6, D8, D10, D12, D20, D100)
+This app provides a few handy tools for tabletop games:
+* Dices (D3, D4, D6, D8, D10, D12, D20, D100)
 * [Rot13](https://en.wikipedia.org/wiki/ROT13)
-* Convertisseur de nombres: Décimal <=> Binaire <=> Hexadécimal
-* Minuteur - 5 min
-* Buzzer pour 2 joueurs
+* Number converter: Decimal <=> Binary <=> Hexadecimal
+* Timer
+* Buzzers for 1 - 4 players
+* List that can be randomized
 
-D'autres outils sont prévus.
+More tools are planned.
