@@ -1,9 +1,9 @@
-Diese App bietet eine Sammlung nützlicher Tools für Tabletop-Spiele:
-* Würfel (W3, W4, W6, W8, W10, W12, W20, W100)
-* [Rot13](https://de.wikipedia.org/wiki/ROT13)
-* Zahlenkonverter: Dezimal <=> Binär <=> Hexadezimal
+This app provides a few handy tools for tabletop games:
+* Dices (D3, D4, D6, D8, D10, D12, D20, D100)
+* [Rot13](https://en.wikipedia.org/wiki/ROT13)
+* Number converter: Decimal <=> Binary <=> Hexadecimal
 * Timer
-* Buzzers für 1 - 4 Spieler
-* Liste, die zufällig sortiert werden kann
+* Buzzers for 1 - 4 players
+* List that can be randomized
 
-Weitere Tools sind geplant.
+More tools are planned.
