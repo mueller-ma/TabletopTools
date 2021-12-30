@@ -1,16 +1,18 @@
 package com.github.muellerma.tabletoptools.ui.fragments
 
+import android.media.AudioAttributes
+import android.media.AudioManager
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.os.Handler
 import android.os.Looper
-import android.provider.Settings
 import android.util.Log
 import android.view.*
 import android.widget.Button
 import android.widget.TextView
 import androidx.core.content.edit
+import androidx.core.content.getSystemService
 import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
 import com.github.muellerma.tabletoptools.R
@@ -145,11 +147,18 @@ class TimerFragment : AbstractBaseFragment() {
                 remainingTime = 0
                 updateTimerView()
                 toggleTimer()
+                startButton.isEnabled = false
+
+                val playerAttributes = AudioAttributes.Builder()
+                    .setUsage(AudioAttributes.USAGE_ALARM)
+                    .build()
+                val audioManager = requireContext().getSystemService<AudioManager>()!!
                 player = MediaPlayer.create(
                     requireContext(),
-                    Settings.System.DEFAULT_RINGTONE_URI
+                    R.raw.beeps,
+                    playerAttributes,
+                    audioManager.generateAudioSessionId()
                 )
-                startButton.isEnabled = false
                 player?.start()
             }
         }.start()

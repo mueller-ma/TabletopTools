@@ -20,3 +20,4 @@ Translations have to be approved before being merged into the app. To become a t
 
 * Feature graphic by https://unsplash.com/@accrualbowtie
 * Some icons by Google and https://materialdesignicons.com/
+* Some audio files from https://soundbible.com/
