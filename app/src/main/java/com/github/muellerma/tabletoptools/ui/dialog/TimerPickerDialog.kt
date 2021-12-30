@@ -11,9 +11,11 @@ import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.setFragmentResult
 import com.github.muellerma.tabletoptools.R
 
-class TimerPickerDialog : DialogFragment() {
-
+class TimerPickerDialog : DialogFragment(), NumberPicker.OnValueChangeListener {
     private var minutesAndSeconds: Pair<Int, Int> = Pair(5, 0)
+    private lateinit var finishButton: Button
+    private lateinit var minutesPicker: NumberPicker
+    private lateinit var secondsPicker: NumberPicker
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -24,26 +26,34 @@ class TimerPickerDialog : DialogFragment() {
         arguments?.apply {
             minutesAndSeconds = convertMillisToMinutesAndSeconds(getLong(MILLIS_BUNDLE_KEY))
         }
-        val minutes = v.findViewById<NumberPicker>(R.id.minute_number_picker).apply {
+        minutesPicker = v.findViewById<NumberPicker>(R.id.minute_number_picker).apply {
             minValue = MIN_TIME
             maxValue = MAX_TIME
             value = minutesAndSeconds.first
+
+            setOnValueChangedListener(this@TimerPickerDialog)
         }
-        val seconds = v.findViewById<NumberPicker>(R.id.second_number_picker).apply {
+        secondsPicker = v.findViewById<NumberPicker>(R.id.second_number_picker).apply {
             minValue = MIN_TIME
             maxValue = MAX_TIME
             value = minutesAndSeconds.second
-        }
 
-        val but = v.findViewById<Button>(R.id.button)
-        but.setOnClickListener {
-            setFragmentResult(
-                RESULT_KEY,
-                bundleOf(MINUTE_KEY to minutes.value, SECOND_KEY to seconds.value)
-            )
-            dismiss()
+            setOnValueChangedListener(this@TimerPickerDialog)
+        }
+        finishButton = v.findViewById<Button>(R.id.button).apply {
+            setOnClickListener {
+                setFragmentResult(
+                    RESULT_KEY,
+                    bundleOf(MINUTE_KEY to minutesPicker.value, SECOND_KEY to secondsPicker.value)
+                )
+                dismiss()
+            }
         }
         return v
+    }
+
+    override fun onValueChange(picker: NumberPicker?, oldVal: Int, newVal: Int) {
+        finishButton.isEnabled = minutesPicker.value != 0 || secondsPicker.value != 0
     }
 
     private fun convertMillisToMinutesAndSeconds(millis: Long): Pair<Int, Int> {
