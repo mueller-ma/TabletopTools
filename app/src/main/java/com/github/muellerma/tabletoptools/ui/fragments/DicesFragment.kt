@@ -99,7 +99,7 @@ class DicesFragment : AbstractBaseFragment() {
             resultString.append("(+ $diceIncrement) ")
         }
 
-        if ((numberOfDices > 1) || (diceIncrement > 0)) {
+        if (numberOfDices > 1 || diceIncrement > 0) {
             resultString.append("= $sum")
         }
 
