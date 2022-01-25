@@ -43,6 +43,7 @@ class BuzzersFragment : AbstractBaseFragment() {
         buzzers.forEachIndexed {index, button ->
             button.isVisible = index <= visible - 1
         }
+        buzzers.first { it.id == R.id.buzzer_a }.rotation = if (visible == 1) 0f else 180f
     }
 
     private fun buttonPressed(pressedButton: Button) {
