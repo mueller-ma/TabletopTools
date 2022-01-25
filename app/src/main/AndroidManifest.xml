@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="com.github.muellerma.tabletoptools">
+        package="com.github.muellerma.tabletoptools"
+        android:installLocation="preferExternal">
 
     <uses-permission android:name="android.permission.VIBRATE" />
 
