@@ -1,5 +1,9 @@
 # Tabletop tools
 
+[![Build App](https://github.com/mueller-ma/TabletopTools/actions/workflows/build.yml/badge.svg)](https://github.com/mueller-ma/TabletopTools/actions/workflows/build.yml)
+[![CodeFactor](https://www.codefactor.io/repository/github/mueller-ma/tabletoptools/badge)](https://www.codefactor.io/repository/github/mueller-ma/tabletoptools)
+[![Crowdin](https://badges.crowdin.net/tabletop-tools/localized.svg)](https://crowdin.com/project/tabletop-tools)
+
 This Android app provides a few handy tools for tabletop games:
 * Dices (D3, D4, D6, D8, D10, D12, D20, D100)
 * [ROT13](https://en.wikipedia.org/wiki/ROT13)
