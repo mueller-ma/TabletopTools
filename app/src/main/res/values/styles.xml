@@ -3,5 +3,8 @@
     <style name="App.DiceButton" parent="@style/Widget.Material3.Button.OutlinedButton">
         <item name="strokeWidth">2dp</item>
         <item name="strokeColor">?colorPrimary</item>
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:layout_margin">8dp</item>
     </style>
 </resources>

@@ -25,23 +25,14 @@
             <com.google.android.material.button.MaterialButton
                     android:id="@+id/dices_button_3"
                     style="@style/App.DiceButton"
-                    android:layout_marginHorizontal="8dp"
-                    android:layout_width="@dimen/dice_button_size"
-                    android:layout_height="@dimen/dice_button_size"
                     android:text="@string/dices_d3" />
             <com.google.android.material.button.MaterialButton
                     android:id="@+id/dices_button_4"
                     style="@style/App.DiceButton"
-                    android:layout_marginHorizontal="8dp"
-                    android:layout_width="@dimen/dice_button_size"
-                    android:layout_height="@dimen/dice_button_size"
                     android:text="@string/dices_d4" />
             <com.google.android.material.button.MaterialButton
                     android:id="@+id/dices_button_6"
                     style="@style/App.DiceButton"
-                    android:layout_marginHorizontal="8dp"
-                    android:layout_width="@dimen/dice_button_size"
-                    android:layout_height="@dimen/dice_button_size"
                     android:text="@string/dices_d6" />
 
         </LinearLayout>
@@ -60,23 +51,14 @@
             <com.google.android.material.button.MaterialButton
                     android:id="@+id/dices_button_8"
                     style="@style/App.DiceButton"
-                    android:layout_marginHorizontal="8dp"
-                    android:layout_width="@dimen/dice_button_size"
-                    android:layout_height="@dimen/dice_button_size"
                     android:text="@string/dices_d8" />
             <com.google.android.material.button.MaterialButton
                     android:id="@+id/dices_button_10"
                     style="@style/App.DiceButton"
-                    android:layout_marginHorizontal="8dp"
-                    android:layout_width="@dimen/dice_button_size"
-                    android:layout_height="@dimen/dice_button_size"
                     android:text="@string/dices_d10" />
             <com.google.android.material.button.MaterialButton
                     android:id="@+id/dices_button_10_2"
                     style="@style/App.DiceButton"
-                    android:layout_marginHorizontal="8dp"
-                    android:layout_width="@dimen/dice_button_size"
-                    android:layout_height="@dimen/dice_button_size"
                     android:text="@string/dices_d10_2" />
 
         </LinearLayout>
@@ -95,23 +77,14 @@
             <com.google.android.material.button.MaterialButton
                     android:id="@+id/dices_button_12"
                     style="@style/App.DiceButton"
-                    android:layout_marginHorizontal="8dp"
-                    android:layout_width="@dimen/dice_button_size"
-                    android:layout_height="@dimen/dice_button_size"
                     android:text="@string/dices_d12" />
             <com.google.android.material.button.MaterialButton
                     android:id="@+id/dices_button_20"
                     style="@style/App.DiceButton"
-                    android:layout_marginHorizontal="8dp"
-                    android:layout_width="@dimen/dice_button_size"
-                    android:layout_height="@dimen/dice_button_size"
                     android:text="@string/dices_d20" />
             <com.google.android.material.button.MaterialButton
                     android:id="@+id/dices_button_100"
                     style="@style/App.DiceButton"
-                    android:layout_marginHorizontal="8dp"
-                    android:layout_width="@dimen/dice_button_size"
-                    android:layout_height="@dimen/dice_button_size"
                     android:text="@string/dices_d100" />
 
         </LinearLayout>
