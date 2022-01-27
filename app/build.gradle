@@ -37,6 +37,9 @@ android {
         jvmTarget = JavaVersion.VERSION_11
         allWarningsAsErrors = true
     }
+    lint {
+        abortOnError false
+    }
 }
 
 dependencies {
