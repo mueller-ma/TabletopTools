@@ -1,0 +1,2 @@
+* Use Material Design 3
+* Allow installation on external storage
