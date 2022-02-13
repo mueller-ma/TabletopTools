@@ -14,6 +14,8 @@ This Android app provides a few handy tools for tabletop games:
 
 More tools are planned.
 
+[<img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/com.github.muellerma.tabletoptools/)
+
 ## Translations
 
 App strings and the app store description can be translated via Crowdin: https://crowdin.com/project/tabletop-tools
