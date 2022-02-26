@@ -47,6 +47,9 @@
     <string name="buzzers_player_b">Гравець B</string>
     <string name="buzzers_player_c">Гравець C</string>
     <string name="buzzers_player_d">Гравець D</string>
+    <string name="random_list_clear_list">Очистити список</string>
+    <string name="random_list_sort_list">Сортувати список</string>
+    <string name="random_list_clear_list_confirm">Бажаєте очистити список?</string>
     <plurals name="buzzers_amount">
         <item quantity="one">%d зумер</item>
         <item quantity="few">%d зумери</item>
