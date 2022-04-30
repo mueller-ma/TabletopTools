@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
-    <string name="app_name">Tools voor bordspellen</string>
     <string name="app_description">Handige collectie tools voor bordspellen</string>
     <string name="nav_header_desc">Navigatieheader</string>
     <string name="settings">Instellingen</string>
@@ -11,6 +10,7 @@
         <item quantity="one">Alle Latijnse letters worden met %d plaatsen gedraaid (kan hieronder worden ingesteld)</item>
         <item quantity="other">Alle Latijnse letters worden met %d plaatsen gedraaid (kan hieronder worden ingesteld)</item>
     </plurals>
+    <!-- Alphabet -->
     <!-- Number converter -->
     <string name="menu_number_converter">Nummer converter</string>
     <string name="number_converter_decimal">Decimaal</string>

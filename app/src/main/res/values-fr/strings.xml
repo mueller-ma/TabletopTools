@@ -9,6 +9,7 @@
         <item quantity="one">Toutes les lettres ( alphabet latin ) seront décalés de %d position (à définir ci-dessous)</item>
         <item quantity="other">Toutes les lettres ( alphabet latin ) seront décalés de %d positions (à définir ci-dessous)</item>
     </plurals>
+    <!-- Alphabet -->
     <!-- Number converter -->
     <string name="menu_number_converter">Convertisseur de nombres</string>
     <string name="number_converter_decimal">Décimal</string>

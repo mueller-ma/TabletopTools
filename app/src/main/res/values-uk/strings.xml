@@ -12,6 +12,7 @@
         <item quantity="many">Всі латинські букви будуть зміщені на %d позицій (можна вказати нижче)</item>
         <item quantity="other">Всі латинські букви будуть зміщені на %d позицій (можна вказати нижче)</item>
     </plurals>
+    <!-- Alphabet -->
     <!-- Number converter -->
     <string name="menu_number_converter">Конвертер чисел</string>
     <string name="number_converter_decimal">Десятковий</string>
