@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/table_row_border">
+
+    <TextView
+            android:id="@+id/alphabet_table_row_letter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            tools:text="A"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+
+    <TextView
+            android:id="@+id/alphabet_table_row_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            tools:text="1"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+
+</TableRow>

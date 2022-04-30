@@ -17,6 +17,10 @@
                 android:icon="@drawable/ic_outline_text_rotation_angleup"
                 android:title="@string/menu_rot13" />
         <item
+                android:id="@+id/nav_alphabet"
+                android:icon="@drawable/ic_alphabetical_variant_24"
+                android:title="@string/menu_alphabet" />
+        <item
                 android:id="@+id/nav_number_converter"
                 android:icon="@drawable/ic_menu_number_converter"
                 android:title="@string/menu_number_converter" />

@@ -15,6 +15,11 @@
         <item quantity="other">All latin letters will be rotated by %d places (can be set below)</item>
     </plurals>
 
+    <!-- Alphabet -->
+    <string name="menu_alphabet">Alphabet</string>
+    <string name="alphabet_letter">Letter</string>
+    <string name="alphabet_number">Position</string>
+
     <!-- Number converter -->
     <string name="menu_number_converter">Number converter</string>
     <string name="number_converter_decimal">Decimal</string>

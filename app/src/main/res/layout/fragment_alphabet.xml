@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".ui.fragments.AlphabetFragment">
+    <TableLayout
+            android:id="@+id/alphabet_table"
+            android:padding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+        <TableRow
+                android:padding="8dp"
+                tools:ignore="UselessParent"> <!-- Children will be added in code -->
+            <TextView
+                    android:id="@+id/alphabet_table_row_letter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/alphabet_letter"
+                    android:textAppearance="@style/TextAppearance.Material3.HeadlineMedium" />
+
+            <TextView
+                    android:id="@+id/alphabet_table_row_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/alphabet_number"
+                    android:textAppearance="@style/TextAppearance.Material3.HeadlineMedium" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

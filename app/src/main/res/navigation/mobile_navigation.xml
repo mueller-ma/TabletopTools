@@ -23,6 +23,12 @@
             tools:layout="@layout/fragment_rot13" />
 
     <fragment
+            android:id="@+id/nav_alphabet"
+            android:name="com.github.muellerma.tabletoptools.ui.fragments.AlphabetFragment"
+            android:label="@string/menu_alphabet"
+            tools:layout="@layout/fragment_alphabet" />
+
+    <fragment
             android:id="@+id/nav_number_converter"
             android:name="com.github.muellerma.tabletoptools.ui.fragments.NumberConverterFragment"
             android:label="@string/menu_number_converter"
