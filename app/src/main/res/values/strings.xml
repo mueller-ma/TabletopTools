@@ -3,7 +3,7 @@
 <resources
         xmlns:tools="http://schemas.android.com/tools"
         tools:ignore="MissingTranslation, ExtraTranslation">
-    <string name="app_name">Tabletop tools</string>
+    <string name="app_name">Tabletop Tools</string>
     <string name="app_description">Handy tool collection for tabletop games</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="settings">Settings</string>

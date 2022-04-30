@@ -1,4 +1,4 @@
-# Tabletop tools
+# Tabletop Tools
 
 [![Build App](https://github.com/mueller-ma/TabletopTools/actions/workflows/build.yml/badge.svg)](https://github.com/mueller-ma/TabletopTools/actions/workflows/build.yml)
 [![CodeFactor](https://www.codefactor.io/repository/github/mueller-ma/tabletoptools/badge)](https://www.codefactor.io/repository/github/mueller-ma/tabletoptools)
