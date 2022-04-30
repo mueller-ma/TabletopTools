@@ -10,6 +10,7 @@
         <item quantity="one">Todas as letras (alfabeto latino) serão trocadas em %d posição (pode ser configurado abaixo)</item>
         <item quantity="other">Todas as letras (alfabeto latino) serão trocadas em %d posições (pode ser configurado abaixo)</item>
     </plurals>
+    <!-- Alphabet -->
     <!-- Number converter -->
     <string name="menu_number_converter">Conversor numérico</string>
     <string name="number_converter_binary">Binário</string>
