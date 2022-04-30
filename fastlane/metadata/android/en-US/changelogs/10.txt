@@ -1,0 +1,1 @@
+Add lockup table for letter <=> position
