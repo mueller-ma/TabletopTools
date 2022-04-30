@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
+    <string name="app_name">Tabletop-Tools</string>
     <string name="app_description">Sammlung nützlicher Tools für Tabletop-Spiele</string>
     <string name="nav_header_desc">Seitenmenü</string>
     <string name="settings">Einstellungen</string>
@@ -10,6 +11,7 @@
         <item quantity="one">Alle lateinischen Buchstaben werden um %d Platz rotiert (kann unten gesetzt werden)</item>
         <item quantity="other">Alle lateinischen Buchstaben werden um %d Plätze rotiert (kann unten gesetzt werden)</item>
     </plurals>
+    <!-- Alphabet -->
     <!-- Number converter -->
     <string name="menu_number_converter">Zahlenkonverter</string>
     <string name="number_converter_decimal">Dezimal</string>
