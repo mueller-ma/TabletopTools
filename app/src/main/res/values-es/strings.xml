@@ -9,6 +9,7 @@
         <item quantity="one">Todas las letras (alfabeto latino) se rotarán %d grado (Se puede definir abajo)</item>
         <item quantity="other">Todas las letras (alfabeto latino) se rotarán %d grados (Se puede definir abajo)</item>
     </plurals>
+    <!-- Alphabet -->
     <!-- Number converter -->
     <string name="menu_number_converter">Conversor de números</string>
     <string name="number_converter_binary">Binario</string>
