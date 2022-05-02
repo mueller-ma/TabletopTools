@@ -14,7 +14,7 @@ This Android app provides a few handy tools for tabletop games:
 
 More tools are planned.
 
-[<img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/com.github.muellerma.tabletoptools/)
+[<img src="assets/get-it-on-fdroid.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/com.github.muellerma.tabletoptools/)
 
 <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/1.png" alt="Screenshot" width=200px> <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/2.png" alt="Screenshot" width=200px> <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/3.png" alt="Screenshot" width=200px> <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/4.png" alt="Screenshot" width=200px>
 
