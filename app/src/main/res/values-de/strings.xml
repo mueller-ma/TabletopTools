@@ -12,6 +12,9 @@
         <item quantity="other">Alle lateinischen Buchstaben werden um %d Plätze rotiert (kann unten gesetzt werden)</item>
     </plurals>
     <!-- Alphabet -->
+    <string name="menu_alphabet">Alphabet</string>
+    <string name="alphabet_letter">Buchstabe</string>
+    <string name="alphabet_number">Position</string>
     <!-- Number converter -->
     <string name="menu_number_converter">Zahlenkonverter</string>
     <string name="number_converter_decimal">Dezimal</string>
