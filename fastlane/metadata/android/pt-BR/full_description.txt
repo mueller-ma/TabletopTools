@@ -4,6 +4,6 @@ Este aplicativo disponibiliza diversas ferramentas uteis para jogos de tabuleiro
 * Conversor numérico: Decimal <=> Binário <=> Hexadecimal
 * Timer de 5 minutos
 * Campainha para dos jogadores
-* List that can be randomized
+* Lista que pode ser aleatorizada
 
 Mais ferramentas estão sendo planejadas.

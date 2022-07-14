@@ -1,9 +1,9 @@
-This app provides a few handy tools for tabletop games:
-* Dices (D3, D4, D6, D8, D10, D12, D20, D100)
-* [Rot13](https://en.wikipedia.org/wiki/ROT13)
-* Number converter: Decimal <=> Binary <=> Hexadecimal
-* Timer
-* Buzzers for 1 - 4 players
-* List that can be randomized
+Цей застосунок надає кілька зручних засобів для настільних ігор:
+* Кості (D3, D4, D6, D8, D10, D12, D20, D100)
+* [Rot13](https://uk.wikipedia.org/wiki/ROT13)
+* Конвертація чисел: десяткові <=> двійкові <=> шістнадцяткові
+* Таймер
+* Buzzers на 1 - 4 гравці
+* Список випадкових значень
 
-More tools are planned.
+Планується більше засобів.
