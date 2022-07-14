@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
+    <string name="app_name">Настільні засоби</string>
     <string name="app_description">Колекція зручних інструментів для настільних ігор</string>
     <string name="nav_header_desc">Заголовок навігації</string>
     <string name="settings">Налаштування</string>
