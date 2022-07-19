@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
-    <string name="app_name">Tabletop Werkzeuge</string>
+    <string name="app_name">Tabletop-Tools</string>
     <string name="app_description">Sammlung nützlicher Tools für Tabletop-Spiele</string>
     <string name="nav_header_desc">Seitenmenü</string>
     <string name="settings">Einstellungen</string>
