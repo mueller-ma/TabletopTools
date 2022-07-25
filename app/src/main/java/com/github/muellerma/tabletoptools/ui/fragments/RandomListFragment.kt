@@ -5,9 +5,12 @@ import android.os.Bundle
 import android.view.*
 import android.widget.Button
 import android.widget.EditText
+import android.widget.NumberPicker
 import androidx.annotation.VisibleForTesting
 import androidx.core.content.edit
+import androidx.core.view.MenuProvider
 import androidx.core.widget.addTextChangedListener
+import androidx.lifecycle.Lifecycle
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.utils.preferences
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -42,35 +45,35 @@ class RandomListFragment : AbstractBaseFragment() {
             }
         }
 
-        setHasOptionsMenu(true)
+        requireActivity().addMenuProvider(object : MenuProvider {
+            override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
+                menuInflater.inflate(R.menu.menu_random_list, menu)
+            }
+
+            override fun onMenuItemSelected(item: MenuItem): Boolean {
+                return when (item.itemId) {
+                    R.id.clear_list -> {
+                        MaterialAlertDialogBuilder(requireContext())
+                            .setMessage(R.string.random_list_clear_list_confirm)
+                            .setPositiveButton(android.R.string.ok) { _, _ ->
+                                randomList.setText("")
+                            }
+                            .setNegativeButton(android.R.string.cancel, null)
+                            .show()
+                        true
+                    }
+                    R.id.sort_list -> {
+                        randomList.setText(
+                            sortList(randomList.text.toString())
+                        )
+                        true
+                    }
+                    else -> false
+                }
+            }
+        }, viewLifecycleOwner, Lifecycle.State.RESUMED)
 
         return root
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.menu_random_list, menu)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.clear_list -> {
-                MaterialAlertDialogBuilder(requireContext())
-                    .setMessage(R.string.random_list_clear_list_confirm)
-                    .setPositiveButton(android.R.string.ok) { _, _ ->
-                        randomList.setText("")
-                    }
-                    .setNegativeButton(android.R.string.cancel, null)
-                    .show()
-                true
-            }
-            R.id.sort_list -> {
-                randomList.setText(
-                    sortList(randomList.text.toString())
-                )
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
     }
 
     companion object {

@@ -13,8 +13,11 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.core.content.edit
 import androidx.core.content.getSystemService
+import androidx.core.view.MenuHost
+import androidx.core.view.MenuProvider
 import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
+import androidx.lifecycle.Lifecycle
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.ui.dialog.TimerPickerDialog
 import com.github.muellerma.tabletoptools.utils.preferences
@@ -32,8 +35,8 @@ class TimerFragment : AbstractBaseFragment() {
     private var timerRunning = false
     private var player: MediaPlayer? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         val prefs = activity?.preferences() ?: return
         val previousTimeMillis = prefs.getLong(PREVIOUS_MILLIS, DEFAULT_TIMER)
         originalTime = previousTimeMillis
@@ -46,6 +49,23 @@ class TimerFragment : AbstractBaseFragment() {
             val seconds = bundle.getInt(TimerPickerDialog.SECOND_KEY)
             changeTimerTime(getMillisFromMinutesAndSeconds(minute, seconds))
         }
+
+        requireActivity().addMenuProvider(object : MenuProvider {
+            override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
+                // Add menu items here
+                menuInflater.inflate(R.menu.menu_timer, menu)
+            }
+
+            override fun onMenuItemSelected(item: MenuItem): Boolean {
+                return when (item.itemId) {
+                    R.id.edit_time -> {
+                        triggerTimerPickerDialog()
+                        true
+                    }
+                    else -> false
+                }
+            }
+        }, viewLifecycleOwner, Lifecycle.State.RESUMED)
     }
 
     private fun changeTimerTime(time: Long) {
@@ -94,7 +114,6 @@ class TimerFragment : AbstractBaseFragment() {
         }
 
         updateTimerView()
-        setHasOptionsMenu(true)
 
         return root
     }
@@ -189,20 +208,6 @@ class TimerFragment : AbstractBaseFragment() {
         outState.putLong("time", remainingTime)
         outState.putBoolean("running", timerRunning)
         super.onSaveInstanceState(outState)
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.menu_timer, menu)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.edit_time -> {
-                triggerTimerPickerDialog()
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
     }
 
     private fun triggerTimerPickerDialog() {

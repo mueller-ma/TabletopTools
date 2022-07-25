@@ -7,7 +7,9 @@ import android.widget.Button
 import android.widget.NumberPicker
 import androidx.core.content.edit
 import androidx.core.content.getSystemService
+import androidx.core.view.MenuProvider
 import androidx.core.view.isVisible
+import androidx.lifecycle.Lifecycle
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.utils.preferences
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -33,7 +35,41 @@ class BuzzersFragment : AbstractBaseFragment() {
         }
         setupButtonVisibility()
 
-        setHasOptionsMenu(true)
+        requireActivity().addMenuProvider(object : MenuProvider {
+            override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
+                menuInflater.inflate(R.menu.menu_buzzers, menu)
+            }
+
+            override fun onMenuItemSelected(item: MenuItem): Boolean {
+                return when (item.itemId) {
+                    R.id.settings -> {
+                        val prefs = requireContext().preferences()
+                        val picker = NumberPicker(requireContext()).apply {
+                            minValue = 1
+                            maxValue = 4
+                            value = prefs.getInt("buzzer_count", 2)
+                            displayedValues = (minValue..maxValue).map {
+                                resources.getQuantityString(R.plurals.buzzers_amount, it, it)
+                            }.toTypedArray()
+                        }
+
+                        MaterialAlertDialogBuilder(requireContext())
+                            .setView(picker)
+                            .setTitle(R.string.settings)
+                            .setPositiveButton(android.R.string.ok) { _, _ ->
+                                prefs.edit {
+                                    putInt("buzzer_count", picker.value)
+                                }
+                                setupButtonVisibility()
+                            }
+                            .setNegativeButton(android.R.string.cancel, null)
+                            .show()
+                        true
+                    }
+                    else -> false
+                }
+            }
+        }, viewLifecycleOwner, Lifecycle.State.RESUMED)
 
         return root
     }
@@ -75,40 +111,6 @@ class BuzzersFragment : AbstractBaseFragment() {
                     }
                 }
             }
-        }
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.menu_buzzers, menu)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.settings -> {
-                val prefs = requireContext().preferences()
-                val picker = NumberPicker(requireContext()).apply {
-                    minValue = 1
-                    maxValue = 4
-                    value = prefs.getInt("buzzer_count", 2)
-                    displayedValues = (minValue..maxValue).map {
-                        resources.getQuantityString(R.plurals.buzzers_amount, it, it)
-                    }.toTypedArray()
-                }
-
-                MaterialAlertDialogBuilder(requireContext())
-                    .setView(picker)
-                    .setTitle(R.string.settings)
-                    .setPositiveButton(android.R.string.ok) { _, _ ->
-                        prefs.edit {
-                            putInt("buzzer_count", picker.value)
-                        }
-                        setupButtonVisibility()
-                    }
-                    .setNegativeButton(android.R.string.cancel, null)
-                    .show()
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
         }
     }
 
