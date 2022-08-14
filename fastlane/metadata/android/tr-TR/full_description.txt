@@ -1,9 +1,9 @@
-This app provides a few handy tools for tabletop games:
-* Dices (D3, D4, D6, D8, D10, D12, D20, D100)
+Bu uygulama masaüstü oyunlar için birkaç kullanışlı araçlar sağlamaktadır:
+* Zar (Z3, Z4, Z6, Z8, Z10, Z12, Z20, Z100)
 * [Rot13](https://en.wikipedia.org/wiki/ROT13)
-* Number converter: Decimal <=> Binary <=> Hexadecimal
-* Timer
-* Buzzers for 1 - 4 players
-* List that can be randomized
+* Sayı dönüştürücü: Ondalık <=> İkili <=> Onaltılık
+* Zamanlayıcı
+* 1 - 4 oyuncu için sesli uyarı
+* Rastgele hale getirilebilen liste
 
-More tools are planned.
+Daha fazla araç planlanmaktadır.
