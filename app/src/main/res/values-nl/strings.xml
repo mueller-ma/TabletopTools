@@ -40,4 +40,6 @@
     <string name="buzzers_player_b">Speler B</string>
     <string name="buzzers_player_c">Speler C</string>
     <string name="buzzers_player_d">Speler D</string>
+    <!-- Preferences -->
+    <string name="menu_preferences">Instellingen</string>
 </resources>
