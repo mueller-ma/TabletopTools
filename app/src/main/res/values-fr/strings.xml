@@ -41,4 +41,6 @@
     <string name="buzzers_player_b">Joueur B</string>
     <string name="buzzers_player_c">Joueur C</string>
     <string name="buzzers_player_d">Joueur D</string>
+    <!-- Preferences -->
+    <string name="menu_preferences">Paramètres</string>
 </resources>
