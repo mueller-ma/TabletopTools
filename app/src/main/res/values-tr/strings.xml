@@ -69,4 +69,6 @@
         <item quantity="one">%d sesli uyarı</item>
         <item quantity="other">%d sesli uyarı</item>
     </plurals>
+    <!-- Preferences -->
+    <string name="menu_preferences">Ayarlar</string>
 </resources>
