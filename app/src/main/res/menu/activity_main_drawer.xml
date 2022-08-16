@@ -32,5 +32,9 @@
                 android:id="@+id/nav_buzzers"
                 android:icon="@drawable/ic_radio_button_unchecked"
                 android:title="@string/menu_buzzers" />
+        <item
+                android:id="@+id/nav_prefs"
+                android:icon="@drawable/ic_outline_settings_24"
+                android:title="@string/menu_preferences" />
     </group>
 </menu>

@@ -50,6 +50,7 @@
     <string name="dices_inc_slider_hint">Add to count: %d</string>
     <!-- Dice with %d sides -->
     <string name="dices_d_d">D%d</string>
+    <string name="dices_max_count">Max. dice count</string>
 
     <!-- Timer -->
     <string name="menu_timer">Timer</string>
@@ -77,4 +78,7 @@
         <item quantity="one">%d buzzer</item>
         <item quantity="other">%d buzzers</item>
     </plurals>
+
+    <!-- Preferences -->
+    <string name="menu_preferences">Settings</string>
 </resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/menu_dices">
+        <ListPreference
+                android:key="dices_max_count"
+                android:title="@string/dices_max_count"
+                android:entryValues="@array/dices_count"
+                android:entries="@array/dices_count"
+                android:defaultValue="10"
+                android:summary="%s" />
+    </PreferenceCategory>
+</PreferenceScreen>

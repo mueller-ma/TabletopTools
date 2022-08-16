@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
+import androidx.preference.PreferenceManager
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.ui.fragments.AbstractBaseFragment
 
@@ -39,7 +40,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_alphabet,
                 R.id.nav_number_converter,
                 R.id.nav_timer,
-                R.id.nav_buzzers
+                R.id.nav_buzzers,
+                R.id.nav_prefs
             ),
             drawerLayout
         )

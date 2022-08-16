@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.github.muellerma.tabletoptools.R
+import com.github.muellerma.tabletoptools.utils.Prefs
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.slider.Slider
 import kotlinx.parcelize.Parcelize
@@ -68,6 +69,7 @@ class DicesFragment : AbstractBaseFragment() {
     override fun onResume() {
         result.text = (savedData as DicesData?)?.results
         super.onResume()
+        dicesCountSlider.valueTo = Prefs(requireContext()).maxDiceCount.toFloat()
     }
 
     private fun roll(max: Int, multiplier: Int = 1) {

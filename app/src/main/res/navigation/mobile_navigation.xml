@@ -45,4 +45,9 @@
             android:name="com.github.muellerma.tabletoptools.ui.fragments.BuzzersFragment"
             android:label="@string/menu_buzzers"
             tools:layout="@layout/fragment_buzzers" />
+
+    <fragment
+            android:id="@+id/nav_prefs"
+            android:name="com.github.muellerma.tabletoptools.ui.fragments.PreferenceFragment"
+            android:label="@string/menu_preferences" />
 </navigation>
