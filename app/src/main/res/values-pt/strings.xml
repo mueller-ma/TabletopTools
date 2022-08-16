@@ -46,4 +46,6 @@
         <item quantity="one">%d campainha</item>
         <item quantity="other">%d campainhas</item>
     </plurals>
+    <!-- Preferences -->
+    <string name="menu_preferences">Configurações</string>
 </resources>
