@@ -45,4 +45,6 @@
         <item quantity="one">%d zumbador</item>
         <item quantity="other">%d zumbadores</item>
     </plurals>
+    <!-- Preferences -->
+    <string name="menu_preferences">Ajustes</string>
 </resources>
