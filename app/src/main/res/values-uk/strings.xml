@@ -73,4 +73,6 @@
         <item quantity="many">%d зумерів</item>
         <item quantity="other">%d зумери</item>
     </plurals>
+    <!-- Preferences -->
+    <string name="menu_preferences">Налаштування</string>
 </resources>

@@ -23,4 +23,6 @@
     <!-- Abr. of minutes -->
     <!-- Abr. of seconds -->
     <!-- Buzzers -->
+    <!-- Preferences -->
+    <string name="menu_preferences">Nastavení</string>
 </resources>

@@ -1,22 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
+    <string name="app_name">Masaüstü Araçları</string>
+    <string name="app_description">Masaüstü oyunlar için kullanışlı araç koleksiyonu</string>
+    <string name="nav_header_desc">Gezinti başlığı</string>
+    <string name="settings">Ayarlar</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
+    <string name="menu_rot13">ROT13</string>
+    <plurals name="rot13_hint">
+        <item quantity="one">Tüm latin harfler %d basamak döndürülecektir (aşağıda ayarlanabilir)</item>
+        <item quantity="other">Tüm latin harfleri %d basamak döndürülecektir (aşağıda ayarlanabilir)</item>
+    </plurals>
     <!-- Alphabet -->
+    <string name="menu_alphabet">Alfabe</string>
+    <string name="alphabet_letter">Harf</string>
+    <string name="alphabet_number">Konum</string>
     <!-- Number converter -->
+    <string name="menu_number_converter">Sayı dönüştürücü</string>
+    <string name="number_converter_decimal">Ondalık</string>
+    <string name="number_converter_binary">İkili</string>
+    <string name="number_converter_hexadecimal">Onaltılık</string>
     <!-- Dices -->
+    <string name="menu_dices">Zarlar</string>
     <!-- Dice with 3 sides -->
+    <string name="dices_d3">Z3</string>
     <!-- Dice with 4 sides -->
+    <string name="dices_d4">Z4</string>
     <!-- Dice with 6 sides -->
+    <string name="dices_d6">Z6</string>
     <!-- Dice with 8 sides -->
+    <string name="dices_d8">Z8</string>
     <!-- Dice with 10 sides -->
+    <string name="dices_d10">Z10</string>
     <!-- Dice with 10 sides; values: 0, 10, 20,... -->
+    <string name="dices_d10_2">Z10 (0&#8211;90)</string>
     <!-- Dice with 100 sides -->
+    <string name="dices_d100">Z100</string>
     <!-- Dice with 20 sides -->
+    <string name="dices_d20">Z20</string>
     <!-- Dice with 12 sides -->
+    <string name="dices_d12">Z12</string>
+    <string name="dices_slider_hint">Zar sayısı: %d</string>
+    <string name="dices_inc_slider_hint">Sayıya ekle: %d</string>
     <!-- Dice with %d sides -->
+    <string name="dices_d_d">Z%d</string>
     <!-- Timer -->
+    <string name="menu_timer">Zamanlayıcı</string>
+    <string name="timer_start">Başlat</string>
+    <string name="timer_pause">Durdur</string>
+    <string name="timer_reset">Sıfırla</string>
+    <string name="timer_edit">Düzenle</string>
     <!-- Abr. of minutes -->
+    <string name="timer_select_min">Dk</string>
     <!-- Abr. of seconds -->
+    <string name="timer_select_sec">Sn</string>
     <!-- Buzzers -->
+    <string name="menu_buzzers">Sesli uyarılar</string>
+    <string name="buzzers_player_a">Oyuncu A</string>
+    <string name="buzzers_player_b">Oyuncu B</string>
+    <string name="buzzers_player_c">Oyuncu C</string>
+    <string name="buzzers_player_d">Oyuncu D</string>
+    <string name="random_list_hint">Değerleri birbirinden ayrılmış olarak satırlarla girin</string>
+    <string name="menu_random_list">Listeyi rastgele sırala</string>
+    <string name="random_list_clear_list">Listeyi temizle</string>
+    <string name="random_list_sort_list">Listeyi sırala</string>
+    <string name="random_list_clear_list_confirm">Listeyi temizlemek istiyor musunuz?</string>
+    <plurals name="buzzers_amount">
+        <item quantity="one">%d sesli uyarı</item>
+        <item quantity="other">%d sesli uyarı</item>
+    </plurals>
+    <!-- Preferences -->
+    <string name="menu_preferences">Ayarlar</string>
 </resources>
