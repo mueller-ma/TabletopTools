@@ -13,6 +13,54 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
     </style>
 
+    <style name="Theme.TabletopTools.Red" parent="Theme.TabletopTools">
+        <item name="colorPrimary">@color/red_500</item>
+        <item name="colorPrimaryContainer">@color/red_700</item>
+
+        <item name="colorSecondary">@color/cyan_500</item>
+        <item name="colorSecondaryContainer">@color/cyan_700</item>
+    </style>
+
+    <style name="Theme.TabletopTools.Pink" parent="Theme.TabletopTools">
+        <item name="colorPrimary">@color/pink_500</item>
+        <item name="colorPrimaryContainer">@color/pink_700</item>
+
+        <item name="colorSecondary">@color/light_green_500</item>
+        <item name="colorSecondaryContainer">@color/light_green_700</item>
+    </style>
+
+    <style name="Theme.TabletopTools.Blue" parent="Theme.TabletopTools">
+        <item name="colorPrimary">@color/blue_500</item>
+        <item name="colorPrimaryContainer">@color/blue_700</item>
+
+        <item name="colorSecondary">@color/light_green_500</item>
+        <item name="colorSecondaryContainer">@color/light_green_700</item>
+    </style>
+
+    <style name="Theme.TabletopTools.Green" parent="Theme.TabletopTools">
+        <item name="colorPrimary">@color/green_500</item>
+        <item name="colorPrimaryContainer">@color/green_700</item>
+
+        <item name="colorSecondary">@color/lime_500</item>
+        <item name="colorSecondaryContainer">@color/lime_700</item>
+    </style>
+
+    <style name="Theme.TabletopTools.Lime" parent="Theme.TabletopTools">
+        <item name="colorPrimary">@color/lime_500</item>
+        <item name="colorPrimaryContainer">@color/lime_700</item>
+
+        <item name="colorSecondary">@color/orange_500</item>
+        <item name="colorSecondaryContainer">@color/orange_700</item>
+    </style>
+
+    <style name="Theme.TabletopTools.Orange" parent="Theme.TabletopTools">
+        <item name="colorPrimary">@color/orange_500</item>
+        <item name="colorPrimaryContainer">@color/orange_700</item>
+
+        <item name="colorSecondary">@color/deep_orange_500</item>
+        <item name="colorSecondaryContainer">@color/deep_orange_700</item>
+    </style>
+
     <style name="Theme.TabletopTools.AppBarOverlay" parent="ThemeOverlay.Material3.Dark.ActionBar" />
 
     <style name="Theme.TabletopTools.PopupOverlay" parent="ThemeOverlay.Material3.DynamicColors.DayNight" />

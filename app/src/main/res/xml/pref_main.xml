@@ -9,4 +9,13 @@
                 android:defaultValue="10"
                 android:summary="%s" />
     </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preferences_appearance">
+        <ListPreference
+                android:key="theme_color"
+                android:title="@string/preferences_theme_color"
+                android:entryValues="@array/theme_color"
+                android:entries="@array/theme_color"
+                android:defaultValue="Purple"
+                android:summary="%s" />
+    </PreferenceCategory>
 </PreferenceScreen>

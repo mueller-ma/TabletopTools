@@ -81,4 +81,6 @@
 
     <!-- Preferences -->
     <string name="menu_preferences">Settings</string>
+    <string name="preferences_appearance">Appearance</string>
+    <string name="preferences_theme_color">Theme Color</string>
 </resources>

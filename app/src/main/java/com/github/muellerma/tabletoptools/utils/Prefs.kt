@@ -10,4 +10,7 @@ class Prefs(context: Context) {
 
     val maxDiceCount: Int
         get() = sharedPrefs.getString("dices_max_count", "10")?.toInt() ?: 10
+
+    val themeColor: String
+        get() = sharedPrefs.getString("theme_color", "Purple") ?: "Purple"
 }

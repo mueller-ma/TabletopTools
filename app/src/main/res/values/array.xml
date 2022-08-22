@@ -7,4 +7,13 @@
         <item>100</item>
         <item>500</item>
     </string-array>
+    <string-array name="theme_color">
+        <item>Purple</item>
+        <item>Green</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Pink</item>
+        <item>Lime</item>
+        <item>Orange</item>
+    </string-array>
 </resources>

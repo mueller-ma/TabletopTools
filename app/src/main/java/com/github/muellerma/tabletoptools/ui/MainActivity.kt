@@ -14,14 +14,20 @@ import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
 import androidx.preference.PreferenceManager
+import android.content.SharedPreferences.OnSharedPreferenceChangeListener
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.ui.fragments.AbstractBaseFragment
+import com.github.muellerma.tabletoptools.utils.Prefs
 
 class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
+    private lateinit var prefs: Prefs;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         Log.d(TAG, "onCreate()")
+        prefs = Prefs(this)
+        setTheme()
+        prefs.sharedPrefs.registerOnSharedPreferenceChangeListener(sharedPreferenceChangeListener)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
@@ -86,5 +92,25 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         private val TAG = MainActivity::class.java.simpleName
+    }
+
+    private var sharedPreferenceChangeListener = OnSharedPreferenceChangeListener { _, key ->
+        if (key == "theme_color") {
+            setTheme()
+            recreate()
+        }
+    }
+
+    private fun setTheme() {
+        val theme = when(prefs.themeColor) {
+            "Green" -> R.style.Theme_TabletopTools_Green
+            "Red" -> R.style.Theme_TabletopTools_Red
+            "Blue" -> R.style.Theme_TabletopTools_Blue
+            "Pink" -> R.style.Theme_TabletopTools_Pink
+            "Lime" -> R.style.Theme_TabletopTools_Lime
+            "Orange" -> R.style.Theme_TabletopTools_Orange
+            else -> R.style.Theme_TabletopTools
+        }
+        setTheme(theme)
     }
 }
