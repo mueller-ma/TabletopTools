@@ -49,7 +49,6 @@
     <string name="timer_start">Başlat</string>
     <string name="timer_pause">Durdur</string>
     <string name="timer_reset">Sıfırla</string>
-    <string name="timer_edit">Düzenle</string>
     <!-- Abr. of minutes -->
     <string name="timer_select_min">Dk</string>
     <!-- Abr. of seconds -->
