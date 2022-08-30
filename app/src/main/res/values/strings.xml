@@ -61,6 +61,7 @@
     <string name="timer_select_min">Min</string>
     <!-- Abr. of seconds -->
     <string name="timer_select_sec">Sec</string>
+    <string name="timer_set_time">Set time</string>
 
     <!-- Buzzers -->
     <string name="menu_buzzers">Buzzers</string>
