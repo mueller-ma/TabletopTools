@@ -69,7 +69,11 @@ class DicesFragment : AbstractBaseFragment() {
     override fun onResume() {
         result.text = (savedData as DicesData?)?.results
         super.onResume()
-        dicesCountSlider.valueTo = Prefs(requireContext()).maxDiceCount.toFloat()
+        val maxDices = Prefs(requireContext()).maxDiceCount.toFloat()
+        if (dicesCountSlider.value > maxDices) {
+            dicesCountSlider.value = 1f
+        }
+        dicesCountSlider.valueTo = maxDices
     }
 
     private fun roll(max: Int, multiplier: Int = 1) {
