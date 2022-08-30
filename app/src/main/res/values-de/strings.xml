@@ -50,7 +50,6 @@
     <string name="timer_start">Start</string>
     <string name="timer_pause">Pause</string>
     <string name="timer_reset">Zurücksetzen</string>
-    <string name="timer_edit">Bearbeiten</string>
     <!-- Abr. of minutes -->
     <string name="timer_select_min">Min</string>
     <!-- Abr. of seconds -->

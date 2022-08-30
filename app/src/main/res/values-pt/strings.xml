@@ -32,7 +32,6 @@
     <string name="timer_start">Iniciar</string>
     <string name="timer_pause">Pausar</string>
     <string name="timer_reset">Reiniciar</string>
-    <string name="timer_edit">Editar</string>
     <!-- Abr. of minutes -->
     <!-- Abr. of seconds -->
     <string name="timer_select_sec">Seg</string>

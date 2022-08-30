@@ -47,7 +47,6 @@
     <string name="timer_start">Начало</string>
     <string name="timer_pause">Пауза</string>
     <string name="timer_reset">Сбросить</string>
-    <string name="timer_edit">Редактировать</string>
     <!-- Abr. of minutes -->
     <string name="timer_select_min">Мин.</string>
     <!-- Abr. of seconds -->
