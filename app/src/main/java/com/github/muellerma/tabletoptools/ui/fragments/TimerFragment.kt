@@ -13,7 +13,6 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.core.content.edit
 import androidx.core.content.getSystemService
-import androidx.core.view.MenuHost
 import androidx.core.view.MenuProvider
 import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
@@ -22,6 +21,7 @@ import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.ui.dialog.TimerPickerDialog
 import com.github.muellerma.tabletoptools.utils.preferences
 import java.util.concurrent.TimeUnit
+import kotlin.time.Duration.Companion.minutes
 
 
 class TimerFragment : AbstractBaseFragment() {
@@ -30,17 +30,17 @@ class TimerFragment : AbstractBaseFragment() {
     private lateinit var startButton: Button
     private lateinit var resetButton: Button
     private var timer: CountDownTimer? = null
-    var originalTime: Long = DEFAULT_TIMER
-    private var remainingTime: Long = originalTime
+    var setTime: Long = DEFAULT_TIME
+    private var remainingTime: Long = setTime
     private var timerRunning = false
     private var player: MediaPlayer? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val prefs = activity?.preferences() ?: return
-        val previousTimeMillis = prefs.getLong(PREVIOUS_MILLIS, DEFAULT_TIMER)
-        originalTime = previousTimeMillis
-        remainingTime = originalTime
+        setTime = prefs.getLong(SET_TIME, DEFAULT_TIME)
+        remainingTime = setTime
+        resetTimer()
         childFragmentManager.setFragmentResultListener(
             TimerPickerDialog.RESULT_KEY,
             this
@@ -59,7 +59,7 @@ class TimerFragment : AbstractBaseFragment() {
             override fun onMenuItemSelected(item: MenuItem): Boolean {
                 return when (item.itemId) {
                     R.id.edit_time -> {
-                        triggerTimerPickerDialog()
+                        openTimerPickerDialog()
                         true
                     }
                     else -> false
@@ -72,10 +72,10 @@ class TimerFragment : AbstractBaseFragment() {
         if (time <= 0L) {
             return
         }
-        originalTime = time
-        remainingTime = originalTime
+        setTime = time
+        remainingTime = setTime
         activity?.preferences()?.edit {
-            putLong(PREVIOUS_MILLIS, time)
+            putLong(SET_TIME, time)
         }
         updateTimerView()
     }
@@ -124,7 +124,7 @@ class TimerFragment : AbstractBaseFragment() {
             toggleTimer()
         }
 
-        remainingTime = originalTime
+        remainingTime = setTime
         updateTimerView()
         startButton.isEnabled = true
     }
@@ -210,16 +210,16 @@ class TimerFragment : AbstractBaseFragment() {
         super.onSaveInstanceState(outState)
     }
 
-    private fun triggerTimerPickerDialog() {
+    private fun openTimerPickerDialog() {
         resetTimer()
         TimerPickerDialog().apply {
-            arguments = TimerPickerDialog.createBundle(originalTime)
+            arguments = TimerPickerDialog.createBundle(setTime)
         }.show(childFragmentManager, TimerPickerDialog.TAG)
     }
 
     companion object {
         private var TAG = TimerFragment::class.java.simpleName
-        private const val PREVIOUS_MILLIS = "PREVIOUS_MILLIS"
-        private const val DEFAULT_TIMER = 5 * 60 * 1000L
+        private const val SET_TIME = "PREVIOUS_MILLIS"
+        private val DEFAULT_TIME = 5.minutes.inWholeMilliseconds
     }
 }
