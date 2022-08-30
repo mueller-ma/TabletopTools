@@ -51,7 +51,6 @@
     <string name="timer_start">Почати</string>
     <string name="timer_pause">Призупинити</string>
     <string name="timer_reset">Скинути</string>
-    <string name="timer_edit">Редагувати</string>
     <!-- Abr. of minutes -->
     <string name="timer_select_min">Хв.</string>
     <!-- Abr. of seconds -->
