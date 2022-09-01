@@ -44,6 +44,7 @@
     <string name="dices_inc_slider_hint">Adicionar ao Total: %d</string>
     <!-- Dice with %d sides -->
     <string name="dices_d_d">d%d</string>
+    <string name="dices_max_count">Máx. número de dados</string>
     <!-- Timer -->
     <string name="menu_timer">Temporizador</string>
     <string name="timer_start">Iniciar</string>
@@ -53,6 +54,7 @@
     <string name="timer_select_min">Mín</string>
     <!-- Abr. of seconds -->
     <string name="timer_select_sec">Seg</string>
+    <string name="timer_set_time">Definir um intervalo</string>
     <!-- Buzzers -->
     <string name="menu_buzzers">Campainhas</string>
     <string name="buzzers_player_a">Jogador A</string>
