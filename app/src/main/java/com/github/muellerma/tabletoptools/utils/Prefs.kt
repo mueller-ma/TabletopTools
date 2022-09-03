@@ -10,4 +10,7 @@ class Prefs(context: Context) {
 
     val maxDiceCount: Int
         get() = sharedPrefs.getString("dices_max_count", "10")?.toInt() ?: 10
+
+    val showDicesIncSlider: Boolean
+        get() = sharedPrefs.getBoolean("dices_show_inc_slider", false)
 }

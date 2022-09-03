@@ -6,10 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.view.isVisible
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.FragmentDicesBinding
 import com.github.muellerma.tabletoptools.utils.Prefs
-import com.google.android.material.button.MaterialButton
 import com.google.android.material.slider.Slider
 import kotlinx.parcelize.Parcelize
 
@@ -38,6 +38,10 @@ class DicesFragment : AbstractBaseFragment() {
         incSlider.addOnChangeListener { _, value, _ ->
             incSliderHint.text = getString(R.string.dices_inc_slider_hint, value.toInt())
         }
+
+        val prefs = Prefs(inflater.context)
+        incSlider.isVisible = prefs.showDicesIncSlider
+        incSliderHint.isVisible = prefs.showDicesIncSlider
 
         result = binding.dicesResultText
 

@@ -8,5 +8,9 @@
                 android:entries="@array/dices_count"
                 android:defaultValue="10"
                 android:summary="%s" />
+        <SwitchPreference
+                android:key="dices_show_inc_slider"
+                android:title="@string/dices_show_inc_slider"
+                android:defaultValue="false" />
     </PreferenceCategory>
 </PreferenceScreen>

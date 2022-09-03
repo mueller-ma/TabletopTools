@@ -51,6 +51,7 @@
     <!-- Dice with %d sides -->
     <string name="dices_d_d">D%d</string>
     <string name="dices_max_count">Max. dice count</string>
+    <string name="dices_show_inc_slider">Show \"Add to count\" slider</string>
 
     <!-- Timer -->
     <string name="menu_timer">Timer</string>
