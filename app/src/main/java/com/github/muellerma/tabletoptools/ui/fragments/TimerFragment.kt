@@ -127,6 +127,7 @@ class TimerFragment : AbstractBaseFragment() {
         remainingTime = setTime
         updateTimerView()
         startButton.isEnabled = true
+        resetButton.isInvisible = true
     }
 
     override fun onResume() {
