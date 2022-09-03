@@ -11,6 +11,8 @@ import android.widget.TableRow
 import android.widget.TextView
 import androidx.core.view.setPadding
 import com.github.muellerma.tabletoptools.R
+import com.github.muellerma.tabletoptools.databinding.AlphabetTableRowBinding
+import com.github.muellerma.tabletoptools.databinding.FragmentAlphabetBinding
 import com.github.muellerma.tabletoptools.utils.positionInAlphabet
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.slider.Slider
@@ -22,23 +24,21 @@ class AlphabetFragment : AbstractBaseFragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        val root = inflater.inflate(R.layout.fragment_alphabet, container, false)
-
-        val table = root.findViewById<TableLayout>(R.id.alphabet_table)
+    ): View {
+        val binding = FragmentAlphabetBinding.inflate(inflater, container, false)
 
         ('A'..'Z').forEach { letter ->
             @SuppressLint("InflateParams") // View is set as child below
-            val row = inflater.inflate(R.layout.alphabet_table_row, null)
-            val letterLabel = row.findViewById<TextView>(R.id.alphabet_table_row_letter)
-            val numberLabel = row.findViewById<TextView>(R.id.alphabet_table_row_number)
+            val row = AlphabetTableRowBinding.inflate(inflater)
+            val letterLabel = row.alphabetTableRowLetter
+            val numberLabel = row.alphabetTableRowNumber
             letterLabel.text = letter.toString()
             numberLabel.text = letter.positionInAlphabet().toString()
 
-            table.addView(row)
+            binding.alphabetTable.addView(row.root)
         }
 
-        return root
+        return binding.root
     }
 
     companion object {

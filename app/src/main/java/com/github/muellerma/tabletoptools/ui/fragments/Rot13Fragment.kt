@@ -10,6 +10,7 @@ import androidx.annotation.VisibleForTesting
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import com.github.muellerma.tabletoptools.R
+import com.github.muellerma.tabletoptools.databinding.FragmentRot13Binding
 import com.github.muellerma.tabletoptools.utils.isLatinLetter
 import com.google.android.material.slider.Slider
 
@@ -22,19 +23,19 @@ class Rot13Fragment : AbstractBaseFragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        val root = inflater.inflate(R.layout.fragment_rot13, container, false)
-        slider = root.findViewById<Slider>(R.id.rot13_slider).apply {
+    ): View {
+        val binding = FragmentRot13Binding.inflate(inflater, container, false)
+        slider = binding.rot13Slider.apply {
             addOnChangeListener { _, _, _ -> updateResult() }
         }
-        inputText = root.findViewById<EditText>(R.id.rot13_input_text).apply {
+        inputText = binding.rot13InputText.apply {
             addTextChangedListener {
                 updateResult()
             }
         }
-        result = root.findViewById(R.id.rot13_result_text)
+        result = binding.rot13ResultText
         updateResult()
-        return root
+        return binding.root
     }
 
     private fun updateResult() {
