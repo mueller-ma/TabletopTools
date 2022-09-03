@@ -9,23 +9,21 @@ import android.widget.EditText
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import com.github.muellerma.tabletoptools.R
+import com.github.muellerma.tabletoptools.databinding.FragmentNumberConverterBinding
 import java.util.*
 
 class NumberConverterFragment : AbstractBaseFragment() {
-    private lateinit var binInputText: EditText
-    private lateinit var decInputText: EditText
-    private lateinit var hexInputText: EditText
     private var inputFromUser = true
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
-    ): View? {
-        val root = inflater.inflate(R.layout.fragment_number_converter, container, false)
-        binInputText = root.findViewById(R.id.number_converter_input_bin)
-        decInputText = root.findViewById(R.id.number_converter_input_dec)
-        hexInputText = root.findViewById(R.id.number_converter_input_hex)
+    ): View {
+        val binding = FragmentNumberConverterBinding.inflate(inflater, container, false)
+        val binInputText = binding.numberConverterInputBin
+        val decInputText = binding.numberConverterInputDec
+        val hexInputText = binding.numberConverterInputHex
 
         binInputText.addTextChangedListener { text ->
             if (!inputFromUser) {
@@ -65,7 +63,7 @@ class NumberConverterFragment : AbstractBaseFragment() {
             binInputText.setText(Integer.toBinaryString(input))
             inputFromUser = true
         }
-        return root
+        return binding.root
     }
 
     companion object {

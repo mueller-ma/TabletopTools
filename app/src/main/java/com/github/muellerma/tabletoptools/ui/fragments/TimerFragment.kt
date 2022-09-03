@@ -18,6 +18,7 @@ import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
 import androidx.lifecycle.Lifecycle
 import com.github.muellerma.tabletoptools.R
+import com.github.muellerma.tabletoptools.databinding.FragmentTimerBinding
 import com.github.muellerma.tabletoptools.ui.dialog.TimerPickerDialog
 import com.github.muellerma.tabletoptools.utils.preferences
 import java.util.concurrent.TimeUnit
@@ -90,13 +91,13 @@ class TimerFragment : AbstractBaseFragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         Log.d(TAG, "onCreateView()")
-        val root = inflater.inflate(R.layout.fragment_timer, container, false)
-        timerView1 = root.findViewById(R.id.timer_view1)
-        timerView2 = root.findViewById(R.id.timer_view2)
-        startButton = root.findViewById(R.id.start_button)
-        resetButton = root.findViewById(R.id.reset_button)
+        val binding = FragmentTimerBinding.inflate(inflater, container, false)
+        timerView1 = binding.timerView1
+        timerView2 = binding.timerView2
+        startButton = binding.startButton
+        resetButton = binding.resetButton
 
         startButton.setOnClickListener {
             toggleTimer()
@@ -115,7 +116,7 @@ class TimerFragment : AbstractBaseFragment() {
 
         updateTimerView()
 
-        return root
+        return binding.root
     }
 
     private fun resetTimer() {

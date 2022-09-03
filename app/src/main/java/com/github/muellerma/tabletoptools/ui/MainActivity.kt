@@ -15,6 +15,8 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
 import androidx.preference.PreferenceManager
 import com.github.muellerma.tabletoptools.R
+import com.github.muellerma.tabletoptools.databinding.ActivityMainBinding
+import com.github.muellerma.tabletoptools.databinding.AppBarMainBinding
 import com.github.muellerma.tabletoptools.ui.fragments.AbstractBaseFragment
 
 class MainActivity : AppCompatActivity() {
@@ -23,12 +25,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         Log.d(TAG, "onCreate()")
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar)
+        val binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        setSupportActionBar(binding.appBar.toolbar)
 
-        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
-        val navView: NavigationView = findViewById(R.id.nav_view)
         val navController = findNavController(R.id.nav_host_fragment)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -43,10 +43,10 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_buzzers,
                 R.id.nav_prefs
             ),
-            drawerLayout
+            binding.drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+        binding.navView.setupWithNavController(navController)
     }
 
     override fun onSupportNavigateUp(): Boolean {

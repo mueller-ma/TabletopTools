@@ -11,6 +11,7 @@ import androidx.core.view.MenuProvider
 import androidx.core.view.isVisible
 import androidx.lifecycle.Lifecycle
 import com.github.muellerma.tabletoptools.R
+import com.github.muellerma.tabletoptools.databinding.FragmentBuzzersBinding
 import com.github.muellerma.tabletoptools.utils.preferences
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.delay
@@ -24,11 +25,12 @@ class BuzzersFragment : AbstractBaseFragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        val root = inflater.inflate(R.layout.fragment_buzzers, container, false)
+    ): View {
+        val binding = FragmentBuzzersBinding.inflate(inflater, container, false)
 
-        listOf(R.id.buzzer_a, R.id.buzzer_b, R.id.buzzer_c, R.id.buzzer_d).forEach { id ->
-            root.findViewById<Button>(id)?.apply {
+        listOf(binding.buzzerA, binding.buzzerB, binding.buzzerC, binding.buzzerD).forEach {
+                button ->
+            button.apply {
                 buzzers.add(this)
                 setOnClickListener { buttonPressed(this) }
             }
@@ -71,7 +73,7 @@ class BuzzersFragment : AbstractBaseFragment() {
             }
         }, viewLifecycleOwner, Lifecycle.State.RESUMED)
 
-        return root
+        return binding.root
     }
 
     private fun setupButtonVisibility() {

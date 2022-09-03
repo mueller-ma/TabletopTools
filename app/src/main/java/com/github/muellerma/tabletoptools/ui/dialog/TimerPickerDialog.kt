@@ -10,6 +10,7 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.setFragmentResult
 import com.github.muellerma.tabletoptools.R
+import com.github.muellerma.tabletoptools.databinding.DialogCountDownPickerBinding
 
 class TimerPickerDialog : DialogFragment(), NumberPicker.OnValueChangeListener {
     private var minutesAndSeconds: Pair<Int, Int> = Pair(5, 0)
@@ -21,26 +22,26 @@ class TimerPickerDialog : DialogFragment(), NumberPicker.OnValueChangeListener {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        val v = inflater.inflate(R.layout.dialog_count_down_picker, container, false)
+    ): View {
+        val binding = DialogCountDownPickerBinding.inflate(inflater, container, false)
         arguments?.apply {
             minutesAndSeconds = convertMillisToMinutesAndSeconds(getLong(MILLIS_BUNDLE_KEY))
         }
-        minutesPicker = v.findViewById<NumberPicker>(R.id.minute_number_picker).apply {
+        minutesPicker = binding.minuteNumberPicker.apply {
             minValue = MIN_TIME
             maxValue = MAX_TIME
             value = minutesAndSeconds.first
 
             setOnValueChangedListener(this@TimerPickerDialog)
         }
-        secondsPicker = v.findViewById<NumberPicker>(R.id.second_number_picker).apply {
+        secondsPicker = binding.secondNumberPicker.apply {
             minValue = MIN_TIME
             maxValue = MAX_TIME
             value = minutesAndSeconds.second
 
             setOnValueChangedListener(this@TimerPickerDialog)
         }
-        finishButton = v.findViewById<Button>(R.id.button).apply {
+        finishButton = binding.button.apply {
             setOnClickListener {
                 setFragmentResult(
                     RESULT_KEY,
@@ -49,7 +50,8 @@ class TimerPickerDialog : DialogFragment(), NumberPicker.OnValueChangeListener {
                 dismiss()
             }
         }
-        return v
+
+        return binding.root
     }
 
     override fun onValueChange(picker: NumberPicker?, oldVal: Int, newVal: Int) {

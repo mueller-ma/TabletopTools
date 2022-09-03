@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.github.muellerma.tabletoptools.R
+import com.github.muellerma.tabletoptools.databinding.FragmentDicesBinding
 import com.github.muellerma.tabletoptools.utils.Prefs
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.slider.Slider
@@ -21,49 +22,47 @@ class DicesFragment : AbstractBaseFragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        val root = inflater.inflate(R.layout.fragment_dices, container, false)
+    ): View {
+        val binding = FragmentDicesBinding.inflate(inflater, container, false)
 
-        dicesCountSlider = root.findViewById(R.id.dices_count_slider)
-        val sliderHint = root.findViewById<TextView>(R.id.dices_slider_hint)
+        dicesCountSlider = binding.dicesCountSlider
+        val sliderHint = binding.dicesSliderHint
         sliderHint.text = getString(R.string.dices_slider_hint, dicesCountSlider.value.toInt())
         dicesCountSlider.addOnChangeListener { _, value, _ ->
             sliderHint.text = getString(R.string.dices_slider_hint, value.toInt())
         }
 
-        incSlider = root.findViewById(R.id.dices_inc_slider)
-        val incSliderHint = root.findViewById<TextView>(R.id.dices_inc_slider_hint)
+        incSlider = binding.dicesIncSlider
+        val incSliderHint = binding.dicesIncSliderHint
         incSliderHint.text = getString(R.string.dices_inc_slider_hint, incSlider.value.toInt())
         incSlider.addOnChangeListener { _, value, _ ->
             incSliderHint.text = getString(R.string.dices_inc_slider_hint, value.toInt())
         }
 
-        result = root.findViewById(R.id.dices_result_text)
+        result = binding.dicesResultText
 
         mapOf(
-                R.id.dices_button_3 to 3,
-                R.id.dices_button_4 to 4,
-                R.id.dices_button_6 to 6,
-                R.id.dices_button_8 to 8,
-                R.id.dices_button_10 to 10,
-                R.id.dices_button_12 to 12,
-                R.id.dices_button_20 to 20,
-                R.id.dices_button_100 to 100
+            binding.dicesButton3 to 3,
+            binding.dicesButton4 to 4,
+            binding.dicesButton6 to 6,
+            binding.dicesButton8 to 8,
+            binding.dicesButton10 to 10,
+            binding.dicesButton12 to 12,
+            binding.dicesButton20 to 20,
+            binding.dicesButton100 to 100
         ).forEach { dice ->
-            root.findViewById<MaterialButton>(dice.key).apply {
-                setOnClickListener {
-                    roll(dice.value)
-                }
+            dice.key.setOnClickListener {
+                roll(dice.value)
             }
         }
 
-        root.findViewById<MaterialButton>(R.id.dices_button_10_2).apply {
+        binding.dicesButton102.apply {
             setOnClickListener {
                 roll(10, 10)
             }
         }
 
-        return root
+        return binding.root
     }
 
     override fun onResume() {
