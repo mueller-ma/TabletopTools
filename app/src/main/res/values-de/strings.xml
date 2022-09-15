@@ -54,6 +54,7 @@
     <string name="timer_select_min">Min</string>
     <!-- Abr. of seconds -->
     <string name="timer_select_sec">Sek</string>
+    <string name="timer_set_time">Zeit einstellen</string>
     <!-- Buzzers -->
     <string name="menu_buzzers">Buzzer</string>
     <string name="buzzers_player_a">Spieler A</string>
