@@ -13,11 +13,11 @@ import androidx.core.widget.addTextChangedListener
 import androidx.lifecycle.Lifecycle
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.FragmentRandomListBinding
-import com.github.muellerma.tabletoptools.utils.preferences
+import com.github.muellerma.tabletoptools.utils.Prefs
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class RandomListFragment : AbstractBaseFragment() {
-    private lateinit var prefs: SharedPreferences
+    private lateinit var prefs: Prefs
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -35,14 +35,12 @@ class RandomListFragment : AbstractBaseFragment() {
             }
         }
 
-        prefs = randomList.context.preferences()
+        prefs = Prefs(randomList.context)
 
-        randomList.setText(prefs.getString("random_list_last_list", ""))
+        randomList.setText(prefs.lastRandomList)
 
         randomList.addTextChangedListener {
-            prefs.edit {
-                putString("random_list_last_list", it.toString())
-            }
+            prefs.lastRandomList = it.toString()
         }
 
         requireActivity().addMenuProvider(object : MenuProvider {

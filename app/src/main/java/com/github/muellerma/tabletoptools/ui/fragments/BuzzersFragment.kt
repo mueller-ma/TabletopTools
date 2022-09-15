@@ -5,14 +5,13 @@ import android.util.Log
 import android.view.*
 import android.widget.Button
 import android.widget.NumberPicker
-import androidx.core.content.edit
 import androidx.core.content.getSystemService
 import androidx.core.view.MenuProvider
 import androidx.core.view.isVisible
 import androidx.lifecycle.Lifecycle
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.FragmentBuzzersBinding
-import com.github.muellerma.tabletoptools.utils.preferences
+import com.github.muellerma.tabletoptools.utils.Prefs
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -45,11 +44,11 @@ class BuzzersFragment : AbstractBaseFragment() {
             override fun onMenuItemSelected(item: MenuItem): Boolean {
                 return when (item.itemId) {
                     R.id.settings -> {
-                        val prefs = requireContext().preferences()
+                        val prefs = Prefs(requireContext())
                         val picker = NumberPicker(requireContext()).apply {
                             minValue = 1
                             maxValue = 4
-                            value = prefs.getInt("buzzer_count", 2)
+                            value = prefs.buzzerCount
                             displayedValues = (minValue..maxValue).map {
                                 resources.getQuantityString(R.plurals.buzzers_amount, it, it)
                             }.toTypedArray()
@@ -59,9 +58,7 @@ class BuzzersFragment : AbstractBaseFragment() {
                             .setView(picker)
                             .setTitle(R.string.settings)
                             .setPositiveButton(android.R.string.ok) { _, _ ->
-                                prefs.edit {
-                                    putInt("buzzer_count", picker.value)
-                                }
+                                prefs.buzzerCount = picker.value
                                 setupButtonVisibility()
                             }
                             .setNegativeButton(android.R.string.cancel, null)
@@ -77,7 +74,7 @@ class BuzzersFragment : AbstractBaseFragment() {
     }
 
     private fun setupButtonVisibility() {
-        val visible = context?.preferences()?.getInt("buzzer_count", 2) ?: 2
+        val visible = Prefs(requireContext()).buzzerCount
         buzzers.forEachIndexed {index, button ->
             button.isVisible = index <= visible - 1
         }

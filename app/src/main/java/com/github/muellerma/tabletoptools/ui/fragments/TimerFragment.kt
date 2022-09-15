@@ -11,7 +11,6 @@ import android.util.Log
 import android.view.*
 import android.widget.Button
 import android.widget.TextView
-import androidx.core.content.edit
 import androidx.core.content.getSystemService
 import androidx.core.view.MenuProvider
 import androidx.core.view.isInvisible
@@ -20,7 +19,7 @@ import androidx.lifecycle.Lifecycle
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.FragmentTimerBinding
 import com.github.muellerma.tabletoptools.ui.dialog.TimerPickerDialog
-import com.github.muellerma.tabletoptools.utils.preferences
+import com.github.muellerma.tabletoptools.utils.Prefs
 import java.util.concurrent.TimeUnit
 import kotlin.time.Duration.Companion.minutes
 
@@ -38,8 +37,7 @@ class TimerFragment : AbstractBaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val prefs = activity?.preferences() ?: return
-        setTime = prefs.getLong(SET_TIME, DEFAULT_TIME)
+        setTime = Prefs(requireContext()).timerMillis
         remainingTime = setTime
         resetTimer()
         childFragmentManager.setFragmentResultListener(
@@ -75,9 +73,7 @@ class TimerFragment : AbstractBaseFragment() {
         }
         setTime = time
         remainingTime = setTime
-        activity?.preferences()?.edit {
-            putLong(SET_TIME, time)
-        }
+        Prefs(requireContext()).timerMillis = time
         updateTimerView()
     }
 
@@ -221,7 +217,6 @@ class TimerFragment : AbstractBaseFragment() {
 
     companion object {
         private var TAG = TimerFragment::class.java.simpleName
-        private const val SET_TIME = "PREVIOUS_MILLIS"
-        private val DEFAULT_TIME = 5.minutes.inWholeMilliseconds
+        val DEFAULT_TIME = 5.minutes.inWholeMilliseconds
     }
 }
