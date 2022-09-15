@@ -2,22 +2,18 @@ package com.github.muellerma.tabletoptools.ui
 
 import android.os.Bundle
 import android.util.Log
-import com.google.android.material.navigation.NavigationView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import androidx.drawerlayout.widget.DrawerLayout
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
-import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.NavHostFragment
-import androidx.preference.PreferenceManager
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.ActivityMainBinding
-import com.github.muellerma.tabletoptools.databinding.AppBarMainBinding
 import com.github.muellerma.tabletoptools.ui.fragments.AbstractBaseFragment
+import com.github.muellerma.tabletoptools.utils.parcelable
 
 class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
@@ -59,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG, "onRestoreInstanceState()")
         getFragments()?.forEach { fragment ->
             if (fragment is AbstractBaseFragment) {
-                fragment.savedData = savedInstanceState.getParcelable(fragment::class.java.simpleName)
+                fragment.savedData = savedInstanceState.parcelable(fragment::class.java.simpleName)
             }
         }
         super.onRestoreInstanceState(savedInstanceState)
