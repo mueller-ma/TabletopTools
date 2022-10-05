@@ -82,4 +82,5 @@
 
     <!-- Preferences -->
     <string name="menu_preferences">Settings</string>
+    <string name="default_tab_title">Default Tab</string>
 </resources>

@@ -13,6 +13,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.ActivityMainBinding
 import com.github.muellerma.tabletoptools.ui.fragments.AbstractBaseFragment
+import com.github.muellerma.tabletoptools.utils.Prefs
 import com.github.muellerma.tabletoptools.utils.parcelable
 
 class MainActivity : AppCompatActivity() {
@@ -26,6 +27,11 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.appBar.toolbar)
 
         val navController = findNavController(R.id.nav_host_fragment)
+
+        val navGraph = navController.navInflater.inflate(R.navigation.mobile_navigation)
+        navGraph.setStartDestination(getDefaultStartDestinationId(Prefs(context = this).defaultTabString))
+        navController.graph = navGraph
+
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
@@ -43,6 +49,19 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         binding.navView.setupWithNavController(navController)
+    }
+
+    private fun getDefaultStartDestinationId(defaultTabName: String): Int {
+        return when (defaultTabName) {
+            this.getString(R.string.menu_dices) -> { R.id.nav_dices }
+            this.getString(R.string.menu_random_list) -> { R.id.nav_random_list }
+            this.getString(R.string.menu_rot13) -> { R.id.nav_rot13 }
+            this.getString(R.string.menu_alphabet) -> { R.id.nav_alphabet }
+            this.getString(R.string.menu_number_converter) -> { R.id.nav_number_converter }
+            this.getString(R.string.menu_timer) -> { R.id.nav_timer }
+            this.getString(R.string.menu_buzzers) -> { R.id.nav_buzzers }
+            else -> { R.id.nav_dices }
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {
