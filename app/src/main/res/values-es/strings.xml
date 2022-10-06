@@ -13,6 +13,7 @@
     <!-- Number converter -->
     <string name="menu_number_converter">Conversor de números</string>
     <string name="number_converter_binary">Binario</string>
+    <!-- Titles for start page -->
     <!-- Dices -->
     <string name="menu_dices">Dados</string>
     <!-- Dice with 3 sides -->
