@@ -6,7 +6,7 @@
                 android:title="@string/default_tab_title"
                 android:entryValues="@array/tabs_values"
                 android:entries="@array/tabs"
-                android:defaultValue="@string/menu_dices"
+                android:defaultValue="@string/menu_dices_value"
                 android:summary="%s" />
         <ListPreference
                 android:key="dices_max_count"

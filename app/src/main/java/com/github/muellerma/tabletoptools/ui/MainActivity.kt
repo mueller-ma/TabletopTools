@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getDefaultStartDestinationId(): Int {
-        return when (Prefs(context = this).defaultTabString) {
+        return when (Prefs(this).defaultTabString) {
             getString(R.string.menu_dices_value) -> R.id.nav_dices
             getString(R.string.menu_random_list_value) -> R.id.nav_random_list
             getString(R.string.menu_rot13_value) -> R.id.nav_rot13
