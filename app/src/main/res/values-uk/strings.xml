@@ -22,6 +22,7 @@
     <string name="number_converter_decimal">Десятковий</string>
     <string name="number_converter_binary">Двійковий</string>
     <string name="number_converter_hexadecimal">Шістнадцятковий</string>
+    <!-- Titles for start page -->
     <!-- Dices -->
     <string name="menu_dices">Кубики</string>
     <!-- Dice with 3 sides -->
