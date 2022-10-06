@@ -26,6 +26,15 @@
     <string name="number_converter_binary">Binary</string>
     <string name="number_converter_hexadecimal">Hexadecimal</string>
 
+    <!-- Titles for start page -->
+    <string name="menu_dices_value" translatable="false">dices</string>
+    <string name="menu_timer_value" translatable="false">timer</string>
+    <string name="menu_buzzers_value" translatable="false">buzzer</string>
+    <string name="menu_random_list_value" translatable="false">random</string>
+    <string name="menu_rot13_value" translatable="false">rot13</string>
+    <string name="menu_alphabet_value" translatable="false">alphabet</string>
+    <string name="menu_number_converter_value" translatable="false">converter</string>
+
     <!-- Dices -->
     <string name="menu_dices">Dices</string>
     <!-- Dice with 3 sides -->
@@ -81,5 +90,7 @@
     </plurals>
 
     <!-- Preferences -->
+    <string name="start_page">Start page</string>
+    <string name="general">General</string>
     <string name="menu_preferences">Settings</string>
 </resources>
