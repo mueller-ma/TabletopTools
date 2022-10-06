@@ -2,6 +2,7 @@
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_description">Collection d\'outils pratiques pour les jeux de société</string>
+    <string name="nav_header_desc">Barre de navigation</string>
     <string name="settings">Paramètres</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">Rot 13</string>
@@ -43,6 +44,8 @@
     <string name="dices_inc_slider_hint">Ajouter au résultat : %d</string>
     <!-- Dice with %d sides -->
     <string name="dices_d_d">d%d</string>
+    <string name="dices_max_count">Nombre de dés maximum</string>
+    <string name="dices_show_inc_slider">Voir l\'option \"Ajouter au résultat\"</string>
     <!-- Timer -->
     <string name="menu_timer">Minuteur</string>
     <string name="timer_start">Démarrer</string>
@@ -56,7 +59,9 @@
     <string name="buzzers_player_d">Joueur D</string>
     <string name="random_list_hint">Entrez toutes les valeurs séparées par une nouvelle ligne</string>
     <string name="menu_random_list">Mélanger une liste</string>
+    <string name="random_list_clear_list">Effacer la liste</string>
     <string name="random_list_clear_list_confirm">Voulez-vous effacer la liste ?</string>
     <!-- Preferences -->
+    <string name="start_page">Page d\'accueil</string>
     <string name="menu_preferences">Paramètres</string>
 </resources>
