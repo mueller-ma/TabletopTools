@@ -16,4 +16,13 @@
         <item>@string/menu_timer</item>
         <item>@string/menu_buzzers</item>
     </string-array>
+    <string-array name="tabs_values">
+        <item>@string/menu_dices_value</item>
+        <item>@string/menu_random_list_value</item>
+        <item>@string/menu_rot13_value</item>
+        <item>@string/menu_alphabet_value</item>
+        <item>@string/menu_number_converter_value</item>
+        <item>@string/menu_timer_value</item>
+        <item>@string/menu_buzzers_value</item>
+    </string-array>
 </resources>

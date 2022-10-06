@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
 
         val navGraph = navController.navInflater.inflate(R.navigation.mobile_navigation)
-        navGraph.setStartDestination(getDefaultStartDestinationId(Prefs(context = this).defaultTabString))
+        navGraph.setStartDestination(getDefaultStartDestinationId())
         navController.graph = navGraph
 
         // Passing each menu ID as a set of Ids because each
@@ -51,16 +51,16 @@ class MainActivity : AppCompatActivity() {
         binding.navView.setupWithNavController(navController)
     }
 
-    private fun getDefaultStartDestinationId(defaultTabName: String): Int {
-        return when (defaultTabName) {
-            this.getString(R.string.menu_dices) -> { R.id.nav_dices }
-            this.getString(R.string.menu_random_list) -> { R.id.nav_random_list }
-            this.getString(R.string.menu_rot13) -> { R.id.nav_rot13 }
-            this.getString(R.string.menu_alphabet) -> { R.id.nav_alphabet }
-            this.getString(R.string.menu_number_converter) -> { R.id.nav_number_converter }
-            this.getString(R.string.menu_timer) -> { R.id.nav_timer }
-            this.getString(R.string.menu_buzzers) -> { R.id.nav_buzzers }
-            else -> { R.id.nav_dices }
+    private fun getDefaultStartDestinationId(): Int {
+        return when (Prefs(context = this).defaultTabString) {
+            getString(R.string.menu_dices_value) -> R.id.nav_dices
+            getString(R.string.menu_random_list_value) -> R.id.nav_random_list
+            getString(R.string.menu_rot13_value) -> R.id.nav_rot13
+            getString(R.string.menu_alphabet_value) -> R.id.nav_alphabet
+            getString(R.string.menu_number_converter_value) -> R.id.nav_number_converter
+            getString(R.string.menu_timer_value) -> R.id.nav_timer
+            getString(R.string.menu_buzzers_value) -> R.id.nav_buzzers
+            else -> R.id.nav_dices
         }
     }
 

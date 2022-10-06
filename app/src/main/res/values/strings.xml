@@ -26,6 +26,15 @@
     <string name="number_converter_binary">Binary</string>
     <string name="number_converter_hexadecimal">Hexadecimal</string>
 
+    <!-- Screen / Tab Titles for Default Tab -->
+    <string name="menu_dices_value">dices</string>
+    <string name="menu_timer_value">timer</string>
+    <string name="menu_buzzers_value">buzzer</string>
+    <string name="menu_random_list_value">random</string>
+    <string name="menu_rot13_value">rot13</string>
+    <string name="menu_alphabet_value">alphabet</string>
+    <string name="menu_number_converter_value">converter</string>
+
     <!-- Dices -->
     <string name="menu_dices">Dices</string>
     <!-- Dice with 3 sides -->
