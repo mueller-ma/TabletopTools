@@ -26,7 +26,7 @@
     <string name="number_converter_binary">Binary</string>
     <string name="number_converter_hexadecimal">Hexadecimal</string>
 
-    <!-- Screen / Tab Titles for Default Page -->
+    <!-- Titles for start page -->
     <string name="menu_dices_value" translatable="false">dices</string>
     <string name="menu_timer_value" translatable="false">timer</string>
     <string name="menu_buzzers_value" translatable="false">buzzer</string>
@@ -91,5 +91,5 @@
 
     <!-- Preferences -->
     <string name="menu_preferences">Settings</string>
-    <string name="default_tab_title">Start Page</string>
+    <string name="start_page">Start page</string>
 </resources>

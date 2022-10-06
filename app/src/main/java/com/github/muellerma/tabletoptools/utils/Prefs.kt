@@ -14,8 +14,8 @@ class Prefs(private val context: Context) {
     val maxDiceCount: Int
         get() = sharedPrefs.getString("dices_max_count", "10")?.toInt() ?: 10
 
-    val defaultTabString: String
-        get() = sharedPrefs.getString("default_tab", context.getString(R.string.menu_dices)) ?: context.getString(R.string.menu_dices)
+    val startPage: String
+        get() = sharedPrefs.getString("start_page", context.getString(R.string.menu_dices)) ?: context.getString(R.string.menu_dices)
 
     val showDicesIncSlider: Boolean
         get() = sharedPrefs.getBoolean("dices_show_inc_slider", false)

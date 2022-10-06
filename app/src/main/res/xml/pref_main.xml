@@ -2,10 +2,10 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory android:title="@string/menu_dices">
         <ListPreference
-                android:key="default_tab"
-                android:title="@string/default_tab_title"
-                android:entryValues="@array/tabs_values"
-                android:entries="@array/tabs"
+                android:key="start_page"
+                android:title="@string/start_page"
+                android:entryValues="@array/pages_values"
+                android:entries="@array/pages"
                 android:defaultValue="@string/menu_dices_value"
                 android:summary="%s" />
         <ListPreference
