@@ -90,6 +90,7 @@
     </plurals>
 
     <!-- Preferences -->
-    <string name="menu_preferences">Settings</string>
     <string name="start_page">Start page</string>
+    <string name="general">General</string>
+    <string name="menu_preferences">Settings</string>
 </resources>
