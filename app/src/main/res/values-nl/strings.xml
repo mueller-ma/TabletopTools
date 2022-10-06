@@ -16,6 +16,7 @@
     <string name="number_converter_decimal">Decimaal</string>
     <string name="number_converter_binary">Binair</string>
     <string name="number_converter_hexadecimal">Hexadecimaal</string>
+    <!-- Titles for start page -->
     <!-- Dices -->
     <string name="menu_dices">Dobbelstenen</string>
     <!-- Dice with 3 sides -->
