@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/general">
+        <ListPreference
+                android:key="start_page"
+                android:title="@string/start_page"
+                android:entryValues="@array/pages_values"
+                android:entries="@array/pages"
+                android:defaultValue="@string/menu_dices_value"
+                android:summary="%s" />
+    </PreferenceCategory>
     <PreferenceCategory android:title="@string/menu_dices">
         <ListPreference
                 android:key="dices_max_count"

@@ -4,14 +4,19 @@ import android.content.Context
 import android.content.SharedPreferences
 import androidx.core.content.edit
 import androidx.preference.PreferenceManager
+import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.ui.fragments.TimerFragment
 
-class Prefs(context: Context) {
+class Prefs(private val context: Context) {
     var sharedPrefs: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
         private set
 
     val maxDiceCount: Int
         get() = sharedPrefs.getString("dices_max_count", "10")?.toInt() ?: 10
+
+    val startPage: String
+        get() = sharedPrefs.getString("start_page", context.getString(R.string.menu_dices_value))
+            ?: context.getString(R.string.menu_dices_value)
 
     val showDicesIncSlider: Boolean
         get() = sharedPrefs.getBoolean("dices_show_inc_slider", false)
