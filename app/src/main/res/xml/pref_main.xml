@@ -22,4 +22,9 @@
                 android:title="@string/dices_show_inc_slider"
                 android:defaultValue="false" />
     </PreferenceCategory>
+    <PreferenceCategory>
+        <Preference
+                android:key="about"
+                android:title="@string/about" />
+    </PreferenceCategory>
 </PreferenceScreen>
