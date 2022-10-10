@@ -47,4 +47,5 @@
     </plurals>
     <!-- Preferences -->
     <string name="menu_preferences">Ajustes</string>
+    <!--  About menu  -->
 </resources>
