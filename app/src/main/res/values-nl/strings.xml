@@ -42,4 +42,5 @@
     <string name="buzzers_player_d">Speler D</string>
     <!-- Preferences -->
     <string name="menu_preferences">Instellingen</string>
+    <!--  About menu  -->
 </resources>
