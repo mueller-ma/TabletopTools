@@ -71,4 +71,5 @@
     </plurals>
     <!-- Preferences -->
     <string name="menu_preferences">Ayarlar</string>
+    <!--  About menu  -->
 </resources>
