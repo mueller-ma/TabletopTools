@@ -64,4 +64,5 @@
     <!-- Preferences -->
     <string name="start_page">Page d\'accueil</string>
     <string name="menu_preferences">Paramètres</string>
+    <!--  About menu  -->
 </resources>
