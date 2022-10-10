@@ -63,6 +63,9 @@
     <string name="random_list_clear_list_confirm">Voulez-vous effacer la liste ?</string>
     <!-- Preferences -->
     <string name="start_page">Page d\'accueil</string>
+    <string name="general">Général</string>
     <string name="menu_preferences">Paramètres</string>
     <!--  About menu  -->
+    <string name="about">À propos</string>
+    <string name="error_no_browser_found">Aucun navigateur trouvé</string>
 </resources>
