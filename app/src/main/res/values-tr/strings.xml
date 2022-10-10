@@ -20,6 +20,7 @@
     <string name="number_converter_decimal">Ondalık</string>
     <string name="number_converter_binary">İkili</string>
     <string name="number_converter_hexadecimal">Onaltılık</string>
+    <!-- Titles for start page -->
     <!-- Dices -->
     <string name="menu_dices">Zarlar</string>
     <!-- Dice with 3 sides -->
@@ -70,4 +71,5 @@
     </plurals>
     <!-- Preferences -->
     <string name="menu_preferences">Ayarlar</string>
+    <!--  About menu  -->
 </resources>

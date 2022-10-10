@@ -20,6 +20,7 @@
     <string name="number_converter_decimal">Dezimal</string>
     <string name="number_converter_binary">Binär</string>
     <string name="number_converter_hexadecimal">Hexadezimal</string>
+    <!-- Titles for start page -->
     <!-- Dices -->
     <string name="menu_dices">Würfel</string>
     <!-- Dice with 3 sides -->
@@ -45,6 +46,7 @@
     <!-- Dice with %d sides -->
     <string name="dices_d_d">W%d</string>
     <string name="dices_max_count">Max. Würfelanzahl</string>
+    <string name="dices_show_inc_slider">Zeige \"Zum Ergebnis addieren\"-Slider</string>
     <!-- Timer -->
     <string name="menu_timer">Timer</string>
     <string name="timer_start">Start</string>
@@ -71,5 +73,10 @@
         <item quantity="other">%d Buzzers</item>
     </plurals>
     <!-- Preferences -->
+    <string name="start_page">Startseite</string>
+    <string name="general">Allgemein</string>
     <string name="menu_preferences">Einstellungen</string>
+    <!--  About menu  -->
+    <string name="about">Über</string>
+    <string name="error_no_browser_found">Kein Browser gefunden</string>
 </resources>

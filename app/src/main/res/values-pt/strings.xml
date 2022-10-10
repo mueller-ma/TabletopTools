@@ -14,6 +14,7 @@
     <!-- Number converter -->
     <string name="menu_number_converter">Conversor numérico</string>
     <string name="number_converter_binary">Binário</string>
+    <!-- Titles for start page -->
     <!-- Dices -->
     <string name="menu_dices">Dados</string>
     <!-- Dice with 3 sides -->
@@ -47,4 +48,5 @@
     </plurals>
     <!-- Preferences -->
     <string name="menu_preferences">Configurações</string>
+    <!--  About menu  -->
 </resources>
