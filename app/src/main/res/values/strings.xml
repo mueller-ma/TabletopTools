@@ -93,4 +93,11 @@
     <string name="start_page">Start page</string>
     <string name="general">General</string>
     <string name="menu_preferences">Settings</string>
+
+    <!--  About menu  -->
+    <string name="about">About</string>
+    <string name="error_no_browser_found">No browser found</string>
+    <string name="aboutLibraries_description_special1_name" translatable="false">GitHub</string>
+    <string name="aboutLibraries_description_special2_name" translatable="false">F-Droid</string>
+    <string name="aboutLibraries_description_special3_name" translatable="false">Crowdin</string>
 </resources>
