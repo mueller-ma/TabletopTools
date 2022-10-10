@@ -76,4 +76,5 @@
     <string name="start_page">Startseite</string>
     <string name="general">Allgemein</string>
     <string name="menu_preferences">Einstellungen</string>
+    <!--  About menu  -->
 </resources>
