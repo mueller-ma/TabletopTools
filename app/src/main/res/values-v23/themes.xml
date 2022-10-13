@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.TabletopTools" parent="Theme.TabletopTools.Base">
+        <item name="android:statusBarColor">?colorSurface</item>
+        <item name="android:windowLightStatusBar">?isLightTheme</item>
+    </style>
+</resources>
