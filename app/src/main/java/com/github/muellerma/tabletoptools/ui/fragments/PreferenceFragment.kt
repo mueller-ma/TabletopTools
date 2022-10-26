@@ -41,6 +41,7 @@ class PreferenceFragment : PreferenceFragmentCompat() {
 
                 parentFragmentManager.commit {
                     addToBackStack("about")
+                    setReorderingAllowed(true)
                     replace(R.id.nav_host_fragment, fragment, "about")
                 }
                 true
