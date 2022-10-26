@@ -73,6 +73,10 @@
         <item quantity="other">%d campainhas</item>
     </plurals>
     <!-- Preferences -->
+    <string name="start_page">Página inicial</string>
+    <string name="general">Gerar</string>
     <string name="menu_preferences">Configurações</string>
     <!--  About menu  -->
+    <string name="about">&amp;Sobre</string>
+    <string name="error_no_browser_found">Nenhum navegador encontrado.</string>
 </resources>
