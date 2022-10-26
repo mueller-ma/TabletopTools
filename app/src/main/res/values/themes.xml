@@ -9,6 +9,8 @@
         <item name="colorSecondaryContainer">@color/teal_700</item>
         <item name="colorOnSecondary">@color/white</item>
         <item name="colorOnSecondaryContainer">@color/white</item>
+
+        <item name="switchStyle">@style/Widget.Material3.CompoundButton.MaterialSwitch</item>
     </style>
 
     <style name="Theme.TabletopTools" parent="Theme.TabletopTools.Base">
