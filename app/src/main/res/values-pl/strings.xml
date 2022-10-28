@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
+    <string name="app_name">Tabletop Tools</string>
+    <string name="app_description">Poręczny zestaw narzędzi do gier planszowych</string>
     <string name="nav_header_desc">Nagłówek nawigacji</string>
     <string name="settings">Ustawienia</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
@@ -35,6 +37,7 @@
     <string name="dices_d20">D20</string>
     <!-- Dice with 12 sides -->
     <string name="dices_d12">D12</string>
+    <string name="dices_slider_hint">Numer kostki: %d</string>
     <string name="dices_inc_slider_hint">Dodaj do wyniku: %d</string>
     <!-- Dice with %d sides -->
     <string name="dices_d_d">D%d</string>
@@ -51,6 +54,7 @@
     <string name="timer_select_sec">Sek</string>
     <string name="timer_set_time">Ustaw czas</string>
     <!-- Buzzers -->
+    <string name="menu_buzzers">Brzęczyki</string>
     <string name="buzzers_player_a">Gracz A</string>
     <string name="buzzers_player_b">Gracz B</string>
     <string name="buzzers_player_c">Gracz C</string>
@@ -60,8 +64,17 @@
     <string name="random_list_clear_list">Wyczyść listę</string>
     <string name="random_list_sort_list">Sortuj listę</string>
     <string name="random_list_clear_list_confirm">Czy chcesz wyczyścić listę?</string>
+    <plurals name="buzzers_amount">
+        <item quantity="one">%d brzęczyk</item>
+        <item quantity="few">%d brzęczyki</item>
+        <item quantity="many">%d brzęczyki</item>
+        <item quantity="other">%d brzęczyków</item>
+    </plurals>
     <!-- Preferences -->
     <string name="start_page">Strona startowa</string>
+    <string name="general">Główny</string>
     <string name="menu_preferences">Ustawienia</string>
     <!--  About menu  -->
+    <string name="about">O aplikacji</string>
+    <string name="error_no_browser_found">Nie znaleziono przeglądarki</string>
 </resources>
