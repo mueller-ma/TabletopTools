@@ -60,4 +60,12 @@ class Prefs(private val context: Context) {
                 putBoolean("rot13_keep_screen_on", value)
             }
         }
+
+    var alphabetKeepScreenOn: Boolean
+        get() = sharedPrefs.getBoolean("alphabet_keep_screen_on", true)
+        set(value) {
+            sharedPrefs.edit {
+                putBoolean("alphabet_keep_screen_on", value)
+            }
+        }
 }
