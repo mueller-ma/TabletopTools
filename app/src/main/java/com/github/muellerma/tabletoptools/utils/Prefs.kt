@@ -68,4 +68,12 @@ class Prefs(private val context: Context) {
                 putBoolean("alphabet_keep_screen_on", value)
             }
         }
+
+    var numberConverterKeepScreenOn: Boolean
+        get() = sharedPrefs.getBoolean("numberConverter_keep_screen_on", true)
+        set(value) {
+            sharedPrefs.edit {
+                putBoolean("numberConverter_keep_screen_on", value)
+            }
+        }
 }
