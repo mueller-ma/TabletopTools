@@ -93,6 +93,7 @@
     <string name="start_page">Start page</string>
     <string name="general">General</string>
     <string name="menu_preferences">Settings</string>
+    <string name="keep_screen_on">Keep screen on</string>
 
     <!--  About menu  -->
     <string name="about">About</string>
