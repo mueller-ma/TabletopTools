@@ -52,4 +52,12 @@ class Prefs(private val context: Context) {
                 putBoolean("random_keep_screen_on", value)
             }
         }
+
+    var rot13KeepScreenOn: Boolean
+        get() = sharedPrefs.getBoolean("rot13_keep_screen_on", true)
+        set(value) {
+            sharedPrefs.edit {
+                putBoolean("rot13_keep_screen_on", value)
+            }
+        }
 }
