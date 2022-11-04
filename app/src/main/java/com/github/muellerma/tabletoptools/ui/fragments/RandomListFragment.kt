@@ -1,13 +1,13 @@
 package com.github.muellerma.tabletoptools.ui.fragments
 
-import android.content.SharedPreferences
 import android.os.Bundle
-import android.view.*
-import android.widget.Button
-import android.widget.EditText
-import android.widget.NumberPicker
+import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
+import android.view.View
+import android.view.ViewGroup
 import androidx.annotation.VisibleForTesting
-import androidx.core.content.edit
 import androidx.core.view.MenuProvider
 import androidx.core.widget.addTextChangedListener
 import androidx.lifecycle.Lifecycle
@@ -43,6 +43,8 @@ class RandomListFragment : AbstractBaseFragment() {
             prefs.lastRandomList = it.toString()
         }
 
+        binding.randomScrollView.keepScreenOn = prefs.randomKeepScreenOn
+
         requireActivity().addMenuProvider(object : MenuProvider {
             override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
                 menuInflater.inflate(R.menu.menu_random_list, menu)
@@ -64,6 +66,12 @@ class RandomListFragment : AbstractBaseFragment() {
                         randomList.setText(
                             sortList(randomList.text.toString())
                         )
+                        true
+                    }
+                    R.id.keep_screen_on -> {
+                        val nowKeepScreenOn = binding.randomScrollView.keepScreenOn.not()
+                        prefs.randomKeepScreenOn = nowKeepScreenOn
+                        binding.randomScrollView.keepScreenOn = nowKeepScreenOn
                         true
                     }
                     else -> false
