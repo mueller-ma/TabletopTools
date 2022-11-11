@@ -65,7 +65,7 @@ class DicesFragment : AbstractBaseFragment() {
         super.onResume()
         val maxDices = Prefs(requireContext()).maxDiceCount.toFloat()
         if (b.dicesCount.value > maxDices) {
-            b.dicesCount.value = 1f
+            b.dicesCount.value = maxDices
         }
         b.dicesCount.valueTo = maxDices
     }
