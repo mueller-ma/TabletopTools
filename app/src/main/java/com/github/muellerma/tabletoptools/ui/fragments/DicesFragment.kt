@@ -1,5 +1,6 @@
 package com.github.muellerma.tabletoptools.ui.fragments
 
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -9,6 +10,7 @@ import androidx.core.view.isVisible
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.FragmentDicesBinding
 import com.github.muellerma.tabletoptools.utils.Prefs
+import com.github.muellerma.tabletoptools.utils.toStringWithSign
 import kotlinx.parcelize.Parcelize
 
 class DicesFragment : AbstractBaseFragment() {
@@ -21,20 +23,8 @@ class DicesFragment : AbstractBaseFragment() {
     ): View {
         b = FragmentDicesBinding.inflate(inflater, container, false)
 
-        b.dicesCountHint.text = getString(R.string.dices_slider_hint, b.dicesCount.value.toInt())
-        b.dicesCount.addOnChangeListener { _, value, _ ->
-            b.dicesCountHint.text = getString(R.string.dices_slider_hint, value.toInt())
-        }
-
-        b.overallIncHint.text = getString(R.string.dices_inc_slider_hint, b.overallInc.value.toInt())
-        b.overallInc.addOnChangeListener { _, value, _ ->
-            b.overallIncHint.text = getString(R.string.dices_inc_slider_hint, value.toInt())
-        }
-
-        val prefs = Prefs(inflater.context)
-        b.overallInc.isVisible = prefs.showDicesIncSlider
-        b.dicesCountHint.isVisible = prefs.showDicesIncSlider
-
+        setupSliderHints()
+        setVisibilityBasedOnPrefs(inflater.context)
 
         mapOf(
             b.dicesButton3 to 3,
@@ -70,40 +60,68 @@ class DicesFragment : AbstractBaseFragment() {
         b.dicesCount.valueTo = maxDices
     }
 
+    private fun setupSliderHints() {
+        b.dicesCountHint.text = getString(R.string.dices_slider_hint, b.dicesCount.value.toInt())
+        b.dicesCount.addOnChangeListener { _, value, _ ->
+            b.dicesCountHint.text = getString(R.string.dices_slider_hint, value.toInt())
+        }
+
+        b.overallIncHint.text = getString(R.string.dices_overall_inc_slider_hint, b.overallInc.value.toInt())
+        b.overallInc.addOnChangeListener { _, value, _ ->
+            b.overallIncHint.text = getString(R.string.dices_overall_inc_slider_hint, value.toInt())
+        }
+
+        b.rollIncHint.text = getString(R.string.dices_roll_inc_slider_hint, b.rollInc.value.toInt())
+        b.rollInc.addOnChangeListener { _, value, _ ->
+            b.rollIncHint.text = getString(R.string.dices_roll_inc_slider_hint, value.toInt())
+        }
+    }
+
+    private fun setVisibilityBasedOnPrefs(context: Context) {
+        val prefs = Prefs(context)
+        b.overallInc.isVisible = prefs.showDicesOverallIncSlider
+        b.overallIncHint.isVisible = prefs.showDicesOverallIncSlider
+
+        b.rollInc.isVisible = prefs.showDicesRollIncSlider
+        b.rollIncHint.isVisible = prefs.showDicesRollIncSlider
+    }
+
     private fun roll(max: Int, multiplier: Int = 1) {
         val resultString = StringBuilder()
         val dicesCount = b.dicesCount.value.toInt()
         val overallInc = b.overallInc.value.toInt()
+        val rollInc = b.rollInc.value.toInt()
 
         // Start with e.g. "2D6"
         resultString.append("$dicesCount${getString(R.string.dices_d_d, max)}")
         var result = 0
-        var showEquals = false
         if (overallInc != 0) {
             Log.d(TAG, "overallInc = $overallInc")
 
-            resultString.append(if (overallInc > 0) " +" else " ")
-            resultString.append(overallInc)
+            resultString.append(" ${overallInc.toStringWithSign()}")
             result += overallInc
-
-            showEquals = true
         }
         resultString.append(": ")
 
-        val firstDice = (1..max).shuffled().first().times(multiplier)
-        Log.d(TAG, "Rolled $firstDice")
-        resultString.append(firstDice).append(" ")
-        result += firstDice
-
-        for (i in 2..dicesCount) {
+        for (i in 1..dicesCount) {
             val rolledDice = (1..max).shuffled().first().times(multiplier)
             Log.d(TAG, "Rolled $rolledDice")
-            resultString.append("+ $rolledDice ")
-            result += rolledDice
-            showEquals = true
+
+            if (i > 1) {
+                resultString.append("+ ")
+            }
+
+            result += if (rollInc == 0) {
+                resultString.append("$rolledDice ")
+                rolledDice
+            } else {
+                val incrementedResult = rolledDice + rollInc
+                resultString.append("$incrementedResult (=$rolledDice${rollInc.toStringWithSign()}) ")
+                incrementedResult
+            }
         }
 
-        if (showEquals) {
+        if (dicesCount > 1 || overallInc != 0) {
             resultString.append("= $result")
         }
 

@@ -14,3 +14,5 @@ fun Char.positionInAlphabet(): Int {
 
     return -1
 }
+
+fun Int.toStringWithSign() = if (this >= 0) "+$this" else "$this"
