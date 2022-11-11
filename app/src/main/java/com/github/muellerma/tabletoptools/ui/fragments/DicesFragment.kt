@@ -5,117 +5,112 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.core.view.isVisible
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.FragmentDicesBinding
 import com.github.muellerma.tabletoptools.utils.Prefs
-import com.google.android.material.slider.Slider
 import kotlinx.parcelize.Parcelize
 
 class DicesFragment : AbstractBaseFragment() {
-    private lateinit var dicesCountSlider: Slider
-    private lateinit var incSlider: Slider
-    private lateinit var result: TextView
+    private lateinit var b: FragmentDicesBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val binding = FragmentDicesBinding.inflate(inflater, container, false)
+        b = FragmentDicesBinding.inflate(inflater, container, false)
 
-        dicesCountSlider = binding.dicesCountSlider
-        val sliderHint = binding.dicesSliderHint
-        sliderHint.text = getString(R.string.dices_slider_hint, dicesCountSlider.value.toInt())
-        dicesCountSlider.addOnChangeListener { _, value, _ ->
-            sliderHint.text = getString(R.string.dices_slider_hint, value.toInt())
+        b.dicesCountHint.text = getString(R.string.dices_slider_hint, b.dicesCount.value.toInt())
+        b.dicesCount.addOnChangeListener { _, value, _ ->
+            b.dicesCountHint.text = getString(R.string.dices_slider_hint, value.toInt())
         }
 
-        incSlider = binding.dicesIncSlider
-        val incSliderHint = binding.dicesIncSliderHint
-        incSliderHint.text = getString(R.string.dices_inc_slider_hint, incSlider.value.toInt())
-        incSlider.addOnChangeListener { _, value, _ ->
-            incSliderHint.text = getString(R.string.dices_inc_slider_hint, value.toInt())
+        b.overallIncHint.text = getString(R.string.dices_inc_slider_hint, b.overallInc.value.toInt())
+        b.overallInc.addOnChangeListener { _, value, _ ->
+            b.overallIncHint.text = getString(R.string.dices_inc_slider_hint, value.toInt())
         }
 
         val prefs = Prefs(inflater.context)
-        incSlider.isVisible = prefs.showDicesIncSlider
-        incSliderHint.isVisible = prefs.showDicesIncSlider
+        b.overallInc.isVisible = prefs.showDicesIncSlider
+        b.dicesCountHint.isVisible = prefs.showDicesIncSlider
 
-        result = binding.dicesResultText
 
         mapOf(
-            binding.dicesButton3 to 3,
-            binding.dicesButton4 to 4,
-            binding.dicesButton6 to 6,
-            binding.dicesButton8 to 8,
-            binding.dicesButton10 to 10,
-            binding.dicesButton12 to 12,
-            binding.dicesButton20 to 20,
-            binding.dicesButton100 to 100
+            b.dicesButton3 to 3,
+            b.dicesButton4 to 4,
+            b.dicesButton6 to 6,
+            b.dicesButton8 to 8,
+            b.dicesButton10 to 10,
+            b.dicesButton12 to 12,
+            b.dicesButton20 to 20,
+            b.dicesButton100 to 100
         ).forEach { dice ->
             dice.key.setOnClickListener {
                 roll(dice.value)
             }
         }
 
-        binding.dicesButton102.apply {
+        b.dicesButton102.apply {
             setOnClickListener {
                 roll(10, 10)
             }
         }
 
-        return binding.root
+        return b.root
     }
 
     override fun onResume() {
-        result.text = (savedData as DicesData?)?.results
+        b.result.text = (savedData as DicesData?)?.results
         super.onResume()
         val maxDices = Prefs(requireContext()).maxDiceCount.toFloat()
-        if (dicesCountSlider.value > maxDices) {
-            dicesCountSlider.value = 1f
+        if (b.dicesCount.value > maxDices) {
+            b.dicesCount.value = 1f
         }
-        dicesCountSlider.valueTo = maxDices
+        b.dicesCount.valueTo = maxDices
     }
 
     private fun roll(max: Int, multiplier: Int = 1) {
         val resultString = StringBuilder()
-        val numberOfDices = dicesCountSlider.value.toInt()
-        val diceIncrement = incSlider.value.toInt()
+        val dicesCount = b.dicesCount.value.toInt()
+        val overallInc = b.overallInc.value.toInt()
 
-        resultString.append("$numberOfDices${getString(R.string.dices_d_d, max)}")
-        if (diceIncrement > 0) {
-            resultString.append("+$diceIncrement")
+        // Start with e.g. "2D6"
+        resultString.append("$dicesCount${getString(R.string.dices_d_d, max)}")
+        var result = 0
+        var showEquals = false
+        if (overallInc != 0) {
+            Log.d(TAG, "overallInc = $overallInc")
+
+            resultString.append(if (overallInc > 0) " +" else " ")
+            resultString.append(overallInc)
+            result += overallInc
+
+            showEquals = true
         }
         resultString.append(": ")
 
         val firstDice = (1..max).shuffled().first().times(multiplier)
         Log.d(TAG, "Rolled $firstDice")
         resultString.append(firstDice).append(" ")
-        var sum = firstDice
+        result += firstDice
 
-        for (i in 2..numberOfDices) {
+        for (i in 2..dicesCount) {
             val rolledDice = (1..max).shuffled().first().times(multiplier)
             Log.d(TAG, "Rolled $rolledDice")
-            sum += rolledDice
-            resultString.append("+ ").append(rolledDice).append(" ")
+            resultString.append("+ $rolledDice ")
+            result += rolledDice
+            showEquals = true
         }
 
-        if (diceIncrement > 0) {
-            sum += diceIncrement
-            Log.d(TAG, "+ increment: $diceIncrement")
-            resultString.append("(+ $diceIncrement) ")
+        if (showEquals) {
+            resultString.append("= $result")
         }
 
-        if (numberOfDices > 1 || diceIncrement > 0) {
-            resultString.append("= $sum")
-        }
-
-        resultString.appendLine().append(result.text)
+        resultString.appendLine().append(b.result.text)
         resultString.toString().apply {
             savedData = DicesData(this)
-            result.text = this
+            b.result.text = this
         }
     }
 
