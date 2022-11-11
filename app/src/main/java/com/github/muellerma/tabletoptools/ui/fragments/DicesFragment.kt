@@ -6,11 +6,13 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.core.view.isVisible
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.FragmentDicesBinding
 import com.github.muellerma.tabletoptools.utils.Prefs
 import com.github.muellerma.tabletoptools.utils.toStringWithSign
+import com.google.android.material.slider.Slider
 import kotlinx.parcelize.Parcelize
 
 class DicesFragment : AbstractBaseFragment() {
@@ -24,7 +26,6 @@ class DicesFragment : AbstractBaseFragment() {
         b = FragmentDicesBinding.inflate(inflater, container, false)
 
         setupSliderHints()
-        setVisibilityBasedOnPrefs(inflater.context)
 
         mapOf(
             b.dicesButton3 to 3,
@@ -58,6 +59,7 @@ class DicesFragment : AbstractBaseFragment() {
             b.dicesCount.value = maxDices
         }
         b.dicesCount.valueTo = maxDices
+        setVisibilityBasedOnPrefs(requireContext())
     }
 
     private fun setupSliderHints() {
@@ -78,12 +80,18 @@ class DicesFragment : AbstractBaseFragment() {
     }
 
     private fun setVisibilityBasedOnPrefs(context: Context) {
-        val prefs = Prefs(context)
-        b.overallInc.isVisible = prefs.showDicesOverallIncSlider
-        b.overallIncHint.isVisible = prefs.showDicesOverallIncSlider
+        Log.d(TAG, "setVisibilityBasedOnPrefs()")
+        fun setVisibility(slider: Slider, hint: TextView, show: Boolean) {
+            slider.isVisible = show
+            hint.isVisible = show
+            if (!show) {
+                slider.value = 0f
+            }
+        }
 
-        b.rollInc.isVisible = prefs.showDicesRollIncSlider
-        b.rollIncHint.isVisible = prefs.showDicesRollIncSlider
+        val prefs = Prefs(context)
+        setVisibility(b.overallInc, b.overallIncHint, prefs.showDicesOverallIncSlider)
+        setVisibility(b.rollInc, b.rollIncHint, prefs.showDicesRollIncSlider)
     }
 
     private fun roll(max: Int, multiplier: Int = 1) {
