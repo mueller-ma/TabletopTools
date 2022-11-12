@@ -44,7 +44,6 @@
     <!-- Dice with 12 sides -->
     <string name="dices_d12">D12</string>
     <string name="dices_slider_hint">Кількість кубиків: %d</string>
-    <string name="dices_inc_slider_hint">Додати до кількості: %d</string>
     <!-- Dice with %d sides -->
     <string name="dices_d_d">d%d</string>
     <!-- Timer -->
