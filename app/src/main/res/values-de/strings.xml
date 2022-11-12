@@ -42,9 +42,13 @@
     <!-- Dice with 12 sides -->
     <string name="dices_d12">W12</string>
     <string name="dices_slider_hint">Anzahl der Würfel: %d</string>
+    <string name="dices_overall_inc_slider_hint">Zum Gesamtergebnis addieren: %d</string>
+    <string name="dices_roll_inc_slider_hint">Zu jedem Wurf addieren: %d</string>
     <!-- Dice with %d sides -->
     <string name="dices_d_d">W%d</string>
     <string name="dices_max_count">Max. Würfelanzahl</string>
+    <string name="dices_show_overall_inc_slider">Zeige \"Zum Gesamtergebnis addieren\"-Slider</string>
+    <string name="dices_show_roll_inc_slider">Zeige \"Zu jedem Wurf addieren\"-Slider</string>
     <!-- Timer -->
     <string name="menu_timer">Timer</string>
     <string name="timer_start">Start</string>
