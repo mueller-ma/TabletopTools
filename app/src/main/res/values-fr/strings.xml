@@ -41,11 +41,9 @@
     <!-- Dice with 12 sides -->
     <string name="dices_d12">D12</string>
     <string name="dices_slider_hint">Nombre de dés : %d</string>
-    <string name="dices_inc_slider_hint">Ajouter au résultat : %d</string>
     <!-- Dice with %d sides -->
     <string name="dices_d_d">d%d</string>
     <string name="dices_max_count">Nombre de dés maximum</string>
-    <string name="dices_show_inc_slider">Voir l\'option \"Ajouter au résultat\"</string>
     <!-- Timer -->
     <string name="menu_timer">Minuteur</string>
     <string name="timer_start">Démarrer</string>
