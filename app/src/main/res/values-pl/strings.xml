@@ -38,11 +38,9 @@
     <!-- Dice with 12 sides -->
     <string name="dices_d12">D12</string>
     <string name="dices_slider_hint">Numer kostki: %d</string>
-    <string name="dices_inc_slider_hint">Dodaj do wyniku: %d</string>
     <!-- Dice with %d sides -->
     <string name="dices_d_d">D%d</string>
     <string name="dices_max_count">Maksymalna liczba kości</string>
-    <string name="dices_show_inc_slider">Pokaż suwak \"Dodaj do wyniku\"</string>
     <!-- Timer -->
     <string name="menu_timer">Minutnik</string>
     <string name="timer_start">Start</string>
