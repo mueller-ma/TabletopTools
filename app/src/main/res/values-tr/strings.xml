@@ -42,7 +42,6 @@
     <!-- Dice with 12 sides -->
     <string name="dices_d12">Z12</string>
     <string name="dices_slider_hint">Zar sayısı: %d</string>
-    <string name="dices_inc_slider_hint">Sayıya ekle: %d</string>
     <!-- Dice with %d sides -->
     <string name="dices_d_d">Z%d</string>
     <!-- Timer -->
