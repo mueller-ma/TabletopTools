@@ -16,15 +16,6 @@
     <!-- Titles for start page -->
     <!-- Dices -->
     <string name="menu_dices">Dados</string>
-    <!-- Dice with 3 sides -->
-    <!-- Dice with 4 sides -->
-    <!-- Dice with 6 sides -->
-    <!-- Dice with 8 sides -->
-    <!-- Dice with 10 sides -->
-    <!-- Dice with 10 sides; values: 0, 10, 20,... -->
-    <!-- Dice with 100 sides -->
-    <!-- Dice with 20 sides -->
-    <!-- Dice with 12 sides -->
     <string name="dices_slider_hint">Número de dados: %d</string>
     <!-- Dice with %d sides -->
     <string name="dices_d_d">d%d</string>
