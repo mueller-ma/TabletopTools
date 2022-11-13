@@ -3,7 +3,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_name">Masaüstü Araçları</string>
     <string name="app_description">Masaüstü oyunlar için kullanışlı araç koleksiyonu</string>
-    <string name="nav_header_desc">Gezinti başlığı</string>
     <string name="settings">Ayarlar</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">ROT13</string>
@@ -23,24 +22,6 @@
     <!-- Titles for start page -->
     <!-- Dices -->
     <string name="menu_dices">Zarlar</string>
-    <!-- Dice with 3 sides -->
-    <string name="dices_d3">Z3</string>
-    <!-- Dice with 4 sides -->
-    <string name="dices_d4">Z4</string>
-    <!-- Dice with 6 sides -->
-    <string name="dices_d6">Z6</string>
-    <!-- Dice with 8 sides -->
-    <string name="dices_d8">Z8</string>
-    <!-- Dice with 10 sides -->
-    <string name="dices_d10">Z10</string>
-    <!-- Dice with 10 sides; values: 0, 10, 20,... -->
-    <string name="dices_d10_2">Z10 (0&#8211;90)</string>
-    <!-- Dice with 100 sides -->
-    <string name="dices_d100">Z100</string>
-    <!-- Dice with 20 sides -->
-    <string name="dices_d20">Z20</string>
-    <!-- Dice with 12 sides -->
-    <string name="dices_d12">Z12</string>
     <string name="dices_slider_hint">Zar sayısı: %d</string>
     <!-- Dice with %d sides -->
     <string name="dices_d_d">Z%d</string>
