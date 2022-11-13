@@ -8,12 +8,17 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.core.view.isVisible
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.github.muellerma.tabletoptools.R
+import com.github.muellerma.tabletoptools.databinding.DiceBinding
 import com.github.muellerma.tabletoptools.databinding.FragmentDicesBinding
 import com.github.muellerma.tabletoptools.utils.Prefs
 import com.github.muellerma.tabletoptools.utils.toStringWithSign
 import com.google.android.material.slider.Slider
 import kotlinx.parcelize.Parcelize
+import kotlin.math.min
+
 
 class DicesFragment : AbstractBaseFragment() {
     private lateinit var b: FragmentDicesBinding
@@ -27,26 +32,15 @@ class DicesFragment : AbstractBaseFragment() {
 
         setupSliderHints()
 
-        mapOf(
-            b.dicesButton3 to 3,
-            b.dicesButton4 to 4,
-            b.dicesButton6 to 6,
-            b.dicesButton8 to 8,
-            b.dicesButton10 to 10,
-            b.dicesButton12 to 12,
-            b.dicesButton20 to 20,
-            b.dicesButton100 to 100
-        ).forEach { dice ->
-            dice.key.setOnClickListener {
-                roll(dice.value)
-            }
-        }
+        val dices = arrayOf(3, 4, 6, 8, 10, 12, 20, 100)
 
-        b.dicesButton102.apply {
-            setOnClickListener {
-                roll(10, 10)
-            }
-        }
+        val displayMetrics = inflater.context.resources.displayMetrics
+        val screenWidthDp = displayMetrics.widthPixels / displayMetrics.density
+        var spanCount = (screenWidthDp / 106 + 0.5).toInt()
+        spanCount = min(spanCount, dices.size)
+
+        b.dicesGrid.layoutManager = GridLayoutManager(inflater.context, spanCount)
+        b.dicesGrid.adapter = DiceViewAdapter(dices)
 
         return b.root
     }
@@ -95,6 +89,7 @@ class DicesFragment : AbstractBaseFragment() {
     }
 
     private fun roll(max: Int, multiplier: Int = 1) {
+        Log.d(TAG, "roll($max, $multiplier)")
         val resultString = StringBuilder()
         val dicesCount = b.dicesCount.value.toInt()
         val overallInc = b.overallInc.value.toInt()
@@ -146,4 +141,31 @@ class DicesFragment : AbstractBaseFragment() {
 
     @Parcelize
     data class DicesData(val results: String) : SavedData
+
+    inner class DiceViewAdapter(val dices: Array<Int>) : RecyclerView.Adapter<DiceViewHolder>() {
+
+        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DiceViewHolder {
+            return DiceViewHolder(DiceBinding.inflate(layoutInflater))
+        }
+
+        override fun onBindViewHolder(holder: DiceViewHolder, position: Int) {
+            holder.onBind(dices[position])
+        }
+
+        override fun getItemCount() = dices.size
+    }
+
+    inner class DiceViewHolder(val b: DiceBinding) : RecyclerView.ViewHolder(b.root), View.OnClickListener {
+        private var max = 0
+
+        fun onBind(max: Int) {
+            this.max = max
+            b.dicesButton.text = b.root.context.getString(R.string.dices_d_d, max)
+            b.dicesButton.setOnClickListener(this)
+        }
+
+        override fun onClick(view: View) {
+            roll(max)
+        }
+    }
 }
