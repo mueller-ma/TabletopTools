@@ -16,8 +16,4 @@
     <style name="Theme.TabletopTools" parent="Theme.TabletopTools.Base">
         <item name="android:statusBarColor">?colorPrimary</item>
     </style>
-
-    <style name="Theme.TabletopTools.AppBarOverlay" parent="ThemeOverlay.Material3.Dark.ActionBar" />
-
-    <style name="Theme.TabletopTools.PopupOverlay" parent="ThemeOverlay.Material3.DynamicColors.DayNight" />
 </resources>
