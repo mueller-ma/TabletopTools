@@ -23,9 +23,13 @@
     <!-- Dices -->
     <string name="menu_dices">Dados</string>
     <string name="dices_slider_hint">Número de dados: %d</string>
+    <string name="dices_overall_inc_slider_hint">Adicionar ao resultado geral: %d</string>
+    <string name="dices_roll_inc_slider_hint">Adicionar a cada rolagem: %d</string>
     <!-- Dice with %d sides -->
     <string name="dices_d_d">d%d</string>
     <string name="dices_max_count">Máx. número de dados</string>
+    <string name="dices_show_overall_inc_slider">Mostrar o controle deslizante \"Adicionar ao resultado geral\"</string>
+    <string name="dices_show_roll_inc_slider">Mostrar o controle deslizante \"Adicionar ao resultado geral\"</string>
     <!-- Timer -->
     <string name="menu_timer">Temporizador</string>
     <string name="timer_start">Iniciar</string>
