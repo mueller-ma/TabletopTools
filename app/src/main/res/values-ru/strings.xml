@@ -2,7 +2,6 @@
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_description">Коллекция удобных инструментов для настольных игр</string>
-    <string name="nav_header_desc">Заголовок навигации</string>
     <string name="settings">Настройки</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">Rot 13</string>
@@ -21,24 +20,6 @@
     <!-- Titles for start page -->
     <!-- Dices -->
     <string name="menu_dices">Кубики</string>
-    <!-- Dice with 3 sides -->
-    <string name="dices_d3">D3</string>
-    <!-- Dice with 4 sides -->
-    <string name="dices_d4">D4</string>
-    <!-- Dice with 6 sides -->
-    <string name="dices_d6">D6</string>
-    <!-- Dice with 8 sides -->
-    <string name="dices_d8">D8</string>
-    <!-- Dice with 10 sides -->
-    <string name="dices_d10">D10</string>
-    <!-- Dice with 10 sides; values: 0, 10, 20,... -->
-    <string name="dices_d10_2">D10 (0&#8211;90)</string>
-    <!-- Dice with 100 sides -->
-    <string name="dices_d100">D100</string>
-    <!-- Dice with 20 sides -->
-    <string name="dices_d20">D20</string>
-    <!-- Dice with 12 sides -->
-    <string name="dices_d12">D12</string>
     <string name="dices_slider_hint">Количество кубиков: %d</string>
     <!-- Dice with %d sides -->
     <string name="dices_d_d">d%d</string>
