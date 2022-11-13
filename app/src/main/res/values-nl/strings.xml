@@ -2,7 +2,6 @@
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_description">Handige collectie tools voor bordspellen</string>
-    <string name="nav_header_desc">Navigatieheader</string>
     <string name="settings">Instellingen</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">ROT13 force update</string>
@@ -19,15 +18,6 @@
     <!-- Titles for start page -->
     <!-- Dices -->
     <string name="menu_dices">Dobbelstenen</string>
-    <!-- Dice with 3 sides -->
-    <!-- Dice with 4 sides -->
-    <!-- Dice with 6 sides -->
-    <!-- Dice with 8 sides -->
-    <!-- Dice with 10 sides -->
-    <!-- Dice with 10 sides; values: 0, 10, 20,... -->
-    <!-- Dice with 100 sides -->
-    <!-- Dice with 20 sides -->
-    <!-- Dice with 12 sides -->
     <string name="dices_slider_hint">Aantal dobbelstenen: %d</string>
     <!-- Dice with %d sides -->
     <string name="dices_d_d">d%d</string>
