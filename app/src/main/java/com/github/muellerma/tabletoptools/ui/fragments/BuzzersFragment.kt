@@ -18,14 +18,18 @@ import kotlinx.coroutines.launch
 
 
 class BuzzersFragment : AbstractBaseFragment() {
+    override lateinit var prefs: Prefs
     private val buzzers = ArrayList<Button>()
+    private lateinit var binding: FragmentBuzzersBinding
+
+    override fun getViewForKeepScreenOn(): View = binding.root
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val binding = FragmentBuzzersBinding.inflate(inflater, container, false)
+        binding = FragmentBuzzersBinding.inflate(inflater, container, false)
 
         listOf(binding.buzzerA, binding.buzzerB, binding.buzzerC, binding.buzzerD).forEach {
                 button ->

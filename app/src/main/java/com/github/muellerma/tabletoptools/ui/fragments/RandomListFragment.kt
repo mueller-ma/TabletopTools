@@ -7,6 +7,7 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ScrollView
 import androidx.annotation.VisibleForTesting
 import androidx.core.view.MenuProvider
 import androidx.core.widget.addTextChangedListener
@@ -17,14 +18,17 @@ import com.github.muellerma.tabletoptools.utils.Prefs
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class RandomListFragment : AbstractBaseFragment() {
-    private lateinit var prefs: Prefs
+    override lateinit var prefs: Prefs
+    private lateinit var binding: FragmentRandomListBinding
+
+    override fun getViewForKeepScreenOn(): ScrollView = binding.randomScrollView
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val binding = FragmentRandomListBinding.inflate(inflater, container, false)
+        binding = FragmentRandomListBinding.inflate(inflater, container, false)
         val randomList = binding.randomList
 
         binding.randomSelect.apply {
@@ -43,7 +47,9 @@ class RandomListFragment : AbstractBaseFragment() {
             prefs.lastRandomList = it.toString()
         }
 
-        binding.randomScrollView.keepScreenOn = prefs.randomKeepScreenOn
+        binding.randomScrollView.keepScreenOn = prefs.keepScreenOn
+
+        requireActivity().addKeepScreenOnMenu()
 
         requireActivity().addMenuProvider(object : MenuProvider {
             override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
@@ -66,12 +72,6 @@ class RandomListFragment : AbstractBaseFragment() {
                         randomList.setText(
                             sortList(randomList.text.toString())
                         )
-                        true
-                    }
-                    R.id.keep_screen_on -> {
-                        val nowKeepScreenOn = binding.randomScrollView.keepScreenOn.not()
-                        prefs.randomKeepScreenOn = nowKeepScreenOn
-                        binding.randomScrollView.keepScreenOn = nowKeepScreenOn
                         true
                     }
                     else -> false

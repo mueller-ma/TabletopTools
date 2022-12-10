@@ -9,14 +9,19 @@ import android.widget.TextView
 import androidx.core.view.isVisible
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.FragmentDicesBinding
+import com.github.muellerma.tabletoptools.databinding.FragmentTimerBinding
 import com.github.muellerma.tabletoptools.utils.Prefs
 import com.google.android.material.slider.Slider
 import kotlinx.parcelize.Parcelize
 
 class DicesFragment : AbstractBaseFragment() {
+    override lateinit var prefs: Prefs
+    private lateinit var binding: FragmentTimerBinding
     private lateinit var dicesCountSlider: Slider
     private lateinit var incSlider: Slider
     private lateinit var result: TextView
+
+    override fun getViewForKeepScreenOn(): View = binding.root
 
     override fun onCreateView(
         inflater: LayoutInflater,

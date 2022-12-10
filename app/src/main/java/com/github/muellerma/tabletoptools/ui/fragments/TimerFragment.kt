@@ -8,7 +8,12 @@ import android.os.CountDownTimer
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
-import android.view.*
+import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
+import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.core.content.getSystemService
@@ -25,6 +30,8 @@ import kotlin.time.Duration.Companion.minutes
 
 
 class TimerFragment : AbstractBaseFragment() {
+    override lateinit var prefs: Prefs
+    private lateinit var binding: FragmentTimerBinding
     private lateinit var timerView1: TextView
     private lateinit var timerView2: TextView
     private lateinit var startButton: Button
@@ -34,6 +41,8 @@ class TimerFragment : AbstractBaseFragment() {
     private var remainingTime: Long = setTime
     private var timerRunning = false
     private var player: MediaPlayer? = null
+
+    override fun getViewForKeepScreenOn(): View = binding.root
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -89,7 +98,7 @@ class TimerFragment : AbstractBaseFragment() {
         savedInstanceState: Bundle?
     ): View {
         Log.d(TAG, "onCreateView()")
-        val binding = FragmentTimerBinding.inflate(inflater, container, false)
+        binding = FragmentTimerBinding.inflate(inflater, container, false)
         timerView1 = binding.timerView1
         timerView2 = binding.timerView2
         startButton = binding.startButton

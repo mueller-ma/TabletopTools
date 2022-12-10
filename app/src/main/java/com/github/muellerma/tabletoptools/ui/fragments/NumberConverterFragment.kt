@@ -3,29 +3,27 @@ package com.github.muellerma.tabletoptools.ui.fragments
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
-import android.view.Menu
-import android.view.MenuInflater
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.MenuProvider
+import android.widget.ScrollView
 import androidx.core.widget.addTextChangedListener
-import androidx.lifecycle.Lifecycle
-import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.FragmentNumberConverterBinding
 import com.github.muellerma.tabletoptools.utils.Prefs
 import java.util.Locale
 
 class NumberConverterFragment : AbstractBaseFragment() {
-    private lateinit var prefs: Prefs
+    override lateinit var prefs: Prefs
+    private lateinit var binding: FragmentNumberConverterBinding
     private var inputFromUser = true
+
+    override fun getViewForKeepScreenOn(): ScrollView = binding.numberConverterScrollView
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View {
-        val binding = FragmentNumberConverterBinding.inflate(inflater, container, false)
+        binding = FragmentNumberConverterBinding.inflate(inflater, container, false)
         val numberConverter = binding.numberConverterScrollView
         val binInputText = binding.numberConverterInputBin
         val decInputText = binding.numberConverterInputDec
@@ -72,25 +70,9 @@ class NumberConverterFragment : AbstractBaseFragment() {
 
         prefs = Prefs(numberConverter.context)
 
-        numberConverter.keepScreenOn = prefs.numberConverterKeepScreenOn
+        numberConverter.keepScreenOn = prefs.keepScreenOn
 
-        requireActivity().addMenuProvider(object : MenuProvider {
-            override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
-                menuInflater.inflate(R.menu.menu_number_converter, menu)
-            }
-
-            override fun onMenuItemSelected(item: MenuItem): Boolean {
-                return when (item.itemId) {
-                    R.id.keep_screen_on -> {
-                        val nowKeepScreenOn = numberConverter.keepScreenOn.not()
-                        prefs.numberConverterKeepScreenOn = nowKeepScreenOn
-                        numberConverter.keepScreenOn = nowKeepScreenOn
-                        true
-                    }
-                    else -> false
-                }
-            }
-        }, viewLifecycleOwner, Lifecycle.State.RESUMED)
+        requireActivity().addKeepScreenOnMenu()
 
         return binding.root
     }
