@@ -12,9 +12,4 @@
             android:icon="@drawable/ic_baseline_sort_by_alpha_24"
             android:title="@string/random_list_sort_list"
             app:showAsAction="ifRoom" />
-    <item
-            android:id="@+id/keep_screen_on"
-            android:icon="@drawable/wb_incandescent_48px"
-            android:title="@string/keep_screen_on"
-            app:showAsAction="ifRoom" />
 </menu>
