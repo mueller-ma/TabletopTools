@@ -26,6 +26,7 @@ abstract class AbstractBaseFragment : Fragment(), CoroutineScope {
     private val job = Job()
     override val coroutineContext: CoroutineContext get() = Dispatchers.Main + job
     var savedData: SavedData? = null
+    protected open val forceAlwaysScreenOn = false
 
     @CallSuper
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,19 +34,30 @@ abstract class AbstractBaseFragment : Fragment(), CoroutineScope {
         prefs = Prefs(this.requireContext())
     }
 
-    protected fun getMenuItemKeepScreenOnIcon(isTurnedOn: Boolean): Drawable? {
-        return when (isTurnedOn) {
-            false -> getDrawable(this.requireContext(), R.drawable.ic_flashlight_on_48px)
-            else -> getDrawable(this.requireContext(), R.drawable.ic_flashlight_off_48px)
+    protected fun setupScreenOn(view: View) {
+        if (forceAlwaysScreenOn) {
+            Log.d(TAG, "setupScreenOn(): forceAlwaysScreenOn is true")
+            view.keepScreenOn = true
+            return
         }
-    }
 
-    protected fun addKeepScreenOnMenu(view: View) {
+        fun getMenuItemKeepScreenOnIcon(isTurnedOn: Boolean): Drawable? {
+            return when (isTurnedOn) {
+                false -> getDrawable(this.requireContext(), R.drawable.ic_flashlight_on_48px)
+                else -> getDrawable(this.requireContext(), R.drawable.ic_flashlight_off_48px)
+            }
+        }
+
+        fun updateViewAndIconState(keepOn: Boolean, item: MenuItem) {
+            view.keepScreenOn = keepOn
+            item.icon = getMenuItemKeepScreenOnIcon(keepOn)
+        }
+
         requireActivity().addMenuProvider(object : MenuProvider {
             override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
                 Log.d(TAG, "onCreateMenu()")
                 menuInflater.inflate(R.menu.menu_keep_screen_on, menu)
-                menu.findItem(R.id.keep_screen_on).icon = getMenuItemKeepScreenOnIcon(prefs.keepScreenOn)
+                updateViewAndIconState(prefs.keepScreenOn, menu.findItem(R.id.keep_screen_on))
             }
 
             override fun onMenuItemSelected(item: MenuItem): Boolean {
@@ -55,8 +67,7 @@ abstract class AbstractBaseFragment : Fragment(), CoroutineScope {
                         val nowKeepScreenOn = prefs.keepScreenOn.not()
                         Log.d(TAG, "Keep screen on changed to $nowKeepScreenOn")
                         prefs.keepScreenOn = nowKeepScreenOn
-                        view.keepScreenOn = nowKeepScreenOn
-                        item.icon = getMenuItemKeepScreenOnIcon(nowKeepScreenOn)
+                        updateViewAndIconState(nowKeepScreenOn, item)
                         true
                     }
                     else -> false

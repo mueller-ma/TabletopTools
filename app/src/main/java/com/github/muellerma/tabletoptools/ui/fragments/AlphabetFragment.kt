@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import com.github.muellerma.tabletoptools.databinding.AlphabetTableRowBinding
 import com.github.muellerma.tabletoptools.databinding.FragmentAlphabetBinding
-import com.github.muellerma.tabletoptools.utils.Prefs
 import com.github.muellerma.tabletoptools.utils.positionInAlphabet
 
 class AlphabetFragment : AbstractBaseFragment() {
@@ -19,7 +18,6 @@ class AlphabetFragment : AbstractBaseFragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentAlphabetBinding.inflate(inflater, container, false)
-        val alphabet = binding.alphabetScrollView
 
         ('A'..'Z').forEach { letter ->
             @SuppressLint("InflateParams") // View is set as child below
@@ -32,9 +30,9 @@ class AlphabetFragment : AbstractBaseFragment() {
             binding.alphabetTable.addView(row.root)
         }
 
-        alphabet.keepScreenOn = prefs.keepScreenOn
+        binding.root.keepScreenOn = prefs.keepScreenOn
 
-        addKeepScreenOnMenu(binding.alphabetScrollView)
+        setupScreenOn(binding.root)
 
         return binding.root
     }

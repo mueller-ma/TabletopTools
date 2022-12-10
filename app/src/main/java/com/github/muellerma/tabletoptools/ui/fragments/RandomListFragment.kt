@@ -35,9 +35,7 @@ class RandomListFragment : AbstractBaseFragment() {
             prefs.lastRandomList = it.toString()
         }
 
-        binding.randomScrollView.keepScreenOn = prefs.keepScreenOn
-
-        addKeepScreenOnMenu(binding.randomScrollView)
+        setupScreenOn(binding.root)
 
         requireActivity().addMenuProvider(object : MenuProvider {
             override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {

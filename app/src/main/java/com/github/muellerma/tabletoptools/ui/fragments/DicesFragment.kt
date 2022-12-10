@@ -43,7 +43,7 @@ class DicesFragment : AbstractBaseFragment() {
         binding.dicesGrid.layoutManager = GridLayoutManager(inflater.context, spanCount)
         binding.dicesGrid.adapter = DiceViewAdapter(dices)
 
-        addKeepScreenOnMenu(binding.root)
+        setupScreenOn(binding.root)
 
         return binding.root
     }

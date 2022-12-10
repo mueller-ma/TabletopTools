@@ -5,11 +5,9 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ScrollView
 import androidx.core.widget.addTextChangedListener
 import com.github.muellerma.tabletoptools.databinding.FragmentNumberConverterBinding
-import com.github.muellerma.tabletoptools.utils.Prefs
-import java.util.Locale
+import java.util.*
 
 class NumberConverterFragment : AbstractBaseFragment() {
     private lateinit var binding: FragmentNumberConverterBinding
@@ -21,7 +19,6 @@ class NumberConverterFragment : AbstractBaseFragment() {
             savedInstanceState: Bundle?
     ): View {
         binding = FragmentNumberConverterBinding.inflate(inflater, container, false)
-        val numberConverter = binding.numberConverterScrollView
         val binInputText = binding.numberConverterInputBin
         val decInputText = binding.numberConverterInputDec
         val hexInputText = binding.numberConverterInputHex
@@ -65,9 +62,7 @@ class NumberConverterFragment : AbstractBaseFragment() {
             inputFromUser = true
         }
 
-        numberConverter.keepScreenOn = prefs.keepScreenOn
-
-        addKeepScreenOnMenu(binding.numberConverterScrollView)
+        setupScreenOn(binding.root)
 
         return binding.root
     }

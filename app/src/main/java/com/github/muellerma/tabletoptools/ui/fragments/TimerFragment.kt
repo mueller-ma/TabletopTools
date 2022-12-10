@@ -34,6 +34,7 @@ class TimerFragment : AbstractBaseFragment() {
     private var remainingTime: Long = setTime
     private var timerRunning = false
     private var player: MediaPlayer? = null
+    override val forceAlwaysScreenOn = true
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -66,7 +67,7 @@ class TimerFragment : AbstractBaseFragment() {
             }
         }, viewLifecycleOwner, Lifecycle.State.RESUMED)
 
-        addKeepScreenOnMenu(binding.root)
+        setupScreenOn(binding.root)
     }
 
     private fun changeTimerTime(time: Long) {

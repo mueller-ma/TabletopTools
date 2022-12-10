@@ -5,13 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
-import android.widget.ScrollView
 import android.widget.TextView
 import androidx.annotation.VisibleForTesting
 import androidx.core.widget.addTextChangedListener
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.FragmentRot13Binding
-import com.github.muellerma.tabletoptools.utils.Prefs
 import com.github.muellerma.tabletoptools.utils.isLatinLetter
 import com.google.android.material.slider.Slider
 
@@ -27,7 +25,6 @@ class Rot13Fragment : AbstractBaseFragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentRot13Binding.inflate(inflater, container, false)
-        val rot13 = binding.rot13ScrollView
         slider = binding.rot13Slider.apply {
             addOnChangeListener { _, _, _ -> updateResult() }
         }
@@ -39,9 +36,7 @@ class Rot13Fragment : AbstractBaseFragment() {
         result = binding.rot13ResultText
         updateResult()
 
-        rot13.keepScreenOn = prefs.keepScreenOn
-
-        addKeepScreenOnMenu(binding.rot13ScrollView)
+        setupScreenOn(binding.root)
 
         return binding.root
     }

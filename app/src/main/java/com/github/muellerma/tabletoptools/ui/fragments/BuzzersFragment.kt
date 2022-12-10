@@ -69,7 +69,7 @@ class BuzzersFragment : AbstractBaseFragment() {
             }
         }, viewLifecycleOwner, Lifecycle.State.RESUMED)
 
-        addKeepScreenOnMenu(binding.root)
+        setupScreenOn(binding.root)
 
         return binding.root
     }
