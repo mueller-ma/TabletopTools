@@ -32,7 +32,7 @@ class DicesFragment : AbstractBaseFragment() {
 
         setupSliderHints()
 
-        val dices = arrayOf(3, 4, 6, 8, 10, 12, 20, 100)
+        val dices = intArrayOf(3, 4, 6, 8, 10, 12, 20, 100)
 
         val displayMetrics = inflater.context.resources.displayMetrics
         val screenWidthDp = displayMetrics.widthPixels / displayMetrics.density
@@ -142,7 +142,7 @@ class DicesFragment : AbstractBaseFragment() {
     @Parcelize
     data class DicesData(val results: String) : SavedData
 
-    inner class DiceViewAdapter(val dices: Array<Int>) : RecyclerView.Adapter<DiceViewHolder>() {
+    inner class DiceViewAdapter(val dices: IntArray) : RecyclerView.Adapter<DiceViewHolder>() {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DiceViewHolder {
             return DiceViewHolder(DiceBinding.inflate(layoutInflater))
