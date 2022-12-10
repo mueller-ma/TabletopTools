@@ -19,7 +19,11 @@
                 android:summary="%s" />
         <SwitchPreferenceCompat
                 android:key="dices_show_inc_slider"
-                android:title="@string/dices_show_inc_slider"
+                android:title="@string/dices_show_overall_inc_slider"
+                android:defaultValue="false" />
+        <SwitchPreferenceCompat
+                android:key="dices_show_roll_inc_slider"
+                android:title="@string/dices_show_roll_inc_slider"
                 android:defaultValue="false" />
     </PreferenceCategory>
     <PreferenceCategory>

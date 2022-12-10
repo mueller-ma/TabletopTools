@@ -1,0 +1,1 @@
+Enhance dice page: More sliders (need to be enabled in settings) and allow negative values

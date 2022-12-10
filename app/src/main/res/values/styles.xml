@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="App.DiceButton" parent="@style/Widget.Material3.Button">
-        <item name="android:layout_width">90dp</item>
-        <item name="android:layout_height">90dp</item>
-        <item name="android:layout_margin">8dp</item>
-    </style>
-</resources>
