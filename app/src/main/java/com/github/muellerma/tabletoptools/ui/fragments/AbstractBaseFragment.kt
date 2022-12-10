@@ -43,8 +43,8 @@ abstract class AbstractBaseFragment : Fragment(), CoroutineScope {
 
         fun getMenuItemKeepScreenOnIcon(isTurnedOn: Boolean): Drawable? {
             return when (isTurnedOn) {
-                false -> getDrawable(this.requireContext(), R.drawable.ic_flashlight_on_48px)
-                else -> getDrawable(this.requireContext(), R.drawable.ic_flashlight_off_48px)
+                false -> getDrawable(this.requireContext(), R.drawable.ic_brightness_low)
+                else -> getDrawable(this.requireContext(), R.drawable.ic_brightness_high)
             }
         }
 
