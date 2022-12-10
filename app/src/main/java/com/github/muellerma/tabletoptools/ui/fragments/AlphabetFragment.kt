@@ -5,17 +5,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ScrollView
 import com.github.muellerma.tabletoptools.databinding.AlphabetTableRowBinding
 import com.github.muellerma.tabletoptools.databinding.FragmentAlphabetBinding
 import com.github.muellerma.tabletoptools.utils.Prefs
 import com.github.muellerma.tabletoptools.utils.positionInAlphabet
 
 class AlphabetFragment : AbstractBaseFragment() {
-    override lateinit var prefs: Prefs
     private lateinit var binding: FragmentAlphabetBinding
-
-    override fun getViewForKeepScreenOn(): ScrollView = binding.alphabetScrollView
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -36,11 +32,9 @@ class AlphabetFragment : AbstractBaseFragment() {
             binding.alphabetTable.addView(row.root)
         }
 
-        prefs = Prefs(alphabet.context)
-
         alphabet.keepScreenOn = prefs.keepScreenOn
 
-        requireActivity().addKeepScreenOnMenu()
+        addKeepScreenOnMenu(binding.alphabetScrollView)
 
         return binding.root
     }

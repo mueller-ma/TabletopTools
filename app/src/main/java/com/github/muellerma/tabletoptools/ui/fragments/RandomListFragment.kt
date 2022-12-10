@@ -1,27 +1,17 @@
 package com.github.muellerma.tabletoptools.ui.fragments
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.Menu
-import android.view.MenuInflater
-import android.view.MenuItem
-import android.view.View
-import android.view.ViewGroup
-import android.widget.ScrollView
+import android.view.*
 import androidx.annotation.VisibleForTesting
 import androidx.core.view.MenuProvider
 import androidx.core.widget.addTextChangedListener
 import androidx.lifecycle.Lifecycle
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.FragmentRandomListBinding
-import com.github.muellerma.tabletoptools.utils.Prefs
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class RandomListFragment : AbstractBaseFragment() {
-    override lateinit var prefs: Prefs
     private lateinit var binding: FragmentRandomListBinding
-
-    override fun getViewForKeepScreenOn(): ScrollView = binding.randomScrollView
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -39,8 +29,6 @@ class RandomListFragment : AbstractBaseFragment() {
             }
         }
 
-        prefs = Prefs(randomList.context)
-
         randomList.setText(prefs.lastRandomList)
 
         randomList.addTextChangedListener {
@@ -49,7 +37,7 @@ class RandomListFragment : AbstractBaseFragment() {
 
         binding.randomScrollView.keepScreenOn = prefs.keepScreenOn
 
-        requireActivity().addKeepScreenOnMenu()
+        addKeepScreenOnMenu(binding.randomScrollView)
 
         requireActivity().addMenuProvider(object : MenuProvider {
             override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {

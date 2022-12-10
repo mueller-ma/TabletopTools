@@ -1,6 +1,5 @@
 package com.github.muellerma.tabletoptools.ui.fragments
 
-import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -13,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.DiceBinding
 import com.github.muellerma.tabletoptools.databinding.FragmentDicesBinding
-import com.github.muellerma.tabletoptools.utils.Prefs
 import com.github.muellerma.tabletoptools.utils.toStringWithSign
 import com.google.android.material.slider.Slider
 import kotlinx.parcelize.Parcelize
@@ -21,13 +19,10 @@ import kotlin.math.min
 
 
 class DicesFragment : AbstractBaseFragment() {
-    override lateinit var prefs: Prefs
     private lateinit var binding: FragmentDicesBinding
     private lateinit var dicesCountSlider: Slider
     private lateinit var incSlider: Slider
     private lateinit var result: TextView
-
-    override fun getViewForKeepScreenOn(): View = binding.root
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -48,18 +43,20 @@ class DicesFragment : AbstractBaseFragment() {
         binding.dicesGrid.layoutManager = GridLayoutManager(inflater.context, spanCount)
         binding.dicesGrid.adapter = DiceViewAdapter(dices)
 
+        addKeepScreenOnMenu(binding.root)
+
         return binding.root
     }
 
     override fun onResume() {
         binding.result.text = (savedData as DicesData?)?.results
         super.onResume()
-        val maxDices = Prefs(requireContext()).maxDiceCount.toFloat()
+        val maxDices = prefs.maxDiceCount.toFloat()
         if (binding.dicesCount.value > maxDices) {
             binding.dicesCount.value = maxDices
         }
         binding.dicesCount.valueTo = maxDices
-        setVisibilityBasedOnPrefs(requireContext())
+        setVisibilityBasedOnPrefs()
     }
 
     private fun setupSliderHints() {
@@ -79,7 +76,7 @@ class DicesFragment : AbstractBaseFragment() {
         }
     }
 
-    private fun setVisibilityBasedOnPrefs(context: Context) {
+    private fun setVisibilityBasedOnPrefs() {
         Log.d(TAG, "setVisibilityBasedOnPrefs()")
         fun setVisibility(slider: Slider, hint: TextView, show: Boolean) {
             slider.isVisible = show
@@ -89,7 +86,6 @@ class DicesFragment : AbstractBaseFragment() {
             }
         }
 
-        val prefs = Prefs(context)
         setVisibility(binding.overallInc, binding.overallIncHint, prefs.showDicesOverallIncSlider)
         setVisibility(binding.rollInc, binding.rollIncHint, prefs.showDicesRollIncSlider)
     }

@@ -11,18 +11,14 @@ import androidx.core.view.isVisible
 import androidx.lifecycle.Lifecycle
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.FragmentBuzzersBinding
-import com.github.muellerma.tabletoptools.utils.Prefs
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 
 class BuzzersFragment : AbstractBaseFragment() {
-    override lateinit var prefs: Prefs
     private val buzzers = ArrayList<Button>()
     private lateinit var binding: FragmentBuzzersBinding
-
-    override fun getViewForKeepScreenOn(): View = binding.root
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -48,7 +44,6 @@ class BuzzersFragment : AbstractBaseFragment() {
             override fun onMenuItemSelected(item: MenuItem): Boolean {
                 return when (item.itemId) {
                     R.id.settings -> {
-                        val prefs = Prefs(requireContext())
                         val picker = NumberPicker(requireContext()).apply {
                             minValue = 1
                             maxValue = 4
@@ -74,11 +69,13 @@ class BuzzersFragment : AbstractBaseFragment() {
             }
         }, viewLifecycleOwner, Lifecycle.State.RESUMED)
 
+        addKeepScreenOnMenu(binding.root)
+
         return binding.root
     }
 
     private fun setupButtonVisibility() {
-        val visible = Prefs(requireContext()).buzzerCount
+        val visible = prefs.buzzerCount
         buzzers.forEachIndexed {index, button ->
             button.isVisible = index <= visible - 1
         }

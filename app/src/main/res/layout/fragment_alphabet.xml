@@ -2,11 +2,9 @@
 <ScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/alphabet_scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
-        android:keepScreenOn="true"
         tools:context=".ui.fragments.AlphabetFragment">
     <TableLayout
             android:id="@+id/alphabet_table"

@@ -16,13 +16,10 @@ import com.github.muellerma.tabletoptools.utils.isLatinLetter
 import com.google.android.material.slider.Slider
 
 class Rot13Fragment : AbstractBaseFragment() {
-    override lateinit var prefs: Prefs
     private lateinit var binding: FragmentRot13Binding
     private lateinit var slider: Slider
     private lateinit var inputText: EditText
     private lateinit var result: TextView
-
-    override fun getViewForKeepScreenOn(): ScrollView = binding.rot13ScrollView
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -42,11 +39,9 @@ class Rot13Fragment : AbstractBaseFragment() {
         result = binding.rot13ResultText
         updateResult()
 
-        prefs = Prefs(rot13.context)
-
         rot13.keepScreenOn = prefs.keepScreenOn
 
-        requireActivity().addKeepScreenOnMenu()
+        addKeepScreenOnMenu(binding.rot13ScrollView)
 
         return binding.root
     }

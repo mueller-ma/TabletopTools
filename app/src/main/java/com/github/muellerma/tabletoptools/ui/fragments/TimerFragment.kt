@@ -8,12 +8,7 @@ import android.os.CountDownTimer
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.Menu
-import android.view.MenuInflater
-import android.view.MenuItem
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.Button
 import android.widget.TextView
 import androidx.core.content.getSystemService
@@ -24,13 +19,11 @@ import androidx.lifecycle.Lifecycle
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.FragmentTimerBinding
 import com.github.muellerma.tabletoptools.ui.dialog.TimerPickerDialog
-import com.github.muellerma.tabletoptools.utils.Prefs
 import java.util.concurrent.TimeUnit
 import kotlin.time.Duration.Companion.minutes
 
 
 class TimerFragment : AbstractBaseFragment() {
-    override lateinit var prefs: Prefs
     private lateinit var binding: FragmentTimerBinding
     private lateinit var timerView1: TextView
     private lateinit var timerView2: TextView
@@ -42,11 +35,9 @@ class TimerFragment : AbstractBaseFragment() {
     private var timerRunning = false
     private var player: MediaPlayer? = null
 
-    override fun getViewForKeepScreenOn(): View = binding.root
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setTime = Prefs(requireContext()).timerMillis
+        setTime = prefs.timerMillis
         remainingTime = setTime
         resetTimer()
         childFragmentManager.setFragmentResultListener(
@@ -74,6 +65,8 @@ class TimerFragment : AbstractBaseFragment() {
                 }
             }
         }, viewLifecycleOwner, Lifecycle.State.RESUMED)
+
+        addKeepScreenOnMenu(binding.root)
     }
 
     private fun changeTimerTime(time: Long) {
@@ -82,7 +75,7 @@ class TimerFragment : AbstractBaseFragment() {
         }
         setTime = time
         remainingTime = setTime
-        Prefs(requireContext()).timerMillis = time
+        prefs.timerMillis = time
         updateTimerView()
     }
 

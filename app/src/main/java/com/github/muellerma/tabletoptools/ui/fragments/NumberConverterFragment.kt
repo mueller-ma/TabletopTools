@@ -12,11 +12,8 @@ import com.github.muellerma.tabletoptools.utils.Prefs
 import java.util.Locale
 
 class NumberConverterFragment : AbstractBaseFragment() {
-    override lateinit var prefs: Prefs
     private lateinit var binding: FragmentNumberConverterBinding
     private var inputFromUser = true
-
-    override fun getViewForKeepScreenOn(): ScrollView = binding.numberConverterScrollView
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -68,11 +65,9 @@ class NumberConverterFragment : AbstractBaseFragment() {
             inputFromUser = true
         }
 
-        prefs = Prefs(numberConverter.context)
-
         numberConverter.keepScreenOn = prefs.keepScreenOn
 
-        requireActivity().addKeepScreenOnMenu()
+        addKeepScreenOnMenu(binding.numberConverterScrollView)
 
         return binding.root
     }
