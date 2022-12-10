@@ -45,35 +45,12 @@ class Prefs(private val context: Context) {
             }
         }
 
-    var randomKeepScreenOn: Boolean
-        get() = sharedPrefs.getBoolean("random_keep_screen_on", true)
+    var keepScreenOn: Boolean
+        get() = sharedPrefs.getBoolean("keep_screen_on", true)
         set(value) {
             sharedPrefs.edit {
-                putBoolean("random_keep_screen_on", value)
+                putBoolean("keep_screen_on", value)
             }
         }
 
-    var rot13KeepScreenOn: Boolean
-        get() = sharedPrefs.getBoolean("rot13_keep_screen_on", true)
-        set(value) {
-            sharedPrefs.edit {
-                putBoolean("rot13_keep_screen_on", value)
-            }
-        }
-
-    var alphabetKeepScreenOn: Boolean
-        get() = sharedPrefs.getBoolean("alphabet_keep_screen_on", true)
-        set(value) {
-            sharedPrefs.edit {
-                putBoolean("alphabet_keep_screen_on", value)
-            }
-        }
-
-    var numberConverterKeepScreenOn: Boolean
-        get() = sharedPrefs.getBoolean("numberConverter_keep_screen_on", true)
-        set(value) {
-            sharedPrefs.edit {
-                putBoolean("numberConverter_keep_screen_on", value)
-            }
-        }
 }
