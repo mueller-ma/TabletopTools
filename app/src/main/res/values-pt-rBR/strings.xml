@@ -59,6 +59,8 @@
     <string name="start_page">Página inicial</string>
     <string name="general">Gerar</string>
     <string name="menu_preferences">Configurações</string>
+    <string name="keep_screen_on_enabled">Manter a tela ligada</string>
+    <string name="keep_screen_on_disabled">Não manter a tela ligada</string>
     <!--  About menu  -->
     <string name="about">&amp;Sobre</string>
     <string name="error_no_browser_found">Nenhum navegador encontrado.</string>
