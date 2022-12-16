@@ -5,6 +5,6 @@
     <item
         android:id="@+id/keep_screen_on"
         android:icon="@drawable/ic_brightness_high"
-        android:title="@string/keep_screen_on"
+        android:title="@string/keep_screen_on_enabled"
         app:showAsAction="ifRoom" />
 </menu>

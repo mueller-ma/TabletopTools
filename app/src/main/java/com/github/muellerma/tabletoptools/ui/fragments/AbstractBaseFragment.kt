@@ -41,16 +41,25 @@ abstract class AbstractBaseFragment : Fragment(), CoroutineScope {
             return
         }
 
-        fun getMenuItemKeepScreenOnIcon(isTurnedOn: Boolean): Drawable? {
-            return when (isTurnedOn) {
-                false -> getDrawable(this.requireContext(), R.drawable.ic_brightness_low)
-                else -> getDrawable(this.requireContext(), R.drawable.ic_brightness_high)
+        fun getMenuItemConfig(isTurnedOn: Boolean): Pair<Drawable?, String> {
+            return if (isTurnedOn) {
+                Pair(
+                    getDrawable(this.requireContext(), R.drawable.ic_brightness_high),
+                    getString(R.string.keep_screen_on_enabled)
+                )
+            } else {
+                Pair(
+                    getDrawable(this.requireContext(), R.drawable.ic_brightness_low),
+                    getString(R.string.keep_screen_on_disabled)
+                )
             }
         }
 
         fun updateViewAndIconState(keepOn: Boolean, item: MenuItem) {
             view.keepScreenOn = keepOn
-            item.icon = getMenuItemKeepScreenOnIcon(keepOn)
+            val menuItemConfig = getMenuItemConfig(keepOn)
+            item.icon = menuItemConfig.first
+            item.title = menuItemConfig.second
         }
 
         requireActivity().addMenuProvider(object : MenuProvider {
