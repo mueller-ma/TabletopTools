@@ -5,14 +5,12 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
 import androidx.core.widget.addTextChangedListener
-import androidx.fragment.app.Fragment
-import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.FragmentNumberConverterBinding
 import java.util.*
 
 class NumberConverterFragment : AbstractBaseFragment() {
+    private lateinit var binding: FragmentNumberConverterBinding
     private var inputFromUser = true
 
     override fun onCreateView(
@@ -20,7 +18,7 @@ class NumberConverterFragment : AbstractBaseFragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View {
-        val binding = FragmentNumberConverterBinding.inflate(inflater, container, false)
+        binding = FragmentNumberConverterBinding.inflate(inflater, container, false)
         val binInputText = binding.numberConverterInputBin
         val decInputText = binding.numberConverterInputDec
         val hexInputText = binding.numberConverterInputHex
@@ -63,6 +61,9 @@ class NumberConverterFragment : AbstractBaseFragment() {
             binInputText.setText(Integer.toBinaryString(input))
             inputFromUser = true
         }
+
+        setupScreenOn(binding.root)
+
         return binding.root
     }
 

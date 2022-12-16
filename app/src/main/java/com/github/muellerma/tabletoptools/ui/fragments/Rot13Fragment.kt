@@ -8,13 +8,13 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.annotation.VisibleForTesting
 import androidx.core.widget.addTextChangedListener
-import androidx.fragment.app.Fragment
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.FragmentRot13Binding
 import com.github.muellerma.tabletoptools.utils.isLatinLetter
 import com.google.android.material.slider.Slider
 
 class Rot13Fragment : AbstractBaseFragment() {
+    private lateinit var binding: FragmentRot13Binding
     private lateinit var slider: Slider
     private lateinit var inputText: EditText
     private lateinit var result: TextView
@@ -24,7 +24,7 @@ class Rot13Fragment : AbstractBaseFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val binding = FragmentRot13Binding.inflate(inflater, container, false)
+        binding = FragmentRot13Binding.inflate(inflater, container, false)
         slider = binding.rot13Slider.apply {
             addOnChangeListener { _, _, _ -> updateResult() }
         }
@@ -35,6 +35,9 @@ class Rot13Fragment : AbstractBaseFragment() {
         }
         result = binding.rot13ResultText
         updateResult()
+
+        setupScreenOn(binding.root)
+
         return binding.root
     }
 

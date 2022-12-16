@@ -76,6 +76,8 @@
     <string name="start_page">Start page</string>
     <string name="general">General</string>
     <string name="menu_preferences">Settings</string>
+    <string name="keep_screen_on_enabled">Keep screen on</string>
+    <string name="keep_screen_on_disabled">Don\'t keep screen on</string>
 
     <!--  About menu  -->
     <string name="about">About</string>

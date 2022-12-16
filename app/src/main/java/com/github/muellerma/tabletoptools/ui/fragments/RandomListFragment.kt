@@ -1,30 +1,24 @@
 package com.github.muellerma.tabletoptools.ui.fragments
 
-import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.*
-import android.widget.Button
-import android.widget.EditText
-import android.widget.NumberPicker
 import androidx.annotation.VisibleForTesting
-import androidx.core.content.edit
 import androidx.core.view.MenuProvider
 import androidx.core.widget.addTextChangedListener
 import androidx.lifecycle.Lifecycle
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.FragmentRandomListBinding
-import com.github.muellerma.tabletoptools.utils.Prefs
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class RandomListFragment : AbstractBaseFragment() {
-    private lateinit var prefs: Prefs
+    private lateinit var binding: FragmentRandomListBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val binding = FragmentRandomListBinding.inflate(inflater, container, false)
+        binding = FragmentRandomListBinding.inflate(inflater, container, false)
         val randomList = binding.randomList
 
         binding.randomSelect.apply {
@@ -35,13 +29,13 @@ class RandomListFragment : AbstractBaseFragment() {
             }
         }
 
-        prefs = Prefs(randomList.context)
-
         randomList.setText(prefs.lastRandomList)
 
         randomList.addTextChangedListener {
             prefs.lastRandomList = it.toString()
         }
+
+        setupScreenOn(binding.root)
 
         requireActivity().addMenuProvider(object : MenuProvider {
             override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {

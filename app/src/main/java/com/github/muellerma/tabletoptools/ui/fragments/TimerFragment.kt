@@ -19,12 +19,12 @@ import androidx.lifecycle.Lifecycle
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.FragmentTimerBinding
 import com.github.muellerma.tabletoptools.ui.dialog.TimerPickerDialog
-import com.github.muellerma.tabletoptools.utils.Prefs
 import java.util.concurrent.TimeUnit
 import kotlin.time.Duration.Companion.minutes
 
 
 class TimerFragment : AbstractBaseFragment() {
+    private lateinit var binding: FragmentTimerBinding
     private lateinit var timerView1: TextView
     private lateinit var timerView2: TextView
     private lateinit var startButton: Button
@@ -34,10 +34,11 @@ class TimerFragment : AbstractBaseFragment() {
     private var remainingTime: Long = setTime
     private var timerRunning = false
     private var player: MediaPlayer? = null
+    override val forceAlwaysScreenOn = true
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setTime = Prefs(requireContext()).timerMillis
+        setTime = prefs.timerMillis
         remainingTime = setTime
         resetTimer()
         childFragmentManager.setFragmentResultListener(
@@ -65,6 +66,8 @@ class TimerFragment : AbstractBaseFragment() {
                 }
             }
         }, viewLifecycleOwner, Lifecycle.State.RESUMED)
+
+        setupScreenOn(binding.root)
     }
 
     private fun changeTimerTime(time: Long) {
@@ -73,7 +76,7 @@ class TimerFragment : AbstractBaseFragment() {
         }
         setTime = time
         remainingTime = setTime
-        Prefs(requireContext()).timerMillis = time
+        prefs.timerMillis = time
         updateTimerView()
     }
 
@@ -89,7 +92,7 @@ class TimerFragment : AbstractBaseFragment() {
         savedInstanceState: Bundle?
     ): View {
         Log.d(TAG, "onCreateView()")
-        val binding = FragmentTimerBinding.inflate(inflater, container, false)
+        binding = FragmentTimerBinding.inflate(inflater, container, false)
         timerView1 = binding.timerView1
         timerView2 = binding.timerView2
         startButton = binding.startButton

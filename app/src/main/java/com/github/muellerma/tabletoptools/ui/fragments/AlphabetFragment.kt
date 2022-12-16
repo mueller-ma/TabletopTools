@@ -2,30 +2,22 @@ package com.github.muellerma.tabletoptools.ui.fragments
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TableLayout
-import android.widget.TableRow
-import android.widget.TextView
-import androidx.core.view.setPadding
-import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.AlphabetTableRowBinding
 import com.github.muellerma.tabletoptools.databinding.FragmentAlphabetBinding
 import com.github.muellerma.tabletoptools.utils.positionInAlphabet
-import com.google.android.material.button.MaterialButton
-import com.google.android.material.slider.Slider
-import kotlinx.parcelize.Parcelize
-import org.w3c.dom.Text
 
 class AlphabetFragment : AbstractBaseFragment() {
+    private lateinit var binding: FragmentAlphabetBinding
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val binding = FragmentAlphabetBinding.inflate(inflater, container, false)
+        binding = FragmentAlphabetBinding.inflate(inflater, container, false)
 
         ('A'..'Z').forEach { letter ->
             @SuppressLint("InflateParams") // View is set as child below
@@ -37,6 +29,10 @@ class AlphabetFragment : AbstractBaseFragment() {
 
             binding.alphabetTable.addView(row.root)
         }
+
+        binding.root.keepScreenOn = prefs.keepScreenOn
+
+        setupScreenOn(binding.root)
 
         return binding.root
     }

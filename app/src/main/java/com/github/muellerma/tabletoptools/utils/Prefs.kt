@@ -47,4 +47,13 @@ class Prefs(private val context: Context) {
                 putLong("timer_millis", value)
             }
         }
+
+    var keepScreenOn: Boolean
+        get() = sharedPrefs.getBoolean("keep_screen_on", true)
+        set(value) {
+            sharedPrefs.edit {
+                putBoolean("keep_screen_on", value)
+            }
+        }
+
 }
