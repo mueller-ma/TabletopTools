@@ -59,6 +59,8 @@
     <string name="start_page">Startseite</string>
     <string name="general">Allgemein</string>
     <string name="menu_preferences">Einstellungen</string>
+    <string name="keep_screen_on_enabled">Bildschirm eingeschaltet lassen</string>
+    <string name="keep_screen_on_disabled">Bildschirm nicht eingeschaltet lassen</string>
     <!--  About menu  -->
     <string name="about">Über</string>
     <string name="error_no_browser_found">Kein Browser gefunden</string>
