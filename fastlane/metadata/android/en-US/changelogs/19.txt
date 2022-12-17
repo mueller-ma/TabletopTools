@@ -1,0 +1,1 @@
+Add setting to keep screen on
