@@ -1,5 +1,5 @@
 Diese App bietet eine Sammlung nützlicher Tools für Tabletop-Spiele:
-* Dice (D3, D4, D6, D8, D10, D12, D20, D100)
+* Würfel (W3, W4, W6, W8, W10, W12, W20, W100)
 * [Rot13](https://de.wikipedia.org/wiki/ROT13)
 * Zahlenkonverter: Dezimal <=> Binär <=> Hexadezimal
 * Timer
