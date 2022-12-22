@@ -16,12 +16,8 @@
     <string name="number_converter_binary">Liczba binarna</string>
     <string name="number_converter_hexadecimal">Liczba szesnastkowa</string>
     <!-- Titles for start page -->
-    <!-- Dices -->
-    <string name="menu_dice">Kostki</string>
-    <string name="dice_slider_hint">Numer kostki: %d</string>
+    <!-- Dice -->
     <!-- Dice with %d sides -->
-    <string name="dice_d_d">D%d</string>
-    <string name="dice_max_count">Maksymalna liczba kości</string>
     <!-- Timer -->
     <string name="menu_timer">Minutnik</string>
     <string name="timer_start">Start</string>
