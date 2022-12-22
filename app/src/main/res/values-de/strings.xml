@@ -20,16 +20,8 @@
     <string name="number_converter_binary">Binär</string>
     <string name="number_converter_hexadecimal">Hexadezimal</string>
     <!-- Titles for start page -->
-    <!-- Dices -->
-    <string name="menu_dice">Würfel</string>
-    <string name="dice_slider_hint">Anzahl der Würfel: %d</string>
-    <string name="dice_overall_inc_slider_hint">Zum Gesamtergebnis addieren: %d</string>
-    <string name="dice_roll_inc_slider_hint">Zu jedem Wurf addieren: %d</string>
+    <!-- Dice -->
     <!-- Dice with %d sides -->
-    <string name="dice_d_d">W%d</string>
-    <string name="dice_max_count">Max. Würfelanzahl</string>
-    <string name="dice_show_overall_inc_slider">Zeige \"Zum Gesamtergebnis addieren\"-Slider</string>
-    <string name="dice_show_roll_inc_slider">Zeige \"Zu jedem Wurf addieren\"-Slider</string>
     <!-- Timer -->
     <string name="menu_timer">Timer</string>
     <string name="timer_start">Start</string>
