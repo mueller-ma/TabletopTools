@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_dices,
+                R.id.nav_dice,
                 R.id.nav_random_list,
                 R.id.nav_rot13,
                 R.id.nav_alphabet,
@@ -53,14 +53,14 @@ class MainActivity : AppCompatActivity() {
 
     private fun getDefaultStartDestinationId(): Int {
         return when (Prefs(this).startPage) {
-            getString(R.string.menu_dices_value) -> R.id.nav_dices
+            getString(R.string.menu_dice_value) -> R.id.nav_dice
             getString(R.string.menu_random_list_value) -> R.id.nav_random_list
             getString(R.string.menu_rot13_value) -> R.id.nav_rot13
             getString(R.string.menu_alphabet_value) -> R.id.nav_alphabet
             getString(R.string.menu_number_converter_value) -> R.id.nav_number_converter
             getString(R.string.menu_timer_value) -> R.id.nav_timer
             getString(R.string.menu_buzzers_value) -> R.id.nav_buzzers
-            else -> R.id.nav_dices
+            else -> R.id.nav_dice
         }
     }
 

@@ -15,10 +15,10 @@
     <string name="number_converter_binary">Binario</string>
     <!-- Titles for start page -->
     <!-- Dices -->
-    <string name="menu_dices">Dados</string>
-    <string name="dices_slider_hint">Número de dados: %d</string>
+    <string name="menu_dice">Dados</string>
+    <string name="dice_slider_hint">Número de dados: %d</string>
     <!-- Dice with %d sides -->
-    <string name="dices_d_d">d%d</string>
+    <string name="dice_d_d">d%d</string>
     <!-- Timer -->
     <string name="menu_timer">Temporizador</string>
     <string name="timer_start">Inicio</string>

@@ -2,13 +2,13 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        app:startDestination="@+id/nav_dices">
+        app:startDestination="@+id/nav_dice">
 
     <fragment
-            android:id="@+id/nav_dices"
-            android:name="com.github.muellerma.tabletoptools.ui.fragments.DicesFragment"
-            android:label="@string/menu_dices"
-            tools:layout="@layout/fragment_dices" />
+            android:id="@+id/nav_dice"
+            android:name="com.github.muellerma.tabletoptools.ui.fragments.DiceFragment"
+            android:label="@string/menu_dice"
+            tools:layout="@layout/fragment_dice" />
 
     <fragment
             android:id="@+id/nav_random_list"

@@ -15,13 +15,13 @@ class Prefs(private val context: Context) {
         get() = sharedPrefs.getString("dices_max_count", "10")?.toInt() ?: 10
 
     val startPage: String
-        get() = sharedPrefs.getString("start_page", context.getString(R.string.menu_dices_value))
-            ?: context.getString(R.string.menu_dices_value)
+        get() = sharedPrefs.getString("start_page", context.getString(R.string.menu_dice_value))
+            ?: context.getString(R.string.menu_dice_value)
 
-    val showDicesOverallIncSlider: Boolean
+    val showDiceOverallIncSlider: Boolean
         get() = sharedPrefs.getBoolean("dices_show_inc_slider", false)
 
-    val showDicesRollIncSlider: Boolean
+    val showDiceRollIncSlider: Boolean
         get() = sharedPrefs.getBoolean("dices_show_roll_inc_slider", false)
 
     var buzzerCount: Int

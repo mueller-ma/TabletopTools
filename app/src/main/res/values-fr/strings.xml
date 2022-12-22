@@ -20,11 +20,11 @@
     <string name="number_converter_hexadecimal">Hexadécimal</string>
     <!-- Titles for start page -->
     <!-- Dices -->
-    <string name="menu_dices">Dés</string>
-    <string name="dices_slider_hint">Nombre de dés : %d</string>
+    <string name="menu_dice">Dés</string>
+    <string name="dice_slider_hint">Nombre de dés : %d</string>
     <!-- Dice with %d sides -->
-    <string name="dices_d_d">d%d</string>
-    <string name="dices_max_count">Nombre de dés maximum</string>
+    <string name="dice_d_d">d%d</string>
+    <string name="dice_max_count">Nombre de dés maximum</string>
     <!-- Timer -->
     <string name="menu_timer">Minuteur</string>
     <string name="timer_start">Démarrer</string>

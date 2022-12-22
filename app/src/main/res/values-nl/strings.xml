@@ -17,10 +17,10 @@
     <string name="number_converter_hexadecimal">Hexadecimaal</string>
     <!-- Titles for start page -->
     <!-- Dices -->
-    <string name="menu_dices">Dobbelstenen</string>
-    <string name="dices_slider_hint">Aantal dobbelstenen: %d</string>
+    <string name="menu_dice">Dobbelstenen</string>
+    <string name="dice_slider_hint">Aantal dobbelstenen: %d</string>
     <!-- Dice with %d sides -->
-    <string name="dices_d_d">d%d</string>
+    <string name="dice_d_d">d%d</string>
     <!-- Timer -->
     <string name="timer_pause">Pauzeren</string>
     <!-- Abr. of minutes -->
