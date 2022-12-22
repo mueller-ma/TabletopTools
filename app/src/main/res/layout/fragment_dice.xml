@@ -4,7 +4,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.fragments.DicesFragment">
+        tools:context=".ui.fragments.DiceFragment">
 
     <LinearLayout
             android:layout_width="match_parent"
@@ -14,7 +14,7 @@
             android:orientation="vertical">
 
         <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/dices_grid"
+                android:id="@+id/dice_grid"
                 tools:listitem="@layout/dice"
                 tools:itemCount="10"
                 android:layout_gravity="center"
@@ -24,14 +24,14 @@
                 android:layout_height="wrap_content" />
 
         <TextView
-                android:id="@+id/dices_count_hint"
+                android:id="@+id/dice_count_hint"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                tools:text="@string/dices_slider_hint" />
+                tools:text="@string/dice_slider_hint" />
 
         <com.google.android.material.slider.Slider
-                android:id="@+id/dices_count"
+                android:id="@+id/dice_count"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:valueFrom="1"
@@ -46,7 +46,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                tools:text="@string/dices_overall_inc_slider_hint" />
+                tools:text="@string/dice_overall_inc_slider_hint" />
 
         <com.google.android.material.slider.Slider
                 android:id="@+id/overall_inc"
@@ -64,7 +64,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                tools:text="@string/dices_roll_inc_slider_hint" />
+                tools:text="@string/dice_roll_inc_slider_hint" />
 
         <com.google.android.material.slider.Slider
                 android:id="@+id/roll_inc"

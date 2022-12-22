@@ -5,9 +5,9 @@
         android:gravity="center"
         xmlns:tools="http://schemas.android.com/tools">
     <com.google.android.material.button.MaterialButton
-            android:id="@+id/dices_button"
+            android:id="@+id/dice_button"
             android:layout_height="90dp"
             android:layout_width="90dp"
             android:padding="8dp"
-            tools:text="@string/dices_d3" />
+            tools:text="D3" />
 </LinearLayout>

@@ -23,10 +23,10 @@
     <string name="number_converter_hexadecimal">Шістнадцятковий</string>
     <!-- Titles for start page -->
     <!-- Dices -->
-    <string name="menu_dices">Кубики</string>
-    <string name="dices_slider_hint">Кількість кубиків: %d</string>
+    <string name="menu_dice">Кубики</string>
+    <string name="dice_slider_hint">Кількість кубиків: %d</string>
     <!-- Dice with %d sides -->
-    <string name="dices_d_d">d%d</string>
+    <string name="dice_d_d">d%d</string>
     <!-- Timer -->
     <string name="menu_timer">Таймер</string>
     <string name="timer_start">Почати</string>

@@ -26,7 +26,7 @@
     <string name="number_converter_hexadecimal">Hexadecimal</string>
 
     <!-- Titles for start page -->
-    <string name="menu_dices_value" translatable="false">dices</string>
+    <string name="menu_dice_value" translatable="false">dice</string>
     <string name="menu_timer_value" translatable="false">timer</string>
     <string name="menu_buzzers_value" translatable="false">buzzer</string>
     <string name="menu_random_list_value" translatable="false">random</string>
@@ -34,16 +34,16 @@
     <string name="menu_alphabet_value" translatable="false">alphabet</string>
     <string name="menu_number_converter_value" translatable="false">converter</string>
 
-    <!-- Dices -->
-    <string name="menu_dices">Dices</string>
-    <string name="dices_slider_hint">Number of dice: %d</string>
-    <string name="dices_overall_inc_slider_hint">Add to overall result: %d</string>
-    <string name="dices_roll_inc_slider_hint">Add to each roll: %d</string>
+    <!-- Dice -->
+    <string name="menu_dice">Dice</string>
+    <string name="dice_slider_hint">Number of dice: %d</string>
+    <string name="dice_overall_inc_slider_hint">Add to overall result: %d</string>
+    <string name="dice_roll_inc_slider_hint">Add to each roll: %d</string>
     <!-- Dice with %d sides -->
-    <string name="dices_d_d">D%d</string>
-    <string name="dices_max_count">Max. dice count</string>
-    <string name="dices_show_overall_inc_slider">Show \"Add to overall result\" slider</string>
-    <string name="dices_show_roll_inc_slider">Show \"Add to each roll\" slider</string>
+    <string name="dice_d_d">D%d</string>
+    <string name="dice_max_count">Max. dice count</string>
+    <string name="dice_show_overall_inc_slider">Show \"Add to overall result\" slider</string>
+    <string name="dice_show_roll_inc_slider">Show \"Add to each roll\" slider</string>
 
     <!-- Timer -->
     <string name="menu_timer">Timer</string>
