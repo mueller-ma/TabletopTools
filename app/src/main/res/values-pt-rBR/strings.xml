@@ -20,16 +20,8 @@
     <string name="number_converter_binary">Binário</string>
     <string name="number_converter_hexadecimal">Hexadecimal</string>
     <!-- Titles for start page -->
-    <!-- Dices -->
-    <string name="menu_dice">Dados</string>
-    <string name="dice_slider_hint">Número de dados: %d</string>
-    <string name="dice_overall_inc_slider_hint">Adicionar ao resultado geral: %d</string>
-    <string name="dice_roll_inc_slider_hint">Adicionar a cada rolagem: %d</string>
+    <!-- Dice -->
     <!-- Dice with %d sides -->
-    <string name="dice_d_d">d%d</string>
-    <string name="dice_max_count">Máx. número de dados</string>
-    <string name="dice_show_overall_inc_slider">Mostrar o controle deslizante \"Adicionar ao resultado geral\"</string>
-    <string name="dice_show_roll_inc_slider">Mostrar o controle deslizante \"Adicionar ao resultado geral\"</string>
     <!-- Timer -->
     <string name="menu_timer">Temporizador</string>
     <string name="timer_start">Iniciar</string>
