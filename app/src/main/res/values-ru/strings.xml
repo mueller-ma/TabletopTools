@@ -18,11 +18,8 @@
     <string name="number_converter_binary">Двоичный</string>
     <string name="number_converter_hexadecimal">Шестнадцатеричный</string>
     <!-- Titles for start page -->
-    <!-- Dices -->
-    <string name="menu_dice">Кубики</string>
-    <string name="dice_slider_hint">Количество кубиков: %d</string>
+    <!-- Dice -->
     <!-- Dice with %d sides -->
-    <string name="dice_d_d">d%d</string>
     <!-- Timer -->
     <string name="menu_timer">Таймер</string>
     <string name="timer_start">Начало</string>

@@ -20,7 +20,7 @@
     <string name="number_converter_binary">Binär</string>
     <string name="number_converter_hexadecimal">Hexadezimal</string>
     <!-- Titles for start page -->
-    <!-- Dices -->
+    <!-- Dice -->
     <string name="menu_dice">Würfel</string>
     <string name="dice_slider_hint">Anzahl der Würfel: %d</string>
     <string name="dice_overall_inc_slider_hint">Zum Gesamtergebnis addieren: %d</string>

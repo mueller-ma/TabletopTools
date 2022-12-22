@@ -1,5 +1,5 @@
 Bu uygulama masaüstü oyunlar için birkaç kullanışlı araçlar sağlamaktadır:
-* Zar (Z3, Z4, Z6, Z8, Z10, Z12, Z20, Z100)
+* Dice (D3, D4, D6, D8, D10, D12, D20, D100)
 * [Rot13](https://en.wikipedia.org/wiki/ROT13)
 * Sayı dönüştürücü: Ondalık <=> İkili <=> Onaltılık
 * Zamanlayıcı
