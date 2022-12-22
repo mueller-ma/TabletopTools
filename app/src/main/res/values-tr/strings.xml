@@ -20,11 +20,8 @@
     <string name="number_converter_binary">İkili</string>
     <string name="number_converter_hexadecimal">Onaltılık</string>
     <!-- Titles for start page -->
-    <!-- Dices -->
-    <string name="menu_dice">Zarlar</string>
-    <string name="dice_slider_hint">Zar sayısı: %d</string>
+    <!-- Dice -->
     <!-- Dice with %d sides -->
-    <string name="dice_d_d">Z%d</string>
     <!-- Timer -->
     <string name="menu_timer">Zamanlayıcı</string>
     <string name="timer_start">Başlat</string>
