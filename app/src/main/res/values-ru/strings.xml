@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
+    <string name="app_name">Инструменты для настолок</string>
     <string name="app_description">Коллекция удобных инструментов для настольных игр</string>
     <string name="settings">Настройки</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
@@ -12,6 +13,9 @@
         <item quantity="other">Все латинские буквы будут сдвинуты на %d позиции (можно указать ниже)</item>
     </plurals>
     <!-- Alphabet -->
+    <string name="menu_alphabet">Алфавит</string>
+    <string name="alphabet_letter">Буква</string>
+    <string name="alphabet_number">Позиция</string>
     <!-- Number converter -->
     <string name="menu_number_converter">Конвертер чисел</string>
     <string name="number_converter_decimal">Десятичный</string>
@@ -19,7 +23,15 @@
     <string name="number_converter_hexadecimal">Шестнадцатеричный</string>
     <!-- Titles for start page -->
     <!-- Dice -->
+    <string name="menu_dice">Кубик</string>
+    <string name="dice_slider_hint">Количество кубиков: %d</string>
+    <string name="dice_overall_inc_slider_hint">Добавить к общему результату: %d</string>
+    <string name="dice_roll_inc_slider_hint">Добавить к каждому броску: %d</string>
     <!-- Dice with %d sides -->
+    <string name="dice_d_d">Сторон %d</string>
+    <string name="dice_max_count">Макс. количество кубиков</string>
+    <string name="dice_show_overall_inc_slider">Показывать ползунок \"Добавить к общему результату\"</string>
+    <string name="dice_show_roll_inc_slider">Показывать \"Добавить к каждому броску\" ползунок</string>
     <!-- Timer -->
     <string name="menu_timer">Таймер</string>
     <string name="timer_start">Начало</string>
@@ -29,6 +41,7 @@
     <string name="timer_select_min">Мин.</string>
     <!-- Abr. of seconds -->
     <string name="timer_select_sec">Сек.</string>
+    <string name="timer_set_time">Установить время</string>
     <!-- Buzzers -->
     <string name="menu_buzzers">Зуммеры</string>
     <string name="buzzers_player_a">Игрок A</string>
@@ -47,6 +60,12 @@
         <item quantity="other">%d зуммера</item>
     </plurals>
     <!-- Preferences -->
+    <string name="start_page">Стартовая страница</string>
+    <string name="general">Общие</string>
     <string name="menu_preferences">Настройки</string>
+    <string name="keep_screen_on_enabled">Оставлять экран включённым</string>
+    <string name="keep_screen_on_disabled">Не оставлять экран включённым</string>
     <!--  About menu  -->
+    <string name="about">О нас</string>
+    <string name="error_no_browser_found">Браузер не найден</string>
 </resources>
