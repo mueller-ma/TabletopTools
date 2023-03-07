@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
+    <string name="app_name">Herramientas de Tabla</string>
     <string name="app_description">Una colección de herramientas útiles para juegos de mesa</string>
     <string name="settings">Ajustes</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
@@ -10,30 +11,57 @@
         <item quantity="other">Todas las letras (alfabeto latino) se rotarán %d grados (Se puede definir abajo)</item>
     </plurals>
     <!-- Alphabet -->
+    <string name="menu_alphabet">Alfabeto</string>
+    <string name="alphabet_letter">Letra</string>
+    <string name="alphabet_number">Posición</string>
     <!-- Number converter -->
     <string name="menu_number_converter">Conversor de números</string>
+    <string name="number_converter_decimal">Decimal</string>
     <string name="number_converter_binary">Binario</string>
+    <string name="number_converter_hexadecimal">Hexadecimal</string>
     <!-- Titles for start page -->
     <!-- Dice -->
+    <string name="menu_dice">Dice</string>
+    <string name="dice_slider_hint">Número de dados: %d</string>
+    <string name="dice_overall_inc_slider_hint">Añadir al resultado general: %d</string>
+    <string name="dice_roll_inc_slider_hint">Añadir a cada tirada: %d</string>
     <!-- Dice with %d sides -->
+    <string name="dice_d_d">d%d</string>
+    <string name="dice_max_count">Número máximo de dados</string>
+    <string name="dice_show_overall_inc_slider">Mostrar deslizador \"Añadir al resultado general\"</string>
+    <string name="dice_show_roll_inc_slider">Mostrar deslizador \"Añadir a cada tira\"</string>
     <!-- Timer -->
     <string name="menu_timer">Temporizador</string>
     <string name="timer_start">Inicio</string>
     <string name="timer_pause">Pausa</string>
     <string name="timer_reset">Reinicio</string>
     <!-- Abr. of minutes -->
+    <string name="timer_select_min">Mínimo</string>
     <!-- Abr. of seconds -->
+    <string name="timer_select_sec">Seg</string>
+    <string name="timer_set_time">Fijar hora</string>
     <!-- Buzzers -->
     <string name="menu_buzzers">Zumbadores</string>
     <string name="buzzers_player_a">Jugador A</string>
     <string name="buzzers_player_b">Jugador B</string>
     <string name="buzzers_player_c">Jugador C</string>
     <string name="buzzers_player_d">Jugador D</string>
+    <string name="random_list_hint">Introduzca valores separados por nuevas líneas</string>
+    <string name="menu_random_list">Lista aleatoria</string>
+    <string name="random_list_clear_list">Limpiar lista</string>
+    <string name="random_list_sort_list">Ordenar lista</string>
+    <string name="random_list_clear_list_confirm">¿Quieres borrar la lista?</string>
     <plurals name="buzzers_amount">
         <item quantity="one">%d zumbador</item>
         <item quantity="other">%d zumbadores</item>
     </plurals>
     <!-- Preferences -->
+    <string name="start_page">Página de inicio</string>
+    <string name="general">General</string>
     <string name="menu_preferences">Ajustes</string>
+    <string name="keep_screen_on_enabled">Mantener pantalla encendida</string>
+    <string name="keep_screen_on_disabled">No mantener la pantalla encendida</string>
     <!--  About menu  -->
+    <string name="about">Acerca de</string>
+    <string name="error_no_browser_found">No se encontró ningún navegador</string>
 </resources>
