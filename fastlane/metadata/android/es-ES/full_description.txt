@@ -4,6 +4,6 @@ Esta app cuenta con varias herramientas útiles para juegos de mesa:
 * Conversor de números: Decimal <=> Binario <=> Hexadecimal
 * Temporizador de 5 minutos
 * Zumbadores para dos jugadores
-* List that can be randomized
+* Lista que puede ser aleatoria
 
-More tools are planned.
+Se han planificado más herramientas.
