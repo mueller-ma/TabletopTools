@@ -1,16 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
+    <string name="app_name">Værktøjer Til Bordplade</string>
+    <string name="app_description">Handy værktøj samling til bordplade spil</string>
+    <string name="settings">Indstillinger</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
+    <string name="menu_rot13">ROT13</string>
+    <plurals name="rot13_hint">
+        <item quantity="one">Alle latinske bogstaver vil blive roteret af %d sted (kan angives nedenfor)</item>
+        <item quantity="other">Alle latinske bogstaver vil blive roteret af %d steder (kan angives nedenfor)</item>
+    </plurals>
     <!-- Alphabet -->
+    <string name="menu_alphabet">Alfabet</string>
+    <string name="alphabet_letter">Brev</string>
+    <string name="alphabet_number">Placering</string>
     <!-- Number converter -->
+    <string name="menu_number_converter">Nummer konverter</string>
+    <string name="number_converter_decimal">Decimal</string>
+    <string name="number_converter_binary">Binær</string>
+    <string name="number_converter_hexadecimal">Hexadecimal</string>
     <!-- Titles for start page -->
     <!-- Dice -->
+    <string name="menu_dice">Terninger</string>
+    <string name="dice_slider_hint">Antal terninger: %d</string>
+    <string name="dice_overall_inc_slider_hint">Føj til samlet resultat: %d</string>
+    <string name="dice_roll_inc_slider_hint">Føj til hver rulle: %d</string>
     <!-- Dice with %d sides -->
+    <string name="dice_d_d">D%d</string>
+    <string name="dice_max_count">Maks. terningstælling</string>
+    <string name="dice_show_overall_inc_slider">Vis skyderen \"Tilføj til samlet resultat\"</string>
+    <string name="dice_show_roll_inc_slider">Vis \"Tilføj til hver rulle\" skyderen</string>
     <!-- Timer -->
+    <string name="menu_timer">Timer</string>
+    <string name="timer_start">Start</string>
+    <string name="timer_pause">Pause</string>
+    <string name="timer_reset">Reset</string>
     <!-- Abr. of minutes -->
+    <string name="timer_select_min">Min.</string>
     <!-- Abr. of seconds -->
+    <string name="timer_select_sec">Hovedafd.</string>
+    <string name="timer_set_time">Angiv tid</string>
     <!-- Buzzers -->
+    <string name="menu_buzzers">Buzzere</string>
+    <string name="buzzers_player_a">Spiller A</string>
+    <string name="buzzers_player_b">Spiller B</string>
+    <string name="buzzers_player_c">Spiller C</string>
+    <string name="buzzers_player_d">Spiller D</string>
+    <string name="random_list_hint">Indtast værdier adskilt af nye linjer</string>
+    <string name="menu_random_list">Tilfældig liste</string>
+    <string name="random_list_clear_list">Ryd liste</string>
+    <string name="random_list_sort_list">Sortér liste</string>
+    <string name="random_list_clear_list_confirm">Vil du rydde listen?</string>
+    <plurals name="buzzers_amount">
+        <item quantity="one">%d buzzer</item>
+        <item quantity="other">%d buzzere</item>
+    </plurals>
     <!-- Preferences -->
+    <string name="start_page">Startside</string>
+    <string name="general">Generelt</string>
+    <string name="menu_preferences">Indstillinger</string>
+    <string name="keep_screen_on_enabled">Hold skærmen tændt</string>
+    <string name="keep_screen_on_disabled">Hold ikke skærmen tændt</string>
     <!--  About menu  -->
+    <string name="about">Om</string>
+    <string name="error_no_browser_found">Ingen browser fundet</string>
 </resources>
