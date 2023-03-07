@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
+    <string name="app_name">Outils Tabletop</string>
     <string name="app_description">Collection d\'outils pratiques pour les jeux de société</string>
     <string name="settings">Paramètres</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
@@ -20,14 +21,27 @@
     <string name="number_converter_hexadecimal">Hexadécimal</string>
     <!-- Titles for start page -->
     <!-- Dice -->
+    <string name="menu_dice">Dés</string>
+    <string name="dice_slider_hint">Nombre de dés : %d</string>
+    <string name="dice_overall_inc_slider_hint">Ajouter au résultat global : %d</string>
+    <string name="dice_roll_inc_slider_hint">Ajouter à chaque dé : %d</string>
     <!-- Dice with %d sides -->
+    <string name="dice_d_d">d%d</string>
+    <string name="dice_max_count">Nombre de dés maximum</string>
+    <string name="dice_show_overall_inc_slider">Afficher le curseur \"Ajouter au résultat global\"</string>
+    <string name="dice_show_roll_inc_slider">Afficher le curseur \"Ajouter à chaque lancement\"</string>
     <!-- Timer -->
     <string name="menu_timer">Minuteur</string>
     <string name="timer_start">Démarrer</string>
+    <string name="timer_pause">Mettre en pause</string>
     <string name="timer_reset">Réinitialiser</string>
     <!-- Abr. of minutes -->
+    <string name="timer_select_min">Min</string>
     <!-- Abr. of seconds -->
+    <string name="timer_select_sec">Sec</string>
+    <string name="timer_set_time">Définir l\'heure</string>
     <!-- Buzzers -->
+    <string name="menu_buzzers">Buzzers</string>
     <string name="buzzers_player_a">Joueur A</string>
     <string name="buzzers_player_b">Joueur B</string>
     <string name="buzzers_player_c">Joueur C</string>
@@ -35,11 +49,18 @@
     <string name="random_list_hint">Entrez toutes les valeurs séparées par une nouvelle ligne</string>
     <string name="menu_random_list">Mélanger une liste</string>
     <string name="random_list_clear_list">Effacer la liste</string>
+    <string name="random_list_sort_list">Trier la liste</string>
     <string name="random_list_clear_list_confirm">Voulez-vous effacer la liste ?</string>
+    <plurals name="buzzers_amount">
+        <item quantity="one">%d buzzer</item>
+        <item quantity="other">%d buzzers</item>
+    </plurals>
     <!-- Preferences -->
     <string name="start_page">Page d\'accueil</string>
     <string name="general">Général</string>
     <string name="menu_preferences">Paramètres</string>
+    <string name="keep_screen_on_enabled">Garder l\'écran allumé</string>
+    <string name="keep_screen_on_disabled">Ne pas garder l\'écran allumé</string>
     <!--  About menu  -->
     <string name="about">À propos</string>
     <string name="error_no_browser_found">Aucun navigateur trouvé</string>
