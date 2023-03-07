@@ -1,9 +1,9 @@
-This app provides a few handy tools for tabletop games:
-* Dice (D3, D4, D6, D8, D10, D12, D20, D100)
+このアプリは、タブレットゲームに便利なツールをいくつか提供します。
+* サイコロ（D3、D4、D6、D8、D10、D12、D20、D100）
 * [Rot13](https://en.wikipedia.org/wiki/ROT13)
-* Number converter: Decimal <=> Binary <=> Hexadecimal
-* Timer
-* Buzzers for 1 - 4 players
-* List that can be randomized
+* 数値コンバーター: 10 進法 <=> バイナリ <=> 六進法
+* タイマー
+* 1 - 4 人のプレイヤーのためのブザー
+* ランダム化が可能なリスト
 
-More tools are planned.
+より多くのツールが計画されています。
