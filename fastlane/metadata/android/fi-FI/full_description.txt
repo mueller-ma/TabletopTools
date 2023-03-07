@@ -1,9 +1,9 @@
-This app provides a few handy tools for tabletop games:
+Tämä sovellus tarjoaa muutamia käteviä työkaluja pöytäpeleihin:
 * Dice (D3, D4, D6, D8, D10, D12, D20, D100)
 * [Rot13](https://en.wikipedia.org/wiki/ROT13)
-* Number converter: Decimal <=> Binary <=> Hexadecimal
-* Timer
-* Buzzers for 1 - 4 players
-* List that can be randomized
+* Numeromuunnin: Desimaali <=> Binary <=> Hexadecimal
+* Ajastin
+* Puskurit 1 - 4 pelaajalle
+* Luettelo joka voidaan satunnaisesti
 
-More tools are planned.
+Uusia työkaluja on suunnitteilla.
