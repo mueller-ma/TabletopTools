@@ -1,16 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
+    <string name="app_name">أدوات سطح الجدول</string>
+    <string name="app_description">مجموعة أدوات مفيدة لألعاب الكمبيوتر</string>
+    <string name="settings">الإعدادات</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
+    <string name="menu_rot13">ROT13</string>
+    <plurals name="rot13_hint">
+        <item quantity="zero">سيتم تدوير جميع الأحرف اللاتينية بواسطة %d أماكن (يمكن تعيينها أدناه)</item>
+        <item quantity="one">سيتم تدوير جميع الأحرف اللاتينية من قبل %d مكان (يمكن تعيينها أدناه)</item>
+        <item quantity="two">سيتم تدوير جميع الأحرف اللاتينية بواسطة %d أماكن (يمكن تعيينها أدناه)</item>
+        <item quantity="few">سيتم تدوير جميع الأحرف اللاتينية بواسطة %d أماكن (يمكن تعيينها أدناه)</item>
+        <item quantity="many">سيتم تدوير جميع الأحرف اللاتينية بواسطة %d أماكن (يمكن تعيينها أدناه)</item>
+        <item quantity="other">سيتم تدوير جميع الأحرف اللاتينية بواسطة %d أماكن (يمكن تعيينها أدناه)</item>
+    </plurals>
     <!-- Alphabet -->
+    <string name="menu_alphabet">الأبجدية</string>
+    <string name="alphabet_letter">حرف</string>
+    <string name="alphabet_number">الموضع</string>
     <!-- Number converter -->
+    <string name="menu_number_converter">محول الأرقام</string>
+    <string name="number_converter_decimal">عشري</string>
+    <string name="number_converter_binary">ثنائي</string>
+    <string name="number_converter_hexadecimal">سداسي</string>
     <!-- Titles for start page -->
     <!-- Dice -->
+    <string name="menu_dice">النجدة</string>
+    <string name="dice_slider_hint">عدد النمل: %d</string>
+    <string name="dice_overall_inc_slider_hint">إضافة إلى النتيجة الإجمالية: %d</string>
+    <string name="dice_roll_inc_slider_hint">إضافة إلى كل دورة: %d</string>
     <!-- Dice with %d sides -->
+    <string name="dice_d_d">د%d</string>
+    <string name="dice_max_count">الحد الاقصى لعدد النغمات</string>
+    <string name="dice_show_overall_inc_slider">إظهار شريط تمرير \"إضافة إلى النتيجة الإجمالية\"</string>
+    <string name="dice_show_roll_inc_slider">إظهار شريط تمرير \"إضافة إلى كل قائمة \"</string>
     <!-- Timer -->
+    <string name="menu_timer">المؤقت</string>
+    <string name="timer_start">ابدأ</string>
+    <string name="timer_pause">إيقاف</string>
+    <string name="timer_reset">Reset</string>
     <!-- Abr. of minutes -->
+    <string name="timer_select_min">الحد الأدنى</string>
     <!-- Abr. of seconds -->
+    <string name="timer_select_sec">ثواني</string>
+    <string name="timer_set_time">تعيين الوقت</string>
     <!-- Buzzers -->
+    <string name="menu_buzzers">ألغاز</string>
+    <string name="buzzers_player_a">اللاعب A</string>
+    <string name="buzzers_player_b">اللاعب B</string>
+    <string name="buzzers_player_c">اللاعب C</string>
+    <string name="buzzers_player_d">اللاعب D</string>
+    <string name="random_list_hint">أدخل القيم مفصولة بخطوط جديدة</string>
+    <string name="menu_random_list">قائمة عشوائية</string>
+    <string name="random_list_clear_list">مسح القائمة</string>
+    <string name="random_list_sort_list">ترتيب القائمة</string>
+    <string name="random_list_clear_list_confirm">هل تريد مسح القائمة؟</string>
+    <plurals name="buzzers_amount">
+        <item quantity="zero">%d دباغة</item>
+        <item quantity="one">%d زجاجة</item>
+        <item quantity="two">%d دباغة</item>
+        <item quantity="few">%d دباغة</item>
+        <item quantity="many">%d دباغة</item>
+        <item quantity="other">%d دباغة</item>
+    </plurals>
     <!-- Preferences -->
+    <string name="start_page">صفحة البداية</string>
+    <string name="general">عام</string>
+    <string name="menu_preferences">الإعدادات</string>
+    <string name="keep_screen_on_enabled">إبقاء الشاشة قيد التشغيل</string>
+    <string name="keep_screen_on_disabled">لا تبقي الشاشة قيد التشغيل</string>
     <!--  About menu  -->
+    <string name="about">حول</string>
+    <string name="error_no_browser_found">لم يتم العثور على متصفح</string>
 </resources>
