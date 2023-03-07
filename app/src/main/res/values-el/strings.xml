@@ -1,16 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
+    <string name="app_name">Εργαλεία Tabletop</string>
+    <string name="app_description">Εύχρηστη συλλογή εργαλείων για επιτραπέζια παιχνίδια</string>
+    <string name="settings">Ρυθμίσεις</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
+    <string name="menu_rot13">ROT13</string>
+    <plurals name="rot13_hint">
+        <item quantity="one">Όλα τα λατινικά γράμματα θα περιστραφούν από %d μέρος (μπορεί να οριστεί παρακάτω)</item>
+        <item quantity="other">Όλα τα λατινικά γράμματα θα περιστραφούν σε %d θέσεις (μπορεί να οριστεί παρακάτω)</item>
+    </plurals>
     <!-- Alphabet -->
+    <string name="menu_alphabet">Αλφάβητο</string>
+    <string name="alphabet_letter">Γράμμα</string>
+    <string name="alphabet_number">Θέση</string>
     <!-- Number converter -->
+    <string name="menu_number_converter">Μετατροπέας αριθμού</string>
+    <string name="number_converter_decimal">Δεκαδικός</string>
+    <string name="number_converter_binary">Δυαδικό</string>
+    <string name="number_converter_hexadecimal">Δεκαεξαδικό</string>
     <!-- Titles for start page -->
     <!-- Dice -->
+    <string name="menu_dice">Ζάρια</string>
+    <string name="dice_slider_hint">Αριθμός ζαριών: %d</string>
+    <string name="dice_overall_inc_slider_hint">Προσθήκη στο γενικό αποτέλεσμα: %d</string>
+    <string name="dice_roll_inc_slider_hint">Προσθήκη σε κάθε ρολ: %d</string>
     <!-- Dice with %d sides -->
+    <string name="dice_d_d">D%d</string>
+    <string name="dice_max_count">Μέγιστος αριθμός ζαριών</string>
+    <string name="dice_show_overall_inc_slider">Εμφάνιση ρυθμιστικού \"Προσθήκη στο γενικό αποτέλεσμα\"</string>
+    <string name="dice_show_roll_inc_slider">Εμφάνιση ρυθμιστικού \"Προσθήκη σε κάθε ρόλο\"</string>
     <!-- Timer -->
+    <string name="menu_timer">Χρονόμετρο</string>
+    <string name="timer_start">Έναρξη</string>
+    <string name="timer_pause">Παύση</string>
+    <string name="timer_reset">Reset</string>
     <!-- Abr. of minutes -->
+    <string name="timer_select_min">Ελάχιστο</string>
     <!-- Abr. of seconds -->
+    <string name="timer_select_sec">Δευτερόλεπτα</string>
+    <string name="timer_set_time">Ορισμός ώρας</string>
     <!-- Buzzers -->
+    <string name="menu_buzzers">Βομβητές</string>
+    <string name="buzzers_player_a">Παίκτης Α</string>
+    <string name="buzzers_player_b">Παίκτης Β</string>
+    <string name="buzzers_player_c">Παίκτης Γ</string>
+    <string name="buzzers_player_d">Παίκτης Δ</string>
+    <string name="random_list_hint">Εισάγετε τιμές διαχωρισμένες με νέες γραμμές</string>
+    <string name="menu_random_list">Τυχαία λίστα</string>
+    <string name="random_list_clear_list">Εκκαθάριση λίστας</string>
+    <string name="random_list_sort_list">Ταξινόμηση λίστας</string>
+    <string name="random_list_clear_list_confirm">Θέλετε να καθαρίσετε τη λίστα?</string>
+    <plurals name="buzzers_amount">
+        <item quantity="one">%d βομβητής</item>
+        <item quantity="other">%d buzzers</item>
+    </plurals>
     <!-- Preferences -->
+    <string name="start_page">Αρχική σελίδα</string>
+    <string name="general">Γενικά</string>
+    <string name="menu_preferences">Ρυθμίσεις</string>
+    <string name="keep_screen_on_enabled">Διατήρηση ενεργής οθόνης</string>
+    <string name="keep_screen_on_disabled">Να μην παραμένει ενεργή η οθόνη</string>
     <!--  About menu  -->
+    <string name="about">Σχετικά</string>
+    <string name="error_no_browser_found">Δεν βρέθηκε πρόγραμμα περιήγησης</string>
 </resources>
