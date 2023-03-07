@@ -6,6 +6,12 @@
     <string name="settings">Ustawienia</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">ROT13</string>
+    <plurals name="rot13_hint">
+        <item quantity="one">Wszystkie łacińskie litery zostaną obrócone o %d miejsce (można ustawić poniżej)</item>
+        <item quantity="few">Wszystkie łacińskie litery zostaną obrócone o %d miejsca (można ustawić poniżej)</item>
+        <item quantity="many">Wszystkie łacińskie litery zostaną obrócone o %d miejsc (można ustawić poniżej)</item>
+        <item quantity="other">Wszystkie łacińskie litery zostaną obrócone o %d miejsc (można ustawić poniżej)</item>
+    </plurals>
     <!-- Alphabet -->
     <string name="menu_alphabet">Alfabet</string>
     <string name="alphabet_letter">Litera</string>
@@ -17,7 +23,15 @@
     <string name="number_converter_hexadecimal">Liczba szesnastkowa</string>
     <!-- Titles for start page -->
     <!-- Dice -->
+    <string name="menu_dice">Kostka</string>
+    <string name="dice_slider_hint">Numer kostki: %d</string>
+    <string name="dice_overall_inc_slider_hint">Dodaj do wyniku ogólnego: %d</string>
+    <string name="dice_roll_inc_slider_hint">Dodaj do każdego rolu: %d</string>
     <!-- Dice with %d sides -->
+    <string name="dice_d_d">D%d</string>
+    <string name="dice_max_count">Maksymalna liczba kości</string>
+    <string name="dice_show_overall_inc_slider">Pokaż suwak \"Dodaj do ogólnego wyniku\"</string>
+    <string name="dice_show_roll_inc_slider">Pokaż suwak \"Dodaj do każdego rolu\"</string>
     <!-- Timer -->
     <string name="menu_timer">Minutnik</string>
     <string name="timer_start">Start</string>
@@ -49,6 +63,8 @@
     <string name="start_page">Strona startowa</string>
     <string name="general">Główny</string>
     <string name="menu_preferences">Ustawienia</string>
+    <string name="keep_screen_on_enabled">Zachowaj włączony ekran</string>
+    <string name="keep_screen_on_disabled">Nie zachowuj włączonego ekranu</string>
     <!--  About menu  -->
     <string name="about">O aplikacji</string>
     <string name="error_no_browser_found">Nie znaleziono przeglądarki</string>
