@@ -1,16 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
+    <string name="app_name">Taulukon Työkalut</string>
+    <string name="app_description">Kätevä työkalu kokoelma pöytäpelejä</string>
+    <string name="settings">Asetukset</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
+    <string name="menu_rot13">ROT13</string>
+    <plurals name="rot13_hint">
+        <item quantity="one">Kaikki latinalaiset kirjaimet pyörivät %d paikan mukaan (voidaan asettaa alla)</item>
+        <item quantity="other">Kaikki latinalaiset kirjaimet pyörivät %d paikan mukaan (voidaan asettaa alla)</item>
+    </plurals>
     <!-- Alphabet -->
+    <string name="menu_alphabet">Aakkoset</string>
+    <string name="alphabet_letter">Kirje</string>
+    <string name="alphabet_number">Sijainti</string>
     <!-- Number converter -->
+    <string name="menu_number_converter">Numeron muunnin</string>
+    <string name="number_converter_decimal">Desimaali</string>
+    <string name="number_converter_binary">Binääri</string>
+    <string name="number_converter_hexadecimal">Heksadesimaali</string>
     <!-- Titles for start page -->
     <!-- Dice -->
+    <string name="menu_dice">Dice</string>
+    <string name="dice_slider_hint">Nopan määrä: %d</string>
+    <string name="dice_overall_inc_slider_hint">Lisää kokonaistulokseen: %d</string>
+    <string name="dice_roll_inc_slider_hint">Lisää jokaiseen rulliin: %d</string>
     <!-- Dice with %d sides -->
+    <string name="dice_d_d">D%d</string>
+    <string name="dice_max_count">Maksimi noppaa määrä</string>
+    <string name="dice_show_overall_inc_slider">Näytä \"Lisää yleiseen tulokseen\" -liukusäädin</string>
+    <string name="dice_show_roll_inc_slider">Näytä \"Lisää jokaiseen rullaan\" -liukusäädintä</string>
     <!-- Timer -->
+    <string name="menu_timer">Ajastin</string>
+    <string name="timer_start">Aloita</string>
+    <string name="timer_pause">Tauko</string>
+    <string name="timer_reset">Reset</string>
     <!-- Abr. of minutes -->
+    <string name="timer_select_min">Minimi</string>
     <!-- Abr. of seconds -->
+    <string name="timer_select_sec">Pääluokka</string>
+    <string name="timer_set_time">Aseta aika</string>
     <!-- Buzzers -->
+    <string name="menu_buzzers">Puskurit</string>
+    <string name="buzzers_player_a">Pelaaja A</string>
+    <string name="buzzers_player_b">Pelaaja B</string>
+    <string name="buzzers_player_c">Pelaaja C</string>
+    <string name="buzzers_player_d">Pelaaja D</string>
+    <string name="random_list_hint">Syötä uusilla riveillä erotetut arvot</string>
+    <string name="menu_random_list">Satunnaisesti lista</string>
+    <string name="random_list_clear_list">Tyhjennä luettelo</string>
+    <string name="random_list_sort_list">Lajittele lista</string>
+    <string name="random_list_clear_list_confirm">Haluatko tyhjentää listan?</string>
+    <plurals name="buzzers_amount">
+        <item quantity="one">%d soittaja</item>
+        <item quantity="other">%d puskuria</item>
+    </plurals>
     <!-- Preferences -->
+    <string name="start_page">Aloitussivu</string>
+    <string name="general">Yleiset</string>
+    <string name="menu_preferences">Asetukset</string>
+    <string name="keep_screen_on_enabled">Pidä näyttö päällä</string>
+    <string name="keep_screen_on_disabled">Älä pidä näyttöä päällä</string>
     <!--  About menu  -->
+    <string name="about">Tietoja</string>
+    <string name="error_no_browser_found">Selainta ei löytynyt</string>
 </resources>
