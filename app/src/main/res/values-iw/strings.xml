@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
+    <string name="settings">הגדרות</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <!-- Alphabet -->
     <!-- Number converter -->
@@ -12,5 +13,8 @@
     <!-- Abr. of seconds -->
     <!-- Buzzers -->
     <!-- Preferences -->
+    <string name="general">כללי</string>
+    <string name="menu_preferences">הגדרות</string>
     <!--  About menu  -->
+    <string name="error_no_browser_found">לא נמצא דפדפן</string>
 </resources>
