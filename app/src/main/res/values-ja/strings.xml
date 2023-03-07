@@ -1,16 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
+    <string name="app_name">タブレットツール</string>
+    <string name="app_description">テーブルトップゲーム用の便利なツールコレクション</string>
+    <string name="settings">設定</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
+    <string name="menu_rot13">ROT13</string>
+    <plurals name="rot13_hint">
+        <item quantity="other">すべてのラテン文字は %d の場所で回転します (下記に設定できます)</item>
+    </plurals>
     <!-- Alphabet -->
+    <string name="menu_alphabet">アルファベット(&amp;A)</string>
+    <string name="alphabet_letter">手紙</string>
+    <string name="alphabet_number">位置</string>
     <!-- Number converter -->
+    <string name="menu_number_converter">数字コンバータ</string>
+    <string name="number_converter_decimal">小数点以下桁数</string>
+    <string name="number_converter_binary">バイナリ</string>
+    <string name="number_converter_hexadecimal">16進法</string>
     <!-- Titles for start page -->
     <!-- Dice -->
+    <string name="menu_dice">ダイス</string>
+    <string name="dice_slider_hint">サイコロの数: %d</string>
+    <string name="dice_overall_inc_slider_hint">全体の結果に追加: %d</string>
+    <string name="dice_roll_inc_slider_hint">各ロールに追加: %d</string>
     <!-- Dice with %d sides -->
+    <string name="dice_d_d">D%d</string>
+    <string name="dice_max_count">最大サイコロ数</string>
+    <string name="dice_show_overall_inc_slider">「結果に追加」スライダーを表示</string>
+    <string name="dice_show_roll_inc_slider">「各ロールに追加」スライダーを表示</string>
     <!-- Timer -->
+    <string name="menu_timer">タイマー</string>
+    <string name="timer_start">開始</string>
+    <string name="timer_pause">一時停止</string>
+    <string name="timer_reset">Reset</string>
     <!-- Abr. of minutes -->
+    <string name="timer_select_min">最小</string>
     <!-- Abr. of seconds -->
+    <string name="timer_select_sec">秒</string>
+    <string name="timer_set_time">時刻を設定</string>
     <!-- Buzzers -->
+    <string name="menu_buzzers">ブザー</string>
+    <string name="buzzers_player_a">プレイヤーA</string>
+    <string name="buzzers_player_b">プレイヤーB</string>
+    <string name="buzzers_player_c">プレイヤーC</string>
+    <string name="buzzers_player_d">プレイヤー D</string>
+    <string name="random_list_hint">新しい行で区切られた値を入力してください</string>
+    <string name="menu_random_list">リストをランダム化</string>
+    <string name="random_list_clear_list">リストをクリア</string>
+    <string name="random_list_sort_list">ソートリスト</string>
+    <string name="random_list_clear_list_confirm">リストをクリアしますか？</string>
+    <plurals name="buzzers_amount">
+        <item quantity="other">%d 件のブザー</item>
+    </plurals>
     <!-- Preferences -->
+    <string name="start_page">スタートページ</string>
+    <string name="general">全般</string>
+    <string name="menu_preferences">設定</string>
+    <string name="keep_screen_on_enabled">画面をオンにする</string>
+    <string name="keep_screen_on_disabled">画面をオンにしない</string>
     <!--  About menu  -->
+    <string name="about">About</string>
+    <string name="error_no_browser_found">ブラウザが見つかりませんでした</string>
 </resources>
