@@ -1,6 +1,6 @@
 buildscript {
     ext.androidx_navigation_version = "2.5.3"
-    ext.androidx_lifecycle_version = "2.5.1"
+    ext.androidx_lifecycle_version = "2.6.0"
 }
 
 plugins {
