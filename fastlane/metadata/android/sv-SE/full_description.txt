@@ -1,9 +1,9 @@
-This app provides a few handy tools for tabletop games:
+Denna app ger några praktiska verktyg för bordsspel:
 * Dice (D3, D4, D6, D8, D10, D12, D20, D100)
 * [Rot13](https://en.wikipedia.org/wiki/ROT13)
-* Number converter: Decimal <=> Binary <=> Hexadecimal
+* Antal omvandlare: Decimal <=> Binär <=> Hexadecimal
 * Timer
-* Buzzers for 1 - 4 players
-* List that can be randomized
+* Summer för 1 - 4 spelare
+* Lista som kan randomiseras
 
-More tools are planned.
+Fler verktyg är planerade.

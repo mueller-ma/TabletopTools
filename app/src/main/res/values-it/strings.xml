@@ -1,16 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
+    <string name="app_name">Strumenti Da Tavolo</string>
+    <string name="app_description">Handy collezione di strumenti per giochi da tavolo</string>
+    <string name="settings">Impostazioni</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
+    <string name="menu_rot13">ROT13</string>
+    <plurals name="rot13_hint">
+        <item quantity="one">Tutte le lettere latine saranno ruotate di %d posto (può essere impostato sotto)</item>
+        <item quantity="other">Tutte le lettere latine saranno ruotate di %d posti (possono essere impostate sotto)</item>
+    </plurals>
     <!-- Alphabet -->
+    <string name="menu_alphabet">Alfabeto</string>
+    <string name="alphabet_letter">Lettera</string>
+    <string name="alphabet_number">Posizione</string>
     <!-- Number converter -->
+    <string name="menu_number_converter">Convertitore di numeri</string>
+    <string name="number_converter_decimal">Decimale</string>
+    <string name="number_converter_binary">Binario</string>
+    <string name="number_converter_hexadecimal">Esadecimale</string>
     <!-- Titles for start page -->
     <!-- Dice -->
+    <string name="menu_dice">Dadi</string>
+    <string name="dice_slider_hint">Numero di dadi: %d</string>
+    <string name="dice_overall_inc_slider_hint">Aggiungi al risultato complessivo: %d</string>
+    <string name="dice_roll_inc_slider_hint">Aggiungi a ogni rullo: %d</string>
     <!-- Dice with %d sides -->
+    <string name="dice_d_d">D%d</string>
+    <string name="dice_max_count">Numero massimo di dadi</string>
+    <string name="dice_show_overall_inc_slider">Mostra il cursore \"Aggiungi al risultato complessivo\"</string>
+    <string name="dice_show_roll_inc_slider">Mostra il cursore \"Aggiungi ad ogni rotolo\"</string>
     <!-- Timer -->
+    <string name="menu_timer">Timer</string>
+    <string name="timer_start">Inizia</string>
+    <string name="timer_pause">Pausa</string>
+    <string name="timer_reset">Reset</string>
     <!-- Abr. of minutes -->
+    <string name="timer_select_min">Min</string>
     <!-- Abr. of seconds -->
+    <string name="timer_select_sec">Sec</string>
+    <string name="timer_set_time">Imposta ora</string>
     <!-- Buzzers -->
+    <string name="menu_buzzers">Buzzer</string>
+    <string name="buzzers_player_a">Giocatore A</string>
+    <string name="buzzers_player_b">Giocatore B</string>
+    <string name="buzzers_player_c">Giocatore C</string>
+    <string name="buzzers_player_d">Giocatore D</string>
+    <string name="random_list_hint">Inserisci valori separati da nuove righe</string>
+    <string name="menu_random_list">Elenco casuale</string>
+    <string name="random_list_clear_list">Cancella elenco</string>
+    <string name="random_list_sort_list">Lista di ordinamento</string>
+    <string name="random_list_clear_list_confirm">Vuoi cancellare la lista?</string>
+    <plurals name="buzzers_amount">
+        <item quantity="one">%d cicalino</item>
+        <item quantity="other">%d cicalini</item>
+    </plurals>
     <!-- Preferences -->
+    <string name="start_page">Pagina iniziale</string>
+    <string name="general">Generali</string>
+    <string name="menu_preferences">Impostazioni</string>
+    <string name="keep_screen_on_enabled">Mantieni lo schermo acceso</string>
+    <string name="keep_screen_on_disabled">Non mantenere lo schermo acceso</string>
     <!--  About menu  -->
+    <string name="about">Informazioni</string>
+    <string name="error_no_browser_found">Nessun browser trovato</string>
 </resources>

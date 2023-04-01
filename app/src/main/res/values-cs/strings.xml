@@ -1,20 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
+    <string name="app_name">Nástroje pro stolní počítače</string>
     <string name="app_description">Šikovná sbírka nástrojů pro stolní hry</string>
     <string name="settings">Nastavení</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">ROT13</string>
+    <plurals name="rot13_hint">
+        <item quantity="one">Všechna latinská písmena budou otočena o %d místo (lze nastavit níže)</item>
+        <item quantity="few">Všechna latinská písmena budou otočena %d místy (lze nastavit níže)</item>
+        <item quantity="many">Všechna latinská písmena budou otočena %d místy (lze nastavit níže)</item>
+        <item quantity="other">Všechna latinská písmena budou otočena %d místy (lze nastavit níže)</item>
+    </plurals>
     <!-- Alphabet -->
+    <string name="menu_alphabet">Abeceda</string>
+    <string name="alphabet_letter">Dopis</string>
+    <string name="alphabet_number">Pozice</string>
     <!-- Number converter -->
+    <string name="menu_number_converter">Převodník čísla</string>
+    <string name="number_converter_decimal">Desetinný</string>
+    <string name="number_converter_binary">Binární</string>
+    <string name="number_converter_hexadecimal">Hexadecimální</string>
     <!-- Titles for start page -->
     <!-- Dice -->
+    <string name="menu_dice">Košík</string>
+    <string name="dice_slider_hint">Počet slov: %d</string>
+    <string name="dice_overall_inc_slider_hint">Přidat k celkovému výsledku: %d</string>
+    <string name="dice_roll_inc_slider_hint">Přidat do každého roletu: %d</string>
     <!-- Dice with %d sides -->
+    <string name="dice_d_d">D%d</string>
+    <string name="dice_max_count">Max. počet kostek</string>
+    <string name="dice_show_overall_inc_slider">Zobrazit posuvník \"Přidat k celkovému výsledku\"</string>
+    <string name="dice_show_roll_inc_slider">Zobrazit posuvník \"Přidat do každého roll\"</string>
     <!-- Timer -->
+    <string name="menu_timer">Časovač</string>
+    <string name="timer_start">Začít</string>
+    <string name="timer_pause">Pozastavit</string>
+    <string name="timer_reset">Reset</string>
     <!-- Abr. of minutes -->
+    <string name="timer_select_min">Min.</string>
     <!-- Abr. of seconds -->
+    <string name="timer_select_sec">Sekce</string>
+    <string name="timer_set_time">Nastavit čas</string>
     <!-- Buzzers -->
+    <string name="menu_buzzers">Hádanky</string>
+    <string name="buzzers_player_a">Hráč A</string>
+    <string name="buzzers_player_b">Hráč B</string>
+    <string name="buzzers_player_c">Hráč C</string>
+    <string name="buzzers_player_d">Hráč D</string>
+    <string name="random_list_hint">Zadejte hodnoty oddělené novými řádky</string>
+    <string name="menu_random_list">Náhodný seznam</string>
+    <string name="random_list_clear_list">Vymazat seznam</string>
+    <string name="random_list_sort_list">Seřadit seznam</string>
+    <string name="random_list_clear_list_confirm">Chcete vymazat seznam?</string>
+    <plurals name="buzzers_amount">
+        <item quantity="one">%d bzučák</item>
+        <item quantity="few">%d bzučáků</item>
+        <item quantity="many">%d bzučáků</item>
+        <item quantity="other">%d bzučáků</item>
+    </plurals>
     <!-- Preferences -->
+    <string name="start_page">Úvodní stránka</string>
+    <string name="general">Obecná ustanovení</string>
     <string name="menu_preferences">Nastavení</string>
+    <string name="keep_screen_on_enabled">Ponechat obrazovku zapnutou</string>
+    <string name="keep_screen_on_disabled">Nezachovat obrazovku</string>
     <!--  About menu  -->
+    <string name="about">O aplikaci</string>
+    <string name="error_no_browser_found">Nebyl nalezen žádný prohlížeč</string>
 </resources>

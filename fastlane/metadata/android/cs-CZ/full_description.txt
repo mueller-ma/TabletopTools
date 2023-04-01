@@ -1,9 +1,9 @@
-This app provides a few handy tools for tabletop games:
-* Dice (D3, D4, D6, D8, D10, D12, D20, D100)
+Tato aplikace poskytuje několik šikovných nástrojů pro stolní hry:
+* Barva (D3, D4, D6, D8, D10, D12, D20, D100)
 * [Rot13](https://en.wikipedia.org/wiki/ROT13)
-* Number converter: Decimal <=> Binary <=> Hexadecimal
-* Timer
-* Buzzers for 1 - 4 players
-* List that can be randomized
+* Převodník čísla: desetinný <=> Binární <=> hexadecimální
+* Časovač
+* Buzzers pro 1 - 4 hráče
+* Seznam který může být náhodný
 
-More tools are planned.
+Plánuje se více nástrojů.

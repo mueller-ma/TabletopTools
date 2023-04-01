@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
+    <string name="app_name">Ferramentas Tabletop</string>
     <string name="app_description">Coleção de ferramentas úteis para jogos de tabuleiro</string>
     <string name="settings">Configurações</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
@@ -10,33 +11,57 @@
         <item quantity="other">Todas as letras (alfabeto latino) serão trocadas em %d posições (pode ser configurado abaixo)</item>
     </plurals>
     <!-- Alphabet -->
+    <string name="menu_alphabet">Alfabeto</string>
+    <string name="alphabet_letter">Letra</string>
+    <string name="alphabet_number">Posição</string>
     <!-- Number converter -->
     <string name="menu_number_converter">Conversor numérico</string>
+    <string name="number_converter_decimal">decimal</string>
     <string name="number_converter_binary">Binário</string>
+    <string name="number_converter_hexadecimal">Hexadecimal</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Dados</string>
     <string name="dice_slider_hint">Número de dados: %d</string>
+    <string name="dice_overall_inc_slider_hint">Adicionar ao resultado geral: %d</string>
+    <string name="dice_roll_inc_slider_hint">Adicione a cada rolagem: %d</string>
     <!-- Dice with %d sides -->
     <string name="dice_d_d">d%d</string>
+    <string name="dice_max_count">Máx. número de dados</string>
+    <string name="dice_show_overall_inc_slider">Mostrar o controle deslizante \"Adicionar ao resultado geral\"</string>
+    <string name="dice_show_roll_inc_slider">Mostrar \"Adicionar a cada controle de rolagem\"</string>
     <!-- Timer -->
+    <string name="menu_timer">Cronômetro</string>
     <string name="timer_start">Iniciar</string>
     <string name="timer_pause">Pausar</string>
     <string name="timer_reset">Reiniciar</string>
     <!-- Abr. of minutes -->
+    <string name="timer_select_min">Mínimo</string>
     <!-- Abr. of seconds -->
     <string name="timer_select_sec">Seg</string>
+    <string name="timer_set_time">Definir horário</string>
     <!-- Buzzers -->
     <string name="menu_buzzers">Campainhas</string>
     <string name="buzzers_player_a">Jogador A</string>
     <string name="buzzers_player_b">Jogador B</string>
     <string name="buzzers_player_c">Jogador C</string>
     <string name="buzzers_player_d">Jogador D</string>
+    <string name="random_list_hint">Digite os valores separados por novas linhas</string>
+    <string name="menu_random_list">Lista aleatória</string>
+    <string name="random_list_clear_list">Limpar lista</string>
+    <string name="random_list_sort_list">Lista de classificação</string>
+    <string name="random_list_clear_list_confirm">Você deseja limpar a lista?</string>
     <plurals name="buzzers_amount">
         <item quantity="one">%d campainha</item>
         <item quantity="other">%d campainhas</item>
     </plurals>
     <!-- Preferences -->
+    <string name="start_page">Página inicial</string>
+    <string name="general">Gerais</string>
     <string name="menu_preferences">Configurações</string>
+    <string name="keep_screen_on_enabled">Manter a tela ligada</string>
+    <string name="keep_screen_on_disabled">Não manter a tela ligada</string>
     <!--  About menu  -->
+    <string name="about">SOBRE</string>
+    <string name="error_no_browser_found">Nenhum navegador encontrado</string>
 </resources>

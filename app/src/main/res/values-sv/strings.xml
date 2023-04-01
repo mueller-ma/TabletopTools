@@ -1,16 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
+    <string name="app_name">Verktyg för bordsskivor</string>
+    <string name="app_description">Praktisk verktygskollektion för bordsspel</string>
+    <string name="settings">Inställningar</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
+    <string name="menu_rot13">ROT13</string>
+    <plurals name="rot13_hint">
+        <item quantity="one">Alla latinska bokstäver kommer att roteras av %d plats (kan anges nedan)</item>
+        <item quantity="other">Alla latinska bokstäver kommer att roteras av %d platser (kan anges nedan)</item>
+    </plurals>
     <!-- Alphabet -->
+    <string name="menu_alphabet">Alfabetet</string>
+    <string name="alphabet_letter">Brev</string>
+    <string name="alphabet_number">Befattning</string>
     <!-- Number converter -->
+    <string name="menu_number_converter">Nummeromvandlare</string>
+    <string name="number_converter_decimal">Decimal</string>
+    <string name="number_converter_binary">Binär</string>
+    <string name="number_converter_hexadecimal">Hexadecimal</string>
     <!-- Titles for start page -->
     <!-- Dice -->
+    <string name="menu_dice">Tärning</string>
+    <string name="dice_slider_hint">Antal tärningar: %d</string>
+    <string name="dice_overall_inc_slider_hint">Lägg till i övergripande resultat: %d</string>
+    <string name="dice_roll_inc_slider_hint">Lägg till i varje rulle: %d</string>
     <!-- Dice with %d sides -->
+    <string name="dice_d_d">D%d</string>
+    <string name="dice_max_count">Max. tärningsantal</string>
+    <string name="dice_show_overall_inc_slider">Visa reglaget \"Lägg till i övergripande resultat\"</string>
+    <string name="dice_show_roll_inc_slider">Visa reglaget \"Lägg till i varje rulle\"</string>
     <!-- Timer -->
+    <string name="menu_timer">Timer</string>
+    <string name="timer_start">Starta</string>
+    <string name="timer_pause">Pausa</string>
+    <string name="timer_reset">Reset</string>
     <!-- Abr. of minutes -->
+    <string name="timer_select_min">Minsta</string>
     <!-- Abr. of seconds -->
+    <string name="timer_select_sec">Sek</string>
+    <string name="timer_set_time">Ange tid</string>
     <!-- Buzzers -->
+    <string name="menu_buzzers">Buzzers</string>
+    <string name="buzzers_player_a">Spelare A</string>
+    <string name="buzzers_player_b">Spelare B</string>
+    <string name="buzzers_player_c">Spelare C</string>
+    <string name="buzzers_player_d">Spelare D</string>
+    <string name="random_list_hint">Ange värden separerade med nya rader</string>
+    <string name="menu_random_list">Slumpa lista</string>
+    <string name="random_list_clear_list">Rensa lista</string>
+    <string name="random_list_sort_list">Sortera lista</string>
+    <string name="random_list_clear_list_confirm">Vill du rensa listan?</string>
+    <plurals name="buzzers_amount">
+        <item quantity="one">%d summerare</item>
+        <item quantity="other">%d summerare</item>
+    </plurals>
     <!-- Preferences -->
+    <string name="start_page">Startsida</string>
+    <string name="general">Allmänt</string>
+    <string name="menu_preferences">Inställningar</string>
+    <string name="keep_screen_on_enabled">Behåll skärmen på</string>
+    <string name="keep_screen_on_disabled">Håll inte skärmen på</string>
     <!--  About menu  -->
+    <string name="about">Om</string>
+    <string name="error_no_browser_found">Ingen webbläsare hittades</string>
 </resources>

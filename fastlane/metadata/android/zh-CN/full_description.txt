@@ -1,9 +1,9 @@
-This app provides a few handy tools for tabletop games:
+这个应用为桌面游戏提供了几个简单的工具：
 * Dice (D3, D4, D6, D8, D10, D12, D20, D100)
 * [Rot13](https://en.wikipedia.org/wiki/ROT13)
-* Number converter: Decimal <=> Binary <=> Hexadecimal
-* Timer
-* Buzzers for 1 - 4 players
-* List that can be randomized
+* 数字转换器：十进制<=> 二进制<=> 六进制文件
+* 计时器
+* 1至4名玩家的蜂鸣器
+* 列表可以随机化
 
-More tools are planned.
+计划提供更多的工具。

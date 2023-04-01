@@ -21,7 +21,9 @@
     <string name="number_converter_hexadecimal">Onaltılık</string>
     <!-- Titles for start page -->
     <!-- Dice -->
+    <string name="dice_slider_hint">Zar sayısı: %d</string>
     <!-- Dice with %d sides -->
+    <string name="dice_d_d">Z%d</string>
     <!-- Timer -->
     <string name="menu_timer">Zamanlayıcı</string>
     <string name="timer_start">Başlat</string>
@@ -47,6 +49,9 @@
         <item quantity="other">%d sesli uyarı</item>
     </plurals>
     <!-- Preferences -->
+    <string name="general">Genel</string>
     <string name="menu_preferences">Ayarlar</string>
     <!--  About menu  -->
+    <string name="about">Hakkında</string>
+    <string name="error_no_browser_found">Web tarayıcısı bulunamadı</string>
 </resources>
