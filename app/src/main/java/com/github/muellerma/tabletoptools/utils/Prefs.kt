@@ -8,8 +8,7 @@ import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.ui.fragments.TimerFragment
 
 class Prefs(private val context: Context) {
-    var sharedPrefs: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
-        private set
+    private var sharedPrefs: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
 
     val maxDiceCount: Int
         get() = sharedPrefs.getString("dices_max_count", "10")?.toInt() ?: 10
@@ -56,4 +55,11 @@ class Prefs(private val context: Context) {
             }
         }
 
+    val buzzerSound: Int?
+        get() {
+            return when (sharedPrefs.getString("buzzer_sound", null)) {
+                "foo" -> R.raw.beeps
+                else -> null
+            }
+        }
 }

@@ -25,4 +25,13 @@
         <item>@string/menu_timer_value</item>
         <item>@string/menu_buzzers_value</item>
     </string-array>
+
+    <string-array name="buzzer_sound">
+        <item>@string/buzzer_sound_none</item>
+        <item>foo</item>
+    </string-array>
+    <string-array name="buzzer_sound_values">
+        <item>@string/buzzer_sound_none_value</item>
+        <item>foo</item>
+    </string-array>
 </resources>
