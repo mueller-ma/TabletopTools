@@ -32,7 +32,7 @@
                 android:title="@string/buzzer_sound"
                 android:entryValues="@array/buzzer_sound_values"
                 android:entries="@array/buzzer_sound"
-                android:defaultValue="@string/buzzer_sound_none_value"
+                android:defaultValue="none"
                 android:summary="%s" />
     </PreferenceCategory>
     <PreferenceCategory>

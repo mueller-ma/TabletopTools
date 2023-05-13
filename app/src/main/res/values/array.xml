@@ -28,10 +28,10 @@
 
     <string-array name="buzzer_sound">
         <item>@string/buzzer_sound_none</item>
-        <item>foo</item>
+        <item>@string/buzzer_sound_buzzer</item>
     </string-array>
-    <string-array name="buzzer_sound_values">
-        <item>@string/buzzer_sound_none_value</item>
-        <item>foo</item>
+    <string-array name="buzzer_sound_values" translatable="false">
+        <item>none</item>
+        <item>buzzer</item>
     </string-array>
 </resources>

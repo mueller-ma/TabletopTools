@@ -58,7 +58,7 @@ class Prefs(private val context: Context) {
     val buzzerSound: Int?
         get() {
             return when (sharedPrefs.getString("buzzer_sound", null)) {
-                "foo" -> R.raw.beeps
+                "buzzer" -> R.raw.buzzer
                 else -> null
             }
         }
