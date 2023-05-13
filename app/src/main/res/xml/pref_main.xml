@@ -29,6 +29,15 @@
                 android:title="@string/dice_show_roll_inc_slider"
                 android:defaultValue="false" />
     </PreferenceCategory>
+    <PreferenceCategory android:title="@string/menu_buzzers">
+        <ListPreference
+                android:key="buzzer_sound"
+                android:title="@string/buzzer_sound"
+                android:entryValues="@array/buzzer_sound_values"
+                android:entries="@array/buzzer_sound"
+                android:defaultValue="none"
+                android:summary="%s" />
+    </PreferenceCategory>
     <PreferenceCategory>
         <Preference
                 android:key="about"

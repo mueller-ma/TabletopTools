@@ -1,5 +1,8 @@
 package com.github.muellerma.tabletoptools.ui.fragments
 
+import android.media.AudioAttributes
+import android.media.AudioManager
+import android.media.MediaPlayer
 import android.os.*
 import android.util.Log
 import android.view.*
@@ -11,6 +14,7 @@ import androidx.core.view.isVisible
 import androidx.lifecycle.Lifecycle
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.FragmentBuzzersBinding
+import com.github.muellerma.tabletoptools.utils.Prefs
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -94,6 +98,18 @@ class BuzzersFragment : AbstractBaseFragment() {
         } else {
             @Suppress("DEPRECATION")
             vibrator.vibrate(500)
+        }
+
+        val sound = Prefs(requireContext()).buzzerSound
+        if (sound != null) {
+            val audioManager = requireContext().getSystemService<AudioManager>()!!
+            val player = MediaPlayer.create(
+                requireContext(),
+                sound,
+                AudioAttributes.Builder().build(),
+                audioManager.generateAudioSessionId()
+            )
+            player.start()
         }
 
         buzzers.forEach {
