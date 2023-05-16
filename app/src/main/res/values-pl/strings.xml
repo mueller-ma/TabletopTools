@@ -65,6 +65,9 @@
     <string name="menu_preferences">Ustawienia</string>
     <string name="keep_screen_on_enabled">Zachowaj włączony ekran</string>
     <string name="keep_screen_on_disabled">Nie zachowuj włączonego ekranu</string>
+    <string name="buzzer_sound">Dźwięk</string>
+    <string name="buzzer_sound_none">Brak</string>
+    <string name="buzzer_sound_buzzer">Brzęczyk</string>
     <!--  About menu  -->
     <string name="about">O aplikacji</string>
     <string name="error_no_browser_found">Nie znaleziono przeglądarki</string>
