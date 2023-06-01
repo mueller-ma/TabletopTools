@@ -12,8 +12,6 @@ This Android app provides a few handy tools for tabletop games:
 * Buzzers for 1 - 4 players
 * List that can be randomized
 
-More tools are planned.
-
 [<img alt="Get it on F-Droid" height="80" src="https://raw.githubusercontent.com/mueller-ma/android-common/main/assets/get-it-on-fdroid.png"/>](https://f-droid.org/de/packages/com.github.muellerma.tabletoptools/)[<img alt="Download from GitHub" height="80" src="https://raw.githubusercontent.com/mueller-ma/android-common/main/assets/direct-apk-download.png"/>](https://github.com/mueller-ma/TabletopTools/releases)
 
 <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/1.png" alt="Screenshot" width=200px> <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/2.png" alt="Screenshot" width=200px> <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/3.png" alt="Screenshot" width=200px> <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/4.png" alt="Screenshot" width=200px>
