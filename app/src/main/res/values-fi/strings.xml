@@ -10,7 +10,6 @@
         <item quantity="one">Kaikki latinalaiset kirjaimet pyörivät %d paikan mukaan (voidaan asettaa alla)</item>
         <item quantity="other">Kaikki latinalaiset kirjaimet pyörivät %d paikan mukaan (voidaan asettaa alla)</item>
     </plurals>
-    <!-- 100 most common words in English (from https://en.wikipedia.org/wiki/Most_common_words_in_English). Don't translate them, but use the most common words in your language. These words are used to automatically decrypt ROT13 -->
     <!-- Alphabet -->
     <string name="menu_alphabet">Aakkoset</string>
     <string name="alphabet_letter">Kirje</string>
