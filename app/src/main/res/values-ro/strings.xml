@@ -11,6 +11,7 @@
         <item quantity="few">Toate literele latine vor fi rotite de %d locuri (pot fi setate mai jos)</item>
         <item quantity="other">Toate literele latine vor fi rotite de %d locuri (pot fi setate mai jos)</item>
     </plurals>
+    <!-- 100 most common words in English (from https://en.wikipedia.org/wiki/Most_common_words_in_English). Don't translate them, but use the most common words in your language. These words are used to automatically decrypt ROT13 -->
     <!-- Alphabet -->
     <string name="menu_alphabet">Alfabet</string>
     <string name="alphabet_letter">Scrisoare</string>
