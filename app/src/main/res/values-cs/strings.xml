@@ -12,6 +12,7 @@
         <item quantity="many">Všechna latinská písmena budou otočena %d místy (lze nastavit níže)</item>
         <item quantity="other">Všechna latinská písmena budou otočena %d místy (lze nastavit níže)</item>
     </plurals>
+    <!-- 100 most common words in English (from https://en.wikipedia.org/wiki/Most_common_words_in_English). Don't translate them, but use the most common words in your language. These words are used to automatically decrypt ROT13 -->
     <!-- Alphabet -->
     <string name="menu_alphabet">Abeceda</string>
     <string name="alphabet_letter">Dopis</string>
