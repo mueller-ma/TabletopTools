@@ -5,6 +5,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:fillViewport="true"
         tools:context=".ui.fragments.Rot13Fragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -45,16 +46,30 @@
 
         <TextView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:id="@+id/rot13_result_text"
                 app:layout_constraintTop_toBottomOf="@+id/rot13_slider"
                 android:layout_marginTop="16dp"
+                android:textIsSelectable="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/rot13_resolve_button"
+                android:src="@drawable/lock_open_outline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@string/rot13_rotate_automatically" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

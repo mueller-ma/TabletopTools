@@ -1,9 +1,8 @@
 package com.github.muellerma.tabletoptools
 
 import com.github.muellerma.tabletoptools.ui.fragments.Rot13Fragment
+import org.junit.Assert.assertEquals
 import org.junit.Test
-
-import org.junit.Assert.*
 
 class Rot13UnitTest {
     @Test
@@ -39,5 +38,11 @@ class Rot13UnitTest {
     fun testRotateNonLatinLetters() {
         assertEquals('Ä', Rot13Fragment.rotateChar('Ä', 42))
         assertEquals('é', Rot13Fragment.rotateChar('é', 42))
+    }
+
+    @Test
+    fun testRotateString() {
+        assertEquals("Unyyb", Rot13Fragment.rotateString("Hallo", 13))
+        assertEquals("Unyyb sbb", Rot13Fragment.rotateString("Hallo foo", 13))
     }
 }
