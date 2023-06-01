@@ -10,6 +10,7 @@
         <item quantity="one">Alle latinske bokstaver vil bli rotert med %d sted (kan angis nedenfor)</item>
         <item quantity="other">Alle latinske bokstaver vil bli rotert av %d steder (kan angis nedenfor)</item>
     </plurals>
+    <!-- 100 most common words in English (from https://en.wikipedia.org/wiki/Most_common_words_in_English). Don't translate them, but use the most common words in your language. These words are used to automatically decrypt ROT13 -->
     <!-- Alphabet -->
     <string name="menu_alphabet">Alfabetet</string>
     <string name="alphabet_letter">Brev</string>
