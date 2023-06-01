@@ -15,6 +15,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.utils.Prefs
+import com.github.muellerma.tabletoptools.utils.showToast
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -77,6 +78,7 @@ abstract class AbstractBaseFragment : Fragment(), CoroutineScope {
                         Log.d(TAG, "Keep screen on changed to $nowKeepScreenOn")
                         prefs.keepScreenOn = nowKeepScreenOn
                         updateViewAndIconState(nowKeepScreenOn, item)
+                        context?.showToast(item.title.toString())
                         true
                     }
                     else -> false

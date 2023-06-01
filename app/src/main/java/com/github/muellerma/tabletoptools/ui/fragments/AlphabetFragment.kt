@@ -30,8 +30,6 @@ class AlphabetFragment : AbstractBaseFragment() {
             binding.alphabetTable.addView(row.root)
         }
 
-        binding.root.keepScreenOn = prefs.keepScreenOn
-
         setupScreenOn(binding.root)
 
         return binding.root
