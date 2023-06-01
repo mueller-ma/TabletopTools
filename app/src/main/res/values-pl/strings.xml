@@ -12,6 +12,7 @@
         <item quantity="many">Wszystkie łacińskie litery zostaną obrócone o %d miejsc (można ustawić poniżej)</item>
         <item quantity="other">Wszystkie łacińskie litery zostaną obrócone o %d miejsc (można ustawić poniżej)</item>
     </plurals>
+    <!-- 100 most common words in English (from https://en.wikipedia.org/wiki/Most_common_words_in_English). Don't translate them, but use the most common words in your language. These words are used to automatically decrypt ROT13 -->
     <!-- Alphabet -->
     <string name="menu_alphabet">Alfabet</string>
     <string name="alphabet_letter">Litera</string>
