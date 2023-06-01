@@ -9,7 +9,6 @@
     <plurals name="rot13_hint">
         <item quantity="other">所有拉丁字母将由 %d 处旋转(可以设置在下方)</item>
     </plurals>
-    <!-- 100 most common words in English (from https://en.wikipedia.org/wiki/Most_common_words_in_English). Don't translate them, but use the most common words in your language. These words are used to automatically decrypt ROT13 -->
     <!-- Alphabet -->
     <string name="menu_alphabet">字母表</string>
     <string name="alphabet_letter">信</string>
