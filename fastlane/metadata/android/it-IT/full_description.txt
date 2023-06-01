@@ -1,9 +1,7 @@
 Questa app fornisce alcuni strumenti utili per i giochi da tavolo:
 * Dadi (D3, D4, D6, D8, D10, D12, D20, D100)
-* [Rot13](https://en.wikipedia.org/wiki/ROT13)
+* [ROT13](https://en.wikipedia.org/wiki/ROT13)
 * Convertitore di numeri: Decimale <=> Binario <=> Esadecimale
 * Timer
 * Buzzer per 1 - 4 giocatori
 * Elenco che può essere casuale
-
-Sono previsti più strumenti.
