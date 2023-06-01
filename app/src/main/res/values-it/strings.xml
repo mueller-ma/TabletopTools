@@ -10,6 +10,7 @@
         <item quantity="one">Tutte le lettere latine saranno ruotate di %d posto (può essere impostato sotto)</item>
         <item quantity="other">Tutte le lettere latine saranno ruotate di %d posti (possono essere impostate sotto)</item>
     </plurals>
+    <!-- 100 most common words in English (from https://en.wikipedia.org/wiki/Most_common_words_in_English). Don't translate them, but use the most common words in your language. These words are used to automatically decrypt ROT13 -->
     <!-- Alphabet -->
     <string name="menu_alphabet">Alfabeto</string>
     <string name="alphabet_letter">Lettera</string>
