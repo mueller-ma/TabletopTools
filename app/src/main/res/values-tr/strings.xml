@@ -10,6 +10,7 @@
         <item quantity="one">Tüm latin harfler %d basamak döndürülecektir (aşağıda ayarlanabilir)</item>
         <item quantity="other">Tüm latin harfleri %d basamak döndürülecektir (aşağıda ayarlanabilir)</item>
     </plurals>
+    <!-- 100 most common words in English (from https://en.wikipedia.org/wiki/Most_common_words_in_English). Don't translate them, but use the most common words in your language. These words are used to automatically decrypt ROT13 -->
     <!-- Alphabet -->
     <string name="menu_alphabet">Alfabe</string>
     <string name="alphabet_letter">Harf</string>
