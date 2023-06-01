@@ -14,6 +14,7 @@ import com.github.muellerma.tabletoptools.databinding.FragmentRot13Binding
 import com.github.muellerma.tabletoptools.utils.isLatinLetter
 import com.github.muellerma.tabletoptools.utils.showToast
 import com.google.android.material.slider.Slider
+import java.util.Locale
 
 class Rot13Fragment : AbstractBaseFragment() {
     private lateinit var binding: FragmentRot13Binding
@@ -57,11 +58,13 @@ class Rot13Fragment : AbstractBaseFragment() {
         val rotated = (0..25).associateWith { rotateBy ->
             rotateString(input, rotateBy)
         }
-        val commonWords = resources.getStringArray(R.array.rot13_common_words).toSet()
+        val commonWords = resources.getStringArray(R.array.rot13_common_words)
+            .map { it.lowercase( Locale.getDefault()) }
+            .toSet()
         var highestIndex = 0
         var highestMatch = 0
         rotated.forEach {
-            val splitText = it.value.split(" ").toList()
+            val splitText = it.value.lowercase(Locale.getDefault()).split(" ").toList()
             val matches = splitText.intersect(commonWords).size
             if (matches > highestMatch) {
                 highestMatch = matches
