@@ -19,8 +19,10 @@ This Android app provides a few handy tools for tabletop games:
 ## Translations
 
 App strings and the app store description can be translated via Crowdin: https://crowdin.com/project/tabletop-tools
+For the automatic rotation detection in ROT13 you need to manually copy [this file](https://github.com/mueller-ma/TabletopTools/blob/main/app/src/main/res/values/common_words.xml) and commit it.
+Crowdin doesn't handle this string array well.
 
-Translations have to be approved before being merged into the app. To become a translator with approval rights or to request a new language, please [poke me on Crowdin](https://crowdin.com/profile/mueller-ma) or open an issue here on GitHub. 
+To request a new language, please [poke me on Crowdin](https://crowdin.com/profile/mueller-ma) or open an issue here on GitHub. 
 
 ## Credits
 
