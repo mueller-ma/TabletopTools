@@ -1,9 +1,7 @@
 Această aplicație oferă câteva unelte utile pentru jocurile cu tablete:
 * Șoareci (D3, D4, D6, D8, D10, D12, D20, D100)
-* [Rot13](https://en.wikipedia.org/wiki/ROT13)
+* [ROT13](https://en.wikipedia.org/wiki/ROT13)
 * Convertor de numere: zecimal <=> Binar <=> Hexadecimal
 * Cronometru
 * Zvonuri pentru 1 - 4 jucători
 * Lista care poate fi randomizat
-
-Sunt planificate mai multe instrumente.
