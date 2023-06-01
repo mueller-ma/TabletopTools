@@ -12,7 +12,6 @@
         <item quantity="many">Все латинские буквы будут сдвинуты на %d позиций (можно указать ниже)</item>
         <item quantity="other">Все латинские буквы будут сдвинуты на %d позиции (можно указать ниже)</item>
     </plurals>
-    <!-- 100 most common words in English (from https://en.wikipedia.org/wiki/Most_common_words_in_English). Don't translate them, but use the most common words in your language. These words are used to automatically decrypt ROT13 -->
     <!-- Alphabet -->
     <string name="menu_alphabet">Алфавит</string>
     <string name="alphabet_letter">Буква</string>
