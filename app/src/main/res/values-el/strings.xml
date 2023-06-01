@@ -10,7 +10,6 @@
         <item quantity="one">Όλα τα λατινικά γράμματα θα περιστραφούν από %d μέρος (μπορεί να οριστεί παρακάτω)</item>
         <item quantity="other">Όλα τα λατινικά γράμματα θα περιστραφούν σε %d θέσεις (μπορεί να οριστεί παρακάτω)</item>
     </plurals>
-    <!-- 100 most common words in English (from https://en.wikipedia.org/wiki/Most_common_words_in_English). Don't translate them, but use the most common words in your language. These words are used to automatically decrypt ROT13 -->
     <!-- Alphabet -->
     <string name="menu_alphabet">Αλφάβητο</string>
     <string name="alphabet_letter">Γράμμα</string>
