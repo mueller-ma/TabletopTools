@@ -9,6 +9,7 @@
     <plurals name="rot13_hint">
         <item quantity="other">すべてのラテン文字は %d の場所で回転します (下記に設定できます)</item>
     </plurals>
+    <!-- 100 most common words in English (from https://en.wikipedia.org/wiki/Most_common_words_in_English). Don't translate them, but use the most common words in your language. These words are used to automatically decrypt ROT13 -->
     <!-- Alphabet -->
     <string name="menu_alphabet">アルファベット(&amp;A)</string>
     <string name="alphabet_letter">手紙</string>
