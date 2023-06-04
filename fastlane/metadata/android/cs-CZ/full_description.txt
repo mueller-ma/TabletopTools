@@ -1,9 +1,7 @@
 Tato aplikace poskytuje několik šikovných nástrojů pro stolní hry:
 * Barva (D3, D4, D6, D8, D10, D12, D20, D100)
-* [Rot13](https://en.wikipedia.org/wiki/ROT13)
+* [ROT13](https://en.wikipedia.org/wiki/ROT13)
 * Převodník čísla: desetinný <=> Binární <=> hexadecimální
 * Časovač
 * Buzzers pro 1 - 4 hráče
 * Seznam který může být náhodný
-
-Plánuje se více nástrojů.

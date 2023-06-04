@@ -1,9 +1,7 @@
 Tämä sovellus tarjoaa muutamia käteviä työkaluja pöytäpeleihin:
 * Dice (D3, D4, D6, D8, D10, D12, D20, D100)
-* [Rot13](https://en.wikipedia.org/wiki/ROT13)
+* [ROT13](https://en.wikipedia.org/wiki/ROT13)
 * Numeromuunnin: Desimaali <=> Binary <=> Hexadecimal
 * Ajastin
 * Puskurit 1 - 4 pelaajalle
 * Luettelo joka voidaan satunnaisesti
-
-Uusia työkaluja on suunnitteilla.
