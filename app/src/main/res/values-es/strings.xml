@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
-    <string name="app_name">Herramientas de Tabla</string>
+    <string name="app_name">Herramientas para juegos de mesa</string>
     <string name="app_description">Una colección de herramientas útiles para juegos de mesa</string>
     <string name="settings">Ajustes</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">Rot 13</string>
+    <string name="rot13_could_not_rotate">No se pudo rotar automáticamente</string>
+    <string name="rot13_rotate_automatically">Rotar automáticamente</string>
     <plurals name="rot13_hint">
         <item quantity="one">Todas las letras (alfabeto latino) se rotarán %d grado (Se puede definir abajo)</item>
         <item quantity="other">Todas las letras (alfabeto latino) se rotarán %d grados (Se puede definir abajo)</item>
@@ -61,6 +63,9 @@
     <string name="menu_preferences">Ajustes</string>
     <string name="keep_screen_on_enabled">Mantener pantalla encendida</string>
     <string name="keep_screen_on_disabled">No mantener la pantalla encendida</string>
+    <string name="buzzer_sound">Sonido</string>
+    <string name="buzzer_sound_none">Ninguno</string>
+    <string name="buzzer_sound_buzzer">Zumbador</string>
     <!--  About menu  -->
     <string name="about">Acerca de</string>
     <string name="error_no_browser_found">No se encontró ningún navegador</string>
