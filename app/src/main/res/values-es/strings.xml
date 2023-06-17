@@ -9,7 +9,7 @@
     <string name="rot13_could_not_rotate">No se pudo rotar automáticamente</string>
     <string name="rot13_rotate_automatically">Rotar automáticamente</string>
     <plurals name="rot13_hint">
-        <item quantity="one">Todas las letras (alfabeto latino) se rotarán %d grado (Se puede definir abajo)</item>
+        <item quantity="one">Todas las letras (alfabeto latino) se rotarán %d posición (se puede definir abajo)</item>
         <item quantity="other">Todas las letras (alfabeto latino) se rotarán %d grados (Se puede definir abajo)</item>
     </plurals>
     <!-- Alphabet -->
