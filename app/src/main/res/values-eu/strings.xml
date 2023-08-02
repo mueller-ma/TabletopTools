@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translation instructions can be found in the Readme -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
+    <string name="app_name">Mahai-jokoetarako tresnak</string>
+    <string name="app_description">Tresna erabilgarrien bilduma mahai-jokoetarako</string>
+    <string name="settings">Ezarpenak</string>
+    <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
+    <string name="menu_rot13">ROT13</string>
+    <string name="rot13_could_not_rotate">Ezin izan da automatikoki txandakatu</string>
+    <string name="rot13_rotate_automatically">Automatikoki txandakatu</string>
+    <!-- Alphabet -->
+    <!-- Number converter -->
+    <!-- Titles for start page -->
+    <!-- Dice -->
+    <!-- Dice with %d sides -->
+    <!-- Timer -->
+    <!-- Abr. of minutes -->
+    <!-- Abr. of seconds -->
+    <!-- Buzzers -->
+    <!-- Preferences -->
+    <string name="menu_preferences">Ezarpenak</string>
+    <!--  About menu  -->
+</resources>
