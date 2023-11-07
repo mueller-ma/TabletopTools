@@ -1,29 +1,16 @@
 package com.github.muellerma.tabletoptools.ui.fragments
 
-import android.annotation.SuppressLint
 import android.os.Bundle
-import android.util.Log
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import android.widget.TableLayout
-import android.widget.TableRow
-import android.widget.TextView
-import androidx.core.view.setPadding
 import androidx.fragment.app.commit
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.utils.openInBrowser
-import com.github.muellerma.tabletoptools.utils.positionInAlphabet
-import com.google.android.material.button.MaterialButton
-import com.google.android.material.slider.Slider
 import com.mikepenz.aboutlibraries.LibsBuilder
 import com.mikepenz.aboutlibraries.LibsConfiguration
 import com.mikepenz.aboutlibraries.entity.Library
 import com.mikepenz.aboutlibraries.util.SpecialButton
-import kotlinx.parcelize.Parcelize
-import org.w3c.dom.Text
 
 class PreferenceFragment : PreferenceFragmentCompat() {
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
