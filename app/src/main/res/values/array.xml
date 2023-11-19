@@ -13,6 +13,7 @@
         <item>@string/menu_rot13</item>
         <item>@string/menu_alphabet</item>
         <item>@string/menu_number_converter</item>
+        <item>@string/menu_prime_fac</item>
         <item>@string/menu_timer</item>
         <item>@string/menu_buzzers</item>
     </string-array>
@@ -22,6 +23,7 @@
         <item>@string/menu_rot13_value</item>
         <item>@string/menu_alphabet_value</item>
         <item>@string/menu_number_converter_value</item>
+        <item>@string/menu_prime_fac_value</item>
         <item>@string/menu_timer_value</item>
         <item>@string/menu_buzzers_value</item>
     </string-array>

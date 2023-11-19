@@ -27,6 +27,10 @@
     <string name="number_converter_binary">Binary</string>
     <string name="number_converter_hexadecimal">Hexadecimal</string>
 
+    <!-- Integer factorization -->
+    <string name="menu_prime_fac">Prime factorization</string>
+    <string name="prime_fac_input">Enter an integer to perform a prime factorization</string>
+
     <!-- Titles for start page -->
     <string name="menu_dice_value" translatable="false">dice</string>
     <string name="menu_timer_value" translatable="false">timer</string>
@@ -35,6 +39,7 @@
     <string name="menu_rot13_value" translatable="false">rot13</string>
     <string name="menu_alphabet_value" translatable="false">alphabet</string>
     <string name="menu_number_converter_value" translatable="false">converter</string>
+    <string name="menu_prime_fac_value" translatable="false">prime_fac</string>
 
     <!-- Dice -->
     <string name="menu_dice">Dice</string>

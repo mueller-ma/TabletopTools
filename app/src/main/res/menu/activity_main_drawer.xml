@@ -24,6 +24,12 @@
                 android:id="@+id/nav_number_converter"
                 android:icon="@drawable/ic_menu_number_converter"
                 android:title="@string/menu_number_converter" />
+
+        <item
+                android:id="@+id/nav_prime_fac"
+                android:icon="@drawable/ic_division"
+                android:title="@string/menu_prime_fac" />
+
         <item
                 android:id="@+id/nav_timer"
                 android:icon="@drawable/ic_baseline_timer_24"
