@@ -18,6 +18,7 @@
     <string name="number_converter_decimal">小数点以下桁数</string>
     <string name="number_converter_binary">バイナリ</string>
     <string name="number_converter_hexadecimal">16進法</string>
+    <!-- Integer factorization -->
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">ダイス</string>
