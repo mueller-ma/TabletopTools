@@ -21,6 +21,7 @@
     <string name="number_converter_decimal">Dezimal</string>
     <string name="number_converter_binary">Binär</string>
     <string name="number_converter_hexadecimal">Hexadezimal</string>
+    <!-- Integer factorization -->
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Würfel</string>
