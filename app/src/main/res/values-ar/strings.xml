@@ -23,6 +23,7 @@
     <string name="number_converter_decimal">عشري</string>
     <string name="number_converter_binary">ثنائي</string>
     <string name="number_converter_hexadecimal">سداسي</string>
+    <!-- Integer factorization -->
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">النجدة</string>
