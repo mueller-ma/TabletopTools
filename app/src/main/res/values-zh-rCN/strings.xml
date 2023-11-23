@@ -18,6 +18,7 @@
     <string name="number_converter_decimal">小数</string>
     <string name="number_converter_binary">二进制文件</string>
     <string name="number_converter_hexadecimal">十六进制的</string>
+    <!-- Integer factorization -->
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">爱好</string>
