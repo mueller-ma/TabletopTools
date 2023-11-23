@@ -22,6 +22,8 @@
     <string name="number_converter_binary">Binär</string>
     <string name="number_converter_hexadecimal">Hexadezimal</string>
     <!-- Integer factorization -->
+    <string name="menu_prime_fac">Primfaktorzerlegung</string>
+    <string name="prime_fac_input">Gebe eine Ganzzahl ein, um eine Primfaktorzerlegung durchzuführen</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Würfel</string>
