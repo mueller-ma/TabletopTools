@@ -35,6 +35,12 @@
             tools:layout="@layout/fragment_number_converter" />
 
     <fragment
+            android:id="@+id/nav_prime_fac"
+            android:name="com.github.muellerma.tabletoptools.ui.fragments.PrimeFacFragment"
+            android:label="@string/menu_prime_fac"
+            tools:layout="@layout/fragment_prime_fac" />
+
+    <fragment
             android:id="@+id/nav_timer"
             android:name="com.github.muellerma.tabletoptools.ui.fragments.TimerFragment"
             android:label="@string/menu_timer"

@@ -41,6 +41,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_rot13,
                 R.id.nav_alphabet,
                 R.id.nav_number_converter,
+                R.id.nav_prime_fac,
                 R.id.nav_timer,
                 R.id.nav_buzzers,
                 R.id.nav_prefs
@@ -58,6 +59,7 @@ class MainActivity : AppCompatActivity() {
             getString(R.string.menu_rot13_value) -> R.id.nav_rot13
             getString(R.string.menu_alphabet_value) -> R.id.nav_alphabet
             getString(R.string.menu_number_converter_value) -> R.id.nav_number_converter
+            getString(R.string.menu_prime_fac_value) -> R.id.nav_prime_fac
             getString(R.string.menu_timer_value) -> R.id.nav_timer
             getString(R.string.menu_buzzers_value) -> R.id.nav_buzzers
             else -> R.id.nav_dice
