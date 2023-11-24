@@ -21,6 +21,7 @@
     <string name="number_converter_decimal">Desetinný</string>
     <string name="number_converter_binary">Binární</string>
     <string name="number_converter_hexadecimal">Hexadecimální</string>
+    <!-- Integer factorization -->
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Košík</string>

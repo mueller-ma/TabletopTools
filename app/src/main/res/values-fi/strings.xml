@@ -19,6 +19,7 @@
     <string name="number_converter_decimal">Desimaali</string>
     <string name="number_converter_binary">Binääri</string>
     <string name="number_converter_hexadecimal">Heksadesimaali</string>
+    <!-- Integer factorization -->
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Dice</string>

@@ -21,6 +21,7 @@
     <string name="number_converter_decimal">Десятичный</string>
     <string name="number_converter_binary">Двоичный</string>
     <string name="number_converter_hexadecimal">Шестнадцатеричный</string>
+    <!-- Integer factorization -->
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Кубик</string>

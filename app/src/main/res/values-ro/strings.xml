@@ -20,6 +20,7 @@
     <string name="number_converter_decimal">Zecimal</string>
     <string name="number_converter_binary">Binar</string>
     <string name="number_converter_hexadecimal">Hexazecimal</string>
+    <!-- Integer factorization -->
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Șoareci</string>

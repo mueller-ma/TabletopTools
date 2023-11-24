@@ -19,6 +19,7 @@
     <string name="number_converter_decimal">Decimale</string>
     <string name="number_converter_binary">Binario</string>
     <string name="number_converter_hexadecimal">Esadecimale</string>
+    <!-- Integer factorization -->
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Dadi</string>

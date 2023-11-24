@@ -19,6 +19,7 @@
     <string name="number_converter_decimal">Décimal</string>
     <string name="number_converter_binary">Binaire</string>
     <string name="number_converter_hexadecimal">Hexadécimal</string>
+    <!-- Integer factorization -->
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Dés</string>
