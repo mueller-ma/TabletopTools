@@ -22,6 +22,8 @@
     <string name="number_converter_binary">Binário</string>
     <string name="number_converter_hexadecimal">Hexadecimal</string>
     <!-- Integer factorization -->
+    <string name="menu_prime_fac">Fatoração Prima</string>
+    <string name="prime_fac_input">Insira um número inteiro para relalizar a fatoração prima</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Dados</string>
