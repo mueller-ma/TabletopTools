@@ -8,6 +8,7 @@
     <string name="menu_rot13">ROT13</string>
     <string name="rot13_could_not_rotate">Ezin izan da automatikoki txandakatu</string>
     <string name="rot13_rotate_automatically">Automatikoki txandakatu</string>
+    <!-- Counter -->
     <!-- Alphabet -->
     <!-- Number converter -->
     <!-- Integer factorization -->
