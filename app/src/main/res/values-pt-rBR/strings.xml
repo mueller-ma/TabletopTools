@@ -12,6 +12,7 @@
         <item quantity="one">Todas as letras (alfabeto latino) serão trocadas em %d posição (pode ser configurado abaixo)</item>
         <item quantity="other">Todas as letras (alfabeto latino) serão trocadas em %d posições (pode ser configurado abaixo)</item>
     </plurals>
+    <!-- Counter -->
     <!-- Alphabet -->
     <string name="menu_alphabet">Alfabeto</string>
     <string name="alphabet_letter">Letra</string>
