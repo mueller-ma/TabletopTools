@@ -12,6 +12,7 @@
         <item quantity="many">Wszystkie łacińskie litery zostaną obrócone o %d miejsc (można ustawić poniżej)</item>
         <item quantity="other">Wszystkie łacińskie litery zostaną obrócone o %d miejsc (można ustawić poniżej)</item>
     </plurals>
+    <!-- Counter -->
     <!-- Alphabet -->
     <string name="menu_alphabet">Alfabet</string>
     <string name="alphabet_letter">Litera</string>
