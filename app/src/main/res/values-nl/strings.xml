@@ -10,6 +10,7 @@
         <item quantity="one">Alle Latijnse letters worden met %d plaatsen gedraaid (kan hieronder worden ingesteld)</item>
         <item quantity="other">Alle Latijnse letters worden met %d plaatsen gedraaid (kan hieronder worden ingesteld)</item>
     </plurals>
+    <!-- Counter -->
     <!-- Alphabet -->
     <string name="menu_alphabet">Alfabet</string>
     <string name="alphabet_letter">Brief</string>
