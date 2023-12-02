@@ -10,6 +10,7 @@
         <item quantity="one">Όλα τα λατινικά γράμματα θα περιστραφούν από %d μέρος (μπορεί να οριστεί παρακάτω)</item>
         <item quantity="other">Όλα τα λατινικά γράμματα θα περιστραφούν σε %d θέσεις (μπορεί να οριστεί παρακάτω)</item>
     </plurals>
+    <!-- Counter -->
     <!-- Alphabet -->
     <string name="menu_alphabet">Αλφάβητο</string>
     <string name="alphabet_letter">Γράμμα</string>
