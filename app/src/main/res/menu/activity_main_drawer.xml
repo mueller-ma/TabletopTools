@@ -9,6 +9,10 @@
                 android:icon="@drawable/ic_menu_dice"
                 android:title="@string/menu_dice" />
         <item
+                android:id="@+id/nav_counter"
+                android:icon="@drawable/baseline_exposure_plus_1_24"
+                android:title="@string/menu_counter" />
+        <item
                 android:id="@+id/nav_random_list"
                 android:icon="@drawable/ic_baseline_format_list_bulleted_24"
                 android:title="@string/menu_random_list" />

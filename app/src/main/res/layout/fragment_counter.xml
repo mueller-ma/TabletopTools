@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <include android:id="@+id/counter1" layout="@layout/counter" android:layout_margin="8dp" />
+        <include android:id="@+id/counter2" layout="@layout/counter" android:layout_margin="8dp" />
+        <include android:id="@+id/counter3" layout="@layout/counter" android:layout_margin="8dp" />
+        <include android:id="@+id/counter4" layout="@layout/counter" android:layout_margin="8dp" />
+        <include android:id="@+id/counter5" layout="@layout/counter" android:layout_margin="8dp" />
+
+    </LinearLayout>
+</ScrollView>

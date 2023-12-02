@@ -62,4 +62,22 @@ class Prefs(private val context: Context) {
                 else -> null
             }
         }
+
+    inner class Counter(private val id: Int) {
+        var label: String?
+            get() = sharedPrefs.getString("counter_${id}_label", null)
+            set(value) {
+                sharedPrefs.edit {
+                    putString("counter_${id}_label", value)
+                }
+            }
+
+        var count: Int
+            get() = sharedPrefs.getInt("counter_${id}_count", 1)
+            set(value) {
+                sharedPrefs.edit {
+                    putInt("counter_${id}_count", value)
+                }
+            }
+    }
 }

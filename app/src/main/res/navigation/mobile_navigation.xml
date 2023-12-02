@@ -11,6 +11,12 @@
             tools:layout="@layout/fragment_dice" />
 
     <fragment
+            android:id="@+id/nav_counter"
+            android:name="com.github.muellerma.tabletoptools.ui.fragments.CounterFragment"
+            android:label="@string/menu_counter"
+            tools:layout="@layout/fragment_counter" />
+
+    <fragment
             android:id="@+id/nav_random_list"
             android:name="com.github.muellerma.tabletoptools.ui.fragments.RandomListFragment"
             android:label="@string/menu_random_list"
