@@ -9,6 +9,7 @@
     </string-array>
     <string-array name="pages">
         <item>@string/menu_dice</item>
+        <item>@string/menu_counter</item>
         <item>@string/menu_random_list</item>
         <item>@string/menu_rot13</item>
         <item>@string/menu_alphabet</item>
@@ -19,6 +20,7 @@
     </string-array>
     <string-array name="pages_values">
         <item>@string/menu_dice_value</item>
+        <item>@string/menu_counter_value</item>
         <item>@string/menu_random_list_value</item>
         <item>@string/menu_rot13_value</item>
         <item>@string/menu_alphabet_value</item>

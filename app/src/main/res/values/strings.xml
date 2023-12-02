@@ -18,6 +18,10 @@
         <item quantity="other">All latin letters will be rotated by %d places (can be set below)</item>
     </plurals>
 
+    <!-- Counter -->
+    <string name="counter_label">Counter name</string>
+    <string name="menu_counter">Counter</string>
+
     <!-- Alphabet -->
     <string name="menu_alphabet">Alphabet</string>
     <string name="alphabet_letter">Letter</string>
@@ -42,6 +46,7 @@
     <string name="menu_alphabet_value" translatable="false">alphabet</string>
     <string name="menu_number_converter_value" translatable="false">converter</string>
     <string name="menu_prime_fac_value" translatable="false">prime_fac</string>
+    <string name="menu_counter_value" translatable="false">counter</string>
 
     <!-- Dice -->
     <string name="menu_dice">Dice</string>

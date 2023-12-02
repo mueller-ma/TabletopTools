@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.nav_dice,
+                R.id.nav_counter,
                 R.id.nav_random_list,
                 R.id.nav_rot13,
                 R.id.nav_alphabet,
@@ -57,6 +58,7 @@ class MainActivity : AppCompatActivity() {
     private fun getDefaultStartDestinationId(): Int {
         return when (Prefs(this).startPage) {
             getString(R.string.menu_dice_value) -> R.id.nav_dice
+            getString(R.string.menu_counter_value) -> R.id.nav_counter
             getString(R.string.menu_random_list_value) -> R.id.nav_random_list
             getString(R.string.menu_rot13_value) -> R.id.nav_rot13
             getString(R.string.menu_alphabet_value) -> R.id.nav_alphabet
