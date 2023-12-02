@@ -2,10 +2,13 @@
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_name">Ferramentas Tabletop</string>
+    <string name="second_instance">Segunda instância</string>
+    <string name="second_instance_hint">Use o recurso de multi-janelas do Android para usar várias ferramentas simultaneamente</string>
     <string name="app_description">Coleção de ferramentas úteis para jogos de tabuleiro</string>
     <string name="settings">Configurações</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">Rot 13</string>
+    <string name="rot13_could_not_rotate">Não foi possível rotacionar automaticamente</string>
     <plurals name="rot13_hint">
         <item quantity="one">Todas as letras (alfabeto latino) serão trocadas em %d posição (pode ser configurado abaixo)</item>
         <item quantity="other">Todas as letras (alfabeto latino) serão trocadas em %d posições (pode ser configurado abaixo)</item>
