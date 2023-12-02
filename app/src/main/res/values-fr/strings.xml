@@ -10,6 +10,7 @@
         <item quantity="one">Toutes les lettres ( alphabet latin ) seront décalés de %d position (à définir ci-dessous)</item>
         <item quantity="other">Toutes les lettres ( alphabet latin ) seront décalés de %d positions (à définir ci-dessous)</item>
     </plurals>
+    <!-- Counter -->
     <!-- Alphabet -->
     <string name="menu_alphabet">Alphabet</string>
     <string name="alphabet_letter">Lettre</string>
