@@ -13,7 +13,7 @@
             android:description="@string/app_description"
             android:theme="@style/Theme.TabletopTools">
         <activity
-                android:name="com.github.muellerma.tabletoptools.ui.MainActivity"
+                android:name=".ui.MainActivity"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+                android:name=".ui.SecondInstance"
+                android:exported="true" />
     </application>
 
 </manifest>

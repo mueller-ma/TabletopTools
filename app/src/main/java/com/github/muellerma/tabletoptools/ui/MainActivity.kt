@@ -14,6 +14,7 @@ import com.github.muellerma.tabletoptools.R
 import com.github.muellerma.tabletoptools.databinding.ActivityMainBinding
 import com.github.muellerma.tabletoptools.ui.fragments.AbstractBaseFragment
 import com.github.muellerma.tabletoptools.utils.Prefs
+import com.github.muellerma.tabletoptools.utils.createShortcuts
 import com.github.muellerma.tabletoptools.utils.parcelable
 
 class MainActivity : AppCompatActivity() {
@@ -50,6 +51,7 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         binding.navView.setupWithNavController(navController)
+        createShortcuts()
     }
 
     private fun getDefaultStartDestinationId(): Int {

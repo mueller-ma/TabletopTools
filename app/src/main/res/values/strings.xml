@@ -4,6 +4,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_name">Tabletop Tools</string>
+    <string name="second_instance">Second instance</string>
+    <string name="second_instance_hint">Use the multi-window feature of Android to use multiple tools simultaneously</string>
     <string name="app_description">Handy tool collection for tabletop games</string>
     <string name="settings">Settings</string>
 
