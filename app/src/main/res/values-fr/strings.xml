@@ -6,11 +6,14 @@
     <string name="settings">Paramètres</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">Rot 13</string>
+    <string name="rot13_rotate_automatically">Rotation automatique</string>
     <plurals name="rot13_hint">
         <item quantity="one">Toutes les lettres ( alphabet latin ) seront décalés de %d position (à définir ci-dessous)</item>
         <item quantity="other">Toutes les lettres ( alphabet latin ) seront décalés de %d positions (à définir ci-dessous)</item>
     </plurals>
     <!-- Counter -->
+    <string name="counter_label">Nom du compteur</string>
+    <string name="menu_counter">Compteur</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">Alphabet</string>
     <string name="alphabet_letter">Lettre</string>
@@ -21,6 +24,8 @@
     <string name="number_converter_binary">Binaire</string>
     <string name="number_converter_hexadecimal">Hexadécimal</string>
     <!-- Integer factorization -->
+    <string name="menu_prime_fac">Décomposition en facteurs premiers</string>
+    <string name="prime_fac_input">Entrez un nombre entier pour effectuer une décomposition en facteurs premiers</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Dés</string>
@@ -63,6 +68,9 @@
     <string name="menu_preferences">Paramètres</string>
     <string name="keep_screen_on_enabled">Garder l\'écran allumé</string>
     <string name="keep_screen_on_disabled">Ne pas garder l\'écran allumé</string>
+    <string name="buzzer_sound">Son</string>
+    <string name="buzzer_sound_none">Aucun</string>
+    <string name="buzzer_sound_buzzer">Buzzer</string>
     <!--  About menu  -->
     <string name="about">À propos</string>
     <string name="error_no_browser_found">Aucun navigateur trouvé</string>
