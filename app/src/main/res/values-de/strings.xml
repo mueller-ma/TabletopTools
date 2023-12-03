@@ -2,6 +2,8 @@
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_name">Tabletop-Tools</string>
+    <string name="second_instance">Zweite Instanz</string>
+    <string name="second_instance_hint">Verwende die Multi-Fenster-Funktion von Android, um mehrere Tools gleichzeitig zu verwenden</string>
     <string name="app_description">Sammlung nützlicher Tools für Tabletop-Spiele</string>
     <string name="settings">Einstellungen</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
@@ -12,6 +14,9 @@
         <item quantity="one">Alle lateinischen Buchstaben werden um %d Platz rotiert (kann unten gesetzt werden)</item>
         <item quantity="other">Alle lateinischen Buchstaben werden um %d Plätze rotiert (kann unten gesetzt werden)</item>
     </plurals>
+    <!-- Counter -->
+    <string name="counter_label">Zählername</string>
+    <string name="menu_counter">Zähler</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">Alphabet</string>
     <string name="alphabet_letter">Buchstabe</string>

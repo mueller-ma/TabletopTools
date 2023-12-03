@@ -9,6 +9,7 @@
     <plurals name="rot13_hint">
         <item quantity="other">所有拉丁字母将由 %d 处旋转(可以设置在下方)</item>
     </plurals>
+    <!-- Counter -->
     <!-- Alphabet -->
     <string name="menu_alphabet">字母表</string>
     <string name="alphabet_letter">信</string>

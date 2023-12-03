@@ -10,6 +10,7 @@
         <item quantity="one">Tutte le lettere latine saranno ruotate di %d posto (può essere impostato sotto)</item>
         <item quantity="other">Tutte le lettere latine saranno ruotate di %d posti (possono essere impostate sotto)</item>
     </plurals>
+    <!-- Counter -->
     <!-- Alphabet -->
     <string name="menu_alphabet">Alfabeto</string>
     <string name="alphabet_letter">Lettera</string>

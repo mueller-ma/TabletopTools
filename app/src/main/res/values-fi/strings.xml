@@ -10,6 +10,7 @@
         <item quantity="one">Kaikki latinalaiset kirjaimet pyörivät %d paikan mukaan (voidaan asettaa alla)</item>
         <item quantity="other">Kaikki latinalaiset kirjaimet pyörivät %d paikan mukaan (voidaan asettaa alla)</item>
     </plurals>
+    <!-- Counter -->
     <!-- Alphabet -->
     <string name="menu_alphabet">Aakkoset</string>
     <string name="alphabet_letter">Kirje</string>

@@ -10,6 +10,7 @@
         <item quantity="one">Alle latinske bogstaver vil blive roteret af %d sted (kan angives nedenfor)</item>
         <item quantity="other">Alle latinske bogstaver vil blive roteret af %d steder (kan angives nedenfor)</item>
     </plurals>
+    <!-- Counter -->
     <!-- Alphabet -->
     <string name="menu_alphabet">Alfabet</string>
     <string name="alphabet_letter">Brev</string>

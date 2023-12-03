@@ -9,6 +9,7 @@
     <plurals name="rot13_hint">
         <item quantity="other">すべてのラテン文字は %d の場所で回転します (下記に設定できます)</item>
     </plurals>
+    <!-- Counter -->
     <!-- Alphabet -->
     <string name="menu_alphabet">アルファベット(&amp;A)</string>
     <string name="alphabet_letter">手紙</string>

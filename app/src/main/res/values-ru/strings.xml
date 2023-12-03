@@ -12,6 +12,7 @@
         <item quantity="many">Все латинские буквы будут сдвинуты на %d позиций (можно указать ниже)</item>
         <item quantity="other">Все латинские буквы будут сдвинуты на %d позиции (можно указать ниже)</item>
     </plurals>
+    <!-- Counter -->
     <!-- Alphabet -->
     <string name="menu_alphabet">Алфавит</string>
     <string name="alphabet_letter">Буква</string>

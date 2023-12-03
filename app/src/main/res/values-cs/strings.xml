@@ -12,6 +12,7 @@
         <item quantity="many">Všechna latinská písmena budou otočena %d místy (lze nastavit níže)</item>
         <item quantity="other">Všechna latinská písmena budou otočena %d místy (lze nastavit níže)</item>
     </plurals>
+    <!-- Counter -->
     <!-- Alphabet -->
     <string name="menu_alphabet">Abeceda</string>
     <string name="alphabet_letter">Dopis</string>
