@@ -1,0 +1,2 @@
+- Add counter
+- Utilize multi-window feature of Android to use multiple tools at the same time
