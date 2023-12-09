@@ -8,7 +8,12 @@ import android.os.CountDownTimer
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
-import android.view.*
+import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
+import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.core.content.getSystemService
@@ -134,8 +139,8 @@ class TimerFragment : AbstractBaseFragment() {
         super.onResume()
 
         Handler(Looper.getMainLooper()).post {
-            Log.d(TAG, "Start button is ${startButton.height} high")
-            timerView1.isVisible = startButton.height > 20
+            Log.d(TAG, "Start button is ${startButton.height} high and minHeight ${startButton.minHeight}")
+            timerView1.isVisible = startButton.height > startButton.minHeight
         }
     }
 
