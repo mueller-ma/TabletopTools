@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
-    <string name="app_name">桌面工具</string>
-    <string name="app_description">桌面游戏的简易工具收藏</string>
+    <string name="app_name">桌游工具</string>
+    <string name="second_instance_hint">借助 Android 的多窗口功能以同时使用多个工具</string>
+    <string name="app_description">用于桌游的实用工具集合</string>
     <string name="settings">设置</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">ROT13</string>
+    <string name="rot13_could_not_rotate">无法自动旋转</string>
+    <string name="rot13_rotate_automatically">自动旋转</string>
     <plurals name="rot13_hint">
-        <item quantity="other">所有拉丁字母将由 %d 处旋转(可以设置在下方)</item>
+        <item quantity="other">所有拉丁字母将向后旋转 %d 个位置(可在下方设置)</item>
     </plurals>
     <!-- Counter -->
+    <string name="counter_label">计数器名称</string>
+    <string name="menu_counter">计数器</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">字母表</string>
-    <string name="alphabet_letter">信</string>
+    <string name="alphabet_letter">字母</string>
     <string name="alphabet_number">位置</string>
     <!-- Number converter -->
     <string name="menu_number_converter">数字转换器</string>
-    <string name="number_converter_decimal">小数</string>
-    <string name="number_converter_binary">二进制文件</string>
+    <string name="number_converter_decimal">十进制</string>
+    <string name="number_converter_binary">二进制</string>
     <string name="number_converter_hexadecimal">十六进制的</string>
     <!-- Integer factorization -->
+    <string name="menu_prime_fac">质因数分解</string>
+    <string name="prime_fac_input">输入要进行质因数分解的整数</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">爱好</string>
@@ -61,6 +68,9 @@
     <string name="menu_preferences">设置</string>
     <string name="keep_screen_on_enabled">保持屏幕开启</string>
     <string name="keep_screen_on_disabled">不要保持屏幕开启</string>
+    <string name="buzzer_sound">音效</string>
+    <string name="buzzer_sound_none">无</string>
+    <string name="buzzer_sound_buzzer">蜂鸣</string>
     <!--  About menu  -->
     <string name="about">关于</string>
     <string name="error_no_browser_found">未找到可用的浏览器</string>
