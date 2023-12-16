@@ -23,28 +23,28 @@
     <string name="menu_number_converter">数字转换器</string>
     <string name="number_converter_decimal">十进制</string>
     <string name="number_converter_binary">二进制</string>
-    <string name="number_converter_hexadecimal">十六进制的</string>
+    <string name="number_converter_hexadecimal">十六进制</string>
     <!-- Integer factorization -->
     <string name="menu_prime_fac">质因数分解</string>
     <string name="prime_fac_input">输入要进行质因数分解的整数</string>
     <!-- Titles for start page -->
     <!-- Dice -->
-    <string name="menu_dice">爱好</string>
-    <string name="dice_slider_hint">词数： %d</string>
-    <string name="dice_overall_inc_slider_hint">添加到总体结果： %d</string>
-    <string name="dice_roll_inc_slider_hint">添加到每个滚动： %d</string>
+    <string name="menu_dice">骰子</string>
+    <string name="dice_slider_hint">骰子数： %d</string>
+    <string name="dice_overall_inc_slider_hint">总点数加上： %d</string>
+    <string name="dice_roll_inc_slider_hint">每个骰子点数加上： %d</string>
     <!-- Dice with %d sides -->
     <string name="dice_d_d">D%d</string>
-    <string name="dice_max_count">最大细胞计数</string>
-    <string name="dice_show_overall_inc_slider">显示“添加到总体结果”滑块</string>
-    <string name="dice_show_roll_inc_slider">显示\"添加到每张滚轮\"滑块</string>
+    <string name="dice_max_count">最大骰子数</string>
+    <string name="dice_show_overall_inc_slider">显示“总点数加上”滑块</string>
+    <string name="dice_show_roll_inc_slider">显示“每个骰子点数加上”滑块</string>
     <!-- Timer -->
     <string name="menu_timer">定时器</string>
     <string name="timer_start">开始</string>
     <string name="timer_pause">暂停</string>
-    <string name="timer_reset">Reset</string>
+    <string name="timer_reset">复位</string>
     <!-- Abr. of minutes -->
-    <string name="timer_select_min">最小值</string>
+    <string name="timer_select_min">分</string>
     <!-- Abr. of seconds -->
     <string name="timer_select_sec">秒</string>
     <string name="timer_set_time">设置时间</string>
@@ -54,11 +54,11 @@
     <string name="buzzers_player_b">玩家 B</string>
     <string name="buzzers_player_c">玩家 C</string>
     <string name="buzzers_player_d">玩家 D</string>
-    <string name="random_list_hint">输入用新行分隔的值</string>
-    <string name="menu_random_list">随机化列表</string>
-    <string name="random_list_clear_list">清除列表</string>
-    <string name="random_list_sort_list">排序列表</string>
-    <string name="random_list_clear_list_confirm">您想要清除该列表吗？</string>
+    <string name="random_list_hint">输入以换行分隔的值</string>
+    <string name="menu_random_list">随机重排列表</string>
+    <string name="random_list_clear_list">清空列表</string>
+    <string name="random_list_sort_list">给列表排序</string>
+    <string name="random_list_clear_list_confirm">要清空列表吗？</string>
     <plurals name="buzzers_amount">
         <item quantity="other">%d 个蜂鸣器</item>
     </plurals>
