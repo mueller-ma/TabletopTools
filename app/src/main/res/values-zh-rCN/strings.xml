@@ -2,6 +2,7 @@
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_name">桌游工具</string>
+    <string name="second_instance">第二实例</string>
     <string name="second_instance_hint">借助 Android 的多窗口功能以同时使用多个工具</string>
     <string name="app_description">用于桌游的实用工具集合</string>
     <string name="settings">设置</string>
