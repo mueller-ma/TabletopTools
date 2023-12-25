@@ -23,6 +23,7 @@
     <string name="number_converter_binary">Двійковий</string>
     <string name="number_converter_hexadecimal">Шістнадцятковий</string>
     <!-- Integer factorization -->
+    <string name="prime_fac_input">Введіть ціле число для ділення його на прості множники</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Дайс</string>
@@ -67,6 +68,7 @@
     <string name="menu_preferences">Налаштування</string>
     <string name="keep_screen_on_enabled">Залишати екран увімкненим</string>
     <string name="keep_screen_on_disabled">Не зберігати екран увімкненим</string>
+    <string name="buzzer_sound">Звук</string>
     <!--  About menu  -->
     <string name="about">Про програму</string>
     <string name="error_no_browser_found">Браузер не знайдено</string>
