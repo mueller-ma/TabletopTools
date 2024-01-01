@@ -55,7 +55,7 @@
     <string name="buzzers_player_b">玩家 B</string>
     <string name="buzzers_player_c">玩家 C</string>
     <string name="buzzers_player_d">玩家 D</string>
-    <string name="random_list_hint">输入以换行分隔的值</string>
+    <string name="random_list_hint">输入以换行符分隔的值</string>
     <string name="menu_random_list">随机重排列表</string>
     <string name="random_list_clear_list">清空列表</string>
     <string name="random_list_sort_list">给列表排序</string>
