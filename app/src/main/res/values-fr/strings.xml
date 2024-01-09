@@ -25,7 +25,6 @@
     <string name="number_converter_hexadecimal">Hexadécimal</string>
     <!-- Integer factorization -->
     <string name="menu_prime_fac">Décomposition en facteurs premiers</string>
-    <string name="prime_fac_input">Entrez un nombre entier pour effectuer une décomposition en facteurs premiers</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Dés</string>
