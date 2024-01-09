@@ -2,14 +2,24 @@
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_name">タブレットツール</string>
+    <string name="second_instance">2番目のインスタンス</string>
+    <string name="second_instance_hint">複数のツールを同時に使用するには、Android のマルチウィンドウ機能を使用してください</string>
     <string name="app_description">テーブルトップゲーム用の便利なツールコレクション</string>
     <string name="settings">設定</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">ROT13</string>
+    <string name="rot13_could_not_rotate">自動的に回転できませんでした</string>
+    <string name="rot13_rotate_automatically">自動的に回転</string>
     <plurals name="rot13_hint">
         <item quantity="other">すべてのラテン文字は %d の場所で回転します (下記に設定できます)</item>
     </plurals>
     <!-- Counter -->
+    <string name="counter_label">カウンター名</string>
+    <string name="menu_counter">カウンター</string>
+    <string name="counter_min_1">-1</string>
+    <string name="counter_plus_1">+1</string>
+    <string name="counter_min_10">-10</string>
+    <string name="counter_plus_10">+10</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">アルファベット(&amp;A)</string>
     <string name="alphabet_letter">手紙</string>
@@ -20,6 +30,8 @@
     <string name="number_converter_binary">バイナリ</string>
     <string name="number_converter_hexadecimal">16進法</string>
     <!-- Integer factorization -->
+    <string name="menu_prime_fac">素因数</string>
+    <string name="prime_fac_input">素因数分解のための整数</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">ダイス</string>
@@ -61,6 +73,9 @@
     <string name="menu_preferences">設定</string>
     <string name="keep_screen_on_enabled">画面をオンにする</string>
     <string name="keep_screen_on_disabled">画面をオンにしない</string>
+    <string name="buzzer_sound">サウンド</string>
+    <string name="buzzer_sound_none">なし</string>
+    <string name="buzzer_sound_buzzer">ブザー</string>
     <!--  About menu  -->
     <string name="about">About</string>
     <string name="error_no_browser_found">ブラウザが見つかりませんでした</string>
