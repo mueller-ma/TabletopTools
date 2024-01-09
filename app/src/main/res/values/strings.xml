@@ -35,7 +35,7 @@
 
     <!-- Integer factorization -->
     <string name="menu_prime_fac">Prime factorization</string>
-    <string name="prime_fac_input">Enter an integer to perform a prime factorization</string>
+    <string name="prime_fac_input">Integer for prime factorization</string>
 
     <!-- Titles for start page -->
     <string name="menu_dice_value" translatable="false">dice</string>

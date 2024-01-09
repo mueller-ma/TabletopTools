@@ -32,6 +32,8 @@ class PrimeFacFragment : AbstractBaseFragment(), TextWatcher {
         val savedInput = savedInstanceState?.getCharSequence("input")?.toString().orEmpty()
         input.setText(savedInput)
 
+        setupScreenOn(binding.root)
+
         return binding.root
     }
 
