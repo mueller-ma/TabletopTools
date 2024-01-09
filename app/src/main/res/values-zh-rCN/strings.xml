@@ -27,7 +27,6 @@
     <string name="number_converter_hexadecimal">十六进制</string>
     <!-- Integer factorization -->
     <string name="menu_prime_fac">质因数分解</string>
-    <string name="prime_fac_input">输入要进行质因数分解的整数</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">骰子</string>
