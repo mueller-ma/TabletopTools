@@ -27,15 +27,19 @@ class CounterFragment : AbstractBaseFragment() {
     override fun onResume() {
         super.onResume()
 
-        setupCounter(1, binding.counter1)
-        setupCounter(2, binding.counter2)
-        setupCounter(3, binding.counter3)
-        setupCounter(4, binding.counter4)
-        setupCounter(5, binding.counter5)
+        listOf(
+            binding.counter1,
+            binding.counter2,
+            binding.counter3,
+            binding.counter4,
+            binding.counter5
+        ).forEachIndexed { index, counterBinding ->
+            setupCounter(index + 1, counterBinding)
+        }
     }
 
     private fun setupCounter(id: Int, counter: CounterBinding) {
-        fun getInput() = counter.count.text.toString().toIntOrNull() ?: 1
+        fun getInput() = counter.count.text.toString().toIntOrNull() ?: 0
 
         counter.less.setOnClickListener {
             counter.count.setText(getInput().dec().toString())

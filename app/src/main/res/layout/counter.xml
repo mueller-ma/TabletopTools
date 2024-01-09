@@ -28,7 +28,7 @@
             android:id="@+id/count"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="1"
+            android:hint="0"
             android:gravity="center"
             android:maxLines="1"
             android:inputType="number"

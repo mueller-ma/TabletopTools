@@ -73,7 +73,7 @@ class Prefs(private val context: Context) {
             }
 
         var count: Int
-            get() = sharedPrefs.getInt("counter_${id}_count", 1)
+            get() = sharedPrefs.getInt("counter_${id}_count", 0)
             set(value) {
                 sharedPrefs.edit {
                     putInt("counter_${id}_count", value)
