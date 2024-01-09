@@ -41,11 +41,17 @@ class CounterFragment : AbstractBaseFragment() {
     private fun setupCounter(id: Int, counter: CounterBinding) {
         fun getInput() = counter.count.text.toString().toIntOrNull() ?: 0
 
-        counter.less.setOnClickListener {
+        counter.less1.setOnClickListener {
             counter.count.setText(getInput().dec().toString())
         }
-        counter.more.setOnClickListener {
+        counter.less10.setOnClickListener {
+            counter.count.setText(getInput().minus(10).toString())
+        }
+        counter.more1.setOnClickListener {
             counter.count.setText(getInput().inc().toString())
+        }
+        counter.more10.setOnClickListener {
+            counter.count.setText(getInput().plus(10).toString())
         }
 
         val prefs = prefs.Counter(id)

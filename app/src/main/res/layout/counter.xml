@@ -15,14 +15,26 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-    <ImageButton
-            android:id="@+id/less"
+    <Button
+            android:id="@+id/less_10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/baseline_keyboard_arrow_left_24"
+            android:minWidth="16dp"
+            android:text="@string/counter_min_10"
             app:layout_constraintTop_toBottomOf="@+id/label"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="16dp" />
+
+    <Button
+            android:id="@+id/less_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="16dp"
+            android:text="@string/counter_min_1"
+            app:layout_constraintTop_toBottomOf="@+id/label"
+            app:layout_constraintStart_toEndOf="@id/less_10"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="4dp" />
 
     <EditText
             android:id="@+id/count"
@@ -34,16 +46,28 @@
             android:inputType="number"
             app:layout_constraintTop_toBottomOf="@+id/label"
             android:layout_marginTop="16dp"
-            app:layout_constraintStart_toEndOf="@+id/less"
-            app:layout_constraintEnd_toStartOf="@+id/more"
+            app:layout_constraintStart_toEndOf="@+id/less_1"
+            app:layout_constraintEnd_toStartOf="@+id/more_1"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp" />
 
-    <ImageButton
-            android:id="@+id/more"
+    <Button
+            android:id="@+id/more_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/baseline_keyboard_arrow_right_24"
+            android:minWidth="16dp"
+            android:text="@string/counter_plus_1"
+            app:layout_constraintTop_toBottomOf="@+id/label"
+            app:layout_constraintEnd_toStartOf="@id/more_10"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="4dp" />
+
+    <Button
+            android:id="@+id/more_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="16dp"
+            android:text="@string/counter_plus_10"
             app:layout_constraintTop_toBottomOf="@+id/label"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="16dp" />

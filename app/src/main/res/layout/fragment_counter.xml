@@ -7,15 +7,15 @@
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
+            android:padding="4dp"
             android:gravity="center"
             android:orientation="vertical">
 
-        <include android:id="@+id/counter1" layout="@layout/counter" android:layout_margin="8dp" />
-        <include android:id="@+id/counter2" layout="@layout/counter" android:layout_margin="8dp" />
-        <include android:id="@+id/counter3" layout="@layout/counter" android:layout_margin="8dp" />
-        <include android:id="@+id/counter4" layout="@layout/counter" android:layout_margin="8dp" />
-        <include android:id="@+id/counter5" layout="@layout/counter" android:layout_margin="8dp" />
+        <include android:id="@+id/counter1" layout="@layout/counter" />
+        <include android:id="@+id/counter2" layout="@layout/counter" />
+        <include android:id="@+id/counter3" layout="@layout/counter" />
+        <include android:id="@+id/counter4" layout="@layout/counter" />
+        <include android:id="@+id/counter5" layout="@layout/counter" />
 
     </LinearLayout>
 </ScrollView>

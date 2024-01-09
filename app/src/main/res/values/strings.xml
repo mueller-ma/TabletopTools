@@ -21,6 +21,10 @@
     <!-- Counter -->
     <string name="counter_label">Counter name</string>
     <string name="menu_counter">Counter</string>
+    <string name="counter_min_1">-1</string>
+    <string name="counter_plus_1">+1</string>
+    <string name="counter_min_10">-10</string>
+    <string name="counter_plus_10">+10</string>
 
     <!-- Alphabet -->
     <string name="menu_alphabet">Alphabet</string>
