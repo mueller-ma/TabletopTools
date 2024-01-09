@@ -2,15 +2,25 @@
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_name">Verktyg för bordsskivor</string>
+    <string name="second_instance">Andra instans</string>
+    <string name="second_instance_hint">Använd multi-window-funktionen i Android för att använda flera verktyg samtidigt</string>
     <string name="app_description">Praktisk verktygskollektion för bordsspel</string>
     <string name="settings">Inställningar</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">ROT13</string>
+    <string name="rot13_could_not_rotate">Kunde inte rotera automatiskt</string>
+    <string name="rot13_rotate_automatically">Rotera automatiskt</string>
     <plurals name="rot13_hint">
         <item quantity="one">Alla latinska bokstäver kommer att roteras av %d plats (kan anges nedan)</item>
         <item quantity="other">Alla latinska bokstäver kommer att roteras av %d platser (kan anges nedan)</item>
     </plurals>
     <!-- Counter -->
+    <string name="counter_label">Räknarens namn</string>
+    <string name="menu_counter">Räknare</string>
+    <string name="counter_min_1">-1</string>
+    <string name="counter_plus_1">+1</string>
+    <string name="counter_min_10">-10</string>
+    <string name="counter_plus_10">+10</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">Alfabetet</string>
     <string name="alphabet_letter">Brev</string>
@@ -21,6 +31,8 @@
     <string name="number_converter_binary">Binär</string>
     <string name="number_converter_hexadecimal">Hexadecimal</string>
     <!-- Integer factorization -->
+    <string name="menu_prime_fac">Primera faktorisering</string>
+    <string name="prime_fac_input">Heltal för prime factorization</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Tärning</string>
@@ -63,6 +75,9 @@
     <string name="menu_preferences">Inställningar</string>
     <string name="keep_screen_on_enabled">Behåll skärmen på</string>
     <string name="keep_screen_on_disabled">Håll inte skärmen på</string>
+    <string name="buzzer_sound">Ljud</string>
+    <string name="buzzer_sound_none">Ingen</string>
+    <string name="buzzer_sound_buzzer">summerare</string>
     <!--  About menu  -->
     <string name="about">Om</string>
     <string name="error_no_browser_found">Ingen webbläsare hittades</string>
