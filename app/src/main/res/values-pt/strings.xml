@@ -9,11 +9,18 @@
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">Rot 13</string>
     <string name="rot13_could_not_rotate">Não foi possível rotacionar automaticamente</string>
+    <string name="rot13_rotate_automatically">Girar automaticamente</string>
     <plurals name="rot13_hint">
         <item quantity="one">Todas as letras (alfabeto latino) serão trocadas em %d posição (pode ser configurado abaixo)</item>
         <item quantity="other">Todas as letras (alfabeto latino) serão trocadas em %d posições (pode ser configurado abaixo)</item>
     </plurals>
     <!-- Counter -->
+    <string name="counter_label">Nome do contador</string>
+    <string name="menu_counter">Contador</string>
+    <string name="counter_min_1">-1</string>
+    <string name="counter_plus_1">+1</string>
+    <string name="counter_min_10">-10</string>
+    <string name="counter_plus_10">+10</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">Alfabeto</string>
     <string name="alphabet_letter">Letra</string>
@@ -24,6 +31,8 @@
     <string name="number_converter_binary">Binário</string>
     <string name="number_converter_hexadecimal">Hexadecimal</string>
     <!-- Integer factorization -->
+    <string name="menu_prime_fac">Fatoração Prime</string>
+    <string name="prime_fac_input">Inteiro para fatoração de primo</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Dados</string>
@@ -66,6 +75,9 @@
     <string name="menu_preferences">Configurações</string>
     <string name="keep_screen_on_enabled">Manter a tela ligada</string>
     <string name="keep_screen_on_disabled">Não manter a tela ligada</string>
+    <string name="buzzer_sound">Som</string>
+    <string name="buzzer_sound_none">Nenhuma</string>
+    <string name="buzzer_sound_buzzer">Campainha</string>
     <!--  About menu  -->
     <string name="about">SOBRE</string>
     <string name="error_no_browser_found">Nenhum navegador encontrado</string>
