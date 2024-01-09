@@ -2,10 +2,14 @@
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_name">Nástroje pro stolní počítače</string>
+    <string name="second_instance">Druhá instance</string>
+    <string name="second_instance_hint">Použijte více oken pro současné použití více nástrojů</string>
     <string name="app_description">Šikovná sbírka nástrojů pro stolní hry</string>
     <string name="settings">Nastavení</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">ROT13</string>
+    <string name="rot13_could_not_rotate">Nelze automaticky otáčet</string>
+    <string name="rot13_rotate_automatically">Automaticky otáčet</string>
     <plurals name="rot13_hint">
         <item quantity="one">Všechna latinská písmena budou otočena o %d místo (lze nastavit níže)</item>
         <item quantity="few">Všechna latinská písmena budou otočena %d místy (lze nastavit níže)</item>
@@ -13,6 +17,12 @@
         <item quantity="other">Všechna latinská písmena budou otočena %d místy (lze nastavit níže)</item>
     </plurals>
     <!-- Counter -->
+    <string name="counter_label">Název počítadla</string>
+    <string name="menu_counter">Počítadlo</string>
+    <string name="counter_min_1">-1</string>
+    <string name="counter_plus_1">+1</string>
+    <string name="counter_min_10">-10</string>
+    <string name="counter_plus_10">+10</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">Abeceda</string>
     <string name="alphabet_letter">Dopis</string>
@@ -23,6 +33,8 @@
     <string name="number_converter_binary">Binární</string>
     <string name="number_converter_hexadecimal">Hexadecimální</string>
     <!-- Integer factorization -->
+    <string name="menu_prime_fac">Primární faktorizace</string>
+    <string name="prime_fac_input">Celé číslo pro primární faktorizaci</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Košík</string>
@@ -67,6 +79,9 @@
     <string name="menu_preferences">Nastavení</string>
     <string name="keep_screen_on_enabled">Ponechat obrazovku zapnutou</string>
     <string name="keep_screen_on_disabled">Nezachovat obrazovku</string>
+    <string name="buzzer_sound">Zvuk</string>
+    <string name="buzzer_sound_none">Nic</string>
+    <string name="buzzer_sound_buzzer">Hádanka</string>
     <!--  About menu  -->
     <string name="about">O aplikaci</string>
     <string name="error_no_browser_found">Nebyl nalezen žádný prohlížeč</string>
