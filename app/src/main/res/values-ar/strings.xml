@@ -2,10 +2,14 @@
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_name">أدوات سطح الجدول</string>
+    <string name="second_instance">المثل الثاني</string>
+    <string name="second_instance_hint">استخدام ميزة نوافذ متعددة للأندرويد لاستخدام أدوات متعددة في وقت واحد</string>
     <string name="app_description">مجموعة أدوات مفيدة لألعاب الكمبيوتر</string>
     <string name="settings">الإعدادات</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">ROT13</string>
+    <string name="rot13_could_not_rotate">تعذر الدوران تلقائياً</string>
+    <string name="rot13_rotate_automatically">تدوير تلقائي</string>
     <plurals name="rot13_hint">
         <item quantity="zero">سيتم تدوير جميع الأحرف اللاتينية بواسطة %d أماكن (يمكن تعيينها أدناه)</item>
         <item quantity="one">سيتم تدوير جميع الأحرف اللاتينية من قبل %d مكان (يمكن تعيينها أدناه)</item>
@@ -15,6 +19,12 @@
         <item quantity="other">سيتم تدوير جميع الأحرف اللاتينية بواسطة %d أماكن (يمكن تعيينها أدناه)</item>
     </plurals>
     <!-- Counter -->
+    <string name="counter_label">اسم العداد</string>
+    <string name="menu_counter">العداد</string>
+    <string name="counter_min_1">-1</string>
+    <string name="counter_plus_1">+1</string>
+    <string name="counter_min_10">-10</string>
+    <string name="counter_plus_10">+10</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">الأبجدية</string>
     <string name="alphabet_letter">حرف</string>
@@ -25,6 +35,8 @@
     <string name="number_converter_binary">ثنائي</string>
     <string name="number_converter_hexadecimal">سداسي</string>
     <!-- Integer factorization -->
+    <string name="menu_prime_fac">العوملة الرئيسية</string>
+    <string name="prime_fac_input">عدد صحيح للعوملة الأولية</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">النجدة</string>
@@ -71,6 +83,9 @@
     <string name="menu_preferences">الإعدادات</string>
     <string name="keep_screen_on_enabled">إبقاء الشاشة قيد التشغيل</string>
     <string name="keep_screen_on_disabled">لا تبقي الشاشة قيد التشغيل</string>
+    <string name="buzzer_sound">صوت</string>
+    <string name="buzzer_sound_none">لا</string>
+    <string name="buzzer_sound_buzzer">عز</string>
     <!--  About menu  -->
     <string name="about">حول</string>
     <string name="error_no_browser_found">لم يتم العثور على متصفح</string>
