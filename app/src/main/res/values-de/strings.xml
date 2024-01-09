@@ -17,6 +17,10 @@
     <!-- Counter -->
     <string name="counter_label">Zählername</string>
     <string name="menu_counter">Zähler</string>
+    <string name="counter_min_1">-1</string>
+    <string name="counter_plus_1">+1</string>
+    <string name="counter_min_10">-10</string>
+    <string name="counter_plus_10">+10</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">Alphabet</string>
     <string name="alphabet_letter">Buchstabe</string>
@@ -28,7 +32,7 @@
     <string name="number_converter_hexadecimal">Hexadezimal</string>
     <!-- Integer factorization -->
     <string name="menu_prime_fac">Primfaktorzerlegung</string>
-    <string name="prime_fac_input">Gebe eine Ganzzahl ein, um eine Primfaktorzerlegung durchzuführen</string>
+    <string name="prime_fac_input">Ganzzahl für Primfaktorzerlegung</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Würfel</string>

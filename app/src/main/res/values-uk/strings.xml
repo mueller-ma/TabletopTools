@@ -6,6 +6,7 @@
     <string name="settings">Налаштування</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">Rot 13</string>
+    <string name="rot13_rotate_automatically">Повертатись автоматично</string>
     <plurals name="rot13_hint">
         <item quantity="one">Всі латинські букви будуть зміщені на %d позицію (можна вказати нижче)</item>
         <item quantity="few">Всі латинські букви будуть зміщені на %d позиції (можна вказати нижче)</item>
@@ -13,6 +14,8 @@
         <item quantity="other">Всі латинські букви будуть зміщені на %d позицій (можна вказати нижче)</item>
     </plurals>
     <!-- Counter -->
+    <string name="counter_label">Назва лічильника</string>
+    <string name="menu_counter">Лічильник</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">Алфавіт</string>
     <string name="alphabet_letter">Літера</string>
@@ -23,17 +26,18 @@
     <string name="number_converter_binary">Двійковий</string>
     <string name="number_converter_hexadecimal">Шістнадцятковий</string>
     <!-- Integer factorization -->
+    <string name="menu_prime_fac">Розбиття на прості множники</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Дайс</string>
     <string name="dice_slider_hint">Кількість кубиків: %d</string>
-    <string name="dice_overall_inc_slider_hint">Додати до загального результату: %d</string>
-    <string name="dice_roll_inc_slider_hint">Додати до кожного жбурляння: %d</string>
+    <string name="dice_overall_inc_slider_hint">Додавати до загального результату: %d</string>
+    <string name="dice_roll_inc_slider_hint">Додавати до кожного жбурляння: %d</string>
     <!-- Dice with %d sides -->
     <string name="dice_d_d">d%d</string>
     <string name="dice_max_count">Макс. кількість кості</string>
-    <string name="dice_show_overall_inc_slider">Показати «Додати до загального результату» слайдер</string>
-    <string name="dice_show_roll_inc_slider">Показати повзунок \"Додати до кожного роли\"</string>
+    <string name="dice_show_overall_inc_slider">Показати повзунок «Додавати до загального результату»</string>
+    <string name="dice_show_roll_inc_slider">Показати повзунок \"Додавати до кожного кидку\"</string>
     <!-- Timer -->
     <string name="menu_timer">Таймер</string>
     <string name="timer_start">Почати</string>
@@ -67,6 +71,8 @@
     <string name="menu_preferences">Налаштування</string>
     <string name="keep_screen_on_enabled">Залишати екран увімкненим</string>
     <string name="keep_screen_on_disabled">Не зберігати екран увімкненим</string>
+    <string name="buzzer_sound">Звук</string>
+    <string name="buzzer_sound_buzzer">Зумер</string>
     <!--  About menu  -->
     <string name="about">Про програму</string>
     <string name="error_no_browser_found">Браузер не знайдено</string>

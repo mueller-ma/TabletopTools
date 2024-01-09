@@ -1,43 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
-    <string name="app_name">桌面工具</string>
-    <string name="app_description">桌面游戏的简易工具收藏</string>
+    <string name="app_name">桌游工具</string>
+    <string name="second_instance">第二实例</string>
+    <string name="second_instance_hint">借助 Android 的多窗口功能以同时使用多个工具</string>
+    <string name="app_description">用于桌游的实用工具集合</string>
     <string name="settings">设置</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">ROT13</string>
+    <string name="rot13_could_not_rotate">无法自动旋转</string>
+    <string name="rot13_rotate_automatically">自动旋转</string>
     <plurals name="rot13_hint">
-        <item quantity="other">所有拉丁字母将由 %d 处旋转(可以设置在下方)</item>
+        <item quantity="other">所有拉丁字母将向后旋转 %d 个位置(可在下方设置)</item>
     </plurals>
     <!-- Counter -->
+    <string name="counter_label">计数器名称</string>
+    <string name="menu_counter">计数器</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">字母表</string>
-    <string name="alphabet_letter">信</string>
+    <string name="alphabet_letter">字母</string>
     <string name="alphabet_number">位置</string>
     <!-- Number converter -->
     <string name="menu_number_converter">数字转换器</string>
-    <string name="number_converter_decimal">小数</string>
-    <string name="number_converter_binary">二进制文件</string>
-    <string name="number_converter_hexadecimal">十六进制的</string>
+    <string name="number_converter_decimal">十进制</string>
+    <string name="number_converter_binary">二进制</string>
+    <string name="number_converter_hexadecimal">十六进制</string>
     <!-- Integer factorization -->
+    <string name="menu_prime_fac">质因数分解</string>
     <!-- Titles for start page -->
     <!-- Dice -->
-    <string name="menu_dice">爱好</string>
-    <string name="dice_slider_hint">词数： %d</string>
-    <string name="dice_overall_inc_slider_hint">添加到总体结果： %d</string>
-    <string name="dice_roll_inc_slider_hint">添加到每个滚动： %d</string>
+    <string name="menu_dice">骰子</string>
+    <string name="dice_slider_hint">骰子数： %d</string>
+    <string name="dice_overall_inc_slider_hint">总点数加上： %d</string>
+    <string name="dice_roll_inc_slider_hint">每个骰子点数加上： %d</string>
     <!-- Dice with %d sides -->
     <string name="dice_d_d">D%d</string>
-    <string name="dice_max_count">最大细胞计数</string>
-    <string name="dice_show_overall_inc_slider">显示“添加到总体结果”滑块</string>
-    <string name="dice_show_roll_inc_slider">显示\"添加到每张滚轮\"滑块</string>
+    <string name="dice_max_count">最大骰子数</string>
+    <string name="dice_show_overall_inc_slider">显示“总点数加上”滑块</string>
+    <string name="dice_show_roll_inc_slider">显示“每个骰子点数加上”滑块</string>
     <!-- Timer -->
     <string name="menu_timer">定时器</string>
     <string name="timer_start">开始</string>
     <string name="timer_pause">暂停</string>
-    <string name="timer_reset">Reset</string>
+    <string name="timer_reset">复位</string>
     <!-- Abr. of minutes -->
-    <string name="timer_select_min">最小值</string>
+    <string name="timer_select_min">分</string>
     <!-- Abr. of seconds -->
     <string name="timer_select_sec">秒</string>
     <string name="timer_set_time">设置时间</string>
@@ -47,11 +54,11 @@
     <string name="buzzers_player_b">玩家 B</string>
     <string name="buzzers_player_c">玩家 C</string>
     <string name="buzzers_player_d">玩家 D</string>
-    <string name="random_list_hint">输入用新行分隔的值</string>
-    <string name="menu_random_list">随机化列表</string>
-    <string name="random_list_clear_list">清除列表</string>
-    <string name="random_list_sort_list">排序列表</string>
-    <string name="random_list_clear_list_confirm">您想要清除该列表吗？</string>
+    <string name="random_list_hint">输入以换行符分隔的值</string>
+    <string name="menu_random_list">随机重排列表</string>
+    <string name="random_list_clear_list">清空列表</string>
+    <string name="random_list_sort_list">给列表排序</string>
+    <string name="random_list_clear_list_confirm">要清空列表吗？</string>
     <plurals name="buzzers_amount">
         <item quantity="other">%d 个蜂鸣器</item>
     </plurals>
@@ -61,6 +68,9 @@
     <string name="menu_preferences">设置</string>
     <string name="keep_screen_on_enabled">保持屏幕开启</string>
     <string name="keep_screen_on_disabled">不要保持屏幕开启</string>
+    <string name="buzzer_sound">音效</string>
+    <string name="buzzer_sound_none">无</string>
+    <string name="buzzer_sound_buzzer">蜂鸣</string>
     <!--  About menu  -->
     <string name="about">关于</string>
     <string name="error_no_browser_found">未找到可用的浏览器</string>
