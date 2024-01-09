@@ -2,6 +2,8 @@
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_name">Herramientas para juegos de mesa</string>
+    <string name="second_instance">Segunda instancia</string>
+    <string name="second_instance_hint">Utilice la característica de ventana múltiple de Android para usar varias herramientas simultáneamente</string>
     <string name="app_description">Una colección de herramientas útiles para juegos de mesa</string>
     <string name="settings">Ajustes</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
@@ -13,6 +15,12 @@
         <item quantity="other">Todas las letras (alfabeto latino) se rotarán %d grados (Se puede definir abajo)</item>
     </plurals>
     <!-- Counter -->
+    <string name="counter_label">Nombre del contador</string>
+    <string name="menu_counter">Contador</string>
+    <string name="counter_min_1">-1</string>
+    <string name="counter_plus_1">+1</string>
+    <string name="counter_min_10">-10</string>
+    <string name="counter_plus_10">+10</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">Alfabeto</string>
     <string name="alphabet_letter">Letra</string>
@@ -23,6 +31,8 @@
     <string name="number_converter_binary">Binario</string>
     <string name="number_converter_hexadecimal">Hexadecimal</string>
     <!-- Integer factorization -->
+    <string name="menu_prime_fac">factorización Prima</string>
+    <string name="prime_fac_input">Entero para factorización prima</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Dado</string>
