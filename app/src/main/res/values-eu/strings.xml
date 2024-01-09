@@ -12,6 +12,7 @@
     <!-- Alphabet -->
     <!-- Number converter -->
     <!-- Integer factorization -->
+    <string name="prime_fac_input">Zenbaki osoa zenbaki lehenen faktorizaziorako</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <!-- Dice with %d sides -->
