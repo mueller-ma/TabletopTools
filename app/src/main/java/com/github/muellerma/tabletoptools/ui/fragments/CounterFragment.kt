@@ -32,7 +32,10 @@ class CounterFragment : AbstractBaseFragment() {
             binding.counter2,
             binding.counter3,
             binding.counter4,
-            binding.counter5
+            binding.counter5,
+            binding.counter6,
+            binding.counter7,
+            binding.counter8
         ).forEachIndexed { index, counterBinding ->
             setupCounter(index + 1, counterBinding)
         }
