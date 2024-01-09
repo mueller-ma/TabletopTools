@@ -27,7 +27,6 @@
     <string name="number_converter_hexadecimal">Шістнадцятковий</string>
     <!-- Integer factorization -->
     <string name="menu_prime_fac">Розбиття на прості множники</string>
-    <string name="prime_fac_input">Введіть ціле число для ділення його на прості множники</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Дайс</string>
