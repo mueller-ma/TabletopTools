@@ -2,10 +2,14 @@
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_name">Инструменты для настолок</string>
+    <string name="second_instance">Второй экземпляр</string>
+    <string name="second_instance_hint">Используйте многооконную функцию Android для одновременного использования нескольких инструментов</string>
     <string name="app_description">Коллекция удобных инструментов для настольных игр</string>
     <string name="settings">Настройки</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">Rot 13</string>
+    <string name="rot13_could_not_rotate">Не удалось повернуть автоматически</string>
+    <string name="rot13_rotate_automatically">Повернуть автоматически</string>
     <plurals name="rot13_hint">
         <item quantity="one">Все латинские буквы будут сдвинуты на %d позицию (можно указать ниже)</item>
         <item quantity="few">Все латинские буквы будут сдвинуты на %d позиции (можно указать ниже)</item>
@@ -13,6 +17,12 @@
         <item quantity="other">Все латинские буквы будут сдвинуты на %d позиции (можно указать ниже)</item>
     </plurals>
     <!-- Counter -->
+    <string name="counter_label">Имя счётчика</string>
+    <string name="menu_counter">Счетчик</string>
+    <string name="counter_min_1">-1</string>
+    <string name="counter_plus_1">+1</string>
+    <string name="counter_min_10">-10</string>
+    <string name="counter_plus_10">+10</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">Алфавит</string>
     <string name="alphabet_letter">Буква</string>
@@ -23,6 +33,8 @@
     <string name="number_converter_binary">Двоичный</string>
     <string name="number_converter_hexadecimal">Шестнадцатеричный</string>
     <!-- Integer factorization -->
+    <string name="menu_prime_fac">Кодировка Прайм</string>
+    <string name="prime_fac_input">Целое число для основной факториализации</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Кубик</string>
@@ -67,6 +79,9 @@
     <string name="menu_preferences">Настройки</string>
     <string name="keep_screen_on_enabled">Оставлять экран включённым</string>
     <string name="keep_screen_on_disabled">Не оставлять экран включённым</string>
+    <string name="buzzer_sound">Звук</string>
+    <string name="buzzer_sound_none">Нет</string>
+    <string name="buzzer_sound_buzzer">Звёзд</string>
     <!--  About menu  -->
     <string name="about">О нас</string>
     <string name="error_no_browser_found">Браузер не найден</string>

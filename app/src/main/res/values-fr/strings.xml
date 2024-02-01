@@ -2,10 +2,13 @@
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_name">Outils Tabletop</string>
+    <string name="second_instance">Deuxième instance</string>
+    <string name="second_instance_hint">Utilisez la fonction multi-fenêtres d\'Android pour utiliser plusieurs outils simultanément</string>
     <string name="app_description">Collection d\'outils pratiques pour les jeux de société</string>
     <string name="settings">Paramètres</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">Rot 13</string>
+    <string name="rot13_could_not_rotate">Impossible de faire pivoter automatiquement</string>
     <string name="rot13_rotate_automatically">Rotation automatique</string>
     <plurals name="rot13_hint">
         <item quantity="one">Toutes les lettres ( alphabet latin ) seront décalés de %d position (à définir ci-dessous)</item>
@@ -14,6 +17,10 @@
     <!-- Counter -->
     <string name="counter_label">Nom du compteur</string>
     <string name="menu_counter">Compteur</string>
+    <string name="counter_min_1">-1</string>
+    <string name="counter_plus_1">+1</string>
+    <string name="counter_min_10">-10</string>
+    <string name="counter_plus_10">+10</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">Alphabet</string>
     <string name="alphabet_letter">Lettre</string>
@@ -25,6 +32,7 @@
     <string name="number_converter_hexadecimal">Hexadécimal</string>
     <!-- Integer factorization -->
     <string name="menu_prime_fac">Décomposition en facteurs premiers</string>
+    <string name="prime_fac_input">Nombre entier pour la factorisation principale</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Dés</string>

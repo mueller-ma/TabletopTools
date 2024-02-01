@@ -2,10 +2,13 @@
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_name">Настільні засоби</string>
+    <string name="second_instance">Другий екземпляр</string>
+    <string name="second_instance_hint">Використовуйте функцію в мультивіконному режимі для використання одночасно кількох інструментів</string>
     <string name="app_description">Колекція зручних інструментів для настільних ігор</string>
     <string name="settings">Налаштування</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">Rot 13</string>
+    <string name="rot13_could_not_rotate">Не вдалося повернути автоматично</string>
     <string name="rot13_rotate_automatically">Повертатись автоматично</string>
     <plurals name="rot13_hint">
         <item quantity="one">Всі латинські букви будуть зміщені на %d позицію (можна вказати нижче)</item>
@@ -16,6 +19,10 @@
     <!-- Counter -->
     <string name="counter_label">Назва лічильника</string>
     <string name="menu_counter">Лічильник</string>
+    <string name="counter_min_1">-1</string>
+    <string name="counter_plus_1">+1</string>
+    <string name="counter_min_10">-10</string>
+    <string name="counter_plus_10">+10</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">Алфавіт</string>
     <string name="alphabet_letter">Літера</string>
@@ -27,6 +34,7 @@
     <string name="number_converter_hexadecimal">Шістнадцятковий</string>
     <!-- Integer factorization -->
     <string name="menu_prime_fac">Розбиття на прості множники</string>
+    <string name="prime_fac_input">Ціле число для розкладення на прості множники</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Дайс</string>
@@ -72,6 +80,7 @@
     <string name="keep_screen_on_enabled">Залишати екран увімкненим</string>
     <string name="keep_screen_on_disabled">Не зберігати екран увімкненим</string>
     <string name="buzzer_sound">Звук</string>
+    <string name="buzzer_sound_none">Без ефекту</string>
     <string name="buzzer_sound_buzzer">Зумер</string>
     <!--  About menu  -->
     <string name="about">Про програму</string>

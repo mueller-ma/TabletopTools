@@ -2,15 +2,25 @@
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_name">Tabeltopgereedschap</string>
+    <string name="second_instance">Tweede keer</string>
+    <string name="second_instance_hint">Gebruik de multi-window functie van Android om meerdere tools tegelijkertijd te gebruiken</string>
     <string name="app_description">Handige collectie tools voor bordspellen</string>
     <string name="settings">Instellingen</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">ROT13 force update</string>
+    <string name="rot13_could_not_rotate">Kan niet automatisch draaien</string>
+    <string name="rot13_rotate_automatically">Automatisch draaien</string>
     <plurals name="rot13_hint">
         <item quantity="one">Alle Latijnse letters worden met %d plaatsen gedraaid (kan hieronder worden ingesteld)</item>
         <item quantity="other">Alle Latijnse letters worden met %d plaatsen gedraaid (kan hieronder worden ingesteld)</item>
     </plurals>
     <!-- Counter -->
+    <string name="counter_label">Naam teller</string>
+    <string name="menu_counter">Teller</string>
+    <string name="counter_min_1">-1</string>
+    <string name="counter_plus_1">+1</string>
+    <string name="counter_min_10">-10</string>
+    <string name="counter_plus_10">+10</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">Alfabet</string>
     <string name="alphabet_letter">Brief</string>
@@ -21,6 +31,8 @@
     <string name="number_converter_binary">Binair</string>
     <string name="number_converter_hexadecimal">Hexadecimaal</string>
     <!-- Integer factorization -->
+    <string name="menu_prime_fac">Eerste factor</string>
+    <string name="prime_fac_input">Geheel voor primaire factor</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Dobbelsteen</string>
@@ -63,6 +75,9 @@
     <string name="menu_preferences">Instellingen</string>
     <string name="keep_screen_on_enabled">Scherm aanlaten</string>
     <string name="keep_screen_on_disabled">Scherm niet aan houden</string>
+    <string name="buzzer_sound">Geluid</string>
+    <string name="buzzer_sound_none">geen</string>
+    <string name="buzzer_sound_buzzer">Zoemer</string>
     <!--  About menu  -->
     <string name="about">Informatie</string>
     <string name="error_no_browser_found">Geen browser gevonden</string>

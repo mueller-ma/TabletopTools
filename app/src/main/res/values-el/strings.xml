@@ -2,15 +2,25 @@
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_name">Εργαλεία Tabletop</string>
+    <string name="second_instance">Δεύτερη παρουσία</string>
+    <string name="second_instance_hint">Χρησιμοποιήστε τη δυνατότητα πολλαπλών παραθύρων του Android για να χρησιμοποιήσετε ταυτόχρονα πολλά εργαλεία</string>
     <string name="app_description">Εύχρηστη συλλογή εργαλείων για επιτραπέζια παιχνίδια</string>
     <string name="settings">Ρυθμίσεις</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">ROT13</string>
+    <string name="rot13_could_not_rotate">Αδυναμία αυτόματης περιστροφής</string>
+    <string name="rot13_rotate_automatically">Αυτόματη περιστροφή</string>
     <plurals name="rot13_hint">
         <item quantity="one">Όλα τα λατινικά γράμματα θα περιστραφούν από %d μέρος (μπορεί να οριστεί παρακάτω)</item>
         <item quantity="other">Όλα τα λατινικά γράμματα θα περιστραφούν σε %d θέσεις (μπορεί να οριστεί παρακάτω)</item>
     </plurals>
     <!-- Counter -->
+    <string name="counter_label">Όνομα μετρητή</string>
+    <string name="menu_counter">Μετρητής</string>
+    <string name="counter_min_1">-1</string>
+    <string name="counter_plus_1">+1</string>
+    <string name="counter_min_10">-10</string>
+    <string name="counter_plus_10">+10</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">Αλφάβητο</string>
     <string name="alphabet_letter">Γράμμα</string>
@@ -21,6 +31,8 @@
     <string name="number_converter_binary">Δυαδικό</string>
     <string name="number_converter_hexadecimal">Δεκαεξαδικό</string>
     <!-- Integer factorization -->
+    <string name="menu_prime_fac">Αρχικός παραγοντισμός</string>
+    <string name="prime_fac_input">Ακέραιος αριθμός για πρωταρχικό παραγοντισμό</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Ζάρια</string>
@@ -63,6 +75,9 @@
     <string name="menu_preferences">Ρυθμίσεις</string>
     <string name="keep_screen_on_enabled">Διατήρηση ενεργής οθόνης</string>
     <string name="keep_screen_on_disabled">Να μην παραμένει ενεργή η οθόνη</string>
+    <string name="buzzer_sound">Ήχος</string>
+    <string name="buzzer_sound_none">Κανένα</string>
+    <string name="buzzer_sound_buzzer">Βομβητής</string>
     <!--  About menu  -->
     <string name="about">Σχετικά</string>
     <string name="error_no_browser_found">Δεν βρέθηκε πρόγραμμα περιήγησης</string>

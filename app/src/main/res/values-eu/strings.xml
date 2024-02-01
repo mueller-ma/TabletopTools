@@ -9,6 +9,10 @@
     <string name="rot13_could_not_rotate">Ezin izan da automatikoki txandakatu</string>
     <string name="rot13_rotate_automatically">Automatikoki txandakatu</string>
     <!-- Counter -->
+    <string name="counter_min_1">-1</string>
+    <string name="counter_plus_1">+1</string>
+    <string name="counter_min_10">-10</string>
+    <string name="counter_plus_10">+10</string>
     <!-- Alphabet -->
     <!-- Number converter -->
     <!-- Integer factorization -->

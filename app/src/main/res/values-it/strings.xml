@@ -2,15 +2,25 @@
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_name">Strumenti Da Tavolo</string>
+    <string name="second_instance">Seconda istanza</string>
+    <string name="second_instance_hint">Utilizzare la funzione multi-finestra di Android per utilizzare più strumenti contemporaneamente</string>
     <string name="app_description">Handy collezione di strumenti per giochi da tavolo</string>
     <string name="settings">Impostazioni</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">ROT13</string>
+    <string name="rot13_could_not_rotate">Impossibile ruotare automaticamente</string>
+    <string name="rot13_rotate_automatically">Ruota automaticamente</string>
     <plurals name="rot13_hint">
         <item quantity="one">Tutte le lettere latine saranno ruotate di %d posto (può essere impostato sotto)</item>
         <item quantity="other">Tutte le lettere latine saranno ruotate di %d posti (possono essere impostate sotto)</item>
     </plurals>
     <!-- Counter -->
+    <string name="counter_label">Nome contatore</string>
+    <string name="menu_counter">Contatore</string>
+    <string name="counter_min_1">-1</string>
+    <string name="counter_plus_1">+1</string>
+    <string name="counter_min_10">-10</string>
+    <string name="counter_plus_10">+10</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">Alfabeto</string>
     <string name="alphabet_letter">Lettera</string>
@@ -21,6 +31,8 @@
     <string name="number_converter_binary">Binario</string>
     <string name="number_converter_hexadecimal">Esadecimale</string>
     <!-- Integer factorization -->
+    <string name="menu_prime_fac">Fattorizzazione iniziale</string>
+    <string name="prime_fac_input">Intero per la factorizzazione primaria</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Dadi</string>
@@ -63,6 +75,9 @@
     <string name="menu_preferences">Impostazioni</string>
     <string name="keep_screen_on_enabled">Mantieni lo schermo acceso</string>
     <string name="keep_screen_on_disabled">Non mantenere lo schermo acceso</string>
+    <string name="buzzer_sound">Suono</string>
+    <string name="buzzer_sound_none">Nessuno</string>
+    <string name="buzzer_sound_buzzer">Buzzer</string>
     <!--  About menu  -->
     <string name="about">Informazioni</string>
     <string name="error_no_browser_found">Nessun browser trovato</string>

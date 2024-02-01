@@ -16,6 +16,10 @@
     <!-- Counter -->
     <string name="counter_label">计数器名称</string>
     <string name="menu_counter">计数器</string>
+    <string name="counter_min_1">-1</string>
+    <string name="counter_plus_1">+1</string>
+    <string name="counter_min_10">-10</string>
+    <string name="counter_plus_10">+10</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">字母表</string>
     <string name="alphabet_letter">字母</string>
@@ -27,6 +31,7 @@
     <string name="number_converter_hexadecimal">十六进制</string>
     <!-- Integer factorization -->
     <string name="menu_prime_fac">质因数分解</string>
+    <string name="prime_fac_input">主因子整数</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">骰子</string>

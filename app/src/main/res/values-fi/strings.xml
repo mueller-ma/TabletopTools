@@ -2,15 +2,25 @@
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_name">Taulukon Työkalut</string>
+    <string name="second_instance">Toinen instanssi</string>
+    <string name="second_instance_hint">Käytä moni-ikkuna ominaisuus Android käyttää useita työkaluja samanaikaisesti</string>
     <string name="app_description">Kätevä työkalu kokoelma pöytäpelejä</string>
     <string name="settings">Asetukset</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">ROT13</string>
+    <string name="rot13_could_not_rotate">Ei voitu kiertää automaattisesti</string>
+    <string name="rot13_rotate_automatically">Kierrä automaattisesti</string>
     <plurals name="rot13_hint">
         <item quantity="one">Kaikki latinalaiset kirjaimet pyörivät %d paikan mukaan (voidaan asettaa alla)</item>
         <item quantity="other">Kaikki latinalaiset kirjaimet pyörivät %d paikan mukaan (voidaan asettaa alla)</item>
     </plurals>
     <!-- Counter -->
+    <string name="counter_label">Laskurin nimi</string>
+    <string name="menu_counter">Laskuri</string>
+    <string name="counter_min_1">-1</string>
+    <string name="counter_plus_1">+1</string>
+    <string name="counter_min_10">-10</string>
+    <string name="counter_plus_10">+10</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">Aakkoset</string>
     <string name="alphabet_letter">Kirje</string>
@@ -21,6 +31,8 @@
     <string name="number_converter_binary">Binääri</string>
     <string name="number_converter_hexadecimal">Heksadesimaali</string>
     <!-- Integer factorization -->
+    <string name="menu_prime_fac">Ensisijainen factorisointi</string>
+    <string name="prime_fac_input">Kokonaisluku prime factorization</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Dice</string>
@@ -63,6 +75,9 @@
     <string name="menu_preferences">Asetukset</string>
     <string name="keep_screen_on_enabled">Pidä näyttö päällä</string>
     <string name="keep_screen_on_disabled">Älä pidä näyttöä päällä</string>
+    <string name="buzzer_sound">Ääni</string>
+    <string name="buzzer_sound_none">Ei Mitään</string>
+    <string name="buzzer_sound_buzzer">Summeri</string>
     <!--  About menu  -->
     <string name="about">Tietoja</string>
     <string name="error_no_browser_found">Selainta ei löytynyt</string>

@@ -2,15 +2,25 @@
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_name">Værktøjer Til Bordplade</string>
+    <string name="second_instance">Anden instans</string>
+    <string name="second_instance_hint">Brug funktionen multi-vindue i Android til at bruge flere værktøjer samtidigt</string>
     <string name="app_description">Handy værktøj samling til bordplade spil</string>
     <string name="settings">Indstillinger</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">ROT13</string>
+    <string name="rot13_could_not_rotate">Kunne ikke rotere automatisk</string>
+    <string name="rot13_rotate_automatically">Rotér automatisk</string>
     <plurals name="rot13_hint">
         <item quantity="one">Alle latinske bogstaver vil blive roteret af %d sted (kan angives nedenfor)</item>
         <item quantity="other">Alle latinske bogstaver vil blive roteret af %d steder (kan angives nedenfor)</item>
     </plurals>
     <!-- Counter -->
+    <string name="counter_label">Tæller navn</string>
+    <string name="menu_counter">Tæller</string>
+    <string name="counter_min_1">-1</string>
+    <string name="counter_plus_1">+1</string>
+    <string name="counter_min_10">-10</string>
+    <string name="counter_plus_10">+10</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">Alfabet</string>
     <string name="alphabet_letter">Brev</string>
@@ -21,6 +31,8 @@
     <string name="number_converter_binary">Binær</string>
     <string name="number_converter_hexadecimal">Hexadecimal</string>
     <!-- Integer factorization -->
+    <string name="menu_prime_fac">Førsteklasses faktorisering</string>
+    <string name="prime_fac_input">Heltal for primfaktorisering</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Terninger</string>
@@ -63,6 +75,9 @@
     <string name="menu_preferences">Indstillinger</string>
     <string name="keep_screen_on_enabled">Hold skærmen tændt</string>
     <string name="keep_screen_on_disabled">Hold ikke skærmen tændt</string>
+    <string name="buzzer_sound">Lyd</string>
+    <string name="buzzer_sound_none">Ingen</string>
+    <string name="buzzer_sound_buzzer">Buzzer</string>
     <!--  About menu  -->
     <string name="about">Om</string>
     <string name="error_no_browser_found">Ingen browser fundet</string>

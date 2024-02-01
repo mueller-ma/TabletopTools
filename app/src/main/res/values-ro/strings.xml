@@ -2,16 +2,26 @@
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
     <string name="app_name">Unelte pentru tablete</string>
+    <string name="second_instance">A doua instanță</string>
+    <string name="second_instance_hint">Utilizați funcția multi-fereastră a Androidului pentru a utiliza simultan mai multe unelte</string>
     <string name="app_description">Colecție de unelte utilă pentru jocurile cu tabletă</string>
     <string name="settings">Setări</string>
     <!-- ROT13: https://en.wikipedia.org/wiki/ROT13 -->
     <string name="menu_rot13">ROT13</string>
+    <string name="rot13_could_not_rotate">Nu s-a putut roti automat</string>
+    <string name="rot13_rotate_automatically">Rotire automată</string>
     <plurals name="rot13_hint">
         <item quantity="one">Toate literele latine vor fi rotite de %d loc (poate fi setat mai jos)</item>
         <item quantity="few">Toate literele latine vor fi rotite de %d locuri (pot fi setate mai jos)</item>
         <item quantity="other">Toate literele latine vor fi rotite de %d locuri (pot fi setate mai jos)</item>
     </plurals>
     <!-- Counter -->
+    <string name="counter_label">Nume contor</string>
+    <string name="menu_counter">Contor</string>
+    <string name="counter_min_1">-1</string>
+    <string name="counter_plus_1">+1</string>
+    <string name="counter_min_10">-10</string>
+    <string name="counter_plus_10">+10</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">Alfabet</string>
     <string name="alphabet_letter">Scrisoare</string>
@@ -22,6 +32,8 @@
     <string name="number_converter_binary">Binar</string>
     <string name="number_converter_hexadecimal">Hexazecimal</string>
     <!-- Integer factorization -->
+    <string name="menu_prime_fac">Factorizare principală</string>
+    <string name="prime_fac_input">Întreg pentru factorizare primă</string>
     <!-- Titles for start page -->
     <!-- Dice -->
     <string name="menu_dice">Șoareci</string>
@@ -65,6 +77,9 @@
     <string name="menu_preferences">Setări</string>
     <string name="keep_screen_on_enabled">Păstraţi ecranul pornit</string>
     <string name="keep_screen_on_disabled">Nu ține ecranul pornit</string>
+    <string name="buzzer_sound">Sunet</string>
+    <string name="buzzer_sound_none">Niciunul</string>
+    <string name="buzzer_sound_buzzer">Buzzer</string>
     <!--  About menu  -->
     <string name="about">Despre</string>
     <string name="error_no_browser_found">Nici un browser găsit</string>
