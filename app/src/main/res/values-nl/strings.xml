@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Translation instructions can be found in the Readme -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation, ExtraTranslation">
-    <string name="app_name">Tabeltopgereedschap</string>
+    <string name="app_name">Tools voor bordspellen</string>
     <string name="second_instance">Tweede keer</string>
     <string name="second_instance_hint">Gebruik de multi-window functie van Android om meerdere tools tegelijkertijd te gebruiken</string>
     <string name="app_description">Handige collectie tools voor bordspellen</string>
@@ -15,7 +15,7 @@
         <item quantity="other">Alle Latijnse letters worden met %d plaatsen gedraaid (kan hieronder worden ingesteld)</item>
     </plurals>
     <!-- Counter -->
-    <string name="counter_label">Naam teller</string>
+    <string name="counter_label">Naam van de teller</string>
     <string name="menu_counter">Teller</string>
     <string name="counter_min_1">-1</string>
     <string name="counter_plus_1">+1</string>
@@ -23,7 +23,7 @@
     <string name="counter_plus_10">+10</string>
     <!-- Alphabet -->
     <string name="menu_alphabet">Alfabet</string>
-    <string name="alphabet_letter">Brief</string>
+    <string name="alphabet_letter">Letter</string>
     <string name="alphabet_number">Positie</string>
     <!-- Number converter -->
     <string name="menu_number_converter">Nummer converter</string>
@@ -37,13 +37,13 @@
     <!-- Dice -->
     <string name="menu_dice">Dobbelsteen</string>
     <string name="dice_slider_hint">Aantal dobbelstenen: %d</string>
-    <string name="dice_overall_inc_slider_hint">Toevoegen aan algemeen resultaat: %d</string>
-    <string name="dice_roll_inc_slider_hint">Aan elke rol toevoegen: %d</string>
+    <string name="dice_overall_inc_slider_hint">Toevoegen aan totaalresultaat: %d</string>
+    <string name="dice_roll_inc_slider_hint">Aan elke worp toevoegen: %d</string>
     <!-- Dice with %d sides -->
     <string name="dice_d_d">d%d</string>
     <string name="dice_max_count">Max. aantal dobbelstenen</string>
-    <string name="dice_show_overall_inc_slider">Toon \"Toevoegen aan het algemene resultaat\" slider</string>
-    <string name="dice_show_roll_inc_slider">Toon \"Toevoegen aan elke rol\" slider</string>
+    <string name="dice_show_overall_inc_slider">Toon regelaar \"Toevoegen aan het tooaal resultaat\"</string>
+    <string name="dice_show_roll_inc_slider">Toon regelaar \"Toevoegen aan elke worp\"</string>
     <!-- Timer -->
     <string name="menu_timer">5 Minuten Timer</string>
     <string name="timer_start">Beginnen</string>
@@ -52,7 +52,7 @@
     <!-- Abr. of minutes -->
     <string name="timer_select_min">Min.</string>
     <!-- Abr. of seconds -->
-    <string name="timer_select_sec">Sec</string>
+    <string name="timer_select_sec">Sec.</string>
     <string name="timer_set_time">Tijd instellen</string>
     <!-- Buzzers -->
     <string name="menu_buzzers">Buzzers</string>
@@ -60,24 +60,24 @@
     <string name="buzzers_player_b">Speler B</string>
     <string name="buzzers_player_c">Speler C</string>
     <string name="buzzers_player_d">Speler D</string>
-    <string name="random_list_hint">Voer waarden in gescheiden door nieuwe regels</string>
-    <string name="menu_random_list">Willekeurige lijst</string>
+    <string name="random_list_hint">Voer waarden in. Elke waarde op een nieuwe regel.</string>
+    <string name="menu_random_list">Schud lijst</string>
     <string name="random_list_clear_list">Lijst wissen</string>
     <string name="random_list_sort_list">Sorteer lijst</string>
     <string name="random_list_clear_list_confirm">Wilt u de lijst wissen?</string>
     <plurals name="buzzers_amount">
-        <item quantity="one">%d zoemer</item>
+        <item quantity="one">%d buzzers</item>
         <item quantity="other">%d buzzers</item>
     </plurals>
     <!-- Preferences -->
-    <string name="start_page">Start pagina</string>
+    <string name="start_page">Startpagina</string>
     <string name="general">Algemeen</string>
     <string name="menu_preferences">Instellingen</string>
-    <string name="keep_screen_on_enabled">Scherm aanlaten</string>
+    <string name="keep_screen_on_enabled">Scherm aan houden</string>
     <string name="keep_screen_on_disabled">Scherm niet aan houden</string>
     <string name="buzzer_sound">Geluid</string>
     <string name="buzzer_sound_none">geen</string>
-    <string name="buzzer_sound_buzzer">Zoemer</string>
+    <string name="buzzer_sound_buzzer">Buzzer</string>
     <!--  About menu  -->
     <string name="about">Informatie</string>
     <string name="error_no_browser_found">Geen browser gevonden</string>
