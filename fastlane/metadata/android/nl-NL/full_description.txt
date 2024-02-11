@@ -4,4 +4,4 @@ Deze app biedt een paar handige tools voor bordspellen:
 * Nummer converter: Decimaal <=> Binair <=> Hexadecimaal
 * 5 Minuten Timer
 * Buzzers voor twee spelers
-* Lijst die kan worden gerandomiseerd
+* Lijst die kan worden geschud
