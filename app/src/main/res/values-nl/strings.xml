@@ -26,7 +26,7 @@
     <string name="alphabet_letter">Letter</string>
     <string name="alphabet_number">Positie</string>
     <!-- Number converter -->
-    <string name="menu_number_converter">Nummer converter</string>
+    <string name="menu_number_converter">Getallen omzetten</string>
     <string name="number_converter_decimal">Decimaal</string>
     <string name="number_converter_binary">Binair</string>
     <string name="number_converter_hexadecimal">Hexadecimaal</string>
