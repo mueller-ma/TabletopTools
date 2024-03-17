@@ -69,6 +69,7 @@
         <item quantity="one">%d βομβητής</item>
         <item quantity="other">%d buzzers</item>
     </plurals>
+    <!-- Frosthaven -->
     <!-- Preferences -->
     <string name="start_page">Αρχική σελίδα</string>
     <string name="general">Γενικά</string>
