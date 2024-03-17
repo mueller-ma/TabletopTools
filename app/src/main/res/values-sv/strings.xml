@@ -69,6 +69,7 @@
         <item quantity="one">%d summerare</item>
         <item quantity="other">%d summerare</item>
     </plurals>
+    <!-- Frosthaven -->
     <!-- Preferences -->
     <string name="start_page">Startsida</string>
     <string name="general">Allmänt</string>
