@@ -51,6 +51,7 @@
     <string name="menu_number_converter_value" translatable="false">converter</string>
     <string name="menu_prime_fac_value" translatable="false">prime_fac</string>
     <string name="menu_counter_value" translatable="false">counter</string>
+    <string name="menu_frosthaven_value" translatable="false">frosthaven</string>
 
     <!-- Dice -->
     <string name="menu_dice">Dice</string>
@@ -89,6 +90,12 @@
         <item quantity="one">%d buzzer</item>
         <item quantity="other">%d buzzers</item>
     </plurals>
+
+    <!-- Frosthaven -->
+    <string name="menu_frosthaven">Frosthaven</string>
+    <string name="frosthaven_character_header">Calculate scenario level</string>
+    <string name="frosthaven_scenario_level_hint">Enter character levels separated by comma</string>
+    <string name="frosthaven_scenario_level_out">Scenario level: %d</string>
 
     <!-- Preferences -->
     <string name="start_page">Start page</string>

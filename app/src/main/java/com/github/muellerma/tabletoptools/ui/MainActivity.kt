@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_prime_fac,
                 R.id.nav_timer,
                 R.id.nav_buzzers,
+                R.id.nav_frosthaven,
                 R.id.nav_prefs
             ),
             binding.drawerLayout
@@ -66,6 +67,7 @@ class MainActivity : AppCompatActivity() {
             getString(R.string.menu_prime_fac_value) -> R.id.nav_prime_fac
             getString(R.string.menu_timer_value) -> R.id.nav_timer
             getString(R.string.menu_buzzers_value) -> R.id.nav_buzzers
+            getString(R.string.menu_frosthaven_value) -> R.id.nav_frosthaven
             else -> R.id.nav_dice
         }
     }
