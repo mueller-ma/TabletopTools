@@ -67,6 +67,7 @@
     <plurals name="buzzers_amount">
         <item quantity="other">%d 个蜂鸣器</item>
     </plurals>
+    <!-- Frosthaven -->
     <!-- Preferences -->
     <string name="start_page">开始页面</string>
     <string name="general">通用</string>
