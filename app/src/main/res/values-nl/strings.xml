@@ -69,6 +69,7 @@
         <item quantity="one">%d buzzers</item>
         <item quantity="other">%d buzzers</item>
     </plurals>
+    <!-- Frosthaven -->
     <!-- Preferences -->
     <string name="start_page">Startpagina</string>
     <string name="general">Algemeen</string>
