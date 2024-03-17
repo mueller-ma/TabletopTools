@@ -73,6 +73,7 @@
         <item quantity="many">%d brzęczyki</item>
         <item quantity="other">%d brzęczyków</item>
     </plurals>
+    <!-- Frosthaven -->
     <!-- Preferences -->
     <string name="start_page">Strona startowa</string>
     <string name="general">Główny</string>
