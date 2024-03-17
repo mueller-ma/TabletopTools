@@ -71,6 +71,7 @@
         <item quantity="few">Balizatoare din %d</item>
         <item quantity="other">Balizatoare din %d</item>
     </plurals>
+    <!-- Frosthaven -->
     <!-- Preferences -->
     <string name="start_page">Pagină de pornire</string>
     <string name="general">Generalități</string>
