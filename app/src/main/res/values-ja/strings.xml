@@ -67,6 +67,7 @@
     <plurals name="buzzers_amount">
         <item quantity="other">%d 件のブザー</item>
     </plurals>
+    <!-- Frosthaven -->
     <!-- Preferences -->
     <string name="start_page">スタートページ</string>
     <string name="general">全般</string>

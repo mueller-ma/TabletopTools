@@ -69,6 +69,7 @@
         <item quantity="one">%d zumbador</item>
         <item quantity="other">%d zumbadores</item>
     </plurals>
+    <!-- Frosthaven -->
     <!-- Preferences -->
     <string name="start_page">Página de inicio</string>
     <string name="general">General</string>

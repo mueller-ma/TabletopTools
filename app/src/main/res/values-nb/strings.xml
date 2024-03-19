@@ -69,6 +69,7 @@
         <item quantity="one">%d økser</item>
         <item quantity="other">%d buzzere</item>
     </plurals>
+    <!-- Frosthaven -->
     <!-- Preferences -->
     <string name="start_page">Start side</string>
     <string name="general">Generelt</string>

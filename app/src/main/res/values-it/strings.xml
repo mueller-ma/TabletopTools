@@ -69,6 +69,7 @@
         <item quantity="one">%d cicalino</item>
         <item quantity="other">%d cicalini</item>
     </plurals>
+    <!-- Frosthaven -->
     <!-- Preferences -->
     <string name="start_page">Pagina iniziale</string>
     <string name="general">Generali</string>

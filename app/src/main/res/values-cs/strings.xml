@@ -73,6 +73,7 @@
         <item quantity="many">%d bzučáků</item>
         <item quantity="other">%d bzučáků</item>
     </plurals>
+    <!-- Frosthaven -->
     <!-- Preferences -->
     <string name="start_page">Úvodní stránka</string>
     <string name="general">Obecná ustanovení</string>

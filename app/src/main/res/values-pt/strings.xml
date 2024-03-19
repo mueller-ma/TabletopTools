@@ -69,6 +69,7 @@
         <item quantity="one">%d campainha</item>
         <item quantity="other">%d campainhas</item>
     </plurals>
+    <!-- Frosthaven -->
     <!-- Preferences -->
     <string name="start_page">Página inicial</string>
     <string name="general">Gerais</string>

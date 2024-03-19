@@ -50,6 +50,7 @@
         <item quantity="one">%d sesli uyarı</item>
         <item quantity="other">%d sesli uyarı</item>
     </plurals>
+    <!-- Frosthaven -->
     <!-- Preferences -->
     <string name="general">Genel</string>
     <string name="menu_preferences">Ayarlar</string>

@@ -73,6 +73,7 @@
         <item quantity="many">%d зуммеров</item>
         <item quantity="other">%d зуммера</item>
     </plurals>
+    <!-- Frosthaven -->
     <!-- Preferences -->
     <string name="start_page">Стартовая страница</string>
     <string name="general">Общие</string>

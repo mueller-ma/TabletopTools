@@ -69,6 +69,11 @@
         <item quantity="one">%d Buzzer</item>
         <item quantity="other">%d Buzzers</item>
     </plurals>
+    <!-- Frosthaven -->
+    <string name="menu_frosthaven">Frosthaven</string>
+    <string name="frosthaven_character_header">Szenario-Level berechnen</string>
+    <string name="frosthaven_scenario_level_hint">Gebe die Character-Level durch Komma getrennt ein</string>
+    <string name="frosthaven_scenario_level_out">Szenario-Level: %d</string>
     <!-- Preferences -->
     <string name="start_page">Startseite</string>
     <string name="general">Allgemein</string>

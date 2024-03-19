@@ -77,6 +77,7 @@
         <item quantity="many">%d دباغة</item>
         <item quantity="other">%d دباغة</item>
     </plurals>
+    <!-- Frosthaven -->
     <!-- Preferences -->
     <string name="start_page">صفحة البداية</string>
     <string name="general">عام</string>

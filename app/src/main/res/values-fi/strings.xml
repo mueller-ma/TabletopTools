@@ -69,6 +69,7 @@
         <item quantity="one">%d soittaja</item>
         <item quantity="other">%d puskuria</item>
     </plurals>
+    <!-- Frosthaven -->
     <!-- Preferences -->
     <string name="start_page">Aloitussivu</string>
     <string name="general">Yleiset</string>
