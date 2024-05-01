@@ -68,6 +68,10 @@
         <item quantity="other">%d 个蜂鸣器</item>
     </plurals>
     <!-- Frosthaven -->
+    <string name="menu_frosthaven">寒霜迷城</string>
+    <string name="frosthaven_character_header">计算场景等级</string>
+    <string name="frosthaven_scenario_level_hint">输入人物等级，以英文逗号分隔</string>
+    <string name="frosthaven_scenario_level_out">场景等级：%d</string>
     <!-- Preferences -->
     <string name="start_page">开始页面</string>
     <string name="general">通用</string>
