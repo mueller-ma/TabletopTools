@@ -74,6 +74,10 @@
         <item quantity="other">%d зуммера</item>
     </plurals>
     <!-- Frosthaven -->
+    <string name="menu_frosthaven">Frosthaven</string>
+    <string name="frosthaven_character_header">Вычислить уровень сценария</string>
+    <string name="frosthaven_scenario_level_hint">Введите уровни символов, разделенные запятыми</string>
+    <string name="frosthaven_scenario_level_out">Уровень сценария: %d</string>
     <!-- Preferences -->
     <string name="start_page">Стартовая страница</string>
     <string name="general">Общие</string>
