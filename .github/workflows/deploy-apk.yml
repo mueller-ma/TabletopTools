@@ -22,7 +22,7 @@ jobs:
           java-version: 17
 
       - name: Validate Gradle Wrapper
-        uses: gradle/wrapper-validation-action@v2.0.0
+        uses: gradle/actions/wrapper-validation@v5
 
       - name: Build APK
         run: bash gradlew app:assembleRelease
